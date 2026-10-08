@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "Trim",
+    "volume": "Volume",
+    "fade": "Fade",
+    "speed": "Speed",
+    "normalize": "Normalize",
+    "merge": "Merge",
+    "convert": "Convert"
+  },
+  "drop": {
+    "title": "Drop an audio file",
+    "titleMany": "Drop audio files to merge",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · nothing is uploaded, ever"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "mono",
+  "stereo": "stereo",
+  "player": {
+    "play": "Play",
+    "pause": "Pause",
+    "toStart": "Back to start",
+    "playSelection": "Play selection",
+    "stop": "Stop"
+  },
+  "trim": {
+    "start": "Start",
+    "end": "End",
+    "selection": "Selection",
+    "hint": "Drag the handles on the waveform or type exact times.",
+    "wholeFile": "Whole file",
+    "reset": "Reset selection"
+  },
+  "volume": {
+    "gain": "Gain",
+    "hint": "Boost or cut the level. Above 0 dB peak the output will clip.",
+    "currentPeak": "Current peak",
+    "afterGain": "After gain",
+    "clipWarning": "This gain pushes peaks above 0 dB. Expect clipping, or enable Normalize."
+  },
+  "fade": {
+    "in": "Fade in",
+    "out": "Fade out",
+    "hint": "Linear ramps at the start and end of the output.",
+    "seconds": "{value} s"
+  },
+  "speed": {
+    "rate": "Playback speed",
+    "hint": "Pitch changes with speed. Pitch-preserving stretch is not available on-device yet.",
+    "newDuration": "New duration",
+    "presets": "Speed presets"
+  },
+  "normalize": {
+    "enable": "Normalize volume",
+    "enableHint": "Bring the clip to a consistent level",
+    "mode": "Measure by",
+    "peak": "Peak",
+    "rms": "RMS (loudness)",
+    "target": "Target level",
+    "measured": "Measured",
+    "gainApplied": "Gain applied",
+    "analyzing": "Analyzing…"
+  },
+  "merge": {
+    "clips": "Clips in order",
+    "add": "Add clips",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "remove": "Remove",
+    "total": "Total length",
+    "hint": "Clips are joined end to end in this order. Trim, gain, fades and speed apply to the merged result.",
+    "needMore": "Add at least one more clip to merge."
+  },
+  "convert": {
+    "format": "Output format",
+    "bitrate": "Bitrate",
+    "bitrateHint": "Higher bitrate, larger file. 192 kbps is transparent for most music.",
+    "wavHint": "WAV is uncompressed PCM — no quality loss, large files.",
+    "estimated": "Estimated output",
+    "ffmpegNote": "MP3, OGG and M4A use an on-device encoder (about 30 MB, downloaded once and cached)."
+  },
+  "status": {
+    "loadingEncoder": "Downloading encoder…",
+    "rendering": "Rendering audio…",
+    "encoding": "Encoding {format}…",
+    "done": "Done — {name}",
+    "decodeError": "Can't open “{name}”",
+    "decodeErrorBody": "This file couldn't be decoded. Try MP3, WAV, OGG, M4A or FLAC.",
+    "encoderError": "The on-device encoder failed to load. Check your connection and try again, or export as WAV.",
+    "cancelled": "Export cancelled",
+    "processedIn": "Processed on this device in {seconds} s",
+    "stepDecode": "Decoded audio",
+    "stepRender": "Applied edits",
+    "stepEncode": "Encoded {format}",
+    "stepWrite": "Write file"
+  },
+  "export": {
+    "download": "Download {format}",
+    "saved": "Saved to your downloads"
+  },
+  "recorder": {
+    "title": "Voice recorder",
+    "subtitle": "Records from your microphone. Audio stays in this tab until you download it.",
+    "start": "Start recording",
+    "stop": "Stop",
+    "pause": "Pause",
+    "resume": "Resume",
+    "recording": "Recording",
+    "paused": "Paused",
+    "ready": "Ready",
+    "permission": "Allow microphone access to start.",
+    "denied": "Microphone access was denied. Check your browser's site permissions.",
+    "unsupported": "Recording isn't supported in this browser.",
+    "level": "Input level",
+    "take": "Take {n}",
+    "discard": "Discard",
+    "openInEditor": "Open in editor",
+    "download": "Download",
+    "newTake": "New take",
+    "mic": "Microphone",
+    "defaultMic": "Default microphone"
+  }
+}

@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Organize",
+    "merge": "Merge",
+    "split": "Split",
+    "watermark": "Watermark",
+    "page-numbers": "Numbers",
+    "sign": "Sign",
+    "compress": "Compress"
+  },
+  "drop": {
+    "title": "Drop a PDF here",
+    "titleMany": "Drop PDFs here",
+    "subtitle": "or click to browse · nothing is uploaded, ever"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# page} other {# pages}}",
+    "files": "{count, plural, one {# file} other {# files}}",
+    "selected": "{count} selected",
+    "addFiles": "Add files",
+    "selectAll": "Select all",
+    "clearSelection": "Clear selection",
+    "clearAll": "Clear all",
+    "zoom": "Thumbnail size"
+  },
+  "page": {
+    "label": "Page {n}",
+    "rotate": "Rotate page {n}",
+    "delete": "Delete page {n}",
+    "moveLeft": "Move page {n} earlier",
+    "moveRight": "Move page {n} later",
+    "select": "Select page {n}",
+    "dragHint": "Drag to reorder",
+    "source": "From {name}"
+  },
+  "organize": {
+    "hint": "Drag pages to reorder. Use the buttons on each page to rotate or delete it.",
+    "rotateAll": "Rotate all",
+    "reverse": "Reverse order",
+    "deleteSelected": "Delete selected",
+    "restore": "Restore original order",
+    "rotateSelected": "Rotate selected"
+  },
+  "merge": {
+    "hint": "Add more PDFs and drag their pages into order. Everything ends up in one file.",
+    "files": "Files in this document",
+    "remove": "Remove {name}",
+    "moveUp": "Move {name} up",
+    "moveDown": "Move {name} down"
+  },
+  "split": {
+    "mode": "Split mode",
+    "ranges": "Page ranges",
+    "every": "Every page",
+    "everyN": "Every N pages",
+    "rangesHint": "e.g. 1-3, 5, 8-10 · each range becomes a file",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Pages per file",
+    "preview": "{count, plural, one {# file} other {# files}} will be created",
+    "invalid": "Check the ranges: pages must be between 1 and {max}.",
+    "single": "Single PDF of the selected ranges",
+    "zip": "One file per range (.zip)"
+  },
+  "watermark": {
+    "enable": "Add watermark",
+    "kind": "Type",
+    "text": "Text",
+    "image": "Image",
+    "textPlaceholder": "CONFIDENTIAL",
+    "uploadImage": "Choose logo",
+    "replaceImage": "Replace logo",
+    "position": "Position",
+    "tile": "Tiled",
+    "opacity": "Opacity",
+    "size": "Size",
+    "rotation": "Rotation",
+    "color": "Color"
+  },
+  "numbers": {
+    "enable": "Add page numbers",
+    "position": "Position",
+    "start": "Start at",
+    "format": "Format",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Page 1",
+    "size": "Size"
+  },
+  "sign": {
+    "draw": "Draw",
+    "upload": "Upload",
+    "clear": "Clear",
+    "use": "Use signature",
+    "hint": "Draw your signature below, then drag it onto the page.",
+    "uploadHint": "PNG with a transparent background works best.",
+    "chooseImage": "Choose image",
+    "page": "Place on page",
+    "size": "Size",
+    "placed": "Signature placed on page {n}. Drag it to move.",
+    "none": "No signature yet",
+    "remove": "Remove signature"
+  },
+  "compress": {
+    "enable": "Re-encode images",
+    "quality": "Image quality",
+    "maxDimension": "Max image size",
+    "hint": "Embedded photos are re-encoded as JPEG. Text and vectors are untouched.",
+    "estimate": "Estimate",
+    "estimating": "Estimating…",
+    "result": "{count, plural, =0 {No images could be re-encoded} one {# image re-encoded} other {# images re-encoded}}",
+    "unsupported": "This browser can't re-encode images in the background. Try Chrome, Edge, Firefox or Safari 16.4+."
+  },
+  "export": {
+    "download": "Download PDF",
+    "downloadZip": "Download .zip",
+    "processing": "Building your PDF…",
+    "phase": {
+      "copy": "Copying pages",
+      "watermark": "Adding watermark",
+      "numbers": "Adding page numbers",
+      "signature": "Placing signature",
+      "compress": "Re-encoding images",
+      "save": "Writing file"
+    },
+    "doneTitle": "Your PDF is ready",
+    "doneSplit": "{count, plural, one {# file} other {# files}} ready",
+    "eta": "Working on-device · nothing leaves your computer",
+    "errorTitle": "Something went wrong",
+    "encrypted": "This PDF is password-protected. Remove the password first.",
+    "corrupt": "This file doesn't look like a valid PDF.",
+    "back": "Back to pages",
+    "compressed": "Images re-encoded: {count}"
+  },
+  "confirm": {
+    "clearTitle": "Clear all files?",
+    "clearBody": "All pages and settings in this session will be discarded. Nothing has been uploaded, so there is nothing to recover.",
+    "clear": "Clear files",
+    "deleteTitle": "Delete {count, plural, one {# page} other {# pages}}?",
+    "deleteBody": "You can restore the original order, but deleted pages come back only by reopening the file.",
+    "delete": "Delete",
+    "cancel": "Keep"
+  },
+  "images": {
+    "title": "Images to PDF",
+    "dropTitle": "Drop images here",
+    "dropSubtitle": "JPG, PNG, WebP or HEIC · one image per page",
+    "pageSize": "Page size",
+    "fit": "Fit to image",
+    "a4": "A4",
+    "letter": "Letter",
+    "orientation": "Orientation",
+    "auto": "Auto",
+    "portrait": "Portrait",
+    "landscape": "Landscape",
+    "margin": "Margin",
+    "images": "{count, plural, one {# image} other {# images}}",
+    "remove": "Remove {name}",
+    "moveUp": "Move {name} earlier",
+    "moveDown": "Move {name} later",
+    "converting": "Converting images…",
+    "unsupported": "“{name}” couldn't be decoded by this browser."
+  },
+  "toImages": {
+    "format": "Format",
+    "scale": "Resolution",
+    "scaleHint": "{dpi} dpi",
+    "quality": "JPG quality",
+    "pages": "Pages",
+    "allPages": "All pages",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Rendering page {n} of {total}…",
+    "download": "Download .zip",
+    "estimate": "{count, plural, one {# image} other {# images}} · {format}"
+  }
+}

@@ -1,5 +1,7 @@
 {
-  "brand": { "tagline": "Edit any file. Upload nothing." },
+  "brand": {
+    "tagline": "Edit any file. Upload nothing."
+  },
   "nav": {
     "home": "Home",
     "allTools": "All tools",
@@ -34,13 +36,17 @@
     "darkLabel": "Dark",
     "lightLabel": "Light"
   },
-  "language": { "label": "Language", "select": "Choose language" },
+  "language": {
+    "label": "Language",
+    "select": "Choose language"
+  },
   "privacyBadge": "Your files stay on your device",
   "offline": {
     "title": "Works offline",
     "body": "No uploads, no accounts, no tracking. Install it like a desktop app.",
     "install": "Install app",
-    "installHint": "Install becomes available once the app is loaded as a PWA"
+    "installHint": "Install becomes available once the app is loaded as a PWA",
+    "installed": "Installed"
   },
   "announcement": {
     "headline": "This domain is for sale.",
@@ -48,11 +54,21 @@
     "cta": "Make an offer",
     "dismiss": "Dismiss announcement"
   },
-  "footer": { "links": "About · Privacy · Open source" },
+  "footer": {
+    "links": "About · Privacy · Open source"
+  },
   "notFound": {
     "title": "That page doesn't exist",
     "body": "The tool may have moved. Try the search, or start from the home page.",
     "back": "Back to home"
   },
-  "loading": "Loading {name}…"
+  "loading": "Loading {name}…",
+  "error": {
+    "title": "Something went wrong",
+    "body": "The tool hit an unexpected error. Your files are still only on this device. Try again, or reload the page.",
+    "retry": "Try again"
+  },
+  "unsupported": {
+    "body": "This browser is missing {features}. Tools may not work; try a current Chrome, Edge, Firefox or Safari."
+  }
 }

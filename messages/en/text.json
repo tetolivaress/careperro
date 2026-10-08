@@ -1,1 +1,87 @@
-{}
+{
+  "counter": {
+    "characters": "Characters",
+    "charactersNoSpaces": "Without spaces",
+    "words": "Words",
+    "sentences": "Sentences",
+    "paragraphs": "Paragraphs",
+    "lines": "Lines",
+    "bytes": "Bytes (UTF-8)",
+    "reading": "Reading time",
+    "speaking": "Speaking time",
+    "minutes": "{count, plural, =0 {< 1 min} one {# min} other {# min}}",
+    "topWords": "Most frequent words",
+    "placeholder": "Paste or type your text here…",
+    "summary": "{words} words · {characters} characters"
+  },
+  "case": {
+    "mode": "Convert to",
+    "upper": "UPPER CASE",
+    "lower": "lower case",
+    "title": "Title Case",
+    "sentence": "Sentence case",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "aLtErNaTiNg",
+    "inverse": "iNVERSE",
+    "placeholder": "Type text to convert…"
+  },
+  "diff": {
+    "original": "Original",
+    "changed": "Changed",
+    "mode": "Compare by",
+    "lines": "Lines",
+    "words": "Words",
+    "chars": "Characters",
+    "ignoreCase": "Ignore case",
+    "ignoreWhitespace": "Ignore whitespace",
+    "added": "{count} added",
+    "removed": "{count} removed",
+    "identical": "The two texts are identical.",
+    "placeholderA": "Paste the original text…",
+    "placeholderB": "Paste the changed text…",
+    "result": "Differences"
+  },
+  "markdown": {
+    "preview": "Preview",
+    "html": "HTML",
+    "placeholder": "# Hello\n\nWrite **Markdown** here…",
+    "downloadHtml": "Download .html",
+    "gfm": "GitHub flavored"
+  },
+  "ocr": {
+    "language": "Language",
+    "drop": "Drop a screenshot or scan",
+    "dropSubtitle": "PNG, JPG, WebP · recognized entirely on your device",
+    "loadingEngine": "Loading the recognition engine…",
+    "recognizing": "Recognizing text…",
+    "steps": { "load": "Load engine", "language": "Load language data", "recognize": "Recognize text" },
+    "result": "Recognized text",
+    "confidence": "Confidence {percent}%",
+    "empty": "No text was found in this image.",
+    "firstRunNote": "The first run downloads the recognition engine (about 15 MB). Your image never leaves this device.",
+    "downloadTxt": "Download .txt",
+    "langs": { "eng": "English", "spa": "Spanish", "fra": "French", "deu": "German", "por": "Portuguese", "ita": "Italian", "jpn": "Japanese", "chi_sim": "Chinese (simplified)", "ara": "Arabic", "rus": "Russian", "hin": "Hindi", "ind": "Indonesian" }
+  },
+  "tts": {
+    "voice": "Voice",
+    "rate": "Speed",
+    "pitch": "Pitch",
+    "volume": "Volume",
+    "play": "Speak",
+    "pause": "Pause",
+    "resume": "Resume",
+    "stop": "Stop",
+    "placeholder": "Type something to read aloud…",
+    "unsupported": "Your browser doesn't support speech synthesis.",
+    "noVoices": "No voices available yet. Try again in a second.",
+    "speaking": "Speaking…",
+    "paused": "Paused",
+    "idle": "Ready",
+    "controls": "Playback",
+    "hint": "Voices come from your operating system; nothing is sent anywhere."
+  }
+}

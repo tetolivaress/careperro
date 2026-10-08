@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { localeAlternates } from "@/i18n/seo";
 import { ToolLoader } from "@/components/shell/ToolLoader";
 import { ToolPageFrame } from "@/components/shell/ToolPageFrame";
+import { ToolFaq } from "@/components/shell/ToolFaq";
 import { getCategory, getTool, tools } from "@/tools/registry";
 import { getToolCopy } from "@/tools/copy.server";
 
@@ -31,8 +32,11 @@ export default async function ToolPage({ params }: PageProps<"/[locale]/[categor
   setRequestLocale(locale);
 
   return (
-    <ToolPageFrame categorySlug={cat.slug} toolSlug={def.slug}>
-      <ToolLoader category={cat.slug} slug={def.slug} />
-    </ToolPageFrame>
+    <>
+      <ToolPageFrame categorySlug={cat.slug} toolSlug={def.slug}>
+        <ToolLoader category={cat.slug} slug={def.slug} />
+      </ToolPageFrame>
+      <ToolFaq locale={locale} tool={def} />
+    </>
   );
 }

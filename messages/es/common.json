@@ -1,5 +1,7 @@
 {
-  "brand": { "tagline": "Edita cualquier archivo. Sin subir nada." },
+  "brand": {
+    "tagline": "Edita cualquier archivo. Sin subir nada."
+  },
   "nav": {
     "home": "Inicio",
     "allTools": "Todas las herramientas",
@@ -34,13 +36,17 @@
     "darkLabel": "Oscuro",
     "lightLabel": "Claro"
   },
-  "language": { "label": "Idioma", "select": "Elegir idioma" },
+  "language": {
+    "label": "Idioma",
+    "select": "Elegir idioma"
+  },
   "privacyBadge": "Tus archivos no salen de tu dispositivo",
   "offline": {
     "title": "Funciona sin conexión",
     "body": "Sin subidas, sin cuentas, sin rastreo. Instálala como una app de escritorio.",
     "install": "Instalar app",
-    "installHint": "La instalación estará disponible cuando la app cargue como PWA"
+    "installHint": "La instalación estará disponible cuando la app cargue como PWA",
+    "installed": "Instalada"
   },
   "announcement": {
     "headline": "Este dominio está en venta.",
@@ -48,11 +54,21 @@
     "cta": "Hacer una oferta",
     "dismiss": "Cerrar aviso"
   },
-  "footer": { "links": "Acerca de · Privacidad · Código abierto" },
+  "footer": {
+    "links": "Acerca de · Privacidad · Código abierto"
+  },
   "notFound": {
     "title": "Esa página no existe",
     "body": "Puede que la herramienta se haya movido. Prueba el buscador o vuelve al inicio.",
     "back": "Volver al inicio"
   },
-  "loading": "Cargando {name}…"
+  "loading": "Cargando {name}…",
+  "error": {
+    "title": "Algo salió mal",
+    "body": "La herramienta encontró un error inesperado. Tus archivos siguen solo en este dispositivo. Inténtalo de nuevo o recarga la página.",
+    "retry": "Reintentar"
+  },
+  "unsupported": {
+    "body": "A este navegador le faltan {features}. Puede que las herramientas no funcionen; prueba con una versión actual de Chrome, Edge, Firefox o Safari."
+  }
 }

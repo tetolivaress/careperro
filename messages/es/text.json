@@ -1,1 +1,87 @@
-{}
+{
+  "counter": {
+    "characters": "Caracteres",
+    "charactersNoSpaces": "Sin espacios",
+    "words": "Palabras",
+    "sentences": "Frases",
+    "paragraphs": "Párrafos",
+    "lines": "Líneas",
+    "bytes": "Bytes (UTF-8)",
+    "reading": "Tiempo de lectura",
+    "speaking": "Tiempo hablado",
+    "minutes": "{count, plural, =0 {< 1 min} one {# min} other {# min}}",
+    "topWords": "Palabras más frecuentes",
+    "placeholder": "Pega o escribe tu texto aquí…",
+    "summary": "{words} palabras · {characters} caracteres"
+  },
+  "case": {
+    "mode": "Convertir a",
+    "upper": "MAYÚSCULAS",
+    "lower": "minúsculas",
+    "title": "Tipo Título",
+    "sentence": "Tipo oración",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "aLtErNaDo",
+    "inverse": "iNVERTIDO",
+    "placeholder": "Escribe el texto a convertir…"
+  },
+  "diff": {
+    "original": "Original",
+    "changed": "Modificado",
+    "mode": "Comparar por",
+    "lines": "Líneas",
+    "words": "Palabras",
+    "chars": "Caracteres",
+    "ignoreCase": "Ignorar mayúsculas",
+    "ignoreWhitespace": "Ignorar espacios",
+    "added": "{count} añadidos",
+    "removed": "{count} eliminados",
+    "identical": "Los dos textos son idénticos.",
+    "placeholderA": "Pega el texto original…",
+    "placeholderB": "Pega el texto modificado…",
+    "result": "Diferencias"
+  },
+  "markdown": {
+    "preview": "Vista previa",
+    "html": "HTML",
+    "placeholder": "# Hola\n\nEscribe **Markdown** aquí…",
+    "downloadHtml": "Descargar .html",
+    "gfm": "Estilo GitHub"
+  },
+  "ocr": {
+    "language": "Idioma",
+    "drop": "Suelta una captura o un escaneo",
+    "dropSubtitle": "PNG, JPG, WebP · reconocido por completo en tu dispositivo",
+    "loadingEngine": "Cargando el motor de reconocimiento…",
+    "recognizing": "Reconociendo texto…",
+    "steps": { "load": "Cargar motor", "language": "Cargar datos del idioma", "recognize": "Reconocer texto" },
+    "result": "Texto reconocido",
+    "confidence": "Confianza {percent}%",
+    "empty": "No se encontró texto en esta imagen.",
+    "firstRunNote": "La primera vez se descarga el motor de reconocimiento (unos 15 MB). Tu imagen nunca sale de este dispositivo.",
+    "downloadTxt": "Descargar .txt",
+    "langs": { "eng": "Inglés", "spa": "Español", "fra": "Francés", "deu": "Alemán", "por": "Portugués", "ita": "Italiano", "jpn": "Japonés", "chi_sim": "Chino (simplificado)", "ara": "Árabe", "rus": "Ruso", "hin": "Hindi", "ind": "Indonesio" }
+  },
+  "tts": {
+    "voice": "Voz",
+    "rate": "Velocidad",
+    "pitch": "Tono",
+    "volume": "Volumen",
+    "play": "Leer",
+    "pause": "Pausar",
+    "resume": "Reanudar",
+    "stop": "Detener",
+    "placeholder": "Escribe algo para leerlo en voz alta…",
+    "unsupported": "Tu navegador no admite síntesis de voz.",
+    "noVoices": "Aún no hay voces disponibles. Inténtalo en un segundo.",
+    "speaking": "Leyendo…",
+    "paused": "En pausa",
+    "idle": "Listo",
+    "controls": "Reproducción",
+    "hint": "Las voces vienen de tu sistema operativo; no se envía nada a ningún sitio."
+  }
+}

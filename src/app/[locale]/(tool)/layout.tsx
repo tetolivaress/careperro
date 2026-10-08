@@ -6,9 +6,9 @@ export default async function ToolLayout({ children, params }: LayoutProps<"/[lo
   const { locale } = await params;
   setRequestLocale(locale);
   return (
-    <div className="flex min-h-0 flex-1 flex-row">
+    <div className="flex flex-1 flex-row items-stretch">
       <AdaptiveSidebar defaultCollapsed />
-      <div className="flex min-h-0 min-w-0 flex-1 flex-col">{children}</div>
+      <div className="flex min-w-0 flex-1 flex-col">{children}</div>
     </div>
   );
 }

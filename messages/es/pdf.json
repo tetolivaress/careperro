@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Organizar",
+    "merge": "Unir",
+    "split": "Dividir",
+    "watermark": "Marca de agua",
+    "page-numbers": "Números",
+    "sign": "Firmar",
+    "compress": "Comprimir"
+  },
+  "drop": {
+    "title": "Suelta un PDF aquí",
+    "titleMany": "Suelta PDFs aquí",
+    "subtitle": "o haz clic para explorar · nunca se sube nada"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# página} other {# páginas}}",
+    "files": "{count, plural, one {# archivo} other {# archivos}}",
+    "selected": "{count} seleccionadas",
+    "addFiles": "Añadir archivos",
+    "selectAll": "Seleccionar todo",
+    "clearSelection": "Quitar selección",
+    "clearAll": "Limpiar todo",
+    "zoom": "Tamaño de miniatura"
+  },
+  "page": {
+    "label": "Página {n}",
+    "rotate": "Girar página {n}",
+    "delete": "Eliminar página {n}",
+    "moveLeft": "Mover página {n} antes",
+    "moveRight": "Mover página {n} después",
+    "select": "Seleccionar página {n}",
+    "dragHint": "Arrastra para reordenar",
+    "source": "De {name}"
+  },
+  "organize": {
+    "hint": "Arrastra las páginas para reordenarlas. Usa los botones de cada página para girarla o eliminarla.",
+    "rotateAll": "Girar todas",
+    "reverse": "Invertir orden",
+    "deleteSelected": "Eliminar seleccionadas",
+    "restore": "Restaurar orden original",
+    "rotateSelected": "Girar seleccionadas"
+  },
+  "merge": {
+    "hint": "Añade más PDFs y arrastra sus páginas para ordenarlas. Todo acaba en un solo archivo.",
+    "files": "Archivos en este documento",
+    "remove": "Quitar {name}",
+    "moveUp": "Subir {name}",
+    "moveDown": "Bajar {name}"
+  },
+  "split": {
+    "mode": "Modo de división",
+    "ranges": "Rangos de páginas",
+    "every": "Cada página",
+    "everyN": "Cada N páginas",
+    "rangesHint": "p. ej. 1-3, 5, 8-10 · cada rango será un archivo",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Páginas por archivo",
+    "preview": "Se crearán {count, plural, one {# archivo} other {# archivos}}",
+    "invalid": "Revisa los rangos: las páginas deben estar entre 1 y {max}.",
+    "single": "Un solo PDF con los rangos elegidos",
+    "zip": "Un archivo por rango (.zip)"
+  },
+  "watermark": {
+    "enable": "Añadir marca de agua",
+    "kind": "Tipo",
+    "text": "Texto",
+    "image": "Imagen",
+    "textPlaceholder": "CONFIDENCIAL",
+    "uploadImage": "Elegir logo",
+    "replaceImage": "Cambiar logo",
+    "position": "Posición",
+    "tile": "Mosaico",
+    "opacity": "Opacidad",
+    "size": "Tamaño",
+    "rotation": "Rotación",
+    "color": "Color"
+  },
+  "numbers": {
+    "enable": "Añadir números de página",
+    "position": "Posición",
+    "start": "Empezar en",
+    "format": "Formato",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Página 1",
+    "size": "Tamaño"
+  },
+  "sign": {
+    "draw": "Dibujar",
+    "upload": "Subir",
+    "clear": "Borrar",
+    "use": "Usar firma",
+    "hint": "Dibuja tu firma abajo y luego arrástrala sobre la página.",
+    "uploadHint": "Un PNG con fondo transparente funciona mejor.",
+    "chooseImage": "Elegir imagen",
+    "page": "Colocar en la página",
+    "size": "Tamaño",
+    "placed": "Firma colocada en la página {n}. Arrástrala para moverla.",
+    "none": "Aún no hay firma",
+    "remove": "Quitar firma"
+  },
+  "compress": {
+    "enable": "Recodificar imágenes",
+    "quality": "Calidad de imagen",
+    "maxDimension": "Tamaño máximo de imagen",
+    "hint": "Las fotos incrustadas se recodifican como JPEG. El texto y los vectores no se tocan.",
+    "estimate": "Estimar",
+    "estimating": "Estimando…",
+    "result": "{count, plural, =0 {No se pudo recodificar ninguna imagen} one {# imagen recodificada} other {# imágenes recodificadas}}",
+    "unsupported": "Este navegador no puede recodificar imágenes en segundo plano. Prueba Chrome, Edge, Firefox o Safari 16.4+."
+  },
+  "export": {
+    "download": "Descargar PDF",
+    "downloadZip": "Descargar .zip",
+    "processing": "Generando tu PDF…",
+    "phase": {
+      "copy": "Copiando páginas",
+      "watermark": "Añadiendo marca de agua",
+      "numbers": "Añadiendo números de página",
+      "signature": "Colocando la firma",
+      "compress": "Recodificando imágenes",
+      "save": "Escribiendo el archivo"
+    },
+    "doneTitle": "Tu PDF está listo",
+    "doneSplit": "{count, plural, one {# archivo listo} other {# archivos listos}}",
+    "eta": "Trabajando en tu dispositivo · nada sale de tu equipo",
+    "errorTitle": "Algo salió mal",
+    "encrypted": "Este PDF está protegido con contraseña. Quítala primero.",
+    "corrupt": "Este archivo no parece un PDF válido.",
+    "back": "Volver a las páginas",
+    "compressed": "Imágenes recodificadas: {count}"
+  },
+  "confirm": {
+    "clearTitle": "¿Limpiar todos los archivos?",
+    "clearBody": "Se descartarán todas las páginas y ajustes de esta sesión. No se subió nada, así que no hay nada que recuperar.",
+    "clear": "Limpiar archivos",
+    "deleteTitle": "¿Eliminar {count, plural, one {# página} other {# páginas}}?",
+    "deleteBody": "Puedes restaurar el orden original, pero las páginas eliminadas solo vuelven al reabrir el archivo.",
+    "delete": "Eliminar",
+    "cancel": "Conservar"
+  },
+  "images": {
+    "title": "Imágenes a PDF",
+    "dropTitle": "Suelta imágenes aquí",
+    "dropSubtitle": "JPG, PNG, WebP o HEIC · una imagen por página",
+    "pageSize": "Tamaño de página",
+    "fit": "Ajustar a la imagen",
+    "a4": "A4",
+    "letter": "Carta",
+    "orientation": "Orientación",
+    "auto": "Auto",
+    "portrait": "Vertical",
+    "landscape": "Horizontal",
+    "margin": "Margen",
+    "images": "{count, plural, one {# imagen} other {# imágenes}}",
+    "remove": "Quitar {name}",
+    "moveUp": "Mover {name} antes",
+    "moveDown": "Mover {name} después",
+    "converting": "Convirtiendo imágenes…",
+    "unsupported": "Este navegador no pudo decodificar “{name}”."
+  },
+  "toImages": {
+    "format": "Formato",
+    "scale": "Resolución",
+    "scaleHint": "{dpi} ppp",
+    "quality": "Calidad JPG",
+    "pages": "Páginas",
+    "allPages": "Todas las páginas",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Renderizando página {n} de {total}…",
+    "download": "Descargar .zip",
+    "estimate": "{count, plural, one {# imagen} other {# imágenes}} · {format}"
+  }
+}

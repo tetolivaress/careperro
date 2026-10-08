@@ -27,8 +27,10 @@ export function ToolPageFrame({
 
   return (
     <>
-      <ToolNavBar categorySlug={categorySlug} toolSlug={toolSlug} />
-      <div className="flex min-h-0 flex-1 flex-col">{children}</div>
+      <div className="flex min-h-[calc(100dvh-100px)] flex-col md:min-h-[calc(100dvh-100px)]">
+        <ToolNavBar categorySlug={categorySlug} toolSlug={toolSlug} />
+        <div className="flex min-h-0 flex-1 flex-col">{children}</div>
+      </div>
     </>
   );
 }
