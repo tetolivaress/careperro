@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "Jatuhkan file apa pun dan kami sarankan alatnya",
+    "subtitle": "atau klik untuk menelusuri · tidak ada yang pernah diunggah",
+    "titleOne": "Jatuhkan file di sini",
+    "titleMany": "Jatuhkan file-file di sini",
+    "release": "Lepaskan untuk membuka {count, plural, =1 {file} other {# file}}",
+    "unsupported": "“{name}” bukan jenis file yang didukung alat ini.",
+    "tooLarge": "Ukuran “{name}” adalah {size}. Alat ini menangani file hingga {max}.",
+    "browse": "Telusuri file"
+  },
+  "export": {
+    "processedOnDevice": "Diproses di perangkat ini",
+    "processedIn": "Diproses di perangkat ini dalam {seconds} dtk",
+    "bytesSent": "0 byte terkirim",
+    "reset": "Atur ulang",
+    "download": "Unduh",
+    "downloadFormat": "Unduh {format}",
+    "downloadAll": "Unduh semua (.zip)",
+    "saved": "Disimpan ke folder unduhan Anda"
+  },
+  "readout": {
+    "estimated": "Perkiraan hasil",
+    "result": "Hasil",
+    "smaller": "{percent}% lebih kecil",
+    "larger": "+{percent}% lebih besar"
+  },
+  "status": {
+    "cancel": "Batal",
+    "anotherFile": "File lain",
+    "chooseAnother": "Pilih yang lain",
+    "supportedFormats": "Format yang didukung",
+    "done": "Selesai — {percent}% lebih kecil",
+    "ready": "{name} siap · hemat {size}",
+    "cannotOpen": "Tidak dapat membuka “{name}”",
+    "eta": "Sekitar {seconds} dtk lagi · di perangkat",
+    "processing": "Memproses…"
+  },
+  "toolbar": {
+    "addFiles": "Tambah file",
+    "fit": "Sesuaikan ke layar",
+    "zoomIn": "Perbesar",
+    "zoomOut": "Perkecil",
+    "original": "Asli",
+    "split": "Pisah",
+    "sideBySide": "Berdampingan",
+    "chooseAnother": "Pilih yang lain",
+    "settings": "Pengaturan",
+    "expandSettings": "Perluas pengaturan",
+    "shrinkSettings": "Ciutkan pengaturan"
+  },
+  "placeholder": {
+    "comingSoon": "Alat ini akan hadir di fase berikutnya. Alat ini akan berjalan sepenuhnya di browser Anda.",
+    "loaded": "File dimuat di perangkat ini",
+    "loadedBody": "Kontrol {tool} akan hadir di fase berikutnya. Tidak ada yang diunggah.",
+    "files": "File",
+    "remove": "Hapus {name}",
+    "name": "Nama",
+    "format": "Format",
+    "size": "Ukuran",
+    "modified": "Diubah",
+    "unchanged": "Keluaran (tidak berubah)",
+    "downloadFirst": "Unduh dulu"
+  },
+  "twoPane": {
+    "input": "Masukan",
+    "output": "Keluaran",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "clear": "Bersihkan",
+    "paste": "Tempel",
+    "sample": "Muat contoh",
+    "characters": "{count} karakter",
+    "uploadFile": "Buka file"
+  }
+}

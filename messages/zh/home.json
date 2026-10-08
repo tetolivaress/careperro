@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "编辑任何文件，无需上传。",
+  "subhead": "{count} 个处理图片、音频、视频、PDF 和代码的工具，完全在您的浏览器中运行。无上传、无需注册、无广告。",
+  "subheadMobile": "{count} 个完全在您手机上运行的工具。无上传、无需注册、无广告。",
+  "drop": {
+    "title": "拖入任意文件，我们为您推荐工具",
+    "subtitle": "或点击浏览 · 绝不上传任何内容",
+    "titleMobile": "拖入文件或点按浏览",
+    "subtitleMobile": "我们会为您推荐合适的工具",
+    "more": "还有 {count} 个",
+    "noTool": "我们暂时没有适用于“{name}”的工具。请浏览下方的分类。"
+  },
+  "session": {
+    "title": "本次会话",
+    "networkIdle": "网络空闲",
+    "uploaded": "已上传",
+    "filesProcessed": "个文件已处理"
+  },
+  "browseByCategory": "按分类浏览",
+  "allTools": "全部 {count} 个工具",
+  "allToolsShort": "全部工具",
+  "suggestTool": "建议新工具",
+  "popular": "当前热门",
+  "seeAll": "查看全部",
+  "toolCount": "{count, plural, one {# 个工具} other {# 个工具}}",
+  "allToolsPage": {
+    "title": "全部工具",
+    "meta": "{count} 个工具 · 每一个都在您的设备上处理",
+    "description": "全部 {count} 个本地处理工具，按分类排列。"
+  },
+  "category": {
+    "meta": "{count} 个工具 · {formats} · 在您的设备上处理",
+    "quickDrop": "拖入文件以在{tool}中打开",
+    "notAFile": "“{name}”不是{category}文件。",
+    "description": "{description}。{count} 个处理 {formats} 的工具，全部在您的设备上运行。"
+  }
+}

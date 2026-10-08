@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Organisieren",
+    "merge": "Zusammenfügen",
+    "split": "Teilen",
+    "watermark": "Wasserzeichen",
+    "page-numbers": "Seitenzahlen",
+    "sign": "Signieren",
+    "compress": "Komprimieren"
+  },
+  "drop": {
+    "title": "PDF hier ablegen",
+    "titleMany": "PDFs hier ablegen",
+    "subtitle": "oder klicken zum Auswählen · es wird nie etwas hochgeladen"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# Seite} other {# Seiten}}",
+    "files": "{count, plural, one {# Datei} other {# Dateien}}",
+    "selected": "{count} ausgewählt",
+    "addFiles": "Dateien hinzufügen",
+    "selectAll": "Alle auswählen",
+    "clearSelection": "Auswahl aufheben",
+    "clearAll": "Alle entfernen",
+    "zoom": "Vorschaugröße"
+  },
+  "page": {
+    "label": "Seite {n}",
+    "rotate": "Seite {n} drehen",
+    "delete": "Seite {n} löschen",
+    "moveLeft": "Seite {n} nach vorne",
+    "moveRight": "Seite {n} nach hinten",
+    "select": "Seite {n} auswählen",
+    "dragHint": "Zum Sortieren ziehen",
+    "source": "Aus {name}"
+  },
+  "organize": {
+    "hint": "Seiten zum Sortieren ziehen. Mit den Buttons auf jeder Seite drehen oder löschen.",
+    "rotateAll": "Alle drehen",
+    "reverse": "Reihenfolge umkehren",
+    "deleteSelected": "Auswahl löschen",
+    "restore": "Ursprüngliche Reihenfolge",
+    "rotateSelected": "Auswahl drehen"
+  },
+  "merge": {
+    "hint": "Weitere PDFs hinzufügen und ihre Seiten in die richtige Reihenfolge ziehen. Alles landet in einer Datei.",
+    "files": "Dateien in diesem Dokument",
+    "remove": "{name} entfernen",
+    "moveUp": "{name} nach oben",
+    "moveDown": "{name} nach unten"
+  },
+  "split": {
+    "mode": "Teilungsmodus",
+    "ranges": "Seitenbereiche",
+    "every": "Jede Seite",
+    "everyN": "Alle N Seiten",
+    "rangesHint": "z. B. 1-3, 5, 8-10 · jeder Bereich wird eine Datei",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Seiten pro Datei",
+    "preview": "{count, plural, one {# Datei wird erstellt} other {# Dateien werden erstellt}}",
+    "invalid": "Bereiche prüfen: Seiten müssen zwischen 1 und {max} liegen.",
+    "single": "Ein PDF mit den gewählten Bereichen",
+    "zip": "Eine Datei pro Bereich (.zip)"
+  },
+  "watermark": {
+    "enable": "Wasserzeichen hinzufügen",
+    "kind": "Typ",
+    "text": "Text",
+    "image": "Bild",
+    "textPlaceholder": "VERTRAULICH",
+    "uploadImage": "Logo wählen",
+    "replaceImage": "Logo ersetzen",
+    "position": "Position",
+    "tile": "Gekachelt",
+    "opacity": "Deckkraft",
+    "size": "Größe",
+    "rotation": "Drehung",
+    "color": "Farbe"
+  },
+  "numbers": {
+    "enable": "Seitenzahlen hinzufügen",
+    "position": "Position",
+    "start": "Beginnen bei",
+    "format": "Format",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Seite 1",
+    "size": "Größe"
+  },
+  "sign": {
+    "draw": "Zeichnen",
+    "upload": "Laden",
+    "clear": "Löschen",
+    "use": "Unterschrift verwenden",
+    "hint": "Unten die Unterschrift zeichnen und dann auf die Seite ziehen.",
+    "uploadHint": "Ein PNG mit transparentem Hintergrund funktioniert am besten.",
+    "chooseImage": "Bild wählen",
+    "page": "Auf Seite platzieren",
+    "size": "Größe",
+    "placed": "Unterschrift auf Seite {n} platziert. Zum Verschieben ziehen.",
+    "none": "Noch keine Unterschrift",
+    "remove": "Unterschrift entfernen"
+  },
+  "compress": {
+    "enable": "Bilder neu kodieren",
+    "quality": "Bildqualität",
+    "maxDimension": "Max. Bildgröße",
+    "hint": "Eingebettete Fotos werden als JPEG neu kodiert. Text und Vektoren bleiben unberührt.",
+    "estimate": "Schätzen",
+    "estimating": "Schätzung läuft…",
+    "result": "{count, plural, =0 {Keine Bilder konnten neu kodiert werden} one {# Bild neu kodiert} other {# Bilder neu kodiert}}",
+    "unsupported": "Dieser Browser kann Bilder nicht im Hintergrund neu kodieren. Besser Chrome, Edge, Firefox oder Safari 16.4+ verwenden."
+  },
+  "export": {
+    "download": "PDF herunterladen",
+    "downloadZip": ".zip herunterladen",
+    "processing": "PDF wird erstellt…",
+    "phase": {
+      "copy": "Seiten kopieren",
+      "watermark": "Wasserzeichen hinzufügen",
+      "numbers": "Seitenzahlen hinzufügen",
+      "signature": "Unterschrift platzieren",
+      "compress": "Bilder neu kodieren",
+      "save": "Datei schreiben"
+    },
+    "doneTitle": "Das PDF ist fertig",
+    "doneSplit": "{count, plural, one {# Datei fertig} other {# Dateien fertig}}",
+    "eta": "Läuft auf dem Gerät · nichts verlässt den Computer",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "encrypted": "Dieses PDF ist passwortgeschützt. Zuerst das Passwort entfernen.",
+    "corrupt": "Diese Datei sieht nicht wie ein gültiges PDF aus.",
+    "back": "Zurück zu den Seiten",
+    "compressed": "Neu kodierte Bilder: {count}"
+  },
+  "confirm": {
+    "clearTitle": "Alle Dateien entfernen?",
+    "clearBody": "Alle Seiten und Einstellungen dieser Sitzung werden verworfen. Es wurde nichts hochgeladen, also gibt es nichts wiederherzustellen.",
+    "clear": "Dateien entfernen",
+    "deleteTitle": "{count, plural, one {# Seite} other {# Seiten}} löschen?",
+    "deleteBody": "Die ursprüngliche Reihenfolge lässt sich wiederherstellen, gelöschte Seiten kommen aber nur durch erneutes Öffnen der Datei zurück.",
+    "delete": "Löschen",
+    "cancel": "Behalten"
+  },
+  "images": {
+    "title": "Bilder zu PDF",
+    "dropTitle": "Bilder hier ablegen",
+    "dropSubtitle": "JPG, PNG, WebP oder HEIC · ein Bild pro Seite",
+    "pageSize": "Seitengröße",
+    "fit": "An Bild anpassen",
+    "a4": "A4",
+    "letter": "Letter",
+    "orientation": "Ausrichtung",
+    "auto": "Auto",
+    "portrait": "Hochformat",
+    "landscape": "Querformat",
+    "margin": "Rand",
+    "images": "{count, plural, one {# Bild} other {# Bilder}}",
+    "remove": "{name} entfernen",
+    "moveUp": "{name} nach vorne",
+    "moveDown": "{name} nach hinten",
+    "converting": "Bilder werden konvertiert…",
+    "unsupported": "„{name}“ konnte von diesem Browser nicht dekodiert werden."
+  },
+  "toImages": {
+    "format": "Format",
+    "scale": "Auflösung",
+    "scaleHint": "{dpi} dpi",
+    "quality": "JPG-Qualität",
+    "pages": "Seiten",
+    "allPages": "Alle Seiten",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Seite {n} von {total} wird gerendert…",
+    "download": ".zip herunterladen",
+    "estimate": "{count, plural, one {# Bild} other {# Bilder}} · {format}"
+  }
+}

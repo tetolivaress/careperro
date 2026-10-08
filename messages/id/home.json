@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "Edit file apa pun. Tanpa mengunggah apa pun.",
+  "subhead": "{count} alat untuk gambar, audio, video, PDF, dan kode yang berjalan sepenuhnya di browser Anda. Tanpa unggahan, tanpa pendaftaran, tanpa iklan.",
+  "subheadMobile": "{count} alat yang berjalan sepenuhnya di ponsel Anda. Tanpa unggahan, tanpa pendaftaran, tanpa iklan.",
+  "drop": {
+    "title": "Jatuhkan file apa pun dan kami sarankan alatnya",
+    "subtitle": "atau klik untuk menelusuri · tidak ada yang pernah diunggah",
+    "titleMobile": "Jatuhkan file atau ketuk untuk menelusuri",
+    "subtitleMobile": "Kami akan menyarankan alat yang tepat",
+    "more": "+{count} lagi",
+    "noTool": "Kami belum punya alat untuk “{name}”. Telusuri kategori di bawah."
+  },
+  "session": {
+    "title": "Sesi ini",
+    "networkIdle": "Jaringan tidak aktif",
+    "uploaded": "diunggah",
+    "filesProcessed": "file diproses"
+  },
+  "browseByCategory": "Telusuri per kategori",
+  "allTools": "Semua {count} alat",
+  "allToolsShort": "Semua alat",
+  "suggestTool": "Usulkan alat",
+  "popular": "Populer saat ini",
+  "seeAll": "Lihat semua",
+  "toolCount": "{count, plural, one {# alat} other {# alat}}",
+  "allToolsPage": {
+    "title": "Semua alat",
+    "meta": "{count} alat · semuanya diproses di perangkat Anda",
+    "description": "Semua {count} alat di perangkat, dikelompokkan per kategori."
+  },
+  "category": {
+    "meta": "{count} alat · {formats} · diproses di perangkat Anda",
+    "quickDrop": "Jatuhkan file untuk membukanya di {tool}",
+    "notAFile": "“{name}” bukan file {category}.",
+    "description": "{description}. {count} alat untuk {formats}, diproses di perangkat Anda."
+  }
+}

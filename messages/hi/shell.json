@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "कोई भी फ़ाइल डालें और हम टूल सुझाएँगे",
+    "subtitle": "या ब्राउज़ करने के लिए क्लिक करें · कुछ भी अपलोड नहीं होता, कभी नहीं",
+    "titleOne": "फ़ाइल यहाँ डालें",
+    "titleMany": "फ़ाइलें यहाँ डालें",
+    "release": "{count, plural, =1 {फ़ाइल} other {# फ़ाइलें}} खोलने के लिए छोड़ें",
+    "unsupported": "“{name}” इस टूल के लिए समर्थित फ़ाइल प्रकार नहीं है।",
+    "tooLarge": "“{name}” {size} की है। यह टूल {max} तक की फ़ाइलें संभालता है।",
+    "browse": "फ़ाइलें ब्राउज़ करें"
+  },
+  "export": {
+    "processedOnDevice": "इस डिवाइस पर प्रोसेस हुआ",
+    "processedIn": "इस डिवाइस पर {seconds} सेकंड में प्रोसेस हुआ",
+    "bytesSent": "0 बाइट भेजे गए",
+    "reset": "रीसेट",
+    "download": "डाउनलोड",
+    "downloadFormat": "{format} डाउनलोड करें",
+    "downloadAll": "सभी डाउनलोड करें (.zip)",
+    "saved": "आपके डाउनलोड में सहेजा गया"
+  },
+  "readout": {
+    "estimated": "अनुमानित आउटपुट",
+    "result": "परिणाम",
+    "smaller": "{percent}% छोटा",
+    "larger": "+{percent}% बड़ा"
+  },
+  "status": {
+    "cancel": "रद्द करें",
+    "anotherFile": "दूसरी फ़ाइल",
+    "chooseAnother": "दूसरी चुनें",
+    "supportedFormats": "समर्थित फ़ॉर्मैट",
+    "done": "हो गया — {percent}% छोटा",
+    "ready": "{name} तैयार है · {size} बचाया",
+    "cannotOpen": "“{name}” नहीं खुल सकी",
+    "eta": "लगभग {seconds} सेकंड बाकी · ऑन-डिवाइस",
+    "processing": "प्रोसेस हो रहा है…"
+  },
+  "toolbar": {
+    "addFiles": "फ़ाइलें जोड़ें",
+    "fit": "स्क्रीन में फ़िट करें",
+    "zoomIn": "ज़ूम इन",
+    "zoomOut": "ज़ूम आउट",
+    "original": "मूल",
+    "split": "स्प्लिट",
+    "sideBySide": "अगल-बगल",
+    "chooseAnother": "दूसरी चुनें",
+    "settings": "सेटिंग",
+    "expandSettings": "सेटिंग बड़ी करें",
+    "shrinkSettings": "सेटिंग छोटी करें"
+  },
+  "placeholder": {
+    "comingSoon": "यह टूल बाद के चरण में आएगा। यह पूरी तरह आपके ब्राउज़र में चलेगा।",
+    "loaded": "फ़ाइल इस डिवाइस पर लोड हुई",
+    "loadedBody": "{tool} के कंट्रोल बाद के चरण में आएँगे। कुछ भी अपलोड नहीं हुआ।",
+    "files": "फ़ाइलें",
+    "remove": "{name} हटाएँ",
+    "name": "नाम",
+    "format": "फ़ॉर्मैट",
+    "size": "आकार",
+    "modified": "संशोधित",
+    "unchanged": "आउटपुट (अपरिवर्तित)",
+    "downloadFirst": "पहले डाउनलोड करें"
+  },
+  "twoPane": {
+    "input": "इनपुट",
+    "output": "आउटपुट",
+    "copy": "कॉपी",
+    "copied": "कॉपी हो गया",
+    "clear": "साफ़ करें",
+    "paste": "पेस्ट",
+    "sample": "नमूना लोड करें",
+    "characters": "{count} अक्षर",
+    "uploadFile": "फ़ाइल खोलें"
+  }
+}

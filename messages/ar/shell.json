@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "أفلت أي ملف وسنقترح عليك الأدوات المناسبة",
+    "subtitle": "أو انقر للاستعراض · لا يُرفع أي شيء، أبدًا",
+    "titleOne": "أفلت ملفًا هنا",
+    "titleMany": "أفلت الملفات هنا",
+    "release": "أفلت لفتح {count, plural, =1 {الملف} other {# ملفات}}",
+    "unsupported": "“{name}” ليس نوع ملف مدعومًا في هذه الأداة.",
+    "tooLarge": "حجم “{name}” هو {size}. تتعامل هذه الأداة مع ملفات حتى {max}.",
+    "browse": "استعراض الملفات"
+  },
+  "export": {
+    "processedOnDevice": "تمت المعالجة على هذا الجهاز",
+    "processedIn": "تمت المعالجة على هذا الجهاز خلال {seconds} ث",
+    "bytesSent": "0 بايت مُرسل",
+    "reset": "إعادة تعيين",
+    "download": "تنزيل",
+    "downloadFormat": "تنزيل {format}",
+    "downloadAll": "تنزيل الكل (.zip)",
+    "saved": "تم الحفظ في مجلد التنزيلات"
+  },
+  "readout": {
+    "estimated": "الناتج المتوقع",
+    "result": "النتيجة",
+    "smaller": "أصغر بنسبة {percent}%",
+    "larger": "أكبر بنسبة +{percent}%"
+  },
+  "status": {
+    "cancel": "إلغاء",
+    "anotherFile": "ملف آخر",
+    "chooseAnother": "اختر ملفًا آخر",
+    "supportedFormats": "الصيغ المدعومة",
+    "done": "تم — أصغر بنسبة {percent}%",
+    "ready": "{name} جاهز · تم توفير {size}",
+    "cannotOpen": "تعذّر فتح “{name}”",
+    "eta": "نحو {seconds} ث متبقية · على الجهاز",
+    "processing": "جارٍ المعالجة…"
+  },
+  "toolbar": {
+    "addFiles": "إضافة ملفات",
+    "fit": "ملاءمة الشاشة",
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير",
+    "original": "الأصل",
+    "split": "مقسوم",
+    "sideBySide": "جنبًا إلى جنب",
+    "chooseAnother": "اختر ملفًا آخر",
+    "settings": "الإعدادات",
+    "expandSettings": "توسيع الإعدادات",
+    "shrinkSettings": "تقليص الإعدادات"
+  },
+  "placeholder": {
+    "comingSoon": "ستتوفر هذه الأداة في مرحلة لاحقة، وستعمل بالكامل في متصفحك.",
+    "loaded": "تم تحميل الملف على هذا الجهاز",
+    "loadedBody": "ستتوفر عناصر التحكم في {tool} في مرحلة لاحقة. لم يُرفع أي شيء.",
+    "files": "الملفات",
+    "remove": "إزالة {name}",
+    "name": "الاسم",
+    "format": "الصيغة",
+    "size": "الحجم",
+    "modified": "آخر تعديل",
+    "unchanged": "الناتج (دون تغيير)",
+    "downloadFirst": "تنزيل الأول"
+  },
+  "twoPane": {
+    "input": "الإدخال",
+    "output": "الناتج",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "clear": "مسح",
+    "paste": "لصق",
+    "sample": "تحميل مثال",
+    "characters": "{count} حرفًا",
+    "uploadFile": "فتح ملف"
+  }
+}

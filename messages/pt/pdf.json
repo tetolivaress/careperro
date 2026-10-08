@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Organizar",
+    "merge": "Juntar",
+    "split": "Dividir",
+    "watermark": "Marca d'água",
+    "page-numbers": "Números",
+    "sign": "Assinar",
+    "compress": "Comprimir"
+  },
+  "drop": {
+    "title": "Solte um PDF aqui",
+    "titleMany": "Solte PDFs aqui",
+    "subtitle": "ou clique para procurar · nada é enviado, nunca"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# página} other {# páginas}}",
+    "files": "{count, plural, one {# arquivo} other {# arquivos}}",
+    "selected": "{count} selecionadas",
+    "addFiles": "Adicionar arquivos",
+    "selectAll": "Selecionar todas",
+    "clearSelection": "Limpar seleção",
+    "clearAll": "Limpar tudo",
+    "zoom": "Tamanho das miniaturas"
+  },
+  "page": {
+    "label": "Página {n}",
+    "rotate": "Girar página {n}",
+    "delete": "Excluir página {n}",
+    "moveLeft": "Mover página {n} para antes",
+    "moveRight": "Mover página {n} para depois",
+    "select": "Selecionar página {n}",
+    "dragHint": "Arraste para reordenar",
+    "source": "De {name}"
+  },
+  "organize": {
+    "hint": "Arraste as páginas para reordenar. Use os botões em cada página para girar ou excluir.",
+    "rotateAll": "Girar todas",
+    "reverse": "Inverter ordem",
+    "deleteSelected": "Excluir selecionadas",
+    "restore": "Restaurar ordem original",
+    "rotateSelected": "Girar selecionadas"
+  },
+  "merge": {
+    "hint": "Adicione mais PDFs e arraste as páginas para ordená-las. Tudo termina em um único arquivo.",
+    "files": "Arquivos neste documento",
+    "remove": "Remover {name}",
+    "moveUp": "Mover {name} para cima",
+    "moveDown": "Mover {name} para baixo"
+  },
+  "split": {
+    "mode": "Modo de divisão",
+    "ranges": "Intervalos de páginas",
+    "every": "Cada página",
+    "everyN": "A cada N páginas",
+    "rangesHint": "ex.: 1-3, 5, 8-10 · cada intervalo vira um arquivo",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Páginas por arquivo",
+    "preview": "{count, plural, one {# arquivo será criado} other {# arquivos serão criados}}",
+    "invalid": "Verifique os intervalos: as páginas devem estar entre 1 e {max}.",
+    "single": "Um único PDF com os intervalos selecionados",
+    "zip": "Um arquivo por intervalo (.zip)"
+  },
+  "watermark": {
+    "enable": "Adicionar marca d'água",
+    "kind": "Tipo",
+    "text": "Texto",
+    "image": "Imagem",
+    "textPlaceholder": "CONFIDENCIAL",
+    "uploadImage": "Escolher logo",
+    "replaceImage": "Substituir logo",
+    "position": "Posição",
+    "tile": "Em mosaico",
+    "opacity": "Opacidade",
+    "size": "Tamanho",
+    "rotation": "Rotação",
+    "color": "Cor"
+  },
+  "numbers": {
+    "enable": "Adicionar números de página",
+    "position": "Posição",
+    "start": "Começar em",
+    "format": "Formato",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Página 1",
+    "size": "Tamanho"
+  },
+  "sign": {
+    "draw": "Desenhar",
+    "upload": "Carregar",
+    "clear": "Limpar",
+    "use": "Usar assinatura",
+    "hint": "Desenhe sua assinatura abaixo e depois arraste-a para a página.",
+    "uploadHint": "PNG com fundo transparente funciona melhor.",
+    "chooseImage": "Escolher imagem",
+    "page": "Colocar na página",
+    "size": "Tamanho",
+    "placed": "Assinatura colocada na página {n}. Arraste para mover.",
+    "none": "Nenhuma assinatura ainda",
+    "remove": "Remover assinatura"
+  },
+  "compress": {
+    "enable": "Recodificar imagens",
+    "quality": "Qualidade da imagem",
+    "maxDimension": "Tamanho máx. da imagem",
+    "hint": "As fotos incorporadas são recodificadas como JPEG. Texto e vetores ficam intactos.",
+    "estimate": "Estimar",
+    "estimating": "Estimando…",
+    "result": "{count, plural, =0 {Nenhuma imagem pôde ser recodificada} one {# imagem recodificada} other {# imagens recodificadas}}",
+    "unsupported": "Este navegador não consegue recodificar imagens em segundo plano. Tente Chrome, Edge, Firefox ou Safari 16.4+."
+  },
+  "export": {
+    "download": "Baixar PDF",
+    "downloadZip": "Baixar .zip",
+    "processing": "Montando seu PDF…",
+    "phase": {
+      "copy": "Copiando páginas",
+      "watermark": "Adicionando marca d'água",
+      "numbers": "Adicionando números de página",
+      "signature": "Posicionando assinatura",
+      "compress": "Recodificando imagens",
+      "save": "Gravando arquivo"
+    },
+    "doneTitle": "Seu PDF está pronto",
+    "doneSplit": "{count, plural, one {# arquivo pronto} other {# arquivos prontos}}",
+    "eta": "Trabalhando no dispositivo · nada sai do seu computador",
+    "errorTitle": "Algo deu errado",
+    "encrypted": "Este PDF está protegido por senha. Remova a senha primeiro.",
+    "corrupt": "Este arquivo não parece um PDF válido.",
+    "back": "Voltar às páginas",
+    "compressed": "Imagens recodificadas: {count}"
+  },
+  "confirm": {
+    "clearTitle": "Limpar todos os arquivos?",
+    "clearBody": "Todas as páginas e configurações desta sessão serão descartadas. Nada foi enviado, então não há nada a recuperar.",
+    "clear": "Limpar arquivos",
+    "deleteTitle": "Excluir {count, plural, one {# página} other {# páginas}}?",
+    "deleteBody": "Você pode restaurar a ordem original, mas páginas excluídas só voltam reabrindo o arquivo.",
+    "delete": "Excluir",
+    "cancel": "Manter"
+  },
+  "images": {
+    "title": "Imagens para PDF",
+    "dropTitle": "Solte imagens aqui",
+    "dropSubtitle": "JPG, PNG, WebP ou HEIC · uma imagem por página",
+    "pageSize": "Tamanho da página",
+    "fit": "Ajustar à imagem",
+    "a4": "A4",
+    "letter": "Carta",
+    "orientation": "Orientação",
+    "auto": "Auto",
+    "portrait": "Retrato",
+    "landscape": "Paisagem",
+    "margin": "Margem",
+    "images": "{count, plural, one {# imagem} other {# imagens}}",
+    "remove": "Remover {name}",
+    "moveUp": "Mover {name} para antes",
+    "moveDown": "Mover {name} para depois",
+    "converting": "Convertendo imagens…",
+    "unsupported": "“{name}” não pôde ser decodificado por este navegador."
+  },
+  "toImages": {
+    "format": "Formato",
+    "scale": "Resolução",
+    "scaleHint": "{dpi} dpi",
+    "quality": "Qualidade JPG",
+    "pages": "Páginas",
+    "allPages": "Todas as páginas",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Renderizando página {n} de {total}…",
+    "download": "Baixar .zip",
+    "estimate": "{count, plural, one {# imagem} other {# imagens}} · {format}"
+  }
+}

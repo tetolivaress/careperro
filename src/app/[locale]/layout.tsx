@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono, Noto_Sans_Arabic, Noto_Sans_Devanagari, Noto_Sans_JP, Noto_Sans_SC } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -11,6 +11,9 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { TopBar } from "@/components/layout/TopBar";
 import { ToolSearch } from "@/components/layout/ToolSearch";
 import { MobileDrawer } from "@/components/layout/MobileDrawer";
+import { BrowserSupport } from "@/components/layout/BrowserSupport";
+import { ServiceWorker } from "@/components/layout/ServiceWorker";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 import { dirFor, LOCALES, type Locale } from "@/i18n/locales";
@@ -19,10 +22,6 @@ import { tools } from "@/tools/registry";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext", "cyrillic"], display: "swap" });
 const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"], display: "swap" });
-const notoArabic = Noto_Sans_Arabic({ variable: "--font-noto-arabic", subsets: ["arabic"], display: "swap", weight: ["400", "500", "600", "700"] });
-const notoDevanagari = Noto_Sans_Devanagari({ variable: "--font-noto-devanagari", subsets: ["devanagari"], display: "swap", weight: ["400", "500", "600", "700"] });
-const notoJP = Noto_Sans_JP({ variable: "--font-noto-jp", subsets: ["latin"], display: "swap", weight: ["400", "500", "700"] });
-const notoSC = Noto_Sans_SC({ variable: "--font-noto-sc", subsets: ["latin"], display: "swap", weight: ["400", "500", "700"] });
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -48,8 +47,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
       ],
       apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
-    openGraph: { type: "website", siteName: SITE.name, url: `${SITE.url}/${locale}/`, title, description, locale },
-    twitter: { card: "summary_large_image" },
+    openGraph: { type: "website", siteName: SITE.name, url: `${SITE.url}/${locale}/`, title, description, locale, images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE.name }] },
+    twitter: { card: "summary_large_image", images: ["/og.png"] },
   };
 }
 
@@ -75,7 +74,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const fontVars = [inter.variable, jetbrainsMono.variable, notoArabic.variable, notoDevanagari.variable, notoJP.variable, notoSC.variable].join(" ");
+  const fontVars = [inter.variable, jetbrainsMono.variable].join(" ");
 
   return (
     <html lang={locale} dir={dirFor(locale)} className={`${fontVars} ${LOCALE_FONT_CLASS[locale] ?? ""} h-full`} suppressHydrationWarning>
@@ -84,6 +83,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
           <ThemeProvider>
             <TooltipProvider>
               <div className="flex min-h-dvh flex-col">
+                <BrowserSupport />
                 <AnnouncementBar />
                 <TopBar />
                 {children}
@@ -91,6 +91,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
               <ToolSearch />
               <MobileDrawer />
               <Toaster position="bottom-right" />
+              <ServiceWorker />
+              <Analytics />
             </TooltipProvider>
           </ThemeProvider>
         </NextIntlClientProvider>

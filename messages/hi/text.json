@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "अक्षर",
+    "charactersNoSpaces": "बिना स्पेस",
+    "words": "शब्द",
+    "sentences": "वाक्य",
+    "paragraphs": "पैराग्राफ़",
+    "lines": "लाइनें",
+    "bytes": "बाइट (UTF-8)",
+    "reading": "पढ़ने का समय",
+    "speaking": "बोलने का समय",
+    "minutes": "{count, plural, =0 {< 1 मिनट} one {# मिनट} other {# मिनट}}",
+    "topWords": "सबसे ज़्यादा आने वाले शब्द",
+    "placeholder": "अपना टेक्स्ट यहाँ पेस्ट या टाइप करें…",
+    "summary": "{words} शब्द · {characters} अक्षर"
+  },
+  "case": {
+    "mode": "इसमें बदलें",
+    "upper": "बड़े अक्षर (UPPER)",
+    "lower": "छोटे अक्षर (lower)",
+    "title": "शीर्षक केस (Title Case)",
+    "sentence": "वाक्य केस (Sentence case)",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "aLtErNaTiNg",
+    "inverse": "iNVERSE",
+    "placeholder": "बदलने के लिए टेक्स्ट टाइप करें…"
+  },
+  "diff": {
+    "original": "मूल",
+    "changed": "बदला हुआ",
+    "mode": "इसके अनुसार तुलना",
+    "lines": "लाइनें",
+    "words": "शब्द",
+    "chars": "अक्षर",
+    "ignoreCase": "केस अनदेखा करें",
+    "ignoreWhitespace": "व्हाइटस्पेस अनदेखा करें",
+    "added": "{count} जोड़े गए",
+    "removed": "{count} हटाए गए",
+    "identical": "दोनों टेक्स्ट एक जैसे हैं।",
+    "placeholderA": "मूल टेक्स्ट पेस्ट करें…",
+    "placeholderB": "बदला हुआ टेक्स्ट पेस्ट करें…",
+    "result": "अंतर"
+  },
+  "markdown": {
+    "preview": "प्रीव्यू",
+    "html": "HTML",
+    "placeholder": "# नमस्ते\n\nयहाँ **Markdown** लिखें…",
+    "downloadHtml": ".html डाउनलोड करें",
+    "gfm": "GitHub फ़्लेवर्ड"
+  },
+  "ocr": {
+    "language": "भाषा",
+    "drop": "स्क्रीनशॉट या स्कैन डालें",
+    "dropSubtitle": "PNG, JPG, WebP · पूरी तरह आपके डिवाइस पर पहचाना जाता है",
+    "loadingEngine": "पहचान इंजन लोड हो रहा है…",
+    "recognizing": "टेक्स्ट पहचाना जा रहा है…",
+    "steps": {
+      "load": "इंजन लोड करें",
+      "language": "भाषा डेटा लोड करें",
+      "recognize": "टेक्स्ट पहचानें"
+    },
+    "result": "पहचाना गया टेक्स्ट",
+    "confidence": "विश्वास {percent}%",
+    "empty": "इस इमेज में कोई टेक्स्ट नहीं मिला।",
+    "firstRunNote": "पहली बार चलाने पर पहचान इंजन डाउनलोड होता है (लगभग 15 MB)। आपकी इमेज कभी इस डिवाइस से बाहर नहीं जाती।",
+    "downloadTxt": ".txt डाउनलोड करें",
+    "langs": {
+      "eng": "अंग्रेज़ी",
+      "spa": "स्पेनिश",
+      "fra": "फ़्रेंच",
+      "deu": "जर्मन",
+      "por": "पुर्तगाली",
+      "ita": "इतालवी",
+      "jpn": "जापानी",
+      "chi_sim": "चीनी (सरलीकृत)",
+      "ara": "अरबी",
+      "rus": "रूसी",
+      "hin": "हिन्दी",
+      "ind": "इंडोनेशियाई"
+    }
+  },
+  "tts": {
+    "voice": "आवाज़",
+    "rate": "स्पीड",
+    "pitch": "पिच",
+    "volume": "वॉल्यूम",
+    "play": "बोलें",
+    "pause": "रोकें",
+    "resume": "जारी रखें",
+    "stop": "बंद करें",
+    "placeholder": "सुनने के लिए कुछ टाइप करें…",
+    "unsupported": "आपका ब्राउज़र स्पीच सिंथेसिस का समर्थन नहीं करता।",
+    "noVoices": "अभी कोई आवाज़ उपलब्ध नहीं। एक सेकंड में फिर कोशिश करें।",
+    "speaking": "बोल रहा है…",
+    "paused": "रुका हुआ",
+    "idle": "तैयार",
+    "controls": "प्लेबैक",
+    "hint": "आवाज़ें आपके ऑपरेटिंग सिस्टम से आती हैं; कुछ भी कहीं नहीं भेजा जाता।"
+  }
+}

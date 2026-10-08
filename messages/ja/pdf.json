@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "整理",
+    "merge": "結合",
+    "split": "分割",
+    "watermark": "透かし",
+    "page-numbers": "ページ番号",
+    "sign": "署名",
+    "compress": "圧縮"
+  },
+  "drop": {
+    "title": "ここに PDF をドロップ",
+    "titleMany": "ここに PDF をドロップ",
+    "subtitle": "またはクリックして選択 · 何もアップロードされません"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# ページ} other {# ページ}}",
+    "files": "{count, plural, one {# 個のファイル} other {# 個のファイル}}",
+    "selected": "{count} 件選択中",
+    "addFiles": "ファイルを追加",
+    "selectAll": "すべて選択",
+    "clearSelection": "選択を解除",
+    "clearAll": "すべて削除",
+    "zoom": "サムネイルのサイズ"
+  },
+  "page": {
+    "label": "ページ {n}",
+    "rotate": "ページ {n} を回転",
+    "delete": "ページ {n} を削除",
+    "moveLeft": "ページ {n} を前へ移動",
+    "moveRight": "ページ {n} を後ろへ移動",
+    "select": "ページ {n} を選択",
+    "dragHint": "ドラッグして並べ替え",
+    "source": "{name} から"
+  },
+  "organize": {
+    "hint": "ページをドラッグして並べ替えます。各ページのボタンで回転や削除ができます。",
+    "rotateAll": "すべて回転",
+    "reverse": "逆順にする",
+    "deleteSelected": "選択項目を削除",
+    "restore": "元の順序に戻す",
+    "rotateSelected": "選択項目を回転"
+  },
+  "merge": {
+    "hint": "PDF をさらに追加し、ページをドラッグして並べ替えます。すべてが 1 つのファイルになります。",
+    "files": "この文書に含まれるファイル",
+    "remove": "{name} を削除",
+    "moveUp": "{name} を上へ移動",
+    "moveDown": "{name} を下へ移動"
+  },
+  "split": {
+    "mode": "分割方法",
+    "ranges": "ページ範囲",
+    "every": "1 ページごと",
+    "everyN": "N ページごと",
+    "rangesHint": "例：1-3, 5, 8-10 · 各範囲が 1 つのファイルになります",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "1 ファイルあたりのページ数",
+    "preview": "{count, plural, one {# 個のファイル} other {# 個のファイル}}が作成されます",
+    "invalid": "範囲を確認してください。ページは 1 から {max} の間で指定します。",
+    "single": "選択した範囲を 1 つの PDF に",
+    "zip": "範囲ごとに 1 ファイル (.zip)"
+  },
+  "watermark": {
+    "enable": "透かしを追加",
+    "kind": "種類",
+    "text": "テキスト",
+    "image": "画像",
+    "textPlaceholder": "社外秘",
+    "uploadImage": "ロゴを選択",
+    "replaceImage": "ロゴを変更",
+    "position": "位置",
+    "tile": "タイル状",
+    "opacity": "不透明度",
+    "size": "サイズ",
+    "rotation": "回転",
+    "color": "色"
+  },
+  "numbers": {
+    "enable": "ページ番号を追加",
+    "position": "位置",
+    "start": "開始番号",
+    "format": "形式",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "ページ 1",
+    "size": "サイズ"
+  },
+  "sign": {
+    "draw": "手書き",
+    "upload": "アップロード",
+    "clear": "消去",
+    "use": "署名を使用",
+    "hint": "下に署名を書いてから、ページ上にドラッグしてください。",
+    "uploadHint": "背景が透過の PNG が最適です。",
+    "chooseImage": "画像を選択",
+    "page": "配置するページ",
+    "size": "サイズ",
+    "placed": "ページ {n} に署名を配置しました。ドラッグで移動できます。",
+    "none": "署名はまだありません",
+    "remove": "署名を削除"
+  },
+  "compress": {
+    "enable": "画像を再エンコード",
+    "quality": "画像の画質",
+    "maxDimension": "画像の最大サイズ",
+    "hint": "埋め込まれた写真は JPEG として再エンコードされます。テキストやベクターはそのままです。",
+    "estimate": "見積もる",
+    "estimating": "見積もり中…",
+    "result": "{count, plural, =0 {再エンコードできる画像はありませんでした} one {# 枚の画像を再エンコード} other {# 枚の画像を再エンコード}}",
+    "unsupported": "このブラウザではバックグラウンドで画像を再エンコードできません。Chrome、Edge、Firefox、または Safari 16.4 以降をお試しください。"
+  },
+  "export": {
+    "download": "PDF をダウンロード",
+    "downloadZip": ".zip をダウンロード",
+    "processing": "PDF を作成中…",
+    "phase": {
+      "copy": "ページをコピー中",
+      "watermark": "透かしを追加中",
+      "numbers": "ページ番号を追加中",
+      "signature": "署名を配置中",
+      "compress": "画像を再エンコード中",
+      "save": "ファイルを書き込み中"
+    },
+    "doneTitle": "PDF の準備ができました",
+    "doneSplit": "{count, plural, one {# 個のファイル} other {# 個のファイル}}の準備ができました",
+    "eta": "端末内で処理中 · データはお使いのコンピューターから出ません",
+    "errorTitle": "問題が発生しました",
+    "encrypted": "この PDF はパスワードで保護されています。先にパスワードを解除してください。",
+    "corrupt": "このファイルは有効な PDF ではないようです。",
+    "back": "ページ一覧に戻る",
+    "compressed": "再エンコードした画像：{count}"
+  },
+  "confirm": {
+    "clearTitle": "すべてのファイルを削除しますか？",
+    "clearBody": "このセッションのすべてのページと設定が破棄されます。何もアップロードされていないため、復元はできません。",
+    "clear": "ファイルを削除",
+    "deleteTitle": "{count, plural, one {# ページ} other {# ページ}}を削除しますか？",
+    "deleteBody": "元の順序は復元できますが、削除したページはファイルを開き直さないと戻りません。",
+    "delete": "削除",
+    "cancel": "残す"
+  },
+  "images": {
+    "title": "画像を PDF に",
+    "dropTitle": "ここに画像をドロップ",
+    "dropSubtitle": "JPG, PNG, WebP, HEIC · 1 ページに 1 枚",
+    "pageSize": "ページサイズ",
+    "fit": "画像に合わせる",
+    "a4": "A4",
+    "letter": "レター",
+    "orientation": "向き",
+    "auto": "自動",
+    "portrait": "縦",
+    "landscape": "横",
+    "margin": "余白",
+    "images": "{count, plural, one {# 枚の画像} other {# 枚の画像}}",
+    "remove": "{name} を削除",
+    "moveUp": "{name} を前へ移動",
+    "moveDown": "{name} を後ろへ移動",
+    "converting": "画像を変換中…",
+    "unsupported": "このブラウザでは「{name}」をデコードできませんでした。"
+  },
+  "toImages": {
+    "format": "形式",
+    "scale": "解像度",
+    "scaleHint": "{dpi} dpi",
+    "quality": "JPG 画質",
+    "pages": "ページ",
+    "allPages": "すべてのページ",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "ページ {n} / {total} を描画中…",
+    "download": ".zip をダウンロード",
+    "estimate": "{count, plural, one {# 枚の画像} other {# 枚の画像}} · {format}"
+  }
+}

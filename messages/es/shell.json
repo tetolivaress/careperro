@@ -71,6 +71,9 @@
     "paste": "Pegar",
     "sample": "Cargar ejemplo",
     "characters": "{count} caracteres",
-    "uploadFile": "Abrir un archivo"
+    "uploadFile": "Abrir un archivo",
+    "download": "Descargar",
+    "copyFailed": "No se pudo copiar al portapapeles",
+    "pasteFailed": "No se pudo leer el portapapeles"
   }
 }

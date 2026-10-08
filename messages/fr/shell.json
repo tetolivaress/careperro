@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "Déposez un fichier et nous vous suggérons des outils",
+    "subtitle": "ou cliquez pour parcourir · rien n'est jamais envoyé",
+    "titleOne": "Déposez un fichier ici",
+    "titleMany": "Déposez des fichiers ici",
+    "release": "Relâchez pour ouvrir {count, plural, =1 {le fichier} other {# fichiers}}",
+    "unsupported": "« {name} » n'est pas un type de fichier pris en charge par cet outil.",
+    "tooLarge": "« {name} » pèse {size}. Cet outil accepte des fichiers jusqu'à {max}.",
+    "browse": "Parcourir les fichiers"
+  },
+  "export": {
+    "processedOnDevice": "Traité sur cet appareil",
+    "processedIn": "Traité sur cet appareil en {seconds} s",
+    "bytesSent": "0 octet envoyé",
+    "reset": "Réinitialiser",
+    "download": "Télécharger",
+    "downloadFormat": "Télécharger {format}",
+    "downloadAll": "Tout télécharger (.zip)",
+    "saved": "Enregistré dans vos téléchargements"
+  },
+  "readout": {
+    "estimated": "Sortie estimée",
+    "result": "Résultat",
+    "smaller": "{percent}% plus léger",
+    "larger": "+{percent}% plus lourd"
+  },
+  "status": {
+    "cancel": "Annuler",
+    "anotherFile": "Autre fichier",
+    "chooseAnother": "En choisir un autre",
+    "supportedFormats": "Formats pris en charge",
+    "done": "Terminé — {percent}% plus léger",
+    "ready": "{name} est prêt · {size} économisés",
+    "cannotOpen": "Impossible d'ouvrir « {name} »",
+    "eta": "Environ {seconds} s restantes · sur l'appareil",
+    "processing": "Traitement…"
+  },
+  "toolbar": {
+    "addFiles": "Ajouter des fichiers",
+    "fit": "Ajuster à l'écran",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière",
+    "original": "Original",
+    "split": "Scindé",
+    "sideBySide": "Côte à côte",
+    "chooseAnother": "En choisir un autre",
+    "settings": "Réglages",
+    "expandSettings": "Développer les réglages",
+    "shrinkSettings": "Réduire les réglages"
+  },
+  "placeholder": {
+    "comingSoon": "Cet outil arrivera dans une phase ultérieure. Il tournera entièrement dans votre navigateur.",
+    "loaded": "Fichier chargé sur cet appareil",
+    "loadedBody": "Les commandes de {tool} arriveront dans une phase ultérieure. Rien n'a été envoyé.",
+    "files": "Fichiers",
+    "remove": "Retirer {name}",
+    "name": "Nom",
+    "format": "Format",
+    "size": "Taille",
+    "modified": "Modifié",
+    "unchanged": "Sortie (inchangée)",
+    "downloadFirst": "Télécharger le premier"
+  },
+  "twoPane": {
+    "input": "Entrée",
+    "output": "Sortie",
+    "copy": "Copier",
+    "copied": "Copié",
+    "clear": "Effacer",
+    "paste": "Coller",
+    "sample": "Charger un exemple",
+    "characters": "{count} caractères",
+    "uploadFile": "Ouvrir un fichier"
+  }
+}

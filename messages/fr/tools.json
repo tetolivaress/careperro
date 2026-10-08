@@ -1,1 +1,293 @@
-{}
+{
+  "categories": {
+    "image": {
+      "name": "Images",
+      "title": "Outils image",
+      "description": "Compresser, redimensionner, recadrer, convertir, filigraner",
+      "formats": "JPG, PNG, WebP, AVIF, HEIC, GIF, SVG"
+    },
+    "audio": {
+      "name": "Audio",
+      "title": "Outils audio",
+      "description": "Couper, convertir, normaliser, changer la vitesse",
+      "formats": "MP3, WAV, OGG, M4A, FLAC"
+    },
+    "video": {
+      "name": "Vidéo",
+      "title": "Outils vidéo",
+      "description": "Couper, compresser, recadrer, extraire l'audio, GIF",
+      "formats": "MP4, WebM, MOV"
+    },
+    "pdf": {
+      "name": "PDF",
+      "title": "Outils PDF",
+      "description": "Fusionner, diviser, compresser, signer, réordonner",
+      "formats": "PDF"
+    },
+    "text": {
+      "name": "Texte",
+      "title": "Outils texte",
+      "description": "Compter, comparer, changer la casse, nettoyer",
+      "formats": "Texte brut, Markdown"
+    },
+    "dev": {
+      "name": "Développeur",
+      "title": "Outils développeur",
+      "description": "JSON, Base64, hachages, regex, JWT, UUID",
+      "formats": "JSON, CSV, XLSX"
+    },
+    "privacy": {
+      "name": "Confidentialité",
+      "title": "Outils de confidentialité",
+      "description": "Supprimer les métadonnées, caviarder, chiffrer des fichiers",
+      "formats": "Tout fichier"
+    }
+  },
+  "items": {
+    "image": {
+      "compress": {
+        "name": "Compresser une image",
+        "description": "Réduisez vos JPG, PNG et WebP sans perte de qualité visible.",
+        "short": "Réduire JPG, PNG et WebP"
+      },
+      "resize": {
+        "name": "Redimensionner une image",
+        "description": "Pixels exacts, pourcentage ou préréglages pour les réseaux sociaux."
+      },
+      "crop": {
+        "name": "Recadrer une image",
+        "description": "Libre ou à ratio fixe comme 1:1 et 16:9."
+      },
+      "convert": {
+        "name": "Convertir le format",
+        "description": "JPG, PNG, WebP, AVIF et inversement."
+      },
+      "rotate": {
+        "name": "Pivoter et retourner",
+        "description": "Corrigez l'orientation en un clic, sans perte."
+      },
+      "watermark": {
+        "name": "Ajouter un filigrane",
+        "description": "Texte ou logo, positionné ou en mosaïque."
+      },
+      "filters": {
+        "name": "Filtres et réglages",
+        "description": "Luminosité, contraste, saturation, préréglages."
+      },
+      "remove-exif": {
+        "name": "Supprimer les données EXIF",
+        "description": "Retirez la position GPS et les infos d'appareil photo de vos photos.",
+        "short": "Retirer la position des photos"
+      },
+      "heic-to-jpg": {
+        "name": "HEIC vers JPG",
+        "description": "Ouvrez vos photos iPhone partout."
+      },
+      "images-to-pdf": {
+        "name": "Images vers PDF",
+        "description": "Regroupez des photos en un seul document."
+      },
+      "favicon": {
+        "name": "Créateur de favicon",
+        "description": "Générez toutes les tailles d'icône à partir d'une image."
+      }
+    },
+    "audio": {
+      "trim": {
+        "name": "Couper l'audio",
+        "description": "Coupez, ajoutez des fondus et exportez en MP3, WAV ou OGG."
+      },
+      "convert": {
+        "name": "Convertir l'audio",
+        "description": "MP3, WAV, OGG et M4A au débit de votre choix."
+      },
+      "volume": {
+        "name": "Changer le volume",
+        "description": "Montez ou baissez le niveau sans saturation."
+      },
+      "fade": {
+        "name": "Fondu d'entrée et de sortie",
+        "description": "Débuts et fins en douceur avec des courbes réglables."
+      },
+      "speed": {
+        "name": "Changer la vitesse",
+        "description": "Accélérez ou ralentissez, avec ou sans changement de hauteur."
+      },
+      "normalize": {
+        "name": "Normaliser le volume",
+        "description": "Amenez chaque extrait à un volume homogène."
+      },
+      "merge": {
+        "name": "Fusionner l'audio",
+        "description": "Assemblez plusieurs extraits en un seul fichier."
+      },
+      "record": {
+        "name": "Enregistreur vocal",
+        "description": "Enregistrez depuis votre micro et téléchargez la prise."
+      }
+    },
+    "video": {
+      "trim": {
+        "name": "Couper une vidéo",
+        "description": "Coupez un extrait exactement au début et à la fin voulus."
+      },
+      "compress": {
+        "name": "Compresser une vidéo",
+        "description": "Choisissez résolution et qualité, voyez la taille estimée."
+      },
+      "convert": {
+        "name": "Convertir une vidéo",
+        "description": "De MP4 vers WebM et inversement."
+      },
+      "to-gif": {
+        "name": "Vidéo vers GIF",
+        "description": "Transformez de courts extraits en boucles légères."
+      },
+      "extract-audio": {
+        "name": "Extraire l'audio",
+        "description": "Enregistrez la bande-son en MP3 ou WAV."
+      },
+      "remove-audio": {
+        "name": "Supprimer l'audio",
+        "description": "Rendez une vidéo muette définitivement."
+      },
+      "crop": {
+        "name": "Recadrer une vidéo",
+        "description": "Recadrez en 9:16, 1:1 ou 16:9."
+      },
+      "watermark": {
+        "name": "Filigraner une vidéo",
+        "description": "Superposez du texte ou un logo."
+      },
+      "capture-frame": {
+        "name": "Capturer une image",
+        "description": "Enregistrez n'importe quelle image en PNG ou JPG."
+      },
+      "record": {
+        "name": "Enregistreur d'écran et webcam",
+        "description": "Enregistrez votre écran ou votre caméra, puis modifiez le résultat."
+      }
+    },
+    "pdf": {
+      "merge": {
+        "name": "Fusionner des PDF",
+        "description": "Combinez des documents et glissez les pages dans l'ordre.",
+        "short": "Combiner et réordonner les pages"
+      },
+      "split": {
+        "name": "Diviser un PDF",
+        "description": "Extrayez une plage de pages ou séparez-les une par une."
+      },
+      "organize": {
+        "name": "Organiser les pages",
+        "description": "Réordonnez, pivotez et supprimez des pages dans une grille."
+      },
+      "to-images": {
+        "name": "PDF vers images",
+        "description": "Convertissez chaque page en PNG ou JPG et téléchargez un zip."
+      },
+      "compress": {
+        "name": "Compresser un PDF",
+        "description": "Réencodez les images intégrées pour alléger le fichier."
+      },
+      "watermark": {
+        "name": "Filigraner un PDF",
+        "description": "Apposez du texte ou une image sur chaque page."
+      },
+      "page-numbers": {
+        "name": "Ajouter des numéros de page",
+        "description": "Des numéros à la position et dans le style de votre choix."
+      },
+      "sign": {
+        "name": "Signer un PDF",
+        "description": "Dessinez ou importez une signature et placez-la sur une page."
+      }
+    },
+    "text": {
+      "word-counter": {
+        "name": "Compteur de mots et caractères",
+        "description": "Mots, caractères, phrases et temps de lecture."
+      },
+      "case-converter": {
+        "name": "Convertisseur de casse",
+        "description": "MAJUSCULES, minuscules, Titre, camelCase, snake_case et plus."
+      },
+      "diff": {
+        "name": "Comparateur de textes",
+        "description": "Comparez deux textes ligne par ligne."
+      },
+      "markdown": {
+        "name": "Aperçu Markdown",
+        "description": "Écrivez du Markdown et voyez le rendu en direct."
+      },
+      "ocr": {
+        "name": "Image vers texte (OCR)",
+        "description": "Extrayez du texte modifiable de captures d'écran et de scans."
+      },
+      "text-to-speech": {
+        "name": "Synthèse vocale",
+        "description": "Faites lire n'importe quel texte à voix haute avec les voix de votre appareil."
+      }
+    },
+    "dev": {
+      "json": {
+        "name": "Formateur JSON",
+        "description": "Formatez, validez et minifiez du JSON instantanément."
+      },
+      "base64": {
+        "name": "Encoder et décoder en Base64",
+        "description": "Texte et fichiers vers Base64 et inversement."
+      },
+      "url": {
+        "name": "Encoder et décoder une URL",
+        "description": "Échappez et déséchappez des URL et des chaînes de requête."
+      },
+      "jwt": {
+        "name": "Décodeur JWT",
+        "description": "Inspectez l'en-tête, la charge utile et l'expiration d'un jeton."
+      },
+      "hash": {
+        "name": "Générateur de hachage",
+        "description": "SHA-1, SHA-256 et SHA-512 pour du texte ou des fichiers."
+      },
+      "uuid": {
+        "name": "Générateur d'UUID",
+        "description": "Générez des UUID v4 un par un ou en masse."
+      },
+      "color": {
+        "name": "Convertisseur de couleurs",
+        "description": "HEX, RGB et HSL côte à côte avec un aperçu en direct."
+      },
+      "palette": {
+        "name": "Générateur de palettes",
+        "description": "Composez des palettes harmonieuses à partir d'une couleur de base."
+      },
+      "regex": {
+        "name": "Testeur de regex",
+        "description": "Testez vos motifs avec correspondances et groupes en direct."
+      },
+      "csv": {
+        "name": "Convertisseur CSV, JSON et Excel",
+        "description": "Convertissez des tableaux entre CSV, JSON et XLSX."
+      }
+    },
+    "privacy": {
+      "password": {
+        "name": "Générateur de mots de passe",
+        "description": "Mots de passe et phrases secrètes aléatoires et robustes."
+      },
+      "encrypt": {
+        "name": "Chiffrer et déchiffrer un fichier",
+        "description": "Verrouillez n'importe quel fichier avec un mot de passe grâce à AES-GCM."
+      },
+      "qr": {
+        "name": "Générateur et lecteur de QR code",
+        "description": "Créez des QR codes ou lisez-les depuis une image."
+      },
+      "zip": {
+        "name": "Zipper et dézipper",
+        "description": "Regroupez des fichiers dans un zip ou extrayez-en un."
+      }
+    }
+  }
+}

@@ -1,1 +1,163 @@
-{}
+{
+  "tabs": {
+    "trim": "Potong",
+    "compress": "Kompres",
+    "convert": "Konversi",
+    "gif": "GIF",
+    "audio": "Audio",
+    "crop": "Pangkas",
+    "watermark": "Tanda air",
+    "frame": "Frame"
+  },
+  "dropzone": {
+    "title": "Jatuhkan video di sini",
+    "subtitle": "atau klik untuk menelusuri · MP4, WebM, MOV · tidak ada yang pernah diunggah",
+    "sizeHint": "Hingga {max} per file. Video besar lambat di browser; potong dulu."
+  },
+  "info": {
+    "meta": "{width} × {height} · {format} · {size}",
+    "fps": "{fps} fps",
+    "noAudio": "Tidak ada trek audio",
+    "unreadable": "Video ini tidak dapat didekode oleh browser Anda. Coba MP4 (H.264) atau WebM."
+  },
+  "timeline": {
+    "start": "Awal",
+    "end": "Akhir",
+    "selected": "{time} dipilih",
+    "trimStart": "Awal potongan",
+    "trimEnd": "Akhir potongan"
+  },
+  "player": {
+    "play": "Putar",
+    "pause": "Jeda",
+    "original": "Asli",
+    "result": "Hasil",
+    "setStart": "Tetapkan awal di sini",
+    "setEnd": "Tetapkan akhir di sini",
+    "reset": "Atur ulang potongan"
+  },
+  "trim": {
+    "label": "Rentang potongan",
+    "hint": "Seret pegangan pada linimasa atau ketik waktu persisnya.",
+    "start": "Awal (dtk)",
+    "end": "Akhir (dtk)",
+    "copyHint": "Memotong saja menyalin video tanpa enkode ulang, jadi cepat dan lossless."
+  },
+  "compress": {
+    "resolution": "Resolusi",
+    "original": "Asli",
+    "quality": "Kualitas",
+    "low": "Lebih kecil",
+    "medium": "Seimbang",
+    "high": "Lebih tajam",
+    "bitrate": "~{mbps} Mbps video",
+    "estimated": "Perkiraan hasil",
+    "frameRate": "Frame rate"
+  },
+  "convert": {
+    "format": "Format keluaran",
+    "copyNote": "Stream yang kompatibel disalin, jadi konversi biasanya instan.",
+    "transcodeNote": "Video akan dienkode ulang dengan {codec}."
+  },
+  "gif": {
+    "fps": "Frame per detik",
+    "width": "Lebar",
+    "duration": "Durasi",
+    "maxNote": "GIF dibatasi hingga {seconds} dtk. Potong ke bagian yang Anda inginkan.",
+    "loop": "Ulangi terus",
+    "estimated": "Perkiraan ukuran GIF"
+  },
+  "audio": {
+    "mode": "Yang ingin dilakukan",
+    "extract": "Ekstrak audio",
+    "remove": "Hapus audio",
+    "format": "Format audio",
+    "mp3Note": "MP3 dienkode dengan ffmpeg (mengunduh ~30 MB sekali).",
+    "wavNote": "WAV tanpa kompresi dan diekspor seketika dengan WebCodecs.",
+    "removeNote": "Video disalin tanpa trek audionya."
+  },
+  "crop": {
+    "ratio": "Rasio aspek",
+    "free": "Bebas",
+    "region": "Area pangkas",
+    "reset": "Atur ulang pangkasan",
+    "output": "Keluaran: {width} × {height}",
+    "hint": "Seret kotak atau sudutnya pada pemutar."
+  },
+  "watermark": {
+    "type": "Jenis",
+    "text": "Teks",
+    "logo": "Logo",
+    "textLabel": "Teks tanda air",
+    "placeholder": "© Nama Anda",
+    "upload": "Pilih logo",
+    "change": "Ganti logo",
+    "position": "Posisi",
+    "opacity": "Opasitas",
+    "size": "Ukuran",
+    "positions": {
+      "tl": "Kiri atas",
+      "tc": "Tengah atas",
+      "tr": "Kanan atas",
+      "ml": "Kiri tengah",
+      "mc": "Tengah",
+      "mr": "Kanan tengah",
+      "bl": "Kiri bawah",
+      "bc": "Tengah bawah",
+      "br": "Kanan bawah"
+    }
+  },
+  "frame": {
+    "time": "Waktu",
+    "format": "Format gambar",
+    "capture": "Simpan frame ini",
+    "hint": "Geser pemutar ke frame yang Anda inginkan, lalu simpan sebagai gambar.",
+    "saved": "Frame disimpan"
+  },
+  "engine": {
+    "webcodecs": "Enkode perangkat keras (WebCodecs)",
+    "ffmpeg": "Cadangan ffmpeg.wasm",
+    "loadingFfmpeg": "Memuat ffmpeg ({percent}%)…",
+    "fallbackNote": "Browser ini tidak dapat mengenkode dengan WebCodecs; memakai ffmpeg sebagai gantinya (lebih lambat)."
+  },
+  "status": {
+    "preparing": "Menyiapkan…",
+    "encoding": "Mengenkode {container}…",
+    "trimming": "Memotong…",
+    "gif": "Menyusun GIF…",
+    "audio": "Mengekstrak audio…",
+    "done": "Selesai dalam {seconds} dtk",
+    "canceled": "Dibatalkan",
+    "failed": "Terjadi kesalahan: {message}",
+    "steps": {
+      "decode": "Dekode video",
+      "process": "Terapkan edit",
+      "encode": "Enkode",
+      "write": "Tulis file"
+    },
+    "processedIn": "Diproses di perangkat ini dalam {seconds} dtk"
+  },
+  "export": {
+    "export": "Ekspor",
+    "download": "Unduh {ext}",
+    "another": "Video lain",
+    "openEditor": "Buka di editor"
+  },
+  "recorder": {
+    "title": "Perekam layar & webcam",
+    "subtitle": "Rekaman tetap di tab ini sampai Anda mengunduhnya.",
+    "source": "Sumber",
+    "screen": "Layar",
+    "camera": "Kamera",
+    "mic": "Rekam mikrofon",
+    "micHint": "Mencampur mikrofon Anda ke dalam rekaman",
+    "start": "Mulai merekam",
+    "stop": "Berhenti",
+    "recording": "Merekam",
+    "permission": "Izin ditolak atau perangkat tidak ditemukan.",
+    "unsupported": "Perekaman tidak didukung di browser ini.",
+    "preview": "Pratinjau",
+    "discard": "Buang",
+    "ready": "Rekaman siap · {duration} · {size}"
+  }
+}

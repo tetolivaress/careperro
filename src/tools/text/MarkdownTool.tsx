@@ -29,6 +29,8 @@ const files = "stay on your device";
 
 /** Strips scripts, event handlers and javascript: URLs from rendered HTML before it reaches the DOM. */
 function sanitize(html: string): string {
+  // Sanitizing needs a DOM; during static prerender there is none and the preview is empty anyway.
+  if (typeof DOMParser === "undefined") return "";
   const doc = new DOMParser().parseFromString(html, "text/html");
   doc.querySelectorAll("script, iframe, object, embed, style, link, meta, base, form").forEach((el) => el.remove());
   doc.querySelectorAll("*").forEach((el) => {

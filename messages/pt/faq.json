@@ -1,1 +1,40 @@
-{}
+{
+  "howItWorks": "Como funciona",
+  "faq": "Perguntas",
+  "steps": {
+    "1": {
+      "title": "Solte um arquivo",
+      "body": "Arraste, clique para procurar ou cole da área de transferência. Ele é lido direto do seu disco para esta aba."
+    },
+    "2": {
+      "title": "Ajuste e visualize",
+      "body": "Cada alteração é renderizada ao vivo neste dispositivo em um worker em segundo plano. O indicador de tamanho mostra o resultado antes de exportar."
+    },
+    "3": {
+      "title": "Baixe",
+      "body": "Salve o resultado direto na sua pasta de downloads. Nada foi enviado; feche a aba e ele desaparece."
+    }
+  },
+  "items": {
+    "privacy": {
+      "q": "O {tool} envia meus arquivos?",
+      "a": "Não. O {tool} roda inteiramente no seu navegador com Web Workers e WebAssembly. Seus arquivos nunca saem do seu dispositivo, e o Caribito não tem servidores que possam recebê-los."
+    },
+    "offline": {
+      "q": "Funciona offline?",
+      "a": "Sim. Depois que uma ferramenta carrega, ela continua funcionando sem conexão, e você pode instalar o Caribito como app para acesso rápido."
+    },
+    "limits": {
+      "q": "Quais são os limites?",
+      "a": "O único limite é a memória do seu dispositivo. Arquivos muito grandes podem ser lentos em celulares antigos; a ferramenta avisa quando um arquivo excede o tamanho recomendado."
+    },
+    "cost": {
+      "q": "É grátis?",
+      "a": "Sim, grátis, sem cadastro e sem anúncios. Toda ferramenta é gratuita para usar quanto você quiser."
+    },
+    "formats": {
+      "q": "Quais formatos são suportados?",
+      "a": "{formats}. O suporte depende do que seu navegador consegue decodificar; a ferramenta avisa na hora se um arquivo não puder ser aberto."
+    }
+  }
+}

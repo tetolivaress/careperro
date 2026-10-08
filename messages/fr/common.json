@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "Modifiez n'importe quel fichier. Sans rien envoyer."
+  },
+  "nav": {
+    "home": "Accueil",
+    "allTools": "Tous les outils",
+    "categories": "Catégories",
+    "workspace": "Espace de travail",
+    "collapseSidebar": "Réduire la barre latérale",
+    "expandSidebar": "Développer la barre latérale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menu": "Menu",
+    "backTo": "Retour à {title}",
+    "more": "Plus",
+    "media": "Médias",
+    "primary": "Principal",
+    "main": "Principal"
+  },
+  "search": {
+    "placeholder": "Trouver un outil...",
+    "label": "Trouver un outil",
+    "noResults": "Aucun outil ne correspond à « {query} ».",
+    "navigate": "naviguer",
+    "open": "ouvrir",
+    "summary": "{count} outils · tous sur votre appareil",
+    "tools": "Outils"
+  },
+  "theme": {
+    "label": "Thème",
+    "switchTo": "Passer au thème {theme}",
+    "dark": "sombre",
+    "light": "clair",
+    "auto": "Auto",
+    "darkLabel": "Sombre",
+    "lightLabel": "Clair"
+  },
+  "language": {
+    "label": "Langue",
+    "select": "Choisir la langue"
+  },
+  "privacyBadge": "Vos fichiers restent sur votre appareil",
+  "offline": {
+    "title": "Fonctionne hors ligne",
+    "body": "Aucun envoi, aucun compte, aucun suivi. Installez-la comme une application de bureau.",
+    "install": "Installer l'app",
+    "installHint": "L'installation devient disponible une fois l'app chargée en tant que PWA",
+    "installed": "Installée"
+  },
+  "announcement": {
+    "headline": "Ce domaine est à vendre.",
+    "body": "Intéressé ? Nous sommes ouverts aux offres.",
+    "cta": "Faire une offre",
+    "dismiss": "Fermer l'annonce"
+  },
+  "footer": {
+    "links": "À propos · Confidentialité · Open source"
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas",
+    "body": "L'outil a peut-être été déplacé. Essayez la recherche ou repartez de la page d'accueil.",
+    "back": "Retour à l'accueil"
+  },
+  "loading": "Chargement de {name}…",
+  "error": {
+    "title": "Une erreur s'est produite",
+    "body": "L'outil a rencontré une erreur inattendue. Vos fichiers sont toujours uniquement sur cet appareil. Réessayez ou rechargez la page.",
+    "retry": "Réessayer"
+  },
+  "unsupported": {
+    "body": "Il manque {features} à ce navigateur. Les outils risquent de ne pas fonctionner ; essayez une version récente de Chrome, Edge, Firefox ou Safari."
+  }
+}

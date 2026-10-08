@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "Edite qualquer arquivo. Sem enviar nada.",
+  "subhead": "{count} ferramentas para imagens, áudio, vídeo, PDF e código que rodam inteiramente no seu navegador. Sem uploads, sem cadastro, sem anúncios.",
+  "subheadMobile": "{count} ferramentas que rodam inteiramente no seu celular. Sem uploads, sem cadastro, sem anúncios.",
+  "drop": {
+    "title": "Solte qualquer arquivo e sugerimos ferramentas",
+    "subtitle": "ou clique para procurar · nada é enviado, nunca",
+    "titleMobile": "Solte um arquivo ou toque para procurar",
+    "subtitleMobile": "Sugerimos as ferramentas certas",
+    "more": "+{count} mais",
+    "noTool": "Ainda não temos uma ferramenta para “{name}”. Explore as categorias abaixo."
+  },
+  "session": {
+    "title": "Esta sessão",
+    "networkIdle": "Rede inativa",
+    "uploaded": "enviados",
+    "filesProcessed": "arquivos processados"
+  },
+  "browseByCategory": "Explorar por categoria",
+  "allTools": "Todas as {count} ferramentas",
+  "allToolsShort": "Todas as ferramentas",
+  "suggestTool": "Sugerir uma ferramenta",
+  "popular": "Populares agora",
+  "seeAll": "Ver todas",
+  "toolCount": "{count, plural, one {# ferramenta} other {# ferramentas}}",
+  "allToolsPage": {
+    "title": "Todas as ferramentas",
+    "meta": "{count} ferramentas · todas processadas no seu dispositivo",
+    "description": "Todas as {count} ferramentas no dispositivo, agrupadas por categoria."
+  },
+  "category": {
+    "meta": "{count} ferramentas · {formats} · processadas no seu dispositivo",
+    "quickDrop": "Solte arquivos para abrir em {tool}",
+    "notAFile": "“{name}” não é um arquivo de {category}.",
+    "description": "{description}. {count} ferramentas para {formats}, processadas no seu dispositivo."
+  }
+}

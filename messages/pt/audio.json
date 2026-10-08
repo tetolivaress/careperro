@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "Cortar",
+    "volume": "Volume",
+    "fade": "Fade",
+    "speed": "Velocidade",
+    "normalize": "Normalizar",
+    "merge": "Juntar",
+    "convert": "Converter"
+  },
+  "drop": {
+    "title": "Solte um arquivo de áudio",
+    "titleMany": "Solte arquivos de áudio para juntar",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · nada é enviado, nunca"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "mono",
+  "stereo": "estéreo",
+  "player": {
+    "play": "Reproduzir",
+    "pause": "Pausar",
+    "toStart": "Voltar ao início",
+    "playSelection": "Reproduzir seleção",
+    "stop": "Parar"
+  },
+  "trim": {
+    "start": "Início",
+    "end": "Fim",
+    "selection": "Seleção",
+    "hint": "Arraste as alças na forma de onda ou digite tempos exatos.",
+    "wholeFile": "Arquivo inteiro",
+    "reset": "Redefinir seleção"
+  },
+  "volume": {
+    "gain": "Ganho",
+    "hint": "Aumente ou reduza o nível. Acima de 0 dB de pico, a saída vai distorcer.",
+    "currentPeak": "Pico atual",
+    "afterGain": "Após o ganho",
+    "clipWarning": "Este ganho leva os picos acima de 0 dB. Espere distorção ou ative Normalizar."
+  },
+  "fade": {
+    "in": "Fade in",
+    "out": "Fade out",
+    "hint": "Rampas lineares no início e no fim da saída.",
+    "seconds": "{value} s"
+  },
+  "speed": {
+    "rate": "Velocidade de reprodução",
+    "hint": "O tom muda com a velocidade. Esticar preservando o tom ainda não está disponível no dispositivo.",
+    "newDuration": "Nova duração",
+    "presets": "Predefinições de velocidade"
+  },
+  "normalize": {
+    "enable": "Normalizar volume",
+    "enableHint": "Leve o clipe a um nível uniforme",
+    "mode": "Medir por",
+    "peak": "Pico",
+    "rms": "RMS (sonoridade)",
+    "target": "Nível alvo",
+    "measured": "Medido",
+    "gainApplied": "Ganho aplicado",
+    "analyzing": "Analisando…"
+  },
+  "merge": {
+    "clips": "Clipes em ordem",
+    "add": "Adicionar clipes",
+    "moveUp": "Mover para cima",
+    "moveDown": "Mover para baixo",
+    "remove": "Remover",
+    "total": "Duração total",
+    "hint": "Os clipes são unidos um após o outro nesta ordem. Corte, ganho, fades e velocidade se aplicam ao resultado final.",
+    "needMore": "Adicione pelo menos mais um clipe para juntar."
+  },
+  "convert": {
+    "format": "Formato de saída",
+    "bitrate": "Bitrate",
+    "bitrateHint": "Bitrate maior, arquivo maior. 192 kbps é transparente para a maioria das músicas.",
+    "wavHint": "WAV é PCM sem compressão — sem perda de qualidade, arquivos grandes.",
+    "estimated": "Saída estimada",
+    "ffmpegNote": "MP3, OGG e M4A usam um codificador no dispositivo (cerca de 30 MB, baixado uma vez e armazenado em cache)."
+  },
+  "status": {
+    "loadingEncoder": "Baixando codificador…",
+    "rendering": "Renderizando áudio…",
+    "encoding": "Codificando {format}…",
+    "done": "Pronto — {name}",
+    "decodeError": "Não foi possível abrir “{name}”",
+    "decodeErrorBody": "Este arquivo não pôde ser decodificado. Tente MP3, WAV, OGG, M4A ou FLAC.",
+    "encoderError": "O codificador no dispositivo não carregou. Verifique sua conexão e tente de novo, ou exporte como WAV.",
+    "cancelled": "Exportação cancelada",
+    "processedIn": "Processado neste dispositivo em {seconds} s",
+    "stepDecode": "Áudio decodificado",
+    "stepRender": "Edições aplicadas",
+    "stepEncode": "{format} codificado",
+    "stepWrite": "Gravar arquivo"
+  },
+  "export": {
+    "download": "Baixar {format}",
+    "saved": "Salvo na pasta de downloads"
+  },
+  "recorder": {
+    "title": "Gravador de voz",
+    "subtitle": "Grava do seu microfone. O áudio fica nesta aba até você baixá-lo.",
+    "start": "Iniciar gravação",
+    "stop": "Parar",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "recording": "Gravando",
+    "paused": "Pausado",
+    "ready": "Pronto",
+    "permission": "Permita o acesso ao microfone para começar.",
+    "denied": "O acesso ao microfone foi negado. Verifique as permissões do site no seu navegador.",
+    "unsupported": "Este navegador não suporta gravação.",
+    "level": "Nível de entrada",
+    "take": "Take {n}",
+    "discard": "Descartar",
+    "openInEditor": "Abrir no editor",
+    "download": "Baixar",
+    "newTake": "Novo take",
+    "mic": "Microfone",
+    "defaultMic": "Microfone padrão"
+  }
+}

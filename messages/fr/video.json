@@ -1,1 +1,163 @@
-{}
+{
+  "tabs": {
+    "trim": "Couper",
+    "compress": "Compresser",
+    "convert": "Convertir",
+    "gif": "GIF",
+    "audio": "Audio",
+    "crop": "Recadrer",
+    "watermark": "Filigrane",
+    "frame": "Image"
+  },
+  "dropzone": {
+    "title": "Déposez une vidéo ici",
+    "subtitle": "ou cliquez pour parcourir · MP4, WebM, MOV · rien n'est jamais envoyé",
+    "sizeHint": "Jusqu'à {max} par fichier. Les vidéos plus lourdes sont lentes dans un navigateur ; coupez-les d'abord."
+  },
+  "info": {
+    "meta": "{width} × {height} · {format} · {size}",
+    "fps": "{fps} fps",
+    "noAudio": "Pas de piste audio",
+    "unreadable": "Votre navigateur ne peut pas décoder cette vidéo. Essayez MP4 (H.264) ou WebM."
+  },
+  "timeline": {
+    "start": "Début",
+    "end": "Fin",
+    "selected": "{time} sélectionné",
+    "trimStart": "Début de coupe",
+    "trimEnd": "Fin de coupe"
+  },
+  "player": {
+    "play": "Lecture",
+    "pause": "Pause",
+    "original": "Original",
+    "result": "Résultat",
+    "setStart": "Définir le début ici",
+    "setEnd": "Définir la fin ici",
+    "reset": "Réinitialiser la coupe"
+  },
+  "trim": {
+    "label": "Plage de coupe",
+    "hint": "Glissez les poignées sur la timeline ou saisissez des temps exacts.",
+    "start": "Début (s)",
+    "end": "Fin (s)",
+    "copyHint": "Couper seul copie la vidéo sans réencodage : c'est rapide et sans perte."
+  },
+  "compress": {
+    "resolution": "Résolution",
+    "original": "Original",
+    "quality": "Qualité",
+    "low": "Plus léger",
+    "medium": "Équilibré",
+    "high": "Plus net",
+    "bitrate": "~{mbps} Mbps vidéo",
+    "estimated": "Sortie estimée",
+    "frameRate": "Fréquence d'images"
+  },
+  "convert": {
+    "format": "Format de sortie",
+    "copyNote": "Les flux compatibles sont copiés, la conversion est donc généralement instantanée.",
+    "transcodeNote": "La vidéo sera réencodée avec {codec}."
+  },
+  "gif": {
+    "fps": "Images par seconde",
+    "width": "Largeur",
+    "duration": "Durée",
+    "maxNote": "Les GIF sont limités à {seconds} s. Coupez la partie qui vous intéresse.",
+    "loop": "Boucle infinie",
+    "estimated": "Taille estimée du GIF"
+  },
+  "audio": {
+    "mode": "Action",
+    "extract": "Extraire l'audio",
+    "remove": "Supprimer l'audio",
+    "format": "Format audio",
+    "mp3Note": "Le MP3 est encodé avec ffmpeg (téléchargement unique d'environ 30 MB).",
+    "wavNote": "Le WAV est non compressé et exporté instantanément avec WebCodecs.",
+    "removeNote": "La vidéo est copiée sans sa piste audio."
+  },
+  "crop": {
+    "ratio": "Proportions",
+    "free": "Libre",
+    "region": "Zone de recadrage",
+    "reset": "Réinitialiser le recadrage",
+    "output": "Sortie : {width} × {height}",
+    "hint": "Glissez le cadre ou ses coins sur le lecteur."
+  },
+  "watermark": {
+    "type": "Type",
+    "text": "Texte",
+    "logo": "Logo",
+    "textLabel": "Texte du filigrane",
+    "placeholder": "© Votre nom",
+    "upload": "Choisir un logo",
+    "change": "Changer le logo",
+    "position": "Position",
+    "opacity": "Opacité",
+    "size": "Taille",
+    "positions": {
+      "tl": "En haut à gauche",
+      "tc": "En haut au centre",
+      "tr": "En haut à droite",
+      "ml": "Au milieu à gauche",
+      "mc": "Centre",
+      "mr": "Au milieu à droite",
+      "bl": "En bas à gauche",
+      "bc": "En bas au centre",
+      "br": "En bas à droite"
+    }
+  },
+  "frame": {
+    "time": "Temps",
+    "format": "Format d'image",
+    "capture": "Enregistrer cette image",
+    "hint": "Placez le lecteur sur l'image voulue, puis enregistrez-la en tant qu'image.",
+    "saved": "Image enregistrée"
+  },
+  "engine": {
+    "webcodecs": "Encodage matériel (WebCodecs)",
+    "ffmpeg": "Secours ffmpeg.wasm",
+    "loadingFfmpeg": "Chargement de ffmpeg ({percent}%)…",
+    "fallbackNote": "Ce navigateur ne peut pas encoder avec WebCodecs ; ffmpeg est utilisé à la place (plus lent)."
+  },
+  "status": {
+    "preparing": "Préparation…",
+    "encoding": "Encodage {container}…",
+    "trimming": "Coupe…",
+    "gif": "Création du GIF…",
+    "audio": "Extraction de l'audio…",
+    "done": "Terminé en {seconds} s",
+    "canceled": "Annulé",
+    "failed": "Une erreur s'est produite : {message}",
+    "steps": {
+      "decode": "Décoder la vidéo",
+      "process": "Appliquer les modifications",
+      "encode": "Encoder",
+      "write": "Écrire le fichier"
+    },
+    "processedIn": "Traité sur cet appareil en {seconds} s"
+  },
+  "export": {
+    "export": "Exporter",
+    "download": "Télécharger {ext}",
+    "another": "Autre vidéo",
+    "openEditor": "Ouvrir dans l'éditeur"
+  },
+  "recorder": {
+    "title": "Enregistreur d'écran et webcam",
+    "subtitle": "Les enregistrements restent dans cet onglet jusqu'à ce que vous les téléchargiez.",
+    "source": "Source",
+    "screen": "Écran",
+    "camera": "Caméra",
+    "mic": "Enregistrer le micro",
+    "micHint": "Mixe votre micro dans l'enregistrement",
+    "start": "Démarrer l'enregistrement",
+    "stop": "Arrêter",
+    "recording": "Enregistrement",
+    "permission": "Autorisation refusée ou aucun périphérique trouvé.",
+    "unsupported": "L'enregistrement n'est pas pris en charge par ce navigateur.",
+    "preview": "Aperçu",
+    "discard": "Supprimer",
+    "ready": "Enregistrement prêt · {duration} · {size}"
+  }
+}

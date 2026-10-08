@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "الأحرف",
+    "charactersNoSpaces": "دون مسافات",
+    "words": "الكلمات",
+    "sentences": "الجمل",
+    "paragraphs": "الفقرات",
+    "lines": "الأسطر",
+    "bytes": "البايتات (UTF-8)",
+    "reading": "وقت القراءة",
+    "speaking": "وقت التحدّث",
+    "minutes": "{count, plural, =0 {< 1 د} one {# د} other {# د}}",
+    "topWords": "الكلمات الأكثر تكرارًا",
+    "placeholder": "الصق نصك أو اكتبه هنا…",
+    "summary": "{words} كلمة · {characters} حرفًا"
+  },
+  "case": {
+    "mode": "تحويل إلى",
+    "upper": "أحرف كبيرة",
+    "lower": "أحرف صغيرة",
+    "title": "حالة العنوان",
+    "sentence": "حالة الجملة",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "متناوبة",
+    "inverse": "معكوسة",
+    "placeholder": "اكتب نصًا لتحويله…"
+  },
+  "diff": {
+    "original": "الأصل",
+    "changed": "المعدَّل",
+    "mode": "المقارنة حسب",
+    "lines": "الأسطر",
+    "words": "الكلمات",
+    "chars": "الأحرف",
+    "ignoreCase": "تجاهل حالة الأحرف",
+    "ignoreWhitespace": "تجاهل المسافات",
+    "added": "{count} مضاف",
+    "removed": "{count} محذوف",
+    "identical": "النصّان متطابقان.",
+    "placeholderA": "الصق النص الأصلي…",
+    "placeholderB": "الصق النص المعدَّل…",
+    "result": "الاختلافات"
+  },
+  "markdown": {
+    "preview": "معاينة",
+    "html": "HTML",
+    "placeholder": "# مرحبًا\n\nاكتب **Markdown** هنا…",
+    "downloadHtml": "تنزيل .html",
+    "gfm": "نكهة GitHub"
+  },
+  "ocr": {
+    "language": "اللغة",
+    "drop": "أفلت لقطة شاشة أو مستندًا ممسوحًا",
+    "dropSubtitle": "PNG, JPG, WebP · يُتعرَّف عليه بالكامل على جهازك",
+    "loadingEngine": "جارٍ تحميل محرك التعرّف…",
+    "recognizing": "جارٍ التعرّف على النص…",
+    "steps": {
+      "load": "تحميل المحرك",
+      "language": "تحميل بيانات اللغة",
+      "recognize": "التعرّف على النص"
+    },
+    "result": "النص المتعرَّف عليه",
+    "confidence": "الثقة {percent}%",
+    "empty": "لم يُعثر على نص في هذه الصورة.",
+    "firstRunNote": "يُنزّل التشغيل الأول محرك التعرّف (نحو 15 MB). لا تغادر صورتك هذا الجهاز أبدًا.",
+    "downloadTxt": "تنزيل .txt",
+    "langs": {
+      "eng": "الإنجليزية",
+      "spa": "الإسبانية",
+      "fra": "الفرنسية",
+      "deu": "الألمانية",
+      "por": "البرتغالية",
+      "ita": "الإيطالية",
+      "jpn": "اليابانية",
+      "chi_sim": "الصينية (المبسطة)",
+      "ara": "العربية",
+      "rus": "الروسية",
+      "hin": "الهندية",
+      "ind": "الإندونيسية"
+    }
+  },
+  "tts": {
+    "voice": "الصوت",
+    "rate": "السرعة",
+    "pitch": "طبقة الصوت",
+    "volume": "مستوى الصوت",
+    "play": "نطق",
+    "pause": "إيقاف مؤقت",
+    "resume": "استئناف",
+    "stop": "إيقاف",
+    "placeholder": "اكتب شيئًا لقراءته بصوت مسموع…",
+    "unsupported": "متصفحك لا يدعم تركيب الكلام.",
+    "noVoices": "لا توجد أصوات متاحة بعد. حاول مرة أخرى بعد لحظة.",
+    "speaking": "جارٍ النطق…",
+    "paused": "متوقف مؤقتًا",
+    "idle": "جاهز",
+    "controls": "التشغيل",
+    "hint": "الأصوات من نظام التشغيل لديك؛ لا يُرسل أي شيء إلى أي مكان."
+  }
+}

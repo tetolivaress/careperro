@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "react-image-crop/dist/ReactCrop.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -185,18 +186,18 @@
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-/* Script-specific fallbacks layered in front of Inter for locales that need them. */
+/* Script-specific system font stacks layered in front of Inter (no web-font download for CJK/Arabic/Devanagari). */
 .font-arabic {
-  --font-sans: var(--font-noto-arabic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "Noto Sans Arabic", "Segoe UI", "Geeza Pro", "Arial", system-ui, sans-serif;
 }
 .font-devanagari {
-  --font-sans: var(--font-noto-devanagari), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "Noto Sans Devanagari", "Kohinoor Devanagari", "Mangal", system-ui, sans-serif;
 }
 .font-jp {
-  --font-sans: var(--font-inter), var(--font-noto-jp), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
 }
 .font-sc {
-  --font-sans: var(--font-inter), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
 }
 
 /* Markdown preview typography */

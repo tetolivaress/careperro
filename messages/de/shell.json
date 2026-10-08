@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "Beliebige Datei ablegen und passende Tools erhalten",
+    "subtitle": "oder klicken zum Auswählen · es wird nie etwas hochgeladen",
+    "titleOne": "Datei hier ablegen",
+    "titleMany": "Dateien hier ablegen",
+    "release": "Loslassen, um {count, plural, =1 {die Datei} other {# Dateien}} zu öffnen",
+    "unsupported": "„{name}“ ist kein unterstützter Dateityp für dieses Tool.",
+    "tooLarge": "„{name}“ ist {size} groß. Dieses Tool verarbeitet Dateien bis {max}.",
+    "browse": "Dateien auswählen"
+  },
+  "export": {
+    "processedOnDevice": "Auf diesem Gerät verarbeitet",
+    "processedIn": "Auf diesem Gerät in {seconds} s verarbeitet",
+    "bytesSent": "0 Bytes gesendet",
+    "reset": "Zurücksetzen",
+    "download": "Herunterladen",
+    "downloadFormat": "{format} herunterladen",
+    "downloadAll": "Alle herunterladen (.zip)",
+    "saved": "Im Download-Ordner gespeichert"
+  },
+  "readout": {
+    "estimated": "Geschätzte Ausgabe",
+    "result": "Ergebnis",
+    "smaller": "{percent}% kleiner",
+    "larger": "+{percent}% größer"
+  },
+  "status": {
+    "cancel": "Abbrechen",
+    "anotherFile": "Andere Datei",
+    "chooseAnother": "Andere wählen",
+    "supportedFormats": "Unterstützte Formate",
+    "done": "Fertig — {percent}% kleiner",
+    "ready": "{name} ist fertig · {size} gespart",
+    "cannotOpen": "„{name}“ kann nicht geöffnet werden",
+    "eta": "Noch etwa {seconds} s · auf dem Gerät",
+    "processing": "Wird verarbeitet…"
+  },
+  "toolbar": {
+    "addFiles": "Dateien hinzufügen",
+    "fit": "An Bildschirm anpassen",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "original": "Original",
+    "split": "Geteilt",
+    "sideBySide": "Nebeneinander",
+    "chooseAnother": "Andere wählen",
+    "settings": "Einstellungen",
+    "expandSettings": "Einstellungen ausklappen",
+    "shrinkSettings": "Einstellungen einklappen"
+  },
+  "placeholder": {
+    "comingSoon": "Dieses Tool kommt in einer späteren Phase. Es wird komplett im Browser laufen.",
+    "loaded": "Datei auf diesem Gerät geladen",
+    "loadedBody": "Die Steuerung für {tool} kommt in einer späteren Phase. Es wurde nichts hochgeladen.",
+    "files": "Dateien",
+    "remove": "{name} entfernen",
+    "name": "Name",
+    "format": "Format",
+    "size": "Größe",
+    "modified": "Geändert",
+    "unchanged": "Ausgabe (unverändert)",
+    "downloadFirst": "Erste herunterladen"
+  },
+  "twoPane": {
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "clear": "Leeren",
+    "paste": "Einfügen",
+    "sample": "Beispiel laden",
+    "characters": "{count} Zeichen",
+    "uploadFile": "Datei öffnen"
+  }
+}

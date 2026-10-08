@@ -1,1 +1,293 @@
-{}
+{
+  "categories": {
+    "image": {
+      "name": "图片",
+      "title": "图片工具",
+      "description": "压缩、调整大小、裁剪、转换、水印",
+      "formats": "JPG, PNG, WebP, AVIF, HEIC, GIF, SVG"
+    },
+    "audio": {
+      "name": "音频",
+      "title": "音频工具",
+      "description": "剪辑、转换、标准化、变速",
+      "formats": "MP3, WAV, OGG, M4A, FLAC"
+    },
+    "video": {
+      "name": "视频",
+      "title": "视频工具",
+      "description": "剪辑、压缩、裁剪、提取音频、GIF",
+      "formats": "MP4, WebM, MOV"
+    },
+    "pdf": {
+      "name": "PDF",
+      "title": "PDF 工具",
+      "description": "合并、拆分、压缩、签名、重排",
+      "formats": "PDF"
+    },
+    "text": {
+      "name": "文本",
+      "title": "文本工具",
+      "description": "统计、对比、大小写转换、清理",
+      "formats": "纯文本, Markdown"
+    },
+    "dev": {
+      "name": "开发者",
+      "title": "开发者工具",
+      "description": "JSON、Base64、哈希、正则、JWT、UUID",
+      "formats": "JSON, CSV, XLSX"
+    },
+    "privacy": {
+      "name": "隐私",
+      "title": "隐私工具",
+      "description": "清除元数据、脱敏、加密文件",
+      "formats": "任何文件"
+    }
+  },
+  "items": {
+    "image": {
+      "compress": {
+        "name": "压缩图片",
+        "description": "缩小 JPG、PNG 和 WebP，画质无明显损失。",
+        "short": "缩小 JPG、PNG 和 WebP"
+      },
+      "resize": {
+        "name": "调整图片大小",
+        "description": "精确像素、百分比或社交媒体预设。"
+      },
+      "crop": {
+        "name": "裁剪图片",
+        "description": "自由裁剪或 1:1、16:9 等固定比例。"
+      },
+      "convert": {
+        "name": "转换格式",
+        "description": "JPG、PNG、WebP、AVIF 相互转换。"
+      },
+      "rotate": {
+        "name": "旋转与翻转",
+        "description": "一键无损修正方向。"
+      },
+      "watermark": {
+        "name": "添加水印",
+        "description": "文字或标志，定位或平铺。"
+      },
+      "filters": {
+        "name": "滤镜与调整",
+        "description": "亮度、对比度、饱和度、预设。"
+      },
+      "remove-exif": {
+        "name": "移除 EXIF 数据",
+        "description": "清除照片中的 GPS 位置和相机信息。",
+        "short": "清除照片中的位置信息"
+      },
+      "heic-to-jpg": {
+        "name": "HEIC 转 JPG",
+        "description": "让 iPhone 照片随处可用。"
+      },
+      "images-to-pdf": {
+        "name": "图片转 PDF",
+        "description": "将多张照片合并为一个文档。"
+      },
+      "favicon": {
+        "name": "网站图标生成器",
+        "description": "从一张图片生成所有尺寸的图标。"
+      }
+    },
+    "audio": {
+      "trim": {
+        "name": "剪辑音频",
+        "description": "剪切、淡入淡出并导出为 MP3、WAV 或 OGG。"
+      },
+      "convert": {
+        "name": "转换音频",
+        "description": "MP3、WAV、OGG 和 M4A，比特率自选。"
+      },
+      "volume": {
+        "name": "调整音量",
+        "description": "提高或降低音量，不产生削波。"
+      },
+      "fade": {
+        "name": "淡入与淡出",
+        "description": "平滑的开头和结尾，曲线可调。"
+      },
+      "speed": {
+        "name": "调整速度",
+        "description": "加速或减速，可选是否改变音调。"
+      },
+      "normalize": {
+        "name": "音量标准化",
+        "description": "让每段音频响度一致。"
+      },
+      "merge": {
+        "name": "合并音频",
+        "description": "将多个片段合为一个文件。"
+      },
+      "record": {
+        "name": "录音机",
+        "description": "用麦克风录音并下载录音。"
+      }
+    },
+    "video": {
+      "trim": {
+        "name": "剪辑视频",
+        "description": "精确截取您需要的起止片段。"
+      },
+      "compress": {
+        "name": "压缩视频",
+        "description": "选择分辨率和画质，查看预计大小。"
+      },
+      "convert": {
+        "name": "转换视频",
+        "description": "MP4 与 WebM 相互转换。"
+      },
+      "to-gif": {
+        "name": "视频转 GIF",
+        "description": "把短片变成轻量的循环动图。"
+      },
+      "extract-audio": {
+        "name": "提取音频",
+        "description": "将音轨保存为 MP3 或 WAV。"
+      },
+      "remove-audio": {
+        "name": "移除音频",
+        "description": "永久静音视频。"
+      },
+      "crop": {
+        "name": "裁剪视频",
+        "description": "重新构图为 9:16、1:1 或 16:9。"
+      },
+      "watermark": {
+        "name": "视频水印",
+        "description": "叠加文字或标志。"
+      },
+      "capture-frame": {
+        "name": "截取画面",
+        "description": "将任意一帧保存为 PNG 或 JPG。"
+      },
+      "record": {
+        "name": "屏幕与摄像头录制",
+        "description": "录制屏幕或摄像头，然后编辑结果。"
+      }
+    },
+    "pdf": {
+      "merge": {
+        "name": "合并 PDF",
+        "description": "合并文档并拖动页面排序。",
+        "short": "合并并重排页面"
+      },
+      "split": {
+        "name": "拆分 PDF",
+        "description": "提取页面范围或拆成单页。"
+      },
+      "organize": {
+        "name": "整理页面",
+        "description": "在网格中重排、旋转和删除页面。"
+      },
+      "to-images": {
+        "name": "PDF 转图片",
+        "description": "将每一页渲染为 PNG 或 JPG 并下载 zip。"
+      },
+      "compress": {
+        "name": "压缩 PDF",
+        "description": "重新编码内嵌图片以缩小文件。"
+      },
+      "watermark": {
+        "name": "PDF 水印",
+        "description": "在每一页上加盖文字或图片。"
+      },
+      "page-numbers": {
+        "name": "添加页码",
+        "description": "位置和样式由您选择。"
+      },
+      "sign": {
+        "name": "签署 PDF",
+        "description": "手绘或上传签名并放置到页面上。"
+      }
+    },
+    "text": {
+      "word-counter": {
+        "name": "字数与字符统计",
+        "description": "字数、字符数、句子数和阅读时长。"
+      },
+      "case-converter": {
+        "name": "大小写转换",
+        "description": "大写、小写、首字母大写、camelCase、snake_case 等。"
+      },
+      "diff": {
+        "name": "文本对比",
+        "description": "逐行比较两段文本。"
+      },
+      "markdown": {
+        "name": "Markdown 预览",
+        "description": "编写 Markdown 并实时查看渲染结果。"
+      },
+      "ocr": {
+        "name": "图片转文字 (OCR)",
+        "description": "从截图和扫描件中提取可编辑文本。"
+      },
+      "text-to-speech": {
+        "name": "文字转语音",
+        "description": "使用设备自带语音朗读任意文本。"
+      }
+    },
+    "dev": {
+      "json": {
+        "name": "JSON 格式化",
+        "description": "即时格式化、校验和压缩 JSON。"
+      },
+      "base64": {
+        "name": "Base64 编码与解码",
+        "description": "文本和文件与 Base64 互转。"
+      },
+      "url": {
+        "name": "URL 编码与解码",
+        "description": "转义和还原 URL 及查询字符串。"
+      },
+      "jwt": {
+        "name": "JWT 解码器",
+        "description": "查看令牌的头部、载荷和过期时间。"
+      },
+      "hash": {
+        "name": "哈希生成器",
+        "description": "为文本或文件计算 SHA-1、SHA-256 和 SHA-512。"
+      },
+      "uuid": {
+        "name": "UUID 生成器",
+        "description": "逐个或批量生成 v4 UUID。"
+      },
+      "color": {
+        "name": "颜色转换器",
+        "description": "HEX、RGB 和 HSL 并排显示，附实时色块。"
+      },
+      "palette": {
+        "name": "调色板生成器",
+        "description": "从一个基础色构建和谐配色。"
+      },
+      "regex": {
+        "name": "正则测试器",
+        "description": "实时测试模式，查看匹配和分组。"
+      },
+      "csv": {
+        "name": "CSV、JSON 与 Excel 转换",
+        "description": "在 CSV、JSON 和 XLSX 之间转换表格。"
+      }
+    },
+    "privacy": {
+      "password": {
+        "name": "密码生成器",
+        "description": "强随机密码和密码短语。"
+      },
+      "encrypt": {
+        "name": "加密与解密文件",
+        "description": "用密码和 AES-GCM 锁定任何文件。"
+      },
+      "qr": {
+        "name": "QR 码生成与扫描",
+        "description": "生成 QR 码或从图片中读取。"
+      },
+      "zip": {
+        "name": "压缩与解压",
+        "description": "将文件打包为 zip 或解压。"
+      }
+    }
+  }
+}

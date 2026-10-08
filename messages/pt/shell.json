@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "Solte qualquer arquivo e sugerimos ferramentas",
+    "subtitle": "ou clique para procurar · nada é enviado, nunca",
+    "titleOne": "Solte um arquivo aqui",
+    "titleMany": "Solte arquivos aqui",
+    "release": "Solte para abrir {count, plural, =1 {o arquivo} other {# arquivos}}",
+    "unsupported": "“{name}” não é um tipo de arquivo compatível com esta ferramenta.",
+    "tooLarge": "“{name}” tem {size}. Esta ferramenta aceita arquivos de até {max}.",
+    "browse": "Procurar arquivos"
+  },
+  "export": {
+    "processedOnDevice": "Processado neste dispositivo",
+    "processedIn": "Processado neste dispositivo em {seconds} s",
+    "bytesSent": "0 bytes enviados",
+    "reset": "Redefinir",
+    "download": "Baixar",
+    "downloadFormat": "Baixar {format}",
+    "downloadAll": "Baixar tudo (.zip)",
+    "saved": "Salvo na pasta de downloads"
+  },
+  "readout": {
+    "estimated": "Saída estimada",
+    "result": "Resultado",
+    "smaller": "{percent}% menor",
+    "larger": "+{percent}% maior"
+  },
+  "status": {
+    "cancel": "Cancelar",
+    "anotherFile": "Outro arquivo",
+    "chooseAnother": "Escolher outro",
+    "supportedFormats": "Formatos compatíveis",
+    "done": "Pronto — {percent}% menor",
+    "ready": "{name} está pronto · {size} economizados",
+    "cannotOpen": "Não foi possível abrir “{name}”",
+    "eta": "Faltam cerca de {seconds} s · no dispositivo",
+    "processing": "Processando…"
+  },
+  "toolbar": {
+    "addFiles": "Adicionar arquivos",
+    "fit": "Ajustar à tela",
+    "zoomIn": "Ampliar",
+    "zoomOut": "Reduzir",
+    "original": "Original",
+    "split": "Dividido",
+    "sideBySide": "Lado a lado",
+    "chooseAnother": "Escolher outro",
+    "settings": "Configurações",
+    "expandSettings": "Expandir configurações",
+    "shrinkSettings": "Recolher configurações"
+  },
+  "placeholder": {
+    "comingSoon": "Esta ferramenta chega em uma fase posterior. Vai rodar inteiramente no seu navegador.",
+    "loaded": "Arquivo carregado neste dispositivo",
+    "loadedBody": "Os controles de {tool} chegam em uma fase posterior. Nada foi enviado.",
+    "files": "Arquivos",
+    "remove": "Remover {name}",
+    "name": "Nome",
+    "format": "Formato",
+    "size": "Tamanho",
+    "modified": "Modificado",
+    "unchanged": "Saída (sem alterações)",
+    "downloadFirst": "Baixar o primeiro"
+  },
+  "twoPane": {
+    "input": "Entrada",
+    "output": "Saída",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "clear": "Limpar",
+    "paste": "Colar",
+    "sample": "Carregar exemplo",
+    "characters": "{count} caracteres",
+    "uploadFile": "Abrir um arquivo"
+  }
+}

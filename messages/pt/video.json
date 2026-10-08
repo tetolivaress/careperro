@@ -1,1 +1,163 @@
-{}
+{
+  "tabs": {
+    "trim": "Cortar",
+    "compress": "Comprimir",
+    "convert": "Converter",
+    "gif": "GIF",
+    "audio": "Áudio",
+    "crop": "Recortar",
+    "watermark": "Marca d'água",
+    "frame": "Quadro"
+  },
+  "dropzone": {
+    "title": "Solte um vídeo aqui",
+    "subtitle": "ou clique para procurar · MP4, WebM, MOV · nada é enviado, nunca",
+    "sizeHint": "Até {max} por arquivo. Vídeos maiores são lentos no navegador; corte-os primeiro."
+  },
+  "info": {
+    "meta": "{width} × {height} · {format} · {size}",
+    "fps": "{fps} fps",
+    "noAudio": "Sem faixa de áudio",
+    "unreadable": "Este vídeo não pode ser decodificado pelo seu navegador. Tente MP4 (H.264) ou WebM."
+  },
+  "timeline": {
+    "start": "Início",
+    "end": "Fim",
+    "selected": "{time} selecionados",
+    "trimStart": "Início do corte",
+    "trimEnd": "Fim do corte"
+  },
+  "player": {
+    "play": "Reproduzir",
+    "pause": "Pausar",
+    "original": "Original",
+    "result": "Resultado",
+    "setStart": "Definir início aqui",
+    "setEnd": "Definir fim aqui",
+    "reset": "Redefinir corte"
+  },
+  "trim": {
+    "label": "Intervalo de corte",
+    "hint": "Arraste as alças na linha do tempo ou digite tempos exatos.",
+    "start": "Início (s)",
+    "end": "Fim (s)",
+    "copyHint": "Só cortar copia o vídeo sem recodificar, então é rápido e sem perdas."
+  },
+  "compress": {
+    "resolution": "Resolução",
+    "original": "Original",
+    "quality": "Qualidade",
+    "low": "Menor",
+    "medium": "Equilibrado",
+    "high": "Mais nítido",
+    "bitrate": "~{mbps} Mbps de vídeo",
+    "estimated": "Saída estimada",
+    "frameRate": "Taxa de quadros"
+  },
+  "convert": {
+    "format": "Formato de saída",
+    "copyNote": "Streams compatíveis são copiados, então a conversão costuma ser instantânea.",
+    "transcodeNote": "O vídeo será recodificado com {codec}."
+  },
+  "gif": {
+    "fps": "Quadros por segundo",
+    "width": "Largura",
+    "duration": "Duração",
+    "maxNote": "GIFs são limitados a {seconds} s. Corte até a parte que você quer.",
+    "loop": "Repetir para sempre",
+    "estimated": "Tamanho estimado do GIF"
+  },
+  "audio": {
+    "mode": "O que fazer",
+    "extract": "Extrair áudio",
+    "remove": "Remover áudio",
+    "format": "Formato de áudio",
+    "mp3Note": "MP3 é codificado com ffmpeg (baixa ~30 MB uma vez).",
+    "wavNote": "WAV é sem compressão e exportado na hora com WebCodecs.",
+    "removeNote": "O vídeo é copiado sem a faixa de áudio."
+  },
+  "crop": {
+    "ratio": "Proporção",
+    "free": "Livre",
+    "region": "Região de recorte",
+    "reset": "Redefinir recorte",
+    "output": "Saída: {width} × {height}",
+    "hint": "Arraste a caixa ou seus cantos no player."
+  },
+  "watermark": {
+    "type": "Tipo",
+    "text": "Texto",
+    "logo": "Logo",
+    "textLabel": "Texto da marca d'água",
+    "placeholder": "© Seu nome",
+    "upload": "Escolher um logo",
+    "change": "Trocar logo",
+    "position": "Posição",
+    "opacity": "Opacidade",
+    "size": "Tamanho",
+    "positions": {
+      "tl": "Superior esquerdo",
+      "tc": "Superior centro",
+      "tr": "Superior direito",
+      "ml": "Meio esquerdo",
+      "mc": "Centro",
+      "mr": "Meio direito",
+      "bl": "Inferior esquerdo",
+      "bc": "Inferior centro",
+      "br": "Inferior direito"
+    }
+  },
+  "frame": {
+    "time": "Tempo",
+    "format": "Formato da imagem",
+    "capture": "Salvar este quadro",
+    "hint": "Navegue no player até o quadro desejado e salve-o como imagem.",
+    "saved": "Quadro salvo"
+  },
+  "engine": {
+    "webcodecs": "Codificação por hardware (WebCodecs)",
+    "ffmpeg": "Alternativa ffmpeg.wasm",
+    "loadingFfmpeg": "Carregando ffmpeg ({percent}%)…",
+    "fallbackNote": "Este navegador não consegue codificar com WebCodecs; usando ffmpeg no lugar (mais lento)."
+  },
+  "status": {
+    "preparing": "Preparando…",
+    "encoding": "Codificando {container}…",
+    "trimming": "Cortando…",
+    "gif": "Montando GIF…",
+    "audio": "Extraindo áudio…",
+    "done": "Concluído em {seconds} s",
+    "canceled": "Cancelado",
+    "failed": "Algo deu errado: {message}",
+    "steps": {
+      "decode": "Decodificar vídeo",
+      "process": "Aplicar edições",
+      "encode": "Codificar",
+      "write": "Gravar arquivo"
+    },
+    "processedIn": "Processado neste dispositivo em {seconds} s"
+  },
+  "export": {
+    "export": "Exportar",
+    "download": "Baixar {ext}",
+    "another": "Outro vídeo",
+    "openEditor": "Abrir no editor"
+  },
+  "recorder": {
+    "title": "Gravador de tela e webcam",
+    "subtitle": "As gravações ficam nesta aba até você baixá-las.",
+    "source": "Fonte",
+    "screen": "Tela",
+    "camera": "Câmera",
+    "mic": "Gravar microfone",
+    "micHint": "Mistura seu microfone na gravação",
+    "start": "Iniciar gravação",
+    "stop": "Parar",
+    "recording": "Gravando",
+    "permission": "Permissão negada ou nenhum dispositivo encontrado.",
+    "unsupported": "Este navegador não suporta gravação.",
+    "preview": "Prévia",
+    "discard": "Descartar",
+    "ready": "Gravação pronta · {duration} · {size}"
+  }
+}

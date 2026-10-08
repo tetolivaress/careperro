@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "Karakter",
+    "charactersNoSpaces": "Tanpa spasi",
+    "words": "Kata",
+    "sentences": "Kalimat",
+    "paragraphs": "Paragraf",
+    "lines": "Baris",
+    "bytes": "Byte (UTF-8)",
+    "reading": "Waktu baca",
+    "speaking": "Waktu bicara",
+    "minutes": "{count, plural, =0 {< 1 mnt} one {# mnt} other {# mnt}}",
+    "topWords": "Kata paling sering",
+    "placeholder": "Tempel atau ketik teks Anda di sini…",
+    "summary": "{words} kata · {characters} karakter"
+  },
+  "case": {
+    "mode": "Konversi ke",
+    "upper": "HURUF BESAR",
+    "lower": "huruf kecil",
+    "title": "Huruf Besar Tiap Kata",
+    "sentence": "Huruf besar awal kalimat",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "bErGaNtIaN",
+    "inverse": "tERBALIK",
+    "placeholder": "Ketik teks untuk dikonversi…"
+  },
+  "diff": {
+    "original": "Asli",
+    "changed": "Diubah",
+    "mode": "Bandingkan per",
+    "lines": "Baris",
+    "words": "Kata",
+    "chars": "Karakter",
+    "ignoreCase": "Abaikan huruf besar-kecil",
+    "ignoreWhitespace": "Abaikan spasi",
+    "added": "{count} ditambahkan",
+    "removed": "{count} dihapus",
+    "identical": "Kedua teks identik.",
+    "placeholderA": "Tempel teks asli…",
+    "placeholderB": "Tempel teks yang diubah…",
+    "result": "Perbedaan"
+  },
+  "markdown": {
+    "preview": "Pratinjau",
+    "html": "HTML",
+    "placeholder": "# Halo\n\nTulis **Markdown** di sini…",
+    "downloadHtml": "Unduh .html",
+    "gfm": "Gaya GitHub"
+  },
+  "ocr": {
+    "language": "Bahasa",
+    "drop": "Jatuhkan tangkapan layar atau hasil pindaian",
+    "dropSubtitle": "PNG, JPG, WebP · dikenali sepenuhnya di perangkat Anda",
+    "loadingEngine": "Memuat mesin pengenalan…",
+    "recognizing": "Mengenali teks…",
+    "steps": {
+      "load": "Muat mesin",
+      "language": "Muat data bahasa",
+      "recognize": "Kenali teks"
+    },
+    "result": "Teks yang dikenali",
+    "confidence": "Keyakinan {percent}%",
+    "empty": "Tidak ada teks yang ditemukan di gambar ini.",
+    "firstRunNote": "Penggunaan pertama mengunduh mesin pengenalan (sekitar 15 MB). Gambar Anda tidak pernah keluar dari perangkat ini.",
+    "downloadTxt": "Unduh .txt",
+    "langs": {
+      "eng": "Inggris",
+      "spa": "Spanyol",
+      "fra": "Prancis",
+      "deu": "Jerman",
+      "por": "Portugis",
+      "ita": "Italia",
+      "jpn": "Jepang",
+      "chi_sim": "Mandarin (sederhana)",
+      "ara": "Arab",
+      "rus": "Rusia",
+      "hin": "Hindi",
+      "ind": "Indonesia"
+    }
+  },
+  "tts": {
+    "voice": "Suara",
+    "rate": "Kecepatan",
+    "pitch": "Pitch",
+    "volume": "Volume",
+    "play": "Ucapkan",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "stop": "Berhenti",
+    "placeholder": "Ketik sesuatu untuk dibacakan…",
+    "unsupported": "Browser Anda tidak mendukung sintesis ucapan.",
+    "noVoices": "Belum ada suara yang tersedia. Coba lagi sebentar.",
+    "speaking": "Berbicara…",
+    "paused": "Dijeda",
+    "idle": "Siap",
+    "controls": "Pemutaran",
+    "hint": "Suara berasal dari sistem operasi Anda; tidak ada yang dikirim ke mana pun."
+  }
+}

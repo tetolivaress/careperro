@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "حرّر أي ملف. دون رفع أي شيء.",
+  "subhead": "{count} أداة للصور والصوت والفيديو وملفات PDF والشيفرة تعمل بالكامل في متصفحك. لا رفع، لا تسجيل، لا إعلانات.",
+  "subheadMobile": "{count} أداة تعمل بالكامل على هاتفك. لا رفع، لا تسجيل، لا إعلانات.",
+  "drop": {
+    "title": "أفلت أي ملف وسنقترح عليك الأدوات المناسبة",
+    "subtitle": "أو انقر للاستعراض · لا يُرفع أي شيء، أبدًا",
+    "titleMobile": "أفلت ملفًا أو انقر للاستعراض",
+    "subtitleMobile": "سنقترح عليك الأدوات المناسبة",
+    "more": "+{count} أخرى",
+    "noTool": "ليست لدينا أداة لـ “{name}” بعد. تصفّح الفئات أدناه."
+  },
+  "session": {
+    "title": "هذه الجلسة",
+    "networkIdle": "الشبكة خاملة",
+    "uploaded": "مرفوع",
+    "filesProcessed": "ملفات تمت معالجتها"
+  },
+  "browseByCategory": "تصفّح حسب الفئة",
+  "allTools": "جميع الأدوات ({count})",
+  "allToolsShort": "جميع الأدوات",
+  "suggestTool": "اقترح أداة",
+  "popular": "الأكثر رواجًا الآن",
+  "seeAll": "عرض الكل",
+  "toolCount": "{count, plural, one {# أداة} other {# أدوات}}",
+  "allToolsPage": {
+    "title": "جميع الأدوات",
+    "meta": "{count} أداة · كل واحدة منها تُعالَج على جهازك",
+    "description": "جميع الأدوات الـ {count} التي تعمل على جهازك، مصنّفة حسب الفئة."
+  },
+  "category": {
+    "meta": "{count} أداة · {formats} · تُعالَج على جهازك",
+    "quickDrop": "أفلت الملفات لفتحها في {tool}",
+    "notAFile": "“{name}” ليس ملف {category}.",
+    "description": "{description}. {count} أداة لصيغ {formats}، تُعالَج على جهازك."
+  }
+}

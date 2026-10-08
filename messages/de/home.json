@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "Jede Datei bearbeiten. Nichts hochladen.",
+  "subhead": "{count} Tools für Bilder, Audio, Video, PDFs und Code, die komplett im Browser laufen. Keine Uploads, keine Anmeldung, keine Werbung.",
+  "subheadMobile": "{count} Tools, die komplett auf dem Smartphone laufen. Keine Uploads, keine Anmeldung, keine Werbung.",
+  "drop": {
+    "title": "Beliebige Datei ablegen und passende Tools erhalten",
+    "subtitle": "oder klicken zum Auswählen · es wird nie etwas hochgeladen",
+    "titleMobile": "Datei ablegen oder tippen zum Auswählen",
+    "subtitleMobile": "Wir schlagen die passenden Tools vor",
+    "more": "+{count} weitere",
+    "noTool": "Für „{name}“ gibt es noch kein Tool. Unten die Kategorien durchstöbern."
+  },
+  "session": {
+    "title": "Diese Sitzung",
+    "networkIdle": "Netzwerk inaktiv",
+    "uploaded": "hochgeladen",
+    "filesProcessed": "Dateien verarbeitet"
+  },
+  "browseByCategory": "Nach Kategorie stöbern",
+  "allTools": "Alle {count} Tools",
+  "allToolsShort": "Alle Tools",
+  "suggestTool": "Tool vorschlagen",
+  "popular": "Gerade beliebt",
+  "seeAll": "Alle anzeigen",
+  "toolCount": "{count, plural, one {# Tool} other {# Tools}}",
+  "allToolsPage": {
+    "title": "Alle Tools",
+    "meta": "{count} Tools · jedes davon auf dem Gerät verarbeitet",
+    "description": "Alle {count} On-Device-Tools, nach Kategorie gruppiert."
+  },
+  "category": {
+    "meta": "{count} Tools · {formats} · auf dem Gerät verarbeitet",
+    "quickDrop": "Dateien ablegen, um sie in {tool} zu öffnen",
+    "notAFile": "„{name}“ ist keine {category}-Datei.",
+    "description": "{description}. {count} Tools für {formats}, verarbeitet auf dem Gerät."
+  }
+}

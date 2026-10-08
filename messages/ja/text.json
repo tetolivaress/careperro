@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "文字数",
+    "charactersNoSpaces": "空白を除く",
+    "words": "単語数",
+    "sentences": "文の数",
+    "paragraphs": "段落数",
+    "lines": "行数",
+    "bytes": "バイト数 (UTF-8)",
+    "reading": "読了時間",
+    "speaking": "発話時間",
+    "minutes": "{count, plural, =0 {1 分未満} one {# 分} other {# 分}}",
+    "topWords": "頻出単語",
+    "placeholder": "ここにテキストを貼り付けるか入力…",
+    "summary": "{words} 語 · {characters} 文字"
+  },
+  "case": {
+    "mode": "変換先",
+    "upper": "すべて大文字",
+    "lower": "すべて小文字",
+    "title": "タイトルケース",
+    "sentence": "文頭のみ大文字",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "大小交互",
+    "inverse": "大小反転",
+    "placeholder": "変換するテキストを入力…"
+  },
+  "diff": {
+    "original": "元のテキスト",
+    "changed": "変更後",
+    "mode": "比較単位",
+    "lines": "行",
+    "words": "単語",
+    "chars": "文字",
+    "ignoreCase": "大文字小文字を無視",
+    "ignoreWhitespace": "空白を無視",
+    "added": "追加 {count}",
+    "removed": "削除 {count}",
+    "identical": "2 つのテキストは同一です。",
+    "placeholderA": "元のテキストを貼り付け…",
+    "placeholderB": "変更後のテキストを貼り付け…",
+    "result": "差分"
+  },
+  "markdown": {
+    "preview": "プレビュー",
+    "html": "HTML",
+    "placeholder": "# こんにちは\n\nここに **Markdown** を書く…",
+    "downloadHtml": ".html をダウンロード",
+    "gfm": "GitHub 方言"
+  },
+  "ocr": {
+    "language": "言語",
+    "drop": "スクリーンショットやスキャンをドロップ",
+    "dropSubtitle": "PNG, JPG, WebP · すべて端末内で認識",
+    "loadingEngine": "認識エンジンを読み込み中…",
+    "recognizing": "テキストを認識中…",
+    "steps": {
+      "load": "エンジンを読み込み",
+      "language": "言語データを読み込み",
+      "recognize": "テキストを認識"
+    },
+    "result": "認識されたテキスト",
+    "confidence": "信頼度 {percent}%",
+    "empty": "この画像からテキストは見つかりませんでした。",
+    "firstRunNote": "初回実行時に認識エンジン（約 15 MB）をダウンロードします。画像はこの端末から出ません。",
+    "downloadTxt": ".txt をダウンロード",
+    "langs": {
+      "eng": "英語",
+      "spa": "スペイン語",
+      "fra": "フランス語",
+      "deu": "ドイツ語",
+      "por": "ポルトガル語",
+      "ita": "イタリア語",
+      "jpn": "日本語",
+      "chi_sim": "中国語（簡体字）",
+      "ara": "アラビア語",
+      "rus": "ロシア語",
+      "hin": "ヒンディー語",
+      "ind": "インドネシア語"
+    }
+  },
+  "tts": {
+    "voice": "音声",
+    "rate": "速度",
+    "pitch": "ピッチ",
+    "volume": "音量",
+    "play": "読み上げ",
+    "pause": "一時停止",
+    "resume": "再開",
+    "stop": "停止",
+    "placeholder": "読み上げる文章を入力…",
+    "unsupported": "お使いのブラウザは音声合成に対応していません。",
+    "noVoices": "利用できる音声がまだありません。少し待ってからもう一度お試しください。",
+    "speaking": "読み上げ中…",
+    "paused": "一時停止中",
+    "idle": "準備完了",
+    "controls": "再生",
+    "hint": "音声はお使いの OS のものです。データはどこにも送信されません。"
+  }
+}

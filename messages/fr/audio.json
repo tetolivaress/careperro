@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "Couper",
+    "volume": "Volume",
+    "fade": "Fondu",
+    "speed": "Vitesse",
+    "normalize": "Normaliser",
+    "merge": "Fusionner",
+    "convert": "Convertir"
+  },
+  "drop": {
+    "title": "Déposez un fichier audio",
+    "titleMany": "Déposez des fichiers audio à fusionner",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · rien n'est jamais envoyé"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "mono",
+  "stereo": "stéréo",
+  "player": {
+    "play": "Lecture",
+    "pause": "Pause",
+    "toStart": "Retour au début",
+    "playSelection": "Lire la sélection",
+    "stop": "Arrêter"
+  },
+  "trim": {
+    "start": "Début",
+    "end": "Fin",
+    "selection": "Sélection",
+    "hint": "Glissez les poignées sur la forme d'onde ou saisissez des temps exacts.",
+    "wholeFile": "Fichier entier",
+    "reset": "Réinitialiser la sélection"
+  },
+  "volume": {
+    "gain": "Gain",
+    "hint": "Montez ou baissez le niveau. Au-dessus de 0 dB de crête, la sortie saturera.",
+    "currentPeak": "Crête actuelle",
+    "afterGain": "Après gain",
+    "clipWarning": "Ce gain pousse les crêtes au-dessus de 0 dB. Attendez-vous à de la saturation, ou activez Normaliser."
+  },
+  "fade": {
+    "in": "Fondu d'entrée",
+    "out": "Fondu de sortie",
+    "hint": "Rampes linéaires au début et à la fin de la sortie.",
+    "seconds": "{value} s"
+  },
+  "speed": {
+    "rate": "Vitesse de lecture",
+    "hint": "La hauteur change avec la vitesse. L'étirement sans changement de hauteur n'est pas encore disponible sur l'appareil.",
+    "newDuration": "Nouvelle durée",
+    "presets": "Vitesses prédéfinies"
+  },
+  "normalize": {
+    "enable": "Normaliser le volume",
+    "enableHint": "Amener l'extrait à un niveau homogène",
+    "mode": "Mesurer par",
+    "peak": "Crête",
+    "rms": "RMS (sonie)",
+    "target": "Niveau cible",
+    "measured": "Mesuré",
+    "gainApplied": "Gain appliqué",
+    "analyzing": "Analyse…"
+  },
+  "merge": {
+    "clips": "Extraits dans l'ordre",
+    "add": "Ajouter des extraits",
+    "moveUp": "Monter",
+    "moveDown": "Descendre",
+    "remove": "Retirer",
+    "total": "Durée totale",
+    "hint": "Les extraits sont mis bout à bout dans cet ordre. Coupe, gain, fondus et vitesse s'appliquent au résultat fusionné.",
+    "needMore": "Ajoutez au moins un autre extrait pour fusionner."
+  },
+  "convert": {
+    "format": "Format de sortie",
+    "bitrate": "Débit",
+    "bitrateHint": "Débit plus élevé, fichier plus lourd. 192 kbps est transparent pour la plupart des musiques.",
+    "wavHint": "Le WAV est du PCM non compressé — aucune perte de qualité, fichiers volumineux.",
+    "estimated": "Sortie estimée",
+    "ffmpegNote": "MP3, OGG et M4A utilisent un encodeur sur l'appareil (environ 30 MB, téléchargé une fois puis mis en cache)."
+  },
+  "status": {
+    "loadingEncoder": "Téléchargement de l'encodeur…",
+    "rendering": "Rendu audio…",
+    "encoding": "Encodage {format}…",
+    "done": "Terminé — {name}",
+    "decodeError": "Impossible d'ouvrir « {name} »",
+    "decodeErrorBody": "Ce fichier n'a pas pu être décodé. Essayez MP3, WAV, OGG, M4A ou FLAC.",
+    "encoderError": "L'encodeur sur l'appareil n'a pas pu se charger. Vérifiez votre connexion et réessayez, ou exportez en WAV.",
+    "cancelled": "Export annulé",
+    "processedIn": "Traité sur cet appareil en {seconds} s",
+    "stepDecode": "Audio décodé",
+    "stepRender": "Modifications appliquées",
+    "stepEncode": "{format} encodé",
+    "stepWrite": "Écriture du fichier"
+  },
+  "export": {
+    "download": "Télécharger {format}",
+    "saved": "Enregistré dans vos téléchargements"
+  },
+  "recorder": {
+    "title": "Enregistreur vocal",
+    "subtitle": "Enregistre depuis votre micro. L'audio reste dans cet onglet jusqu'à ce que vous le téléchargiez.",
+    "start": "Démarrer l'enregistrement",
+    "stop": "Arrêter",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "recording": "Enregistrement",
+    "paused": "En pause",
+    "ready": "Prêt",
+    "permission": "Autorisez l'accès au micro pour commencer.",
+    "denied": "L'accès au micro a été refusé. Vérifiez les autorisations du site dans votre navigateur.",
+    "unsupported": "L'enregistrement n'est pas pris en charge par ce navigateur.",
+    "level": "Niveau d'entrée",
+    "take": "Prise {n}",
+    "discard": "Supprimer",
+    "openInEditor": "Ouvrir dans l'éditeur",
+    "download": "Télécharger",
+    "newTake": "Nouvelle prise",
+    "mic": "Micro",
+    "defaultMic": "Micro par défaut"
+  }
+}

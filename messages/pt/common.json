@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "Edite qualquer arquivo. Sem enviar nada."
+  },
+  "nav": {
+    "home": "Início",
+    "allTools": "Todas as ferramentas",
+    "categories": "Categorias",
+    "workspace": "Área de trabalho",
+    "collapseSidebar": "Recolher barra lateral",
+    "expandSidebar": "Expandir barra lateral",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "menu": "Menu",
+    "backTo": "Voltar para {title}",
+    "more": "Mais",
+    "media": "Mídia",
+    "primary": "Principal",
+    "main": "Principal"
+  },
+  "search": {
+    "placeholder": "Buscar uma ferramenta...",
+    "label": "Buscar uma ferramenta",
+    "noResults": "Nenhuma ferramenta corresponde a “{query}”.",
+    "navigate": "navegar",
+    "open": "abrir",
+    "summary": "{count} ferramentas · todas no seu dispositivo",
+    "tools": "Ferramentas"
+  },
+  "theme": {
+    "label": "Tema",
+    "switchTo": "Mudar para o tema {theme}",
+    "dark": "escuro",
+    "light": "claro",
+    "auto": "Auto",
+    "darkLabel": "Escuro",
+    "lightLabel": "Claro"
+  },
+  "language": {
+    "label": "Idioma",
+    "select": "Escolher idioma"
+  },
+  "privacyBadge": "Seus arquivos ficam no seu dispositivo",
+  "offline": {
+    "title": "Funciona offline",
+    "body": "Sem uploads, sem contas, sem rastreamento. Instale como um app de desktop.",
+    "install": "Instalar app",
+    "installHint": "A instalação fica disponível quando o app carrega como PWA",
+    "installed": "Instalado"
+  },
+  "announcement": {
+    "headline": "Este domínio está à venda.",
+    "body": "Tem interesse? Estamos abertos a ofertas.",
+    "cta": "Fazer uma oferta",
+    "dismiss": "Fechar aviso"
+  },
+  "footer": {
+    "links": "Sobre · Privacidade · Código aberto"
+  },
+  "notFound": {
+    "title": "Essa página não existe",
+    "body": "A ferramenta pode ter mudado de lugar. Tente a busca ou comece pela página inicial.",
+    "back": "Voltar ao início"
+  },
+  "loading": "Carregando {name}…",
+  "error": {
+    "title": "Algo deu errado",
+    "body": "A ferramenta encontrou um erro inesperado. Seus arquivos continuam apenas neste dispositivo. Tente de novo ou recarregue a página.",
+    "retry": "Tentar de novo"
+  },
+  "unsupported": {
+    "body": "Este navegador não tem {features}. As ferramentas podem não funcionar; tente uma versão atual do Chrome, Edge, Firefox ou Safari."
+  }
+}

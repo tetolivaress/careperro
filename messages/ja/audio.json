@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "トリミング",
+    "volume": "音量",
+    "fade": "フェード",
+    "speed": "速度",
+    "normalize": "ノーマライズ",
+    "merge": "結合",
+    "convert": "変換"
+  },
+  "drop": {
+    "title": "音声ファイルをドロップ",
+    "titleMany": "結合する音声ファイルをドロップ",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · 何もアップロードされません"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "モノラル",
+  "stereo": "ステレオ",
+  "player": {
+    "play": "再生",
+    "pause": "一時停止",
+    "toStart": "先頭に戻る",
+    "playSelection": "選択範囲を再生",
+    "stop": "停止"
+  },
+  "trim": {
+    "start": "開始",
+    "end": "終了",
+    "selection": "選択範囲",
+    "hint": "波形上のハンドルをドラッグするか、正確な時間を入力してください。",
+    "wholeFile": "ファイル全体",
+    "reset": "選択をリセット"
+  },
+  "volume": {
+    "gain": "ゲイン",
+    "hint": "音量を上げ下げします。ピークが 0 dB を超えると出力がクリップします。",
+    "currentPeak": "現在のピーク",
+    "afterGain": "ゲイン適用後",
+    "clipWarning": "このゲインではピークが 0 dB を超えます。クリッピングが発生するか、ノーマライズを有効にしてください。"
+  },
+  "fade": {
+    "in": "フェードイン",
+    "out": "フェードアウト",
+    "hint": "出力の先頭と末尾に直線的なフェードを適用します。",
+    "seconds": "{value} 秒"
+  },
+  "speed": {
+    "rate": "再生速度",
+    "hint": "速度に応じてピッチも変わります。ピッチを保ったままの変速は、端末内処理ではまだ利用できません。",
+    "newDuration": "新しい長さ",
+    "presets": "速度プリセット"
+  },
+  "normalize": {
+    "enable": "音量をノーマライズ",
+    "enableHint": "クリップを一定のレベルに揃えます",
+    "mode": "測定基準",
+    "peak": "ピーク",
+    "rms": "RMS（ラウドネス）",
+    "target": "目標レベル",
+    "measured": "測定値",
+    "gainApplied": "適用ゲイン",
+    "analyzing": "解析中…"
+  },
+  "merge": {
+    "clips": "クリップの順序",
+    "add": "クリップを追加",
+    "moveUp": "上へ移動",
+    "moveDown": "下へ移動",
+    "remove": "削除",
+    "total": "合計の長さ",
+    "hint": "クリップはこの順序で連結されます。トリミング、ゲイン、フェード、速度は結合後の結果に適用されます。",
+    "needMore": "結合するにはクリップをあと 1 つ以上追加してください。"
+  },
+  "convert": {
+    "format": "出力形式",
+    "bitrate": "ビットレート",
+    "bitrateHint": "ビットレートが高いほどファイルは大きくなります。ほとんどの音楽では 192 kbps で違いは感じられません。",
+    "wavHint": "WAV は非圧縮 PCM です — 音質の劣化はありませんが、ファイルは大きくなります。",
+    "estimated": "推定出力",
+    "ffmpegNote": "MP3、OGG、M4A は端末内エンコーダー（約 30 MB、初回のみダウンロードしてキャッシュ）を使用します。"
+  },
+  "status": {
+    "loadingEncoder": "エンコーダーをダウンロード中…",
+    "rendering": "音声をレンダリング中…",
+    "encoding": "{format} をエンコード中…",
+    "done": "完了 — {name}",
+    "decodeError": "「{name}」を開けません",
+    "decodeErrorBody": "このファイルをデコードできませんでした。MP3、WAV、OGG、M4A、FLAC をお試しください。",
+    "encoderError": "端末内エンコーダーの読み込みに失敗しました。接続を確認してもう一度試すか、WAV で書き出してください。",
+    "cancelled": "書き出しをキャンセルしました",
+    "processedIn": "この端末で {seconds} 秒で処理",
+    "stepDecode": "音声をデコード",
+    "stepRender": "編集を適用",
+    "stepEncode": "{format} をエンコード",
+    "stepWrite": "ファイルを書き込み"
+  },
+  "export": {
+    "download": "{format} をダウンロード",
+    "saved": "ダウンロードフォルダに保存しました"
+  },
+  "recorder": {
+    "title": "ボイスレコーダー",
+    "subtitle": "マイクから録音します。音声はダウンロードするまでこのタブ内に留まります。",
+    "start": "録音を開始",
+    "stop": "停止",
+    "pause": "一時停止",
+    "resume": "再開",
+    "recording": "録音中",
+    "paused": "一時停止中",
+    "ready": "準備完了",
+    "permission": "開始するにはマイクへのアクセスを許可してください。",
+    "denied": "マイクへのアクセスが拒否されました。ブラウザのサイト権限を確認してください。",
+    "unsupported": "このブラウザでは録音がサポートされていません。",
+    "level": "入力レベル",
+    "take": "テイク {n}",
+    "discard": "破棄",
+    "openInEditor": "エディターで開く",
+    "download": "ダウンロード",
+    "newTake": "新しいテイク",
+    "mic": "マイク",
+    "defaultMic": "既定のマイク"
+  }
+}

@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "Zeichen",
+    "charactersNoSpaces": "Ohne Leerzeichen",
+    "words": "Wörter",
+    "sentences": "Sätze",
+    "paragraphs": "Absätze",
+    "lines": "Zeilen",
+    "bytes": "Bytes (UTF-8)",
+    "reading": "Lesezeit",
+    "speaking": "Sprechzeit",
+    "minutes": "{count, plural, =0 {< 1 Min.} one {# Min.} other {# Min.}}",
+    "topWords": "Häufigste Wörter",
+    "placeholder": "Text hier einfügen oder eingeben…",
+    "summary": "{words} Wörter · {characters} Zeichen"
+  },
+  "case": {
+    "mode": "Umwandeln in",
+    "upper": "GROSSBUCHSTABEN",
+    "lower": "kleinbuchstaben",
+    "title": "Jedes Wort Groß",
+    "sentence": "Satzanfang groß",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "aBwEcHsElNd",
+    "inverse": "iNVERTIERT",
+    "placeholder": "Text zum Umwandeln eingeben…"
+  },
+  "diff": {
+    "original": "Original",
+    "changed": "Geändert",
+    "mode": "Vergleichen nach",
+    "lines": "Zeilen",
+    "words": "Wörter",
+    "chars": "Zeichen",
+    "ignoreCase": "Groß-/Kleinschreibung ignorieren",
+    "ignoreWhitespace": "Leerraum ignorieren",
+    "added": "{count} hinzugefügt",
+    "removed": "{count} entfernt",
+    "identical": "Die beiden Texte sind identisch.",
+    "placeholderA": "Originaltext einfügen…",
+    "placeholderB": "Geänderten Text einfügen…",
+    "result": "Unterschiede"
+  },
+  "markdown": {
+    "preview": "Vorschau",
+    "html": "HTML",
+    "placeholder": "# Hallo\n\nHier **Markdown** schreiben…",
+    "downloadHtml": ".html herunterladen",
+    "gfm": "GitHub-Variante"
+  },
+  "ocr": {
+    "language": "Sprache",
+    "drop": "Screenshot oder Scan ablegen",
+    "dropSubtitle": "PNG, JPG, WebP · Erkennung komplett auf dem Gerät",
+    "loadingEngine": "Erkennungs-Engine wird geladen…",
+    "recognizing": "Text wird erkannt…",
+    "steps": {
+      "load": "Engine laden",
+      "language": "Sprachdaten laden",
+      "recognize": "Text erkennen"
+    },
+    "result": "Erkannter Text",
+    "confidence": "Zuverlässigkeit {percent}%",
+    "empty": "In diesem Bild wurde kein Text gefunden.",
+    "firstRunNote": "Beim ersten Mal wird die Erkennungs-Engine geladen (etwa 15 MB). Das Bild verlässt dieses Gerät nie.",
+    "downloadTxt": ".txt herunterladen",
+    "langs": {
+      "eng": "Englisch",
+      "spa": "Spanisch",
+      "fra": "Französisch",
+      "deu": "Deutsch",
+      "por": "Portugiesisch",
+      "ita": "Italienisch",
+      "jpn": "Japanisch",
+      "chi_sim": "Chinesisch (vereinfacht)",
+      "ara": "Arabisch",
+      "rus": "Russisch",
+      "hin": "Hindi",
+      "ind": "Indonesisch"
+    }
+  },
+  "tts": {
+    "voice": "Stimme",
+    "rate": "Tempo",
+    "pitch": "Tonhöhe",
+    "volume": "Lautstärke",
+    "play": "Vorlesen",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "stop": "Stopp",
+    "placeholder": "Etwas zum Vorlesen eingeben…",
+    "unsupported": "Der Browser unterstützt keine Sprachsynthese.",
+    "noVoices": "Noch keine Stimmen verfügbar. Gleich noch einmal versuchen.",
+    "speaking": "Wird vorgelesen…",
+    "paused": "Pausiert",
+    "idle": "Bereit",
+    "controls": "Wiedergabe",
+    "hint": "Die Stimmen stammen vom Betriebssystem; es wird nichts gesendet."
+  }
+}

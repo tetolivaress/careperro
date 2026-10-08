@@ -1,1 +1,76 @@
-{}
+{
+  "dropzone": {
+    "title": "ファイルをドロップすると、ツールを提案します",
+    "subtitle": "またはクリックして選択 · 何もアップロードされません",
+    "titleOne": "ここにファイルをドロップ",
+    "titleMany": "ここにファイルをドロップ",
+    "release": "離して{count, plural, =1 {ファイル} other {# 個のファイル}}を開く",
+    "unsupported": "「{name}」はこのツールでサポートされていないファイル形式です。",
+    "tooLarge": "「{name}」のサイズは {size} です。このツールは {max} までのファイルに対応しています。",
+    "browse": "ファイルを選択"
+  },
+  "export": {
+    "processedOnDevice": "この端末で処理済み",
+    "processedIn": "この端末で {seconds} 秒で処理",
+    "bytesSent": "送信 0 バイト",
+    "reset": "リセット",
+    "download": "ダウンロード",
+    "downloadFormat": "{format} をダウンロード",
+    "downloadAll": "すべてダウンロード (.zip)",
+    "saved": "ダウンロードフォルダに保存しました"
+  },
+  "readout": {
+    "estimated": "推定出力",
+    "result": "結果",
+    "smaller": "{percent}% 削減",
+    "larger": "+{percent}% 増加"
+  },
+  "status": {
+    "cancel": "キャンセル",
+    "anotherFile": "別のファイル",
+    "chooseAnother": "別のファイルを選択",
+    "supportedFormats": "対応形式",
+    "done": "完了 — {percent}% 削減",
+    "ready": "{name} の準備ができました · {size} 節約",
+    "cannotOpen": "「{name}」を開けません",
+    "eta": "残り約 {seconds} 秒 · 端末内で処理中",
+    "processing": "処理中…"
+  },
+  "toolbar": {
+    "addFiles": "ファイルを追加",
+    "fit": "画面に合わせる",
+    "zoomIn": "拡大",
+    "zoomOut": "縮小",
+    "original": "元画像",
+    "split": "分割表示",
+    "sideBySide": "並べて表示",
+    "chooseAnother": "別のファイルを選択",
+    "settings": "設定",
+    "expandSettings": "設定を展開",
+    "shrinkSettings": "設定を縮小"
+  },
+  "placeholder": {
+    "comingSoon": "このツールは今後のフェーズで提供予定です。すべてブラウザ内で動作します。",
+    "loaded": "ファイルをこの端末に読み込みました",
+    "loadedBody": "{tool}の操作パネルは今後のフェーズで提供予定です。何もアップロードされていません。",
+    "files": "ファイル",
+    "remove": "{name} を削除",
+    "name": "名前",
+    "format": "形式",
+    "size": "サイズ",
+    "modified": "更新日時",
+    "unchanged": "出力（変更なし）",
+    "downloadFirst": "最初のファイルをダウンロード"
+  },
+  "twoPane": {
+    "input": "入力",
+    "output": "出力",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "clear": "クリア",
+    "paste": "貼り付け",
+    "sample": "サンプルを読み込む",
+    "characters": "{count} 文字",
+    "uploadFile": "ファイルを開く"
+  }
+}

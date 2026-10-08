@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "Jede Datei bearbeiten. Nichts hochladen."
+  },
+  "nav": {
+    "home": "Start",
+    "allTools": "Alle Tools",
+    "categories": "Kategorien",
+    "workspace": "Arbeitsbereich",
+    "collapseSidebar": "Seitenleiste einklappen",
+    "expandSidebar": "Seitenleiste ausklappen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "menu": "Menü",
+    "backTo": "Zurück zu {title}",
+    "more": "Mehr",
+    "media": "Medien",
+    "primary": "Primär",
+    "main": "Hauptbereich"
+  },
+  "search": {
+    "placeholder": "Tool suchen...",
+    "label": "Tool suchen",
+    "noResults": "Kein Tool passt zu „{query}“.",
+    "navigate": "navigieren",
+    "open": "öffnen",
+    "summary": "{count} Tools · alle auf dem Gerät",
+    "tools": "Tools"
+  },
+  "theme": {
+    "label": "Design",
+    "switchTo": "Zum {theme} Design wechseln",
+    "dark": "dunklen",
+    "light": "hellen",
+    "auto": "Auto",
+    "darkLabel": "Dunkel",
+    "lightLabel": "Hell"
+  },
+  "language": {
+    "label": "Sprache",
+    "select": "Sprache wählen"
+  },
+  "privacyBadge": "Dateien bleiben auf dem Gerät",
+  "offline": {
+    "title": "Funktioniert offline",
+    "body": "Keine Uploads, keine Konten, kein Tracking. Wie eine Desktop-App installieren.",
+    "install": "App installieren",
+    "installHint": "Die Installation ist verfügbar, sobald die App als PWA geladen wurde",
+    "installed": "Installiert"
+  },
+  "announcement": {
+    "headline": "Diese Domain steht zum Verkauf.",
+    "body": "Interesse? Wir sind offen für Angebote.",
+    "cta": "Angebot machen",
+    "dismiss": "Hinweis schließen"
+  },
+  "footer": {
+    "links": "Über · Datenschutz · Open Source"
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es nicht",
+    "body": "Das Tool wurde vielleicht verschoben. Die Suche verwenden oder auf der Startseite beginnen.",
+    "back": "Zurück zur Startseite"
+  },
+  "loading": "{name} wird geladen…",
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "body": "Im Tool ist ein unerwarteter Fehler aufgetreten. Die Dateien sind weiterhin nur auf diesem Gerät. Erneut versuchen oder die Seite neu laden.",
+    "retry": "Erneut versuchen"
+  },
+  "unsupported": {
+    "body": "Diesem Browser fehlt {features}. Tools funktionieren möglicherweise nicht; besser einen aktuellen Chrome, Edge, Firefox oder Safari verwenden."
+  }
+}

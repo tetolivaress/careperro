@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Atur",
+    "merge": "Gabung",
+    "split": "Pisah",
+    "watermark": "Tanda air",
+    "page-numbers": "Nomor",
+    "sign": "Tanda tangan",
+    "compress": "Kompres"
+  },
+  "drop": {
+    "title": "Jatuhkan PDF di sini",
+    "titleMany": "Jatuhkan beberapa PDF di sini",
+    "subtitle": "atau klik untuk menelusuri · tidak ada yang pernah diunggah"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# halaman} other {# halaman}}",
+    "files": "{count, plural, one {# file} other {# file}}",
+    "selected": "{count} dipilih",
+    "addFiles": "Tambah file",
+    "selectAll": "Pilih semua",
+    "clearSelection": "Batalkan pilihan",
+    "clearAll": "Hapus semua",
+    "zoom": "Ukuran thumbnail"
+  },
+  "page": {
+    "label": "Halaman {n}",
+    "rotate": "Putar halaman {n}",
+    "delete": "Hapus halaman {n}",
+    "moveLeft": "Pindahkan halaman {n} ke depan",
+    "moveRight": "Pindahkan halaman {n} ke belakang",
+    "select": "Pilih halaman {n}",
+    "dragHint": "Seret untuk menyusun ulang",
+    "source": "Dari {name}"
+  },
+  "organize": {
+    "hint": "Seret halaman untuk menyusun ulang. Gunakan tombol di setiap halaman untuk memutar atau menghapusnya.",
+    "rotateAll": "Putar semua",
+    "reverse": "Balik urutan",
+    "deleteSelected": "Hapus yang dipilih",
+    "restore": "Pulihkan urutan asli",
+    "rotateSelected": "Putar yang dipilih"
+  },
+  "merge": {
+    "hint": "Tambahkan PDF lain dan seret halamannya untuk mengurutkan. Semuanya menjadi satu file.",
+    "files": "File dalam dokumen ini",
+    "remove": "Hapus {name}",
+    "moveUp": "Pindahkan {name} ke atas",
+    "moveDown": "Pindahkan {name} ke bawah"
+  },
+  "split": {
+    "mode": "Mode pemisahan",
+    "ranges": "Rentang halaman",
+    "every": "Setiap halaman",
+    "everyN": "Setiap N halaman",
+    "rangesHint": "mis. 1-3, 5, 8-10 · setiap rentang menjadi satu file",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Halaman per file",
+    "preview": "{count, plural, one {# file} other {# file}} akan dibuat",
+    "invalid": "Periksa rentangnya: halaman harus antara 1 dan {max}.",
+    "single": "Satu PDF dari rentang yang dipilih",
+    "zip": "Satu file per rentang (.zip)"
+  },
+  "watermark": {
+    "enable": "Tambah tanda air",
+    "kind": "Jenis",
+    "text": "Teks",
+    "image": "Gambar",
+    "textPlaceholder": "RAHASIA",
+    "uploadImage": "Pilih logo",
+    "replaceImage": "Ganti logo",
+    "position": "Posisi",
+    "tile": "Berulang",
+    "opacity": "Opasitas",
+    "size": "Ukuran",
+    "rotation": "Rotasi",
+    "color": "Warna"
+  },
+  "numbers": {
+    "enable": "Tambah nomor halaman",
+    "position": "Posisi",
+    "start": "Mulai dari",
+    "format": "Format",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Halaman 1",
+    "size": "Ukuran"
+  },
+  "sign": {
+    "draw": "Gambar",
+    "upload": "Unggah",
+    "clear": "Bersihkan",
+    "use": "Gunakan tanda tangan",
+    "hint": "Gambar tanda tangan Anda di bawah, lalu seret ke halaman.",
+    "uploadHint": "PNG dengan latar transparan memberi hasil terbaik.",
+    "chooseImage": "Pilih gambar",
+    "page": "Letakkan di halaman",
+    "size": "Ukuran",
+    "placed": "Tanda tangan diletakkan di halaman {n}. Seret untuk memindahkan.",
+    "none": "Belum ada tanda tangan",
+    "remove": "Hapus tanda tangan"
+  },
+  "compress": {
+    "enable": "Enkode ulang gambar",
+    "quality": "Kualitas gambar",
+    "maxDimension": "Ukuran gambar maks",
+    "hint": "Foto tersemat dienkode ulang sebagai JPEG. Teks dan vektor tidak disentuh.",
+    "estimate": "Perkirakan",
+    "estimating": "Memperkirakan…",
+    "result": "{count, plural, =0 {Tidak ada gambar yang dapat dienkode ulang} one {# gambar dienkode ulang} other {# gambar dienkode ulang}}",
+    "unsupported": "Browser ini tidak dapat mengenkode ulang gambar di latar belakang. Coba Chrome, Edge, Firefox, atau Safari 16.4+."
+  },
+  "export": {
+    "download": "Unduh PDF",
+    "downloadZip": "Unduh .zip",
+    "processing": "Menyusun PDF Anda…",
+    "phase": {
+      "copy": "Menyalin halaman",
+      "watermark": "Menambahkan tanda air",
+      "numbers": "Menambahkan nomor halaman",
+      "signature": "Meletakkan tanda tangan",
+      "compress": "Mengenkode ulang gambar",
+      "save": "Menulis file"
+    },
+    "doneTitle": "PDF Anda siap",
+    "doneSplit": "{count, plural, one {# file} other {# file}} siap",
+    "eta": "Bekerja di perangkat · tidak ada yang keluar dari komputer Anda",
+    "errorTitle": "Terjadi kesalahan",
+    "encrypted": "PDF ini dilindungi kata sandi. Hapus kata sandinya terlebih dahulu.",
+    "corrupt": "File ini tampaknya bukan PDF yang valid.",
+    "back": "Kembali ke halaman",
+    "compressed": "Gambar dienkode ulang: {count}"
+  },
+  "confirm": {
+    "clearTitle": "Hapus semua file?",
+    "clearBody": "Semua halaman dan pengaturan dalam sesi ini akan dibuang. Tidak ada yang diunggah, jadi tidak ada yang perlu dipulihkan.",
+    "clear": "Hapus file",
+    "deleteTitle": "Hapus {count, plural, one {# halaman} other {# halaman}}?",
+    "deleteBody": "Anda bisa memulihkan urutan asli, tetapi halaman yang dihapus hanya kembali dengan membuka ulang file.",
+    "delete": "Hapus",
+    "cancel": "Pertahankan"
+  },
+  "images": {
+    "title": "Gambar ke PDF",
+    "dropTitle": "Jatuhkan gambar di sini",
+    "dropSubtitle": "JPG, PNG, WebP, atau HEIC · satu gambar per halaman",
+    "pageSize": "Ukuran halaman",
+    "fit": "Sesuaikan dengan gambar",
+    "a4": "A4",
+    "letter": "Letter",
+    "orientation": "Orientasi",
+    "auto": "Otomatis",
+    "portrait": "Potret",
+    "landscape": "Lanskap",
+    "margin": "Margin",
+    "images": "{count, plural, one {# gambar} other {# gambar}}",
+    "remove": "Hapus {name}",
+    "moveUp": "Pindahkan {name} ke depan",
+    "moveDown": "Pindahkan {name} ke belakang",
+    "converting": "Mengonversi gambar…",
+    "unsupported": "“{name}” tidak dapat didekode oleh browser ini."
+  },
+  "toImages": {
+    "format": "Format",
+    "scale": "Resolusi",
+    "scaleHint": "{dpi} dpi",
+    "quality": "Kualitas JPG",
+    "pages": "Halaman",
+    "allPages": "Semua halaman",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Merender halaman {n} dari {total}…",
+    "download": "Unduh .zip",
+    "estimate": "{count, plural, one {# gambar} other {# gambar}} · {format}"
+  }
+}

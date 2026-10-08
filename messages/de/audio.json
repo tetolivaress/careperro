@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "Schneiden",
+    "volume": "Lautstärke",
+    "fade": "Blende",
+    "speed": "Tempo",
+    "normalize": "Normalisieren",
+    "merge": "Zusammenfügen",
+    "convert": "Konvertieren"
+  },
+  "drop": {
+    "title": "Audiodatei ablegen",
+    "titleMany": "Audiodateien zum Zusammenfügen ablegen",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · es wird nie etwas hochgeladen"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "Mono",
+  "stereo": "Stereo",
+  "player": {
+    "play": "Abspielen",
+    "pause": "Pause",
+    "toStart": "Zum Anfang",
+    "playSelection": "Auswahl abspielen",
+    "stop": "Stopp"
+  },
+  "trim": {
+    "start": "Anfang",
+    "end": "Ende",
+    "selection": "Auswahl",
+    "hint": "Die Griffe auf der Wellenform ziehen oder exakte Zeiten eingeben.",
+    "wholeFile": "Ganze Datei",
+    "reset": "Auswahl zurücksetzen"
+  },
+  "volume": {
+    "gain": "Verstärkung",
+    "hint": "Pegel anheben oder absenken. Über 0 dB Spitze übersteuert die Ausgabe.",
+    "currentPeak": "Aktuelle Spitze",
+    "afterGain": "Nach Verstärkung",
+    "clipWarning": "Diese Verstärkung treibt die Spitzen über 0 dB. Mit Übersteuerung rechnen oder Normalisieren aktivieren."
+  },
+  "fade": {
+    "in": "Einblenden",
+    "out": "Ausblenden",
+    "hint": "Lineare Rampen am Anfang und Ende der Ausgabe.",
+    "seconds": "{value} s"
+  },
+  "speed": {
+    "rate": "Wiedergabetempo",
+    "hint": "Die Tonhöhe ändert sich mit dem Tempo. Tonhöhenerhaltendes Strecken ist auf dem Gerät noch nicht verfügbar.",
+    "newDuration": "Neue Dauer",
+    "presets": "Tempo-Vorlagen"
+  },
+  "normalize": {
+    "enable": "Lautstärke normalisieren",
+    "enableHint": "Den Clip auf einen einheitlichen Pegel bringen",
+    "mode": "Messen nach",
+    "peak": "Spitze",
+    "rms": "RMS (Lautheit)",
+    "target": "Zielpegel",
+    "measured": "Gemessen",
+    "gainApplied": "Angewandte Verstärkung",
+    "analyzing": "Analyse läuft…"
+  },
+  "merge": {
+    "clips": "Clips in Reihenfolge",
+    "add": "Clips hinzufügen",
+    "moveUp": "Nach oben",
+    "moveDown": "Nach unten",
+    "remove": "Entfernen",
+    "total": "Gesamtlänge",
+    "hint": "Die Clips werden in dieser Reihenfolge aneinandergehängt. Schnitt, Verstärkung, Blenden und Tempo gelten für das zusammengefügte Ergebnis.",
+    "needMore": "Mindestens einen weiteren Clip zum Zusammenfügen hinzufügen."
+  },
+  "convert": {
+    "format": "Ausgabeformat",
+    "bitrate": "Bitrate",
+    "bitrateHint": "Höhere Bitrate, größere Datei. 192 kbps ist für die meiste Musik transparent.",
+    "wavHint": "WAV ist unkomprimiertes PCM — kein Qualitätsverlust, große Dateien.",
+    "estimated": "Geschätzte Ausgabe",
+    "ffmpegNote": "MP3, OGG und M4A nutzen einen Encoder auf dem Gerät (etwa 30 MB, einmal geladen und zwischengespeichert)."
+  },
+  "status": {
+    "loadingEncoder": "Encoder wird geladen…",
+    "rendering": "Audio wird gerendert…",
+    "encoding": "{format} wird kodiert…",
+    "done": "Fertig — {name}",
+    "decodeError": "„{name}“ kann nicht geöffnet werden",
+    "decodeErrorBody": "Diese Datei konnte nicht dekodiert werden. Besser MP3, WAV, OGG, M4A oder FLAC verwenden.",
+    "encoderError": "Der Encoder auf dem Gerät konnte nicht geladen werden. Verbindung prüfen und erneut versuchen oder als WAV exportieren.",
+    "cancelled": "Export abgebrochen",
+    "processedIn": "Auf diesem Gerät in {seconds} s verarbeitet",
+    "stepDecode": "Audio dekodiert",
+    "stepRender": "Bearbeitungen angewandt",
+    "stepEncode": "{format} kodiert",
+    "stepWrite": "Datei schreiben"
+  },
+  "export": {
+    "download": "{format} herunterladen",
+    "saved": "Im Download-Ordner gespeichert"
+  },
+  "recorder": {
+    "title": "Sprachrekorder",
+    "subtitle": "Nimmt vom Mikrofon auf. Das Audio bleibt in diesem Tab, bis es heruntergeladen wird.",
+    "start": "Aufnahme starten",
+    "stop": "Stopp",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "recording": "Aufnahme läuft",
+    "paused": "Pausiert",
+    "ready": "Bereit",
+    "permission": "Mikrofonzugriff erlauben, um zu starten.",
+    "denied": "Der Mikrofonzugriff wurde verweigert. Die Website-Berechtigungen im Browser prüfen.",
+    "unsupported": "Aufnahme wird in diesem Browser nicht unterstützt.",
+    "level": "Eingangspegel",
+    "take": "Take {n}",
+    "discard": "Verwerfen",
+    "openInEditor": "Im Editor öffnen",
+    "download": "Herunterladen",
+    "newTake": "Neuer Take",
+    "mic": "Mikrofon",
+    "defaultMic": "Standardmikrofon"
+  }
+}

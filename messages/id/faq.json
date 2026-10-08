@@ -1,1 +1,40 @@
-{}
+{
+  "howItWorks": "Cara kerjanya",
+  "faq": "Pertanyaan",
+  "steps": {
+    "1": {
+      "title": "Jatuhkan file",
+      "body": "Seret ke sini, klik untuk menelusuri, atau tempel dari papan klip. File dibaca langsung dari disk Anda ke tab ini."
+    },
+    "2": {
+      "title": "Atur dan pratinjau",
+      "body": "Setiap perubahan dirender langsung di perangkat ini dalam worker latar belakang. Indikator ukuran menampilkan hasilnya sebelum Anda mengekspor."
+    },
+    "3": {
+      "title": "Unduh",
+      "body": "Simpan hasilnya langsung ke folder unduhan Anda. Tidak ada yang diunggah; tutup tab dan semuanya hilang."
+    }
+  },
+  "items": {
+    "privacy": {
+      "q": "Apakah {tool} mengunggah file saya?",
+      "a": "Tidak. {tool} berjalan sepenuhnya di browser Anda dengan Web Worker dan WebAssembly. File Anda tidak pernah keluar dari perangkat, dan Caribito tidak memiliki server yang dapat menerimanya."
+    },
+    "offline": {
+      "q": "Apakah bisa bekerja offline?",
+      "a": "Ya. Setelah alat dimuat, alat tetap bekerja tanpa koneksi, dan Anda dapat menginstal Caribito sebagai aplikasi untuk akses cepat."
+    },
+    "limits": {
+      "q": "Apa batasannya?",
+      "a": "Satu-satunya batas adalah memori perangkat Anda. File yang sangat besar mungkin lambat di ponsel lama; alat akan memperingatkan Anda saat file melebihi ukuran yang disarankan."
+    },
+    "cost": {
+      "q": "Apakah gratis?",
+      "a": "Ya, gratis, tanpa pendaftaran dan tanpa iklan. Setiap alat bebas digunakan sepuasnya."
+    },
+    "formats": {
+      "q": "Format apa saja yang didukung?",
+      "a": "{formats}. Dukungan bergantung pada apa yang dapat didekode browser Anda; alat langsung memberi tahu jika file tidak dapat dibuka."
+    }
+  }
+}

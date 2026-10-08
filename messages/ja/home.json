@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "どんなファイルも編集。アップロードは一切なし。",
+  "subhead": "画像、音声、動画、PDF、コードのための {count} 個のツールが、すべてブラウザ内で動作します。アップロードなし、登録不要、広告なし。",
+  "subheadMobile": "スマートフォン内だけで動作する {count} 個のツール。アップロードなし、登録不要、広告なし。",
+  "drop": {
+    "title": "ファイルをドロップすると、ツールを提案します",
+    "subtitle": "またはクリックして選択 · 何もアップロードされません",
+    "titleMobile": "ファイルをドロップ、またはタップして選択",
+    "subtitleMobile": "最適なツールを提案します",
+    "more": "他 {count} 件",
+    "noTool": "「{name}」に対応するツールはまだありません。下のカテゴリからお探しください。"
+  },
+  "session": {
+    "title": "このセッション",
+    "networkIdle": "ネットワーク待機中",
+    "uploaded": "アップロード済み",
+    "filesProcessed": "ファイル処理済み"
+  },
+  "browseByCategory": "カテゴリから探す",
+  "allTools": "すべてのツール（{count} 個）",
+  "allToolsShort": "すべてのツール",
+  "suggestTool": "ツールを提案する",
+  "popular": "人気のツール",
+  "seeAll": "すべて表示",
+  "toolCount": "{count, plural, one {# 個のツール} other {# 個のツール}}",
+  "allToolsPage": {
+    "title": "すべてのツール",
+    "meta": "{count} 個のツール · すべてお使いの端末内で処理",
+    "description": "端末内で処理される {count} 個のツールすべてを、カテゴリ別に表示します。"
+  },
+  "category": {
+    "meta": "{count} 個のツール · {formats} · 端末内で処理",
+    "quickDrop": "ファイルをドロップして{tool}で開く",
+    "notAFile": "「{name}」は{category}ファイルではありません。",
+    "description": "{description}。{formats} に対応する {count} 個のツールを、端末内で処理します。"
+  }
+}

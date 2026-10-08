@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "Organiser",
+    "merge": "Fusionner",
+    "split": "Diviser",
+    "watermark": "Filigrane",
+    "page-numbers": "Numéros",
+    "sign": "Signer",
+    "compress": "Compresser"
+  },
+  "drop": {
+    "title": "Déposez un PDF ici",
+    "titleMany": "Déposez des PDF ici",
+    "subtitle": "ou cliquez pour parcourir · rien n'est jamais envoyé"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# page} other {# pages}}",
+    "files": "{count, plural, one {# fichier} other {# fichiers}}",
+    "selected": "{count} sélectionnées",
+    "addFiles": "Ajouter des fichiers",
+    "selectAll": "Tout sélectionner",
+    "clearSelection": "Effacer la sélection",
+    "clearAll": "Tout effacer",
+    "zoom": "Taille des vignettes"
+  },
+  "page": {
+    "label": "Page {n}",
+    "rotate": "Pivoter la page {n}",
+    "delete": "Supprimer la page {n}",
+    "moveLeft": "Avancer la page {n}",
+    "moveRight": "Reculer la page {n}",
+    "select": "Sélectionner la page {n}",
+    "dragHint": "Glissez pour réordonner",
+    "source": "Depuis {name}"
+  },
+  "organize": {
+    "hint": "Glissez les pages pour les réordonner. Utilisez les boutons de chaque page pour la pivoter ou la supprimer.",
+    "rotateAll": "Tout pivoter",
+    "reverse": "Inverser l'ordre",
+    "deleteSelected": "Supprimer la sélection",
+    "restore": "Restaurer l'ordre d'origine",
+    "rotateSelected": "Pivoter la sélection"
+  },
+  "merge": {
+    "hint": "Ajoutez d'autres PDF et glissez leurs pages dans l'ordre. Tout finit dans un seul fichier.",
+    "files": "Fichiers de ce document",
+    "remove": "Retirer {name}",
+    "moveUp": "Monter {name}",
+    "moveDown": "Descendre {name}"
+  },
+  "split": {
+    "mode": "Mode de division",
+    "ranges": "Plages de pages",
+    "every": "Chaque page",
+    "everyN": "Toutes les N pages",
+    "rangesHint": "ex. 1-3, 5, 8-10 · chaque plage devient un fichier",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "Pages par fichier",
+    "preview": "{count, plural, one {# fichier sera créé} other {# fichiers seront créés}}",
+    "invalid": "Vérifiez les plages : les pages doivent être comprises entre 1 et {max}.",
+    "single": "Un seul PDF des plages sélectionnées",
+    "zip": "Un fichier par plage (.zip)"
+  },
+  "watermark": {
+    "enable": "Ajouter un filigrane",
+    "kind": "Type",
+    "text": "Texte",
+    "image": "Image",
+    "textPlaceholder": "CONFIDENTIEL",
+    "uploadImage": "Choisir un logo",
+    "replaceImage": "Remplacer le logo",
+    "position": "Position",
+    "tile": "En mosaïque",
+    "opacity": "Opacité",
+    "size": "Taille",
+    "rotation": "Rotation",
+    "color": "Couleur"
+  },
+  "numbers": {
+    "enable": "Ajouter des numéros de page",
+    "position": "Position",
+    "start": "Commencer à",
+    "format": "Format",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "Page 1",
+    "size": "Taille"
+  },
+  "sign": {
+    "draw": "Dessiner",
+    "upload": "Importer",
+    "clear": "Effacer",
+    "use": "Utiliser la signature",
+    "hint": "Dessinez votre signature ci-dessous, puis glissez-la sur la page.",
+    "uploadHint": "Un PNG à fond transparent donne le meilleur résultat.",
+    "chooseImage": "Choisir une image",
+    "page": "Placer sur la page",
+    "size": "Taille",
+    "placed": "Signature placée sur la page {n}. Glissez-la pour la déplacer.",
+    "none": "Pas encore de signature",
+    "remove": "Retirer la signature"
+  },
+  "compress": {
+    "enable": "Réencoder les images",
+    "quality": "Qualité des images",
+    "maxDimension": "Taille max. des images",
+    "hint": "Les photos intégrées sont réencodées en JPEG. Le texte et les vecteurs restent intacts.",
+    "estimate": "Estimer",
+    "estimating": "Estimation…",
+    "result": "{count, plural, =0 {Aucune image n'a pu être réencodée} one {# image réencodée} other {# images réencodées}}",
+    "unsupported": "Ce navigateur ne peut pas réencoder les images en arrière-plan. Essayez Chrome, Edge, Firefox ou Safari 16.4+."
+  },
+  "export": {
+    "download": "Télécharger le PDF",
+    "downloadZip": "Télécharger le .zip",
+    "processing": "Création de votre PDF…",
+    "phase": {
+      "copy": "Copie des pages",
+      "watermark": "Ajout du filigrane",
+      "numbers": "Ajout des numéros de page",
+      "signature": "Placement de la signature",
+      "compress": "Réencodage des images",
+      "save": "Écriture du fichier"
+    },
+    "doneTitle": "Votre PDF est prêt",
+    "doneSplit": "{count, plural, one {# fichier prêt} other {# fichiers prêts}}",
+    "eta": "Traitement sur l'appareil · rien ne quitte votre ordinateur",
+    "errorTitle": "Une erreur s'est produite",
+    "encrypted": "Ce PDF est protégé par mot de passe. Retirez d'abord le mot de passe.",
+    "corrupt": "Ce fichier ne ressemble pas à un PDF valide.",
+    "back": "Retour aux pages",
+    "compressed": "Images réencodées : {count}"
+  },
+  "confirm": {
+    "clearTitle": "Effacer tous les fichiers ?",
+    "clearBody": "Toutes les pages et tous les réglages de cette session seront abandonnés. Rien n'a été envoyé, il n'y a donc rien à récupérer.",
+    "clear": "Effacer les fichiers",
+    "deleteTitle": "Supprimer {count, plural, one {# page} other {# pages}} ?",
+    "deleteBody": "Vous pouvez restaurer l'ordre d'origine, mais les pages supprimées ne reviennent qu'en rouvrant le fichier.",
+    "delete": "Supprimer",
+    "cancel": "Conserver"
+  },
+  "images": {
+    "title": "Images vers PDF",
+    "dropTitle": "Déposez des images ici",
+    "dropSubtitle": "JPG, PNG, WebP ou HEIC · une image par page",
+    "pageSize": "Format de page",
+    "fit": "Ajuster à l'image",
+    "a4": "A4",
+    "letter": "Lettre",
+    "orientation": "Orientation",
+    "auto": "Auto",
+    "portrait": "Portrait",
+    "landscape": "Paysage",
+    "margin": "Marge",
+    "images": "{count, plural, one {# image} other {# images}}",
+    "remove": "Retirer {name}",
+    "moveUp": "Avancer {name}",
+    "moveDown": "Reculer {name}",
+    "converting": "Conversion des images…",
+    "unsupported": "« {name} » n'a pas pu être décodé par ce navigateur."
+  },
+  "toImages": {
+    "format": "Format",
+    "scale": "Résolution",
+    "scaleHint": "{dpi} dpi",
+    "quality": "Qualité JPG",
+    "pages": "Pages",
+    "allPages": "Toutes les pages",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "Rendu de la page {n} sur {total}…",
+    "download": "Télécharger le .zip",
+    "estimate": "{count, plural, one {# image} other {# images}} · {format}"
+  }
+}

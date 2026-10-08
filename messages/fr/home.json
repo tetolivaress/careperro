@@ -1,1 +1,37 @@
-{}
+{
+  "headline": "Modifiez n'importe quel fichier. Sans rien envoyer.",
+  "subhead": "{count} outils pour les images, l'audio, la vidéo, les PDF et le code, qui tournent entièrement dans votre navigateur. Aucun envoi, aucune inscription, aucune publicité.",
+  "subheadMobile": "{count} outils qui tournent entièrement sur votre téléphone. Aucun envoi, aucune inscription, aucune publicité.",
+  "drop": {
+    "title": "Déposez un fichier et nous vous suggérons des outils",
+    "subtitle": "ou cliquez pour parcourir · rien n'est jamais envoyé",
+    "titleMobile": "Déposez un fichier ou touchez pour parcourir",
+    "subtitleMobile": "Nous vous suggérons les bons outils",
+    "more": "+{count} de plus",
+    "noTool": "Nous n'avons pas encore d'outil pour « {name} ». Parcourez les catégories ci-dessous."
+  },
+  "session": {
+    "title": "Cette session",
+    "networkIdle": "Réseau inactif",
+    "uploaded": "envoyés",
+    "filesProcessed": "fichiers traités"
+  },
+  "browseByCategory": "Parcourir par catégorie",
+  "allTools": "Les {count} outils",
+  "allToolsShort": "Tous les outils",
+  "suggestTool": "Suggérer un outil",
+  "popular": "Populaires en ce moment",
+  "seeAll": "Tout voir",
+  "toolCount": "{count, plural, one {# outil} other {# outils}}",
+  "allToolsPage": {
+    "title": "Tous les outils",
+    "meta": "{count} outils · tous traités sur votre appareil",
+    "description": "Les {count} outils sur appareil, regroupés par catégorie."
+  },
+  "category": {
+    "meta": "{count} outils · {formats} · traités sur votre appareil",
+    "quickDrop": "Déposez des fichiers pour les ouvrir dans {tool}",
+    "notAFile": "« {name} » n'est pas un fichier {category}.",
+    "description": "{description}. {count} outils pour {formats}, traités sur votre appareil."
+  }
+}

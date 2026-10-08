@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "Potong",
+    "volume": "Volume",
+    "fade": "Fade",
+    "speed": "Kecepatan",
+    "normalize": "Normalisasi",
+    "merge": "Gabung",
+    "convert": "Konversi"
+  },
+  "drop": {
+    "title": "Jatuhkan file audio",
+    "titleMany": "Jatuhkan file audio untuk digabung",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · tidak ada yang pernah diunggah"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "mono",
+  "stereo": "stereo",
+  "player": {
+    "play": "Putar",
+    "pause": "Jeda",
+    "toStart": "Kembali ke awal",
+    "playSelection": "Putar pilihan",
+    "stop": "Berhenti"
+  },
+  "trim": {
+    "start": "Awal",
+    "end": "Akhir",
+    "selection": "Pilihan",
+    "hint": "Seret pegangan pada gelombang suara atau ketik waktu persisnya.",
+    "wholeFile": "Seluruh file",
+    "reset": "Atur ulang pilihan"
+  },
+  "volume": {
+    "gain": "Gain",
+    "hint": "Naikkan atau turunkan level. Di atas puncak 0 dB, keluaran akan clipping.",
+    "currentPeak": "Puncak saat ini",
+    "afterGain": "Setelah gain",
+    "clipWarning": "Gain ini mendorong puncak di atas 0 dB. Akan terjadi clipping, atau aktifkan Normalisasi."
+  },
+  "fade": {
+    "in": "Fade in",
+    "out": "Fade out",
+    "hint": "Ramp linear di awal dan akhir keluaran.",
+    "seconds": "{value} dtk"
+  },
+  "speed": {
+    "rate": "Kecepatan putar",
+    "hint": "Pitch berubah mengikuti kecepatan. Peregangan dengan pitch tetap belum tersedia di perangkat.",
+    "newDuration": "Durasi baru",
+    "presets": "Preset kecepatan"
+  },
+  "normalize": {
+    "enable": "Normalisasi volume",
+    "enableHint": "Samakan level klip",
+    "mode": "Ukur berdasarkan",
+    "peak": "Puncak",
+    "rms": "RMS (kenyaringan)",
+    "target": "Level target",
+    "measured": "Terukur",
+    "gainApplied": "Gain diterapkan",
+    "analyzing": "Menganalisis…"
+  },
+  "merge": {
+    "clips": "Klip berurutan",
+    "add": "Tambah klip",
+    "moveUp": "Pindah ke atas",
+    "moveDown": "Pindah ke bawah",
+    "remove": "Hapus",
+    "total": "Total durasi",
+    "hint": "Klip disambung ujung ke ujung dalam urutan ini. Potongan, gain, fade, dan kecepatan diterapkan pada hasil gabungan.",
+    "needMore": "Tambahkan setidaknya satu klip lagi untuk menggabungkan."
+  },
+  "convert": {
+    "format": "Format keluaran",
+    "bitrate": "Bitrate",
+    "bitrateHint": "Bitrate lebih tinggi, file lebih besar. 192 kbps transparan untuk sebagian besar musik.",
+    "wavHint": "WAV adalah PCM tanpa kompresi — tanpa kehilangan kualitas, file besar.",
+    "estimated": "Perkiraan hasil",
+    "ffmpegNote": "MP3, OGG, dan M4A memakai encoder di perangkat (sekitar 30 MB, diunduh sekali dan disimpan di cache)."
+  },
+  "status": {
+    "loadingEncoder": "Mengunduh encoder…",
+    "rendering": "Merender audio…",
+    "encoding": "Mengenkode {format}…",
+    "done": "Selesai — {name}",
+    "decodeError": "Tidak dapat membuka “{name}”",
+    "decodeErrorBody": "File ini tidak dapat didekode. Coba MP3, WAV, OGG, M4A, atau FLAC.",
+    "encoderError": "Encoder di perangkat gagal dimuat. Periksa koneksi Anda dan coba lagi, atau ekspor sebagai WAV.",
+    "cancelled": "Ekspor dibatalkan",
+    "processedIn": "Diproses di perangkat ini dalam {seconds} dtk",
+    "stepDecode": "Audio didekode",
+    "stepRender": "Edit diterapkan",
+    "stepEncode": "{format} dienkode",
+    "stepWrite": "Tulis file"
+  },
+  "export": {
+    "download": "Unduh {format}",
+    "saved": "Disimpan ke folder unduhan Anda"
+  },
+  "recorder": {
+    "title": "Perekam suara",
+    "subtitle": "Merekam dari mikrofon Anda. Audio tetap di tab ini sampai Anda mengunduhnya.",
+    "start": "Mulai merekam",
+    "stop": "Berhenti",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "recording": "Merekam",
+    "paused": "Dijeda",
+    "ready": "Siap",
+    "permission": "Izinkan akses mikrofon untuk memulai.",
+    "denied": "Akses mikrofon ditolak. Periksa izin situs di browser Anda.",
+    "unsupported": "Perekaman tidak didukung di browser ini.",
+    "level": "Level masukan",
+    "take": "Take {n}",
+    "discard": "Buang",
+    "openInEditor": "Buka di editor",
+    "download": "Unduh",
+    "newTake": "Take baru",
+    "mic": "Mikrofon",
+    "defaultMic": "Mikrofon default"
+  }
+}

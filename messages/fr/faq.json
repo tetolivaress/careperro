@@ -1,1 +1,40 @@
-{}
+{
+  "howItWorks": "Comment ça marche",
+  "faq": "Questions",
+  "steps": {
+    "1": {
+      "title": "Déposez un fichier",
+      "body": "Glissez-le, cliquez pour parcourir ou collez-le depuis le presse-papiers. Il est lu directement depuis votre disque dans cet onglet."
+    },
+    "2": {
+      "title": "Ajustez et prévisualisez",
+      "body": "Chaque modification est rendue en direct sur cet appareil dans un worker en arrière-plan. L'indicateur de taille montre le résultat avant l'export."
+    },
+    "3": {
+      "title": "Téléchargez",
+      "body": "Enregistrez le résultat directement dans vos téléchargements. Rien n'a été envoyé ; fermez l'onglet et tout disparaît."
+    }
+  },
+  "items": {
+    "privacy": {
+      "q": "{tool} envoie-t-il mes fichiers ?",
+      "a": "Non. {tool} tourne entièrement dans votre navigateur grâce aux Web Workers et à WebAssembly. Vos fichiers ne quittent jamais votre appareil, et Caribito n'a aucun serveur qui pourrait les recevoir."
+    },
+    "offline": {
+      "q": "Ça marche hors ligne ?",
+      "a": "Oui. Une fois un outil chargé, il continue de fonctionner sans connexion, et vous pouvez installer Caribito comme application pour y accéder rapidement."
+    },
+    "limits": {
+      "q": "Quelles sont les limites ?",
+      "a": "La seule limite est la mémoire de votre appareil. Les très gros fichiers peuvent être lents sur les téléphones anciens ; l'outil vous prévient quand un fichier dépasse la taille recommandée."
+    },
+    "cost": {
+      "q": "C'est gratuit ?",
+      "a": "Oui, gratuit, sans inscription et sans publicité. Chaque outil peut être utilisé librement, autant que vous le souhaitez."
+    },
+    "formats": {
+      "q": "Quels formats sont pris en charge ?",
+      "a": "{formats}. La prise en charge dépend de ce que votre navigateur sait décoder ; l'outil vous indique immédiatement si un fichier ne peut pas être ouvert."
+    }
+  }
+}

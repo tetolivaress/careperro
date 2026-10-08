@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import ReactCrop, { centerCrop, makeAspectCrop, type Crop, type PercentCrop } from "react-image-crop";
-import "react-image-crop/dist/ReactCrop.css";
 import { ChevronsLeftRight, Loader } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { formatBytes } from "@/lib/formatBytes";

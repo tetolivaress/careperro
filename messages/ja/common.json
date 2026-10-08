@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "どんなファイルも編集。アップロードは一切なし。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "allTools": "すべてのツール",
+    "categories": "カテゴリ",
+    "workspace": "ワークスペース",
+    "collapseSidebar": "サイドバーを折りたたむ",
+    "expandSidebar": "サイドバーを展開",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "menu": "メニュー",
+    "backTo": "{title}に戻る",
+    "more": "その他",
+    "media": "メディア",
+    "primary": "メイン",
+    "main": "メインナビゲーション"
+  },
+  "search": {
+    "placeholder": "ツールを検索...",
+    "label": "ツールを検索",
+    "noResults": "「{query}」に一致するツールはありません。",
+    "navigate": "移動",
+    "open": "開く",
+    "summary": "{count} 個のツール · すべて端末内で処理",
+    "tools": "ツール"
+  },
+  "theme": {
+    "label": "テーマ",
+    "switchTo": "{theme}テーマに切り替え",
+    "dark": "ダーク",
+    "light": "ライト",
+    "auto": "自動",
+    "darkLabel": "ダーク",
+    "lightLabel": "ライト"
+  },
+  "language": {
+    "label": "言語",
+    "select": "言語を選択"
+  },
+  "privacyBadge": "ファイルはお使いの端末から出ません",
+  "offline": {
+    "title": "オフラインで動作",
+    "body": "アップロードなし、アカウント不要、トラッキングなし。デスクトップアプリのようにインストールできます。",
+    "install": "アプリをインストール",
+    "installHint": "アプリが PWA として読み込まれるとインストールできるようになります",
+    "installed": "インストール済み"
+  },
+  "announcement": {
+    "headline": "このドメインは売却可能です。",
+    "body": "ご興味がありますか？オファーをお待ちしています。",
+    "cta": "オファーを送る",
+    "dismiss": "お知らせを閉じる"
+  },
+  "footer": {
+    "links": "概要 · プライバシー · オープンソース"
+  },
+  "notFound": {
+    "title": "このページは存在しません",
+    "body": "ツールが移動した可能性があります。検索するか、ホームページからやり直してください。",
+    "back": "ホームに戻る"
+  },
+  "loading": "{name}を読み込み中…",
+  "error": {
+    "title": "問題が発生しました",
+    "body": "ツールで予期しないエラーが発生しました。ファイルは引き続きこの端末内にのみ保存されています。もう一度試すか、ページを再読み込みしてください。",
+    "retry": "再試行"
+  },
+  "unsupported": {
+    "body": "このブラウザには {features} がありません。ツールが動作しない可能性があります。最新の Chrome、Edge、Firefox、Safari をお試しください。"
+  }
+}

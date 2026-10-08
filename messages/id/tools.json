@@ -1,1 +1,293 @@
-{}
+{
+  "categories": {
+    "image": {
+      "name": "Gambar",
+      "title": "Alat gambar",
+      "description": "Kompres, ubah ukuran, pangkas, konversi, tanda air",
+      "formats": "JPG, PNG, WebP, AVIF, HEIC, GIF, SVG"
+    },
+    "audio": {
+      "name": "Audio",
+      "title": "Alat audio",
+      "description": "Potong, konversi, normalisasi, ubah kecepatan",
+      "formats": "MP3, WAV, OGG, M4A, FLAC"
+    },
+    "video": {
+      "name": "Video",
+      "title": "Alat video",
+      "description": "Potong, kompres, pangkas, ekstrak audio, GIF",
+      "formats": "MP4, WebM, MOV"
+    },
+    "pdf": {
+      "name": "PDF",
+      "title": "Alat PDF",
+      "description": "Gabung, pisah, kompres, tanda tangan, susun ulang",
+      "formats": "PDF"
+    },
+    "text": {
+      "name": "Teks",
+      "title": "Alat teks",
+      "description": "Hitung, bandingkan, ubah huruf besar-kecil, rapikan",
+      "formats": "Teks biasa, Markdown"
+    },
+    "dev": {
+      "name": "Developer",
+      "title": "Alat developer",
+      "description": "JSON, Base64, hash, regex, JWT, UUID",
+      "formats": "JSON, CSV, XLSX"
+    },
+    "privacy": {
+      "name": "Privasi",
+      "title": "Alat privasi",
+      "description": "Hapus metadata, sensor, enkripsi file",
+      "formats": "File apa pun"
+    }
+  },
+  "items": {
+    "image": {
+      "compress": {
+        "name": "Kompres gambar",
+        "description": "Perkecil JPG, PNG, dan WebP tanpa penurunan kualitas yang terlihat.",
+        "short": "Perkecil JPG, PNG, dan WebP"
+      },
+      "resize": {
+        "name": "Ubah ukuran gambar",
+        "description": "Piksel persis, persentase, atau preset media sosial."
+      },
+      "crop": {
+        "name": "Pangkas gambar",
+        "description": "Bebas atau rasio tetap seperti 1:1 dan 16:9."
+      },
+      "convert": {
+        "name": "Konversi format",
+        "description": "JPG, PNG, WebP, AVIF, dan sebaliknya."
+      },
+      "rotate": {
+        "name": "Putar & balik",
+        "description": "Perbaiki orientasi dalam satu klik, tanpa kehilangan kualitas."
+      },
+      "watermark": {
+        "name": "Tambah tanda air",
+        "description": "Teks atau logo, diposisikan atau berulang."
+      },
+      "filters": {
+        "name": "Filter & penyesuaian",
+        "description": "Kecerahan, kontras, saturasi, preset."
+      },
+      "remove-exif": {
+        "name": "Hapus data EXIF",
+        "description": "Hapus lokasi GPS dan detail kamera dari foto.",
+        "short": "Hapus lokasi dari foto"
+      },
+      "heic-to-jpg": {
+        "name": "HEIC ke JPG",
+        "description": "Buka foto iPhone di mana saja."
+      },
+      "images-to-pdf": {
+        "name": "Gambar ke PDF",
+        "description": "Gabungkan foto menjadi satu dokumen."
+      },
+      "favicon": {
+        "name": "Pembuat favicon",
+        "description": "Hasilkan semua ukuran ikon dari satu gambar."
+      }
+    },
+    "audio": {
+      "trim": {
+        "name": "Potong audio",
+        "description": "Potong, fade, dan ekspor ke MP3, WAV, atau OGG."
+      },
+      "convert": {
+        "name": "Konversi audio",
+        "description": "MP3, WAV, OGG, dan M4A dengan bitrate pilihan Anda."
+      },
+      "volume": {
+        "name": "Ubah volume",
+        "description": "Naikkan atau turunkan level tanpa clipping."
+      },
+      "fade": {
+        "name": "Fade in & out",
+        "description": "Awal dan akhir yang halus dengan kurva yang dapat diatur."
+      },
+      "speed": {
+        "name": "Ubah kecepatan",
+        "description": "Percepat atau perlambat, dengan atau tanpa perubahan pitch."
+      },
+      "normalize": {
+        "name": "Normalisasi volume",
+        "description": "Samakan kenyaringan setiap klip."
+      },
+      "merge": {
+        "name": "Gabung audio",
+        "description": "Satukan beberapa klip menjadi satu file."
+      },
+      "record": {
+        "name": "Perekam suara",
+        "description": "Rekam dari mikrofon dan unduh hasilnya."
+      }
+    },
+    "video": {
+      "trim": {
+        "name": "Potong video",
+        "description": "Potong klip tepat pada awal dan akhir yang Anda butuhkan."
+      },
+      "compress": {
+        "name": "Kompres video",
+        "description": "Pilih resolusi dan kualitas, lihat perkiraan ukurannya."
+      },
+      "convert": {
+        "name": "Konversi video",
+        "description": "MP4 ke WebM dan sebaliknya."
+      },
+      "to-gif": {
+        "name": "Video ke GIF",
+        "description": "Ubah klip pendek menjadi loop ringan."
+      },
+      "extract-audio": {
+        "name": "Ekstrak audio",
+        "description": "Simpan trek suara sebagai MP3 atau WAV."
+      },
+      "remove-audio": {
+        "name": "Hapus audio",
+        "description": "Bisukan video secara permanen."
+      },
+      "crop": {
+        "name": "Pangkas video",
+        "description": "Bingkai ulang ke 9:16, 1:1, atau 16:9."
+      },
+      "watermark": {
+        "name": "Tanda air video",
+        "description": "Tumpangkan teks atau logo."
+      },
+      "capture-frame": {
+        "name": "Tangkap frame",
+        "description": "Simpan frame mana pun sebagai PNG atau JPG."
+      },
+      "record": {
+        "name": "Perekam layar & webcam",
+        "description": "Rekam layar atau kamera Anda, lalu edit hasilnya."
+      }
+    },
+    "pdf": {
+      "merge": {
+        "name": "Gabung PDF",
+        "description": "Gabungkan dokumen dan seret halaman untuk mengurutkannya.",
+        "short": "Gabungkan dan susun ulang halaman"
+      },
+      "split": {
+        "name": "Pisah PDF",
+        "description": "Ekstrak rentang halaman atau pecah menjadi halaman tunggal."
+      },
+      "organize": {
+        "name": "Atur halaman",
+        "description": "Susun ulang, putar, dan hapus halaman dalam kisi."
+      },
+      "to-images": {
+        "name": "PDF ke gambar",
+        "description": "Render setiap halaman ke PNG atau JPG dan unduh sebagai zip."
+      },
+      "compress": {
+        "name": "Kompres PDF",
+        "description": "Enkode ulang gambar tersemat untuk memperkecil file."
+      },
+      "watermark": {
+        "name": "Tanda air PDF",
+        "description": "Bubuhkan teks atau gambar di setiap halaman."
+      },
+      "page-numbers": {
+        "name": "Tambah nomor halaman",
+        "description": "Nomor di posisi dan gaya pilihan Anda."
+      },
+      "sign": {
+        "name": "Tanda tangani PDF",
+        "description": "Gambar atau unggah tanda tangan dan letakkan di halaman."
+      }
+    },
+    "text": {
+      "word-counter": {
+        "name": "Penghitung kata & karakter",
+        "description": "Kata, karakter, kalimat, dan waktu baca."
+      },
+      "case-converter": {
+        "name": "Pengubah huruf besar-kecil",
+        "description": "UPPER, lower, Title, camelCase, snake_case, dan lainnya."
+      },
+      "diff": {
+        "name": "Perbandingan teks",
+        "description": "Bandingkan dua teks baris demi baris."
+      },
+      "markdown": {
+        "name": "Pratinjau Markdown",
+        "description": "Tulis Markdown dan lihat hasil rendernya secara langsung."
+      },
+      "ocr": {
+        "name": "Gambar ke teks (OCR)",
+        "description": "Ambil teks yang dapat diedit dari tangkapan layar dan hasil pindaian."
+      },
+      "text-to-speech": {
+        "name": "Teks ke ucapan",
+        "description": "Bacakan teks apa pun dengan suara perangkat Anda."
+      }
+    },
+    "dev": {
+      "json": {
+        "name": "Pemformat JSON",
+        "description": "Format, validasi, dan minify JSON seketika."
+      },
+      "base64": {
+        "name": "Enkode & dekode Base64",
+        "description": "Teks dan file ke Base64 dan sebaliknya."
+      },
+      "url": {
+        "name": "Enkode & dekode URL",
+        "description": "Escape dan unescape URL serta query string."
+      },
+      "jwt": {
+        "name": "Dekoder JWT",
+        "description": "Periksa header, payload, dan masa berlaku token."
+      },
+      "hash": {
+        "name": "Generator hash",
+        "description": "SHA-1, SHA-256, dan SHA-512 untuk teks atau file."
+      },
+      "uuid": {
+        "name": "Generator UUID",
+        "description": "Hasilkan UUID v4 satu per satu atau sekaligus."
+      },
+      "color": {
+        "name": "Konverter warna",
+        "description": "HEX, RGB, dan HSL berdampingan dengan contoh warna langsung."
+      },
+      "palette": {
+        "name": "Generator palet",
+        "description": "Buat palet harmonis dari satu warna dasar."
+      },
+      "regex": {
+        "name": "Penguji regex",
+        "description": "Uji pola dengan kecocokan dan grup secara langsung."
+      },
+      "csv": {
+        "name": "Konverter CSV, JSON & Excel",
+        "description": "Konversi tabel antara CSV, JSON, dan XLSX."
+      }
+    },
+    "privacy": {
+      "password": {
+        "name": "Generator kata sandi",
+        "description": "Kata sandi dan frasa sandi acak yang kuat."
+      },
+      "encrypt": {
+        "name": "Enkripsi & dekripsi file",
+        "description": "Kunci file apa pun dengan kata sandi menggunakan AES-GCM."
+      },
+      "qr": {
+        "name": "Generator & pemindai kode QR",
+        "description": "Buat kode QR atau baca dari gambar."
+      },
+      "zip": {
+        "name": "Zip & unzip",
+        "description": "Bundel file ke dalam zip atau ekstrak isinya."
+      }
+    }
+  }
+}

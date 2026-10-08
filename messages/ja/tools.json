@@ -1,1 +1,293 @@
-{}
+{
+  "categories": {
+    "image": {
+      "name": "画像",
+      "title": "画像ツール",
+      "description": "圧縮、リサイズ、トリミング、変換、透かし",
+      "formats": "JPG, PNG, WebP, AVIF, HEIC, GIF, SVG"
+    },
+    "audio": {
+      "name": "音声",
+      "title": "音声ツール",
+      "description": "トリミング、変換、ノーマライズ、速度変更",
+      "formats": "MP3, WAV, OGG, M4A, FLAC"
+    },
+    "video": {
+      "name": "動画",
+      "title": "動画ツール",
+      "description": "トリミング、圧縮、クロップ、音声抽出、GIF",
+      "formats": "MP4, WebM, MOV"
+    },
+    "pdf": {
+      "name": "PDF",
+      "title": "PDF ツール",
+      "description": "結合、分割、圧縮、署名、並べ替え",
+      "formats": "PDF"
+    },
+    "text": {
+      "name": "テキスト",
+      "title": "テキストツール",
+      "description": "カウント、比較、大文字小文字変換、整形",
+      "formats": "プレーンテキスト, Markdown"
+    },
+    "dev": {
+      "name": "開発者",
+      "title": "開発者ツール",
+      "description": "JSON、Base64、ハッシュ、正規表現、JWT、UUID",
+      "formats": "JSON, CSV, XLSX"
+    },
+    "privacy": {
+      "name": "プライバシー",
+      "title": "プライバシーツール",
+      "description": "メタデータ削除、墨消し、ファイル暗号化",
+      "formats": "あらゆるファイル"
+    }
+  },
+  "items": {
+    "image": {
+      "compress": {
+        "name": "画像を圧縮",
+        "description": "JPG、PNG、WebP を目に見える画質低下なしで軽量化。",
+        "short": "JPG、PNG、WebP を軽量化"
+      },
+      "resize": {
+        "name": "画像をリサイズ",
+        "description": "ピクセル指定、パーセント指定、SNS 向けプリセット。"
+      },
+      "crop": {
+        "name": "画像をトリミング",
+        "description": "自由トリミング、または 1:1 や 16:9 などの固定比率。"
+      },
+      "convert": {
+        "name": "形式を変換",
+        "description": "JPG、PNG、WebP、AVIF を相互に変換。"
+      },
+      "rotate": {
+        "name": "回転と反転",
+        "description": "ワンクリックで向きをロスレス修正。"
+      },
+      "watermark": {
+        "name": "透かしを追加",
+        "description": "テキストやロゴを、位置指定またはタイル状に。"
+      },
+      "filters": {
+        "name": "フィルターと調整",
+        "description": "明るさ、コントラスト、彩度、プリセット。"
+      },
+      "remove-exif": {
+        "name": "EXIF データを削除",
+        "description": "写真から GPS 位置情報とカメラ情報を取り除きます。",
+        "short": "写真から位置情報を削除"
+      },
+      "heic-to-jpg": {
+        "name": "HEIC から JPG へ",
+        "description": "iPhone の写真をどこでも開けるように。"
+      },
+      "images-to-pdf": {
+        "name": "画像を PDF に",
+        "description": "複数の写真を 1 つの文書にまとめます。"
+      },
+      "favicon": {
+        "name": "ファビコン作成",
+        "description": "1 枚の画像からすべてのアイコンサイズを生成。"
+      }
+    },
+    "audio": {
+      "trim": {
+        "name": "音声をトリミング",
+        "description": "カット、フェードして MP3、WAV、OGG に書き出し。"
+      },
+      "convert": {
+        "name": "音声を変換",
+        "description": "MP3、WAV、OGG、M4A をお好みのビットレートで。"
+      },
+      "volume": {
+        "name": "音量を変更",
+        "description": "クリッピングなしで音量を上げ下げ。"
+      },
+      "fade": {
+        "name": "フェードイン・アウト",
+        "description": "カーブを調整できる滑らかな始まりと終わり。"
+      },
+      "speed": {
+        "name": "速度を変更",
+        "description": "ピッチ変更あり・なしで速くしたり遅くしたり。"
+      },
+      "normalize": {
+        "name": "音量をノーマライズ",
+        "description": "すべてのクリップを一定のラウドネスに揃えます。"
+      },
+      "merge": {
+        "name": "音声を結合",
+        "description": "複数のクリップを 1 つのファイルに。"
+      },
+      "record": {
+        "name": "ボイスレコーダー",
+        "description": "マイクから録音してテイクをダウンロード。"
+      }
+    },
+    "video": {
+      "trim": {
+        "name": "動画をトリミング",
+        "description": "必要な開始点と終了点でクリップを正確にカット。"
+      },
+      "compress": {
+        "name": "動画を圧縮",
+        "description": "解像度と画質を選んで、推定サイズを確認。"
+      },
+      "convert": {
+        "name": "動画を変換",
+        "description": "MP4 と WebM を相互に変換。"
+      },
+      "to-gif": {
+        "name": "動画を GIF に",
+        "description": "短いクリップを軽量なループ GIF に。"
+      },
+      "extract-audio": {
+        "name": "音声を抽出",
+        "description": "サウンドトラックを MP3 または WAV で保存。"
+      },
+      "remove-audio": {
+        "name": "音声を削除",
+        "description": "動画を完全にミュート。"
+      },
+      "crop": {
+        "name": "動画をクロップ",
+        "description": "9:16、1:1、16:9 に構図を変更。"
+      },
+      "watermark": {
+        "name": "動画に透かし",
+        "description": "テキストやロゴを重ねます。"
+      },
+      "capture-frame": {
+        "name": "フレームをキャプチャ",
+        "description": "任意のフレームを PNG または JPG で保存。"
+      },
+      "record": {
+        "name": "画面・ウェブカメラ録画",
+        "description": "画面やカメラを録画して、そのまま編集。"
+      }
+    },
+    "pdf": {
+      "merge": {
+        "name": "PDF を結合",
+        "description": "文書を結合し、ページをドラッグして並べ替え。",
+        "short": "結合してページを並べ替え"
+      },
+      "split": {
+        "name": "PDF を分割",
+        "description": "ページ範囲を抽出、または 1 ページずつに分割。"
+      },
+      "organize": {
+        "name": "ページを整理",
+        "description": "グリッド表示でページを並べ替え、回転、削除。"
+      },
+      "to-images": {
+        "name": "PDF を画像に",
+        "description": "各ページを PNG または JPG に書き出して zip でダウンロード。"
+      },
+      "compress": {
+        "name": "PDF を圧縮",
+        "description": "埋め込み画像を再エンコードしてファイルを軽量化。"
+      },
+      "watermark": {
+        "name": "PDF に透かし",
+        "description": "全ページにテキストや画像を重ねます。"
+      },
+      "page-numbers": {
+        "name": "ページ番号を追加",
+        "description": "位置とスタイルを選んで番号を付けます。"
+      },
+      "sign": {
+        "name": "PDF に署名",
+        "description": "署名を手書きまたはアップロードしてページに配置。"
+      }
+    },
+    "text": {
+      "word-counter": {
+        "name": "文字数・単語数カウンター",
+        "description": "単語数、文字数、文の数、読了時間。"
+      },
+      "case-converter": {
+        "name": "大文字小文字変換",
+        "description": "大文字、小文字、タイトルケース、camelCase、snake_case など。"
+      },
+      "diff": {
+        "name": "テキスト差分",
+        "description": "2 つのテキストを行ごとに比較。"
+      },
+      "markdown": {
+        "name": "Markdown プレビュー",
+        "description": "Markdown を書いて、描画結果をリアルタイムで確認。"
+      },
+      "ocr": {
+        "name": "画像からテキスト (OCR)",
+        "description": "スクリーンショットやスキャンから編集可能なテキストを抽出。"
+      },
+      "text-to-speech": {
+        "name": "テキスト読み上げ",
+        "description": "端末の音声でどんなテキストも読み上げ。"
+      }
+    },
+    "dev": {
+      "json": {
+        "name": "JSON フォーマッター",
+        "description": "JSON を瞬時に整形、検証、最小化。"
+      },
+      "base64": {
+        "name": "Base64 エンコード・デコード",
+        "description": "テキストやファイルを Base64 に、またその逆に。"
+      },
+      "url": {
+        "name": "URL エンコード・デコード",
+        "description": "URL やクエリ文字列をエスケープ・復元。"
+      },
+      "jwt": {
+        "name": "JWT デコーダー",
+        "description": "トークンのヘッダー、ペイロード、有効期限を確認。"
+      },
+      "hash": {
+        "name": "ハッシュ生成",
+        "description": "テキストやファイルの SHA-1、SHA-256、SHA-512。"
+      },
+      "uuid": {
+        "name": "UUID 生成",
+        "description": "v4 UUID を 1 つずつ、または一括で生成。"
+      },
+      "color": {
+        "name": "カラー変換",
+        "description": "HEX、RGB、HSL を並べて表示し、色見本をリアルタイム更新。"
+      },
+      "palette": {
+        "name": "パレット生成",
+        "description": "ベースカラーから調和の取れたパレットを作成。"
+      },
+      "regex": {
+        "name": "正規表現テスター",
+        "description": "マッチとグループをリアルタイムで確認しながらパターンをテスト。"
+      },
+      "csv": {
+        "name": "CSV・JSON・Excel 変換",
+        "description": "表データを CSV、JSON、XLSX の間で変換。"
+      }
+    },
+    "privacy": {
+      "password": {
+        "name": "パスワード生成",
+        "description": "強力なランダムパスワードとパスフレーズ。"
+      },
+      "encrypt": {
+        "name": "ファイルの暗号化・復号",
+        "description": "AES-GCM でどんなファイルもパスワード保護。"
+      },
+      "qr": {
+        "name": "QR コード生成・読み取り",
+        "description": "QR コードを作成、または画像から読み取り。"
+      },
+      "zip": {
+        "name": "Zip 圧縮・解凍",
+        "description": "ファイルを zip にまとめる、または展開する。"
+      }
+    }
+  }
+}

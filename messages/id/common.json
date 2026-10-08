@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "Edit file apa pun. Tanpa mengunggah apa pun."
+  },
+  "nav": {
+    "home": "Beranda",
+    "allTools": "Semua alat",
+    "categories": "Kategori",
+    "workspace": "Ruang kerja",
+    "collapseSidebar": "Ciutkan bilah samping",
+    "expandSidebar": "Perluas bilah samping",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "menu": "Menu",
+    "backTo": "Kembali ke {title}",
+    "more": "Lainnya",
+    "media": "Media",
+    "primary": "Utama",
+    "main": "Utama"
+  },
+  "search": {
+    "placeholder": "Cari alat...",
+    "label": "Cari alat",
+    "noResults": "Tidak ada alat yang cocok dengan “{query}”.",
+    "navigate": "navigasi",
+    "open": "buka",
+    "summary": "{count} alat · semuanya di perangkat",
+    "tools": "Alat"
+  },
+  "theme": {
+    "label": "Tema",
+    "switchTo": "Beralih ke tema {theme}",
+    "dark": "gelap",
+    "light": "terang",
+    "auto": "Otomatis",
+    "darkLabel": "Gelap",
+    "lightLabel": "Terang"
+  },
+  "language": {
+    "label": "Bahasa",
+    "select": "Pilih bahasa"
+  },
+  "privacyBadge": "File Anda tetap di perangkat Anda",
+  "offline": {
+    "title": "Bekerja offline",
+    "body": "Tanpa unggahan, tanpa akun, tanpa pelacakan. Instal seperti aplikasi desktop.",
+    "install": "Instal aplikasi",
+    "installHint": "Instalasi tersedia setelah aplikasi dimuat sebagai PWA",
+    "installed": "Terinstal"
+  },
+  "announcement": {
+    "headline": "Domain ini dijual.",
+    "body": "Tertarik memilikinya? Kami terbuka untuk penawaran.",
+    "cta": "Ajukan penawaran",
+    "dismiss": "Tutup pengumuman"
+  },
+  "footer": {
+    "links": "Tentang · Privasi · Sumber terbuka"
+  },
+  "notFound": {
+    "title": "Halaman itu tidak ada",
+    "body": "Alat mungkin sudah dipindahkan. Coba pencarian, atau mulai dari beranda.",
+    "back": "Kembali ke beranda"
+  },
+  "loading": "Memuat {name}…",
+  "error": {
+    "title": "Terjadi kesalahan",
+    "body": "Alat mengalami kesalahan tak terduga. File Anda tetap hanya ada di perangkat ini. Coba lagi, atau muat ulang halaman.",
+    "retry": "Coba lagi"
+  },
+  "unsupported": {
+    "body": "Browser ini tidak memiliki {features}. Alat mungkin tidak berfungsi; coba Chrome, Edge, Firefox, atau Safari versi terbaru."
+  }
+}

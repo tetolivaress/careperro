@@ -1,1 +1,123 @@
-{}
+{
+  "tabs": {
+    "trim": "剪辑",
+    "volume": "音量",
+    "fade": "淡化",
+    "speed": "速度",
+    "normalize": "标准化",
+    "merge": "合并",
+    "convert": "转换"
+  },
+  "drop": {
+    "title": "拖入音频文件",
+    "titleMany": "拖入要合并的音频文件",
+    "subtitle": "MP3, WAV, OGG, M4A, FLAC · 绝不上传任何内容"
+  },
+  "meta": "{duration} · {format} · {size} · {rate} kHz {channels}",
+  "mono": "单声道",
+  "stereo": "立体声",
+  "player": {
+    "play": "播放",
+    "pause": "暂停",
+    "toStart": "回到开头",
+    "playSelection": "播放选区",
+    "stop": "停止"
+  },
+  "trim": {
+    "start": "开始",
+    "end": "结束",
+    "selection": "选区",
+    "hint": "拖动波形上的控制点，或输入精确时间。",
+    "wholeFile": "整个文件",
+    "reset": "重置选区"
+  },
+  "volume": {
+    "gain": "增益",
+    "hint": "提高或降低音量。峰值超过 0 dB 时输出会削波。",
+    "currentPeak": "当前峰值",
+    "afterGain": "增益后",
+    "clipWarning": "此增益会使峰值超过 0 dB。可能出现削波，或请启用标准化。"
+  },
+  "fade": {
+    "in": "淡入",
+    "out": "淡出",
+    "hint": "在输出的开头和结尾应用线性渐变。",
+    "seconds": "{value} 秒"
+  },
+  "speed": {
+    "rate": "播放速度",
+    "hint": "音调会随速度变化。保持音调的变速功能暂不支持本地处理。",
+    "newDuration": "新时长",
+    "presets": "速度预设"
+  },
+  "normalize": {
+    "enable": "音量标准化",
+    "enableHint": "让音频达到一致的音量",
+    "mode": "测量方式",
+    "peak": "峰值",
+    "rms": "RMS（响度）",
+    "target": "目标电平",
+    "measured": "测量值",
+    "gainApplied": "已应用增益",
+    "analyzing": "分析中…"
+  },
+  "merge": {
+    "clips": "片段顺序",
+    "add": "添加片段",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "remove": "移除",
+    "total": "总时长",
+    "hint": "片段按此顺序首尾相接。剪辑、增益、淡化和速度将应用于合并后的结果。",
+    "needMore": "至少再添加一个片段才能合并。"
+  },
+  "convert": {
+    "format": "输出格式",
+    "bitrate": "比特率",
+    "bitrateHint": "比特率越高，文件越大。对大多数音乐而言 192 kbps 已无损感知。",
+    "wavHint": "WAV 是未压缩的 PCM — 无画质损失，但文件较大。",
+    "estimated": "预计输出",
+    "ffmpegNote": "MP3、OGG 和 M4A 使用本地编码器（约 30 MB，仅下载一次并缓存）。"
+  },
+  "status": {
+    "loadingEncoder": "正在下载编码器…",
+    "rendering": "正在渲染音频…",
+    "encoding": "正在编码 {format}…",
+    "done": "完成 — {name}",
+    "decodeError": "无法打开“{name}”",
+    "decodeErrorBody": "无法解码此文件。请尝试 MP3、WAV、OGG、M4A 或 FLAC。",
+    "encoderError": "本地编码器加载失败。请检查网络连接后重试，或导出为 WAV。",
+    "cancelled": "导出已取消",
+    "processedIn": "已在本设备上处理，用时 {seconds} 秒",
+    "stepDecode": "已解码音频",
+    "stepRender": "已应用编辑",
+    "stepEncode": "已编码 {format}",
+    "stepWrite": "写入文件"
+  },
+  "export": {
+    "download": "下载 {format}",
+    "saved": "已保存到下载文件夹"
+  },
+  "recorder": {
+    "title": "录音机",
+    "subtitle": "通过麦克风录音。音频在您下载前仅保留在此标签页中。",
+    "start": "开始录音",
+    "stop": "停止",
+    "pause": "暂停",
+    "resume": "继续",
+    "recording": "录音中",
+    "paused": "已暂停",
+    "ready": "就绪",
+    "permission": "请允许访问麦克风以开始。",
+    "denied": "麦克风访问被拒绝。请检查浏览器的网站权限。",
+    "unsupported": "此浏览器不支持录音。",
+    "level": "输入电平",
+    "take": "第 {n} 次录音",
+    "discard": "丢弃",
+    "openInEditor": "在编辑器中打开",
+    "download": "下载",
+    "newTake": "重新录制",
+    "mic": "麦克风",
+    "defaultMic": "默认麦克风"
+  }
+}

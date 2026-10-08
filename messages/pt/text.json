@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "Caracteres",
+    "charactersNoSpaces": "Sem espaços",
+    "words": "Palavras",
+    "sentences": "Frases",
+    "paragraphs": "Parágrafos",
+    "lines": "Linhas",
+    "bytes": "Bytes (UTF-8)",
+    "reading": "Tempo de leitura",
+    "speaking": "Tempo de fala",
+    "minutes": "{count, plural, =0 {< 1 min} one {# min} other {# min}}",
+    "topWords": "Palavras mais frequentes",
+    "placeholder": "Cole ou digite seu texto aqui…",
+    "summary": "{words} palavras · {characters} caracteres"
+  },
+  "case": {
+    "mode": "Converter para",
+    "upper": "MAIÚSCULAS",
+    "lower": "minúsculas",
+    "title": "Iniciais Maiúsculas",
+    "sentence": "Primeira letra maiúscula",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "aLtErNaDo",
+    "inverse": "iNVERTIDO",
+    "placeholder": "Digite o texto para converter…"
+  },
+  "diff": {
+    "original": "Original",
+    "changed": "Alterado",
+    "mode": "Comparar por",
+    "lines": "Linhas",
+    "words": "Palavras",
+    "chars": "Caracteres",
+    "ignoreCase": "Ignorar maiúsculas/minúsculas",
+    "ignoreWhitespace": "Ignorar espaços",
+    "added": "{count} adicionadas",
+    "removed": "{count} removidas",
+    "identical": "Os dois textos são idênticos.",
+    "placeholderA": "Cole o texto original…",
+    "placeholderB": "Cole o texto alterado…",
+    "result": "Diferenças"
+  },
+  "markdown": {
+    "preview": "Prévia",
+    "html": "HTML",
+    "placeholder": "# Olá\n\nEscreva **Markdown** aqui…",
+    "downloadHtml": "Baixar .html",
+    "gfm": "Estilo GitHub"
+  },
+  "ocr": {
+    "language": "Idioma",
+    "drop": "Solte uma captura de tela ou digitalização",
+    "dropSubtitle": "PNG, JPG, WebP · reconhecido inteiramente no seu dispositivo",
+    "loadingEngine": "Carregando o motor de reconhecimento…",
+    "recognizing": "Reconhecendo texto…",
+    "steps": {
+      "load": "Carregar motor",
+      "language": "Carregar dados do idioma",
+      "recognize": "Reconhecer texto"
+    },
+    "result": "Texto reconhecido",
+    "confidence": "Confiança {percent}%",
+    "empty": "Nenhum texto foi encontrado nesta imagem.",
+    "firstRunNote": "A primeira execução baixa o motor de reconhecimento (cerca de 15 MB). Sua imagem nunca sai deste dispositivo.",
+    "downloadTxt": "Baixar .txt",
+    "langs": {
+      "eng": "Inglês",
+      "spa": "Espanhol",
+      "fra": "Francês",
+      "deu": "Alemão",
+      "por": "Português",
+      "ita": "Italiano",
+      "jpn": "Japonês",
+      "chi_sim": "Chinês (simplificado)",
+      "ara": "Árabe",
+      "rus": "Russo",
+      "hin": "Hindi",
+      "ind": "Indonésio"
+    }
+  },
+  "tts": {
+    "voice": "Voz",
+    "rate": "Velocidade",
+    "pitch": "Tom",
+    "volume": "Volume",
+    "play": "Falar",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "stop": "Parar",
+    "placeholder": "Digite algo para ler em voz alta…",
+    "unsupported": "Seu navegador não suporta síntese de voz.",
+    "noVoices": "Nenhuma voz disponível ainda. Tente de novo em um instante.",
+    "speaking": "Falando…",
+    "paused": "Pausado",
+    "idle": "Pronto",
+    "controls": "Reprodução",
+    "hint": "As vozes vêm do seu sistema operacional; nada é enviado a lugar nenhum."
+  }
+}

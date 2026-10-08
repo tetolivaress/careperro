@@ -1,1 +1,40 @@
-{}
+{
+  "howItWorks": "So funktioniert es",
+  "faq": "Fragen",
+  "steps": {
+    "1": {
+      "title": "Datei ablegen",
+      "body": "Hineinziehen, klicken zum Auswählen oder aus der Zwischenablage einfügen. Die Datei wird direkt von der Festplatte in diesen Tab gelesen."
+    },
+    "2": {
+      "title": "Anpassen und Vorschau",
+      "body": "Jede Änderung wird live auf diesem Gerät in einem Hintergrund-Worker gerendert. Die Größenanzeige zeigt das Ergebnis vor dem Export."
+    },
+    "3": {
+      "title": "Herunterladen",
+      "body": "Das Ergebnis direkt im Download-Ordner speichern. Nichts wurde hochgeladen; Tab schließen und es ist weg."
+    }
+  },
+  "items": {
+    "privacy": {
+      "q": "Lädt {tool} meine Dateien hoch?",
+      "a": "Nein. {tool} läuft komplett im Browser mit Web Workers und WebAssembly. Die Dateien verlassen das Gerät nie, und Caribito hat keine Server, die sie empfangen könnten."
+    },
+    "offline": {
+      "q": "Funktioniert es offline?",
+      "a": "Ja. Sobald ein Tool geladen ist, funktioniert es auch ohne Verbindung weiter, und Caribito lässt sich für schnellen Zugriff als App installieren."
+    },
+    "limits": {
+      "q": "Wo liegen die Grenzen?",
+      "a": "Die einzige Grenze ist der Arbeitsspeicher des Geräts. Sehr große Dateien können auf älteren Smartphones langsam sein; das Tool warnt, wenn eine Datei die empfohlene Größe überschreitet."
+    },
+    "cost": {
+      "q": "Ist es kostenlos?",
+      "a": "Ja, kostenlos, ohne Anmeldung und ohne Werbung. Jedes Tool darf beliebig oft genutzt werden."
+    },
+    "formats": {
+      "q": "Welche Formate werden unterstützt?",
+      "a": "{formats}. Die Unterstützung hängt davon ab, was der Browser dekodieren kann; das Tool meldet sofort, wenn sich eine Datei nicht öffnen lässt."
+    }
+  }
+}

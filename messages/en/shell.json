@@ -71,6 +71,9 @@
     "paste": "Paste",
     "sample": "Load sample",
     "characters": "{count} characters",
-    "uploadFile": "Open a file"
+    "uploadFile": "Open a file",
+    "download": "Download",
+    "copyFailed": "Couldn't copy to the clipboard",
+    "pasteFailed": "Couldn't read the clipboard"
   }
 }

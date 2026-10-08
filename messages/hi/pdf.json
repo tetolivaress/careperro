@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "व्यवस्थित",
+    "merge": "मर्ज",
+    "split": "स्प्लिट",
+    "watermark": "वॉटरमार्क",
+    "page-numbers": "नंबर",
+    "sign": "साइन",
+    "compress": "कंप्रेस"
+  },
+  "drop": {
+    "title": "PDF यहाँ डालें",
+    "titleMany": "PDF फ़ाइलें यहाँ डालें",
+    "subtitle": "या ब्राउज़ करने के लिए क्लिक करें · कुछ भी अपलोड नहीं होता, कभी नहीं"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# पेज} other {# पेज}}",
+    "files": "{count, plural, one {# फ़ाइल} other {# फ़ाइलें}}",
+    "selected": "{count} चुने गए",
+    "addFiles": "फ़ाइलें जोड़ें",
+    "selectAll": "सभी चुनें",
+    "clearSelection": "चयन हटाएँ",
+    "clearAll": "सभी हटाएँ",
+    "zoom": "थंबनेल आकार"
+  },
+  "page": {
+    "label": "पेज {n}",
+    "rotate": "पेज {n} घुमाएँ",
+    "delete": "पेज {n} हटाएँ",
+    "moveLeft": "पेज {n} को पहले ले जाएँ",
+    "moveRight": "पेज {n} को बाद में ले जाएँ",
+    "select": "पेज {n} चुनें",
+    "dragHint": "क्रम बदलने के लिए खींचें",
+    "source": "{name} से"
+  },
+  "organize": {
+    "hint": "क्रम बदलने के लिए पेज खींचें। घुमाने या हटाने के लिए हर पेज पर दिए बटन इस्तेमाल करें।",
+    "rotateAll": "सभी घुमाएँ",
+    "reverse": "क्रम उलटें",
+    "deleteSelected": "चुने हुए हटाएँ",
+    "restore": "मूल क्रम बहाल करें",
+    "rotateSelected": "चुने हुए घुमाएँ"
+  },
+  "merge": {
+    "hint": "और PDF जोड़ें और उनके पेजों को खींचकर क्रम में लगाएँ। सब कुछ एक फ़ाइल में आ जाता है।",
+    "files": "इस दस्तावेज़ की फ़ाइलें",
+    "remove": "{name} हटाएँ",
+    "moveUp": "{name} ऊपर ले जाएँ",
+    "moveDown": "{name} नीचे ले जाएँ"
+  },
+  "split": {
+    "mode": "स्प्लिट मोड",
+    "ranges": "पेज रेंज",
+    "every": "हर पेज",
+    "everyN": "हर N पेज",
+    "rangesHint": "जैसे 1-3, 5, 8-10 · हर रेंज एक फ़ाइल बनती है",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "प्रति फ़ाइल पेज",
+    "preview": "{count, plural, one {# फ़ाइल बनेगी} other {# फ़ाइलें बनेंगी}}",
+    "invalid": "रेंज जाँचें: पेज 1 और {max} के बीच होने चाहिए।",
+    "single": "चुनी हुई रेंज की एक PDF",
+    "zip": "हर रेंज की एक फ़ाइल (.zip)"
+  },
+  "watermark": {
+    "enable": "वॉटरमार्क जोड़ें",
+    "kind": "प्रकार",
+    "text": "टेक्स्ट",
+    "image": "इमेज",
+    "textPlaceholder": "गोपनीय",
+    "uploadImage": "लोगो चुनें",
+    "replaceImage": "लोगो बदलें",
+    "position": "स्थिति",
+    "tile": "टाइल्ड",
+    "opacity": "अपारदर्शिता",
+    "size": "आकार",
+    "rotation": "रोटेशन",
+    "color": "रंग"
+  },
+  "numbers": {
+    "enable": "पेज नंबर जोड़ें",
+    "position": "स्थिति",
+    "start": "शुरू करें",
+    "format": "फ़ॉर्मैट",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "पेज 1",
+    "size": "आकार"
+  },
+  "sign": {
+    "draw": "बनाएँ",
+    "upload": "अपलोड",
+    "clear": "साफ़ करें",
+    "use": "हस्ताक्षर इस्तेमाल करें",
+    "hint": "नीचे अपना हस्ताक्षर बनाएँ, फिर उसे पेज पर खींचें।",
+    "uploadHint": "पारदर्शी बैकग्राउंड वाला PNG सबसे अच्छा काम करता है।",
+    "chooseImage": "इमेज चुनें",
+    "page": "इस पेज पर रखें",
+    "size": "आकार",
+    "placed": "हस्ताक्षर पेज {n} पर रखा गया। हिलाने के लिए खींचें।",
+    "none": "अभी कोई हस्ताक्षर नहीं",
+    "remove": "हस्ताक्षर हटाएँ"
+  },
+  "compress": {
+    "enable": "इमेज री-एन्कोड करें",
+    "quality": "इमेज क्वालिटी",
+    "maxDimension": "अधिकतम इमेज आकार",
+    "hint": "एम्बेडेड फ़ोटो JPEG में री-एन्कोड होती हैं। टेक्स्ट और वेक्टर अछूते रहते हैं।",
+    "estimate": "अनुमान लगाएँ",
+    "estimating": "अनुमान लग रहा है…",
+    "result": "{count, plural, =0 {कोई इमेज री-एन्कोड नहीं हो सकी} one {# इमेज री-एन्कोड हुई} other {# इमेज री-एन्कोड हुईं}}",
+    "unsupported": "यह ब्राउज़र बैकग्राउंड में इमेज री-एन्कोड नहीं कर सकता। Chrome, Edge, Firefox या Safari 16.4+ आज़माएँ।"
+  },
+  "export": {
+    "download": "PDF डाउनलोड करें",
+    "downloadZip": ".zip डाउनलोड करें",
+    "processing": "आपकी PDF बन रही है…",
+    "phase": {
+      "copy": "पेज कॉपी हो रहे हैं",
+      "watermark": "वॉटरमार्क जुड़ रहा है",
+      "numbers": "पेज नंबर जुड़ रहे हैं",
+      "signature": "हस्ताक्षर रखा जा रहा है",
+      "compress": "इमेज री-एन्कोड हो रही हैं",
+      "save": "फ़ाइल लिखी जा रही है"
+    },
+    "doneTitle": "आपकी PDF तैयार है",
+    "doneSplit": "{count, plural, one {# फ़ाइल तैयार है} other {# फ़ाइलें तैयार हैं}}",
+    "eta": "ऑन-डिवाइस काम हो रहा है · कुछ भी आपके कंप्यूटर से बाहर नहीं जाता",
+    "errorTitle": "कुछ गड़बड़ हो गई",
+    "encrypted": "यह PDF पासवर्ड से सुरक्षित है। पहले पासवर्ड हटाएँ।",
+    "corrupt": "यह फ़ाइल मान्य PDF नहीं लगती।",
+    "back": "पेजों पर वापस जाएँ",
+    "compressed": "री-एन्कोड की गई इमेज: {count}"
+  },
+  "confirm": {
+    "clearTitle": "सभी फ़ाइलें हटाएँ?",
+    "clearBody": "इस सेशन के सभी पेज और सेटिंग हट जाएँगी। कुछ भी अपलोड नहीं हुआ है, इसलिए वापस पाने को कुछ नहीं।",
+    "clear": "फ़ाइलें हटाएँ",
+    "deleteTitle": "{count, plural, one {# पेज} other {# पेज}} हटाएँ?",
+    "deleteBody": "आप मूल क्रम बहाल कर सकते हैं, लेकिन हटाए गए पेज फ़ाइल दोबारा खोलने पर ही वापस आते हैं।",
+    "delete": "हटाएँ",
+    "cancel": "रखें"
+  },
+  "images": {
+    "title": "इमेज से PDF",
+    "dropTitle": "इमेज यहाँ डालें",
+    "dropSubtitle": "JPG, PNG, WebP या HEIC · हर पेज पर एक इमेज",
+    "pageSize": "पेज आकार",
+    "fit": "इमेज के अनुसार",
+    "a4": "A4",
+    "letter": "Letter",
+    "orientation": "ओरिएंटेशन",
+    "auto": "ऑटो",
+    "portrait": "पोर्ट्रेट",
+    "landscape": "लैंडस्केप",
+    "margin": "मार्जिन",
+    "images": "{count, plural, one {# इमेज} other {# इमेज}}",
+    "remove": "{name} हटाएँ",
+    "moveUp": "{name} को पहले ले जाएँ",
+    "moveDown": "{name} को बाद में ले जाएँ",
+    "converting": "इमेज कन्वर्ट हो रही हैं…",
+    "unsupported": "“{name}” को यह ब्राउज़र डिकोड नहीं कर सका।"
+  },
+  "toImages": {
+    "format": "फ़ॉर्मैट",
+    "scale": "रिज़ॉल्यूशन",
+    "scaleHint": "{dpi} dpi",
+    "quality": "JPG क्वालिटी",
+    "pages": "पेज",
+    "allPages": "सभी पेज",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "{total} में से पेज {n} रेंडर हो रहा है…",
+    "download": ".zip डाउनलोड करें",
+    "estimate": "{count, plural, one {# इमेज} other {# इमेज}} · {format}"
+  }
+}

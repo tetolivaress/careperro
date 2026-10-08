@@ -1,1 +1,74 @@
-{}
+{
+  "brand": {
+    "tagline": "编辑任何文件，无需上传。"
+  },
+  "nav": {
+    "home": "首页",
+    "allTools": "全部工具",
+    "categories": "分类",
+    "workspace": "工作区",
+    "collapseSidebar": "收起侧边栏",
+    "expandSidebar": "展开侧边栏",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "menu": "菜单",
+    "backTo": "返回{title}",
+    "more": "更多",
+    "media": "媒体",
+    "primary": "主要",
+    "main": "主导航"
+  },
+  "search": {
+    "placeholder": "查找工具...",
+    "label": "查找工具",
+    "noResults": "没有与“{query}”匹配的工具。",
+    "navigate": "导航",
+    "open": "打开",
+    "summary": "{count} 个工具 · 全部在本设备运行",
+    "tools": "工具"
+  },
+  "theme": {
+    "label": "主题",
+    "switchTo": "切换到{theme}主题",
+    "dark": "深色",
+    "light": "浅色",
+    "auto": "自动",
+    "darkLabel": "深色",
+    "lightLabel": "浅色"
+  },
+  "language": {
+    "label": "语言",
+    "select": "选择语言"
+  },
+  "privacyBadge": "您的文件始终保留在您的设备上",
+  "offline": {
+    "title": "支持离线使用",
+    "body": "无上传、无账号、无跟踪。可像桌面应用一样安装。",
+    "install": "安装应用",
+    "installHint": "应用以 PWA 方式加载后即可安装",
+    "installed": "已安装"
+  },
+  "announcement": {
+    "headline": "此域名正在出售。",
+    "body": "有意收购？欢迎报价。",
+    "cta": "提出报价",
+    "dismiss": "关闭公告"
+  },
+  "footer": {
+    "links": "关于 · 隐私 · 开源"
+  },
+  "notFound": {
+    "title": "该页面不存在",
+    "body": "此工具可能已移动。请尝试搜索，或从首页开始。",
+    "back": "返回首页"
+  },
+  "loading": "正在加载{name}…",
+  "error": {
+    "title": "出了点问题",
+    "body": "工具遇到了意外错误。您的文件仍然只保存在本设备上。请重试或重新加载页面。",
+    "retry": "重试"
+  },
+  "unsupported": {
+    "body": "此浏览器缺少 {features}。工具可能无法正常工作；请尝试最新版 Chrome、Edge、Firefox 或 Safari。"
+  }
+}

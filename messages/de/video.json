@@ -1,1 +1,163 @@
-{}
+{
+  "tabs": {
+    "trim": "Schneiden",
+    "compress": "Komprimieren",
+    "convert": "Konvertieren",
+    "gif": "GIF",
+    "audio": "Audio",
+    "crop": "Zuschneiden",
+    "watermark": "Wasserzeichen",
+    "frame": "Einzelbild"
+  },
+  "dropzone": {
+    "title": "Video hier ablegen",
+    "subtitle": "oder klicken zum Auswählen · MP4, WebM, MOV · es wird nie etwas hochgeladen",
+    "sizeHint": "Bis {max} pro Datei. Größere Videos sind im Browser langsam; besser zuerst schneiden."
+  },
+  "info": {
+    "meta": "{width} × {height} · {format} · {size}",
+    "fps": "{fps} fps",
+    "noAudio": "Keine Tonspur",
+    "unreadable": "Dieses Video kann vom Browser nicht dekodiert werden. Besser MP4 (H.264) oder WebM verwenden."
+  },
+  "timeline": {
+    "start": "Anfang",
+    "end": "Ende",
+    "selected": "{time} ausgewählt",
+    "trimStart": "Schnittanfang",
+    "trimEnd": "Schnittende"
+  },
+  "player": {
+    "play": "Abspielen",
+    "pause": "Pause",
+    "original": "Original",
+    "result": "Ergebnis",
+    "setStart": "Anfang hier setzen",
+    "setEnd": "Ende hier setzen",
+    "reset": "Schnitt zurücksetzen"
+  },
+  "trim": {
+    "label": "Schnittbereich",
+    "hint": "Die Griffe auf der Zeitleiste ziehen oder exakte Zeiten eingeben.",
+    "start": "Anfang (s)",
+    "end": "Ende (s)",
+    "copyHint": "Reines Schneiden kopiert das Video ohne Neukodierung – schnell und verlustfrei."
+  },
+  "compress": {
+    "resolution": "Auflösung",
+    "original": "Original",
+    "quality": "Qualität",
+    "low": "Kleiner",
+    "medium": "Ausgewogen",
+    "high": "Schärfer",
+    "bitrate": "~{mbps} Mbps Video",
+    "estimated": "Geschätzte Ausgabe",
+    "frameRate": "Bildrate"
+  },
+  "convert": {
+    "format": "Ausgabeformat",
+    "copyNote": "Kompatible Streams werden kopiert, die Konvertierung ist daher meist sofort fertig.",
+    "transcodeNote": "Das Video wird mit {codec} neu kodiert."
+  },
+  "gif": {
+    "fps": "Bilder pro Sekunde",
+    "width": "Breite",
+    "duration": "Länge",
+    "maxNote": "GIFs sind auf {seconds} s begrenzt. Auf den gewünschten Teil zuschneiden.",
+    "loop": "Endlos wiederholen",
+    "estimated": "Geschätzte GIF-Größe"
+  },
+  "audio": {
+    "mode": "Aktion",
+    "extract": "Audio extrahieren",
+    "remove": "Audio entfernen",
+    "format": "Audioformat",
+    "mp3Note": "MP3 wird mit ffmpeg kodiert (einmaliger Download von ~30 MB).",
+    "wavNote": "WAV ist unkomprimiert und wird mit WebCodecs sofort exportiert.",
+    "removeNote": "Das Video wird ohne Tonspur kopiert."
+  },
+  "crop": {
+    "ratio": "Seitenverhältnis",
+    "free": "Frei",
+    "region": "Zuschnittbereich",
+    "reset": "Zuschnitt zurücksetzen",
+    "output": "Ausgabe: {width} × {height}",
+    "hint": "Den Rahmen oder seine Ecken im Player ziehen."
+  },
+  "watermark": {
+    "type": "Typ",
+    "text": "Text",
+    "logo": "Logo",
+    "textLabel": "Wasserzeichen-Text",
+    "placeholder": "© Name",
+    "upload": "Logo wählen",
+    "change": "Logo ändern",
+    "position": "Position",
+    "opacity": "Deckkraft",
+    "size": "Größe",
+    "positions": {
+      "tl": "Oben links",
+      "tc": "Oben Mitte",
+      "tr": "Oben rechts",
+      "ml": "Mitte links",
+      "mc": "Zentriert",
+      "mr": "Mitte rechts",
+      "bl": "Unten links",
+      "bc": "Unten Mitte",
+      "br": "Unten rechts"
+    }
+  },
+  "frame": {
+    "time": "Zeit",
+    "format": "Bildformat",
+    "capture": "Dieses Einzelbild speichern",
+    "hint": "Im Player zum gewünschten Bild springen und es als Bild speichern.",
+    "saved": "Einzelbild gespeichert"
+  },
+  "engine": {
+    "webcodecs": "Hardware-Kodierung (WebCodecs)",
+    "ffmpeg": "ffmpeg.wasm-Fallback",
+    "loadingFfmpeg": "ffmpeg wird geladen ({percent}%)…",
+    "fallbackNote": "Dieser Browser kann nicht mit WebCodecs kodieren; stattdessen wird ffmpeg verwendet (langsamer)."
+  },
+  "status": {
+    "preparing": "Vorbereitung…",
+    "encoding": "{container} wird kodiert…",
+    "trimming": "Wird geschnitten…",
+    "gif": "GIF wird erstellt…",
+    "audio": "Audio wird extrahiert…",
+    "done": "Fertig in {seconds} s",
+    "canceled": "Abgebrochen",
+    "failed": "Etwas ist schiefgelaufen: {message}",
+    "steps": {
+      "decode": "Video dekodieren",
+      "process": "Bearbeitungen anwenden",
+      "encode": "Kodieren",
+      "write": "Datei schreiben"
+    },
+    "processedIn": "Auf diesem Gerät in {seconds} s verarbeitet"
+  },
+  "export": {
+    "export": "Exportieren",
+    "download": "{ext} herunterladen",
+    "another": "Anderes Video",
+    "openEditor": "Im Editor öffnen"
+  },
+  "recorder": {
+    "title": "Bildschirm- & Webcam-Rekorder",
+    "subtitle": "Aufnahmen bleiben in diesem Tab, bis sie heruntergeladen werden.",
+    "source": "Quelle",
+    "screen": "Bildschirm",
+    "camera": "Kamera",
+    "mic": "Mikrofon aufnehmen",
+    "micHint": "Mischt das Mikrofon in die Aufnahme",
+    "start": "Aufnahme starten",
+    "stop": "Stopp",
+    "recording": "Aufnahme läuft",
+    "permission": "Berechtigung verweigert oder kein Gerät gefunden.",
+    "unsupported": "Aufnahme wird in diesem Browser nicht unterstützt.",
+    "preview": "Vorschau",
+    "discard": "Verwerfen",
+    "ready": "Aufnahme fertig · {duration} · {size}"
+  }
+}

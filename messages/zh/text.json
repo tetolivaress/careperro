@@ -1,1 +1,104 @@
-{}
+{
+  "counter": {
+    "characters": "字符",
+    "charactersNoSpaces": "不含空格",
+    "words": "单词",
+    "sentences": "句子",
+    "paragraphs": "段落",
+    "lines": "行",
+    "bytes": "字节 (UTF-8)",
+    "reading": "阅读时长",
+    "speaking": "朗读时长",
+    "minutes": "{count, plural, =0 {< 1 分钟} one {# 分钟} other {# 分钟}}",
+    "topWords": "最常用词",
+    "placeholder": "在此粘贴或输入文本…",
+    "summary": "{words} 个单词 · {characters} 个字符"
+  },
+  "case": {
+    "mode": "转换为",
+    "upper": "全部大写",
+    "lower": "全部小写",
+    "title": "每词首字母大写",
+    "sentence": "句首大写",
+    "camel": "camelCase",
+    "pascal": "PascalCase",
+    "snake": "snake_case",
+    "kebab": "kebab-case",
+    "constant": "CONSTANT_CASE",
+    "alternating": "大小写交替",
+    "inverse": "大小写反转",
+    "placeholder": "输入要转换的文本…"
+  },
+  "diff": {
+    "original": "原文",
+    "changed": "修改后",
+    "mode": "比较方式",
+    "lines": "按行",
+    "words": "按词",
+    "chars": "按字符",
+    "ignoreCase": "忽略大小写",
+    "ignoreWhitespace": "忽略空白",
+    "added": "新增 {count}",
+    "removed": "删除 {count}",
+    "identical": "两段文本完全相同。",
+    "placeholderA": "粘贴原文…",
+    "placeholderB": "粘贴修改后的文本…",
+    "result": "差异"
+  },
+  "markdown": {
+    "preview": "预览",
+    "html": "HTML",
+    "placeholder": "# 你好\n\n在此编写 **Markdown**…",
+    "downloadHtml": "下载 .html",
+    "gfm": "GitHub 风格"
+  },
+  "ocr": {
+    "language": "语言",
+    "drop": "拖入截图或扫描件",
+    "dropSubtitle": "PNG, JPG, WebP · 完全在您的设备上识别",
+    "loadingEngine": "正在加载识别引擎…",
+    "recognizing": "正在识别文字…",
+    "steps": {
+      "load": "加载引擎",
+      "language": "加载语言数据",
+      "recognize": "识别文字"
+    },
+    "result": "识别结果",
+    "confidence": "置信度 {percent}%",
+    "empty": "此图片中未找到文字。",
+    "firstRunNote": "首次运行会下载识别引擎（约 15 MB）。您的图片绝不会离开本设备。",
+    "downloadTxt": "下载 .txt",
+    "langs": {
+      "eng": "英语",
+      "spa": "西班牙语",
+      "fra": "法语",
+      "deu": "德语",
+      "por": "葡萄牙语",
+      "ita": "意大利语",
+      "jpn": "日语",
+      "chi_sim": "中文（简体）",
+      "ara": "阿拉伯语",
+      "rus": "俄语",
+      "hin": "印地语",
+      "ind": "印尼语"
+    }
+  },
+  "tts": {
+    "voice": "语音",
+    "rate": "语速",
+    "pitch": "音调",
+    "volume": "音量",
+    "play": "朗读",
+    "pause": "暂停",
+    "resume": "继续",
+    "stop": "停止",
+    "placeholder": "输入要朗读的内容…",
+    "unsupported": "您的浏览器不支持语音合成。",
+    "noVoices": "暂无可用语音。请稍后重试。",
+    "speaking": "朗读中…",
+    "paused": "已暂停",
+    "idle": "就绪",
+    "controls": "播放控制",
+    "hint": "语音来自您的操作系统；不会向任何地方发送数据。"
+  }
+}

@@ -1,1 +1,175 @@
-{}
+{
+  "tabs": {
+    "organize": "تنظيم",
+    "merge": "دمج",
+    "split": "تقسيم",
+    "watermark": "علامة مائية",
+    "page-numbers": "الأرقام",
+    "sign": "توقيع",
+    "compress": "ضغط"
+  },
+  "drop": {
+    "title": "أفلت ملف PDF هنا",
+    "titleMany": "أفلت ملفات PDF هنا",
+    "subtitle": "أو انقر للاستعراض · لا يُرفع أي شيء، أبدًا"
+  },
+  "toolbar": {
+    "pages": "{count, plural, one {# صفحة} other {# صفحات}}",
+    "files": "{count, plural, one {# ملف} other {# ملفات}}",
+    "selected": "{count} محدد",
+    "addFiles": "إضافة ملفات",
+    "selectAll": "تحديد الكل",
+    "clearSelection": "إلغاء التحديد",
+    "clearAll": "مسح الكل",
+    "zoom": "حجم الصور المصغّرة"
+  },
+  "page": {
+    "label": "الصفحة {n}",
+    "rotate": "تدوير الصفحة {n}",
+    "delete": "حذف الصفحة {n}",
+    "moveLeft": "تقديم الصفحة {n}",
+    "moveRight": "تأخير الصفحة {n}",
+    "select": "تحديد الصفحة {n}",
+    "dragHint": "اسحب لإعادة الترتيب",
+    "source": "من {name}"
+  },
+  "organize": {
+    "hint": "اسحب الصفحات لإعادة ترتيبها. استخدم الأزرار على كل صفحة لتدويرها أو حذفها.",
+    "rotateAll": "تدوير الكل",
+    "reverse": "عكس الترتيب",
+    "deleteSelected": "حذف المحدد",
+    "restore": "استعادة الترتيب الأصلي",
+    "rotateSelected": "تدوير المحدد"
+  },
+  "merge": {
+    "hint": "أضف المزيد من ملفات PDF واسحب صفحاتها لترتيبها. سينتهي كل شيء في ملف واحد.",
+    "files": "الملفات في هذا المستند",
+    "remove": "إزالة {name}",
+    "moveUp": "نقل {name} لأعلى",
+    "moveDown": "نقل {name} لأسفل"
+  },
+  "split": {
+    "mode": "طريقة التقسيم",
+    "ranges": "نطاقات الصفحات",
+    "every": "كل صفحة",
+    "everyN": "كل N صفحات",
+    "rangesHint": "مثال: 1-3, 5, 8-10 · كل نطاق يصبح ملفًا",
+    "rangesPlaceholder": "1-3, 5, 8-10",
+    "chunk": "عدد الصفحات لكل ملف",
+    "preview": "سيتم إنشاء {count, plural, one {# ملف} other {# ملفات}}",
+    "invalid": "تحقق من النطاقات: يجب أن تكون الصفحات بين 1 و{max}.",
+    "single": "ملف PDF واحد للنطاقات المحددة",
+    "zip": "ملف لكل نطاق (.zip)"
+  },
+  "watermark": {
+    "enable": "إضافة علامة مائية",
+    "kind": "النوع",
+    "text": "نص",
+    "image": "صورة",
+    "textPlaceholder": "سرّي",
+    "uploadImage": "اختر شعارًا",
+    "replaceImage": "استبدال الشعار",
+    "position": "الموضع",
+    "tile": "متكرر",
+    "opacity": "الشفافية",
+    "size": "الحجم",
+    "rotation": "التدوير",
+    "color": "اللون"
+  },
+  "numbers": {
+    "enable": "إضافة أرقام الصفحات",
+    "position": "الموضع",
+    "start": "البدء من",
+    "format": "التنسيق",
+    "formatN": "1",
+    "formatTotal": "1 / 12",
+    "formatPage": "صفحة 1",
+    "size": "الحجم"
+  },
+  "sign": {
+    "draw": "رسم",
+    "upload": "رفع",
+    "clear": "مسح",
+    "use": "استخدام التوقيع",
+    "hint": "ارسم توقيعك أدناه، ثم اسحبه إلى الصفحة.",
+    "uploadHint": "تعمل صور PNG ذات الخلفية الشفافة بشكل أفضل.",
+    "chooseImage": "اختر صورة",
+    "page": "وضعه في الصفحة",
+    "size": "الحجم",
+    "placed": "وُضع التوقيع في الصفحة {n}. اسحبه لتحريكه.",
+    "none": "لا يوجد توقيع بعد",
+    "remove": "إزالة التوقيع"
+  },
+  "compress": {
+    "enable": "إعادة ترميز الصور",
+    "quality": "جودة الصور",
+    "maxDimension": "الحجم الأقصى للصور",
+    "hint": "تُعاد ترميز الصور المضمّنة بصيغة JPEG. لا يُمسّ النص ولا الرسومات المتجهة.",
+    "estimate": "تقدير",
+    "estimating": "جارٍ التقدير…",
+    "result": "{count, plural, =0 {تعذّر إعادة ترميز أي صورة} one {أُعيد ترميز # صورة} other {أُعيد ترميز # صور}}",
+    "unsupported": "لا يستطيع هذا المتصفح إعادة ترميز الصور في الخلفية. جرّب Chrome أو Edge أو Firefox أو Safari 16.4 فأحدث."
+  },
+  "export": {
+    "download": "تنزيل PDF",
+    "downloadZip": "تنزيل .zip",
+    "processing": "جارٍ إنشاء ملف PDF…",
+    "phase": {
+      "copy": "نسخ الصفحات",
+      "watermark": "إضافة العلامة المائية",
+      "numbers": "إضافة أرقام الصفحات",
+      "signature": "وضع التوقيع",
+      "compress": "إعادة ترميز الصور",
+      "save": "كتابة الملف"
+    },
+    "doneTitle": "ملف PDF جاهز",
+    "doneSplit": "{count, plural, one {# ملف جاهز} other {# ملفات جاهزة}}",
+    "eta": "جارٍ العمل على الجهاز · لا يغادر أي شيء حاسوبك",
+    "errorTitle": "حدث خطأ ما",
+    "encrypted": "ملف PDF هذا محمي بكلمة مرور. أزل كلمة المرور أولًا.",
+    "corrupt": "لا يبدو هذا الملف ملف PDF صالحًا.",
+    "back": "العودة إلى الصفحات",
+    "compressed": "الصور المُعاد ترميزها: {count}"
+  },
+  "confirm": {
+    "clearTitle": "هل تريد مسح جميع الملفات؟",
+    "clearBody": "سيتم التخلص من جميع الصفحات والإعدادات في هذه الجلسة. لم يُرفع أي شيء، لذا لا يوجد ما يمكن استعادته.",
+    "clear": "مسح الملفات",
+    "deleteTitle": "هل تريد حذف {count, plural, one {# صفحة} other {# صفحات}}؟",
+    "deleteBody": "يمكنك استعادة الترتيب الأصلي، لكن الصفحات المحذوفة لا تعود إلا بإعادة فتح الملف.",
+    "delete": "حذف",
+    "cancel": "إبقاء"
+  },
+  "images": {
+    "title": "تحويل الصور إلى PDF",
+    "dropTitle": "أفلت الصور هنا",
+    "dropSubtitle": "JPG أو PNG أو WebP أو HEIC · صورة واحدة لكل صفحة",
+    "pageSize": "حجم الصفحة",
+    "fit": "ملاءمة الصورة",
+    "a4": "A4",
+    "letter": "Letter",
+    "orientation": "الاتجاه",
+    "auto": "تلقائي",
+    "portrait": "عمودي",
+    "landscape": "أفقي",
+    "margin": "الهامش",
+    "images": "{count, plural, one {# صورة} other {# صور}}",
+    "remove": "إزالة {name}",
+    "moveUp": "تقديم {name}",
+    "moveDown": "تأخير {name}",
+    "converting": "جارٍ تحويل الصور…",
+    "unsupported": "تعذّر على هذا المتصفح فك ترميز “{name}”."
+  },
+  "toImages": {
+    "format": "الصيغة",
+    "scale": "الدقة",
+    "scaleHint": "{dpi} dpi",
+    "quality": "جودة JPG",
+    "pages": "الصفحات",
+    "allPages": "جميع الصفحات",
+    "rangePlaceholder": "1-3, 5",
+    "rendering": "جارٍ عرض الصفحة {n} من {total}…",
+    "download": "تنزيل .zip",
+    "estimate": "{count, plural, one {# صورة} other {# صور}} · {format}"
+  }
+}
