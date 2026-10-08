@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { ArrowDownToLine, TriangleAlert, Upload } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { formatBytes } from "@/lib/formatBytes";
 import { matchesAccept } from "@/lib/fileTypes";
@@ -34,8 +35,8 @@ export function DropZone({
   maxSize,
   onFiles,
   paste = true,
-  title = "Drop any file and we'll suggest tools",
-  subtitle = "or click to browse · nothing is uploaded, ever",
+  title,
+  subtitle,
   formats = DEFAULT_FORMATS,
   moreLabel,
   size = "default",
@@ -48,6 +49,9 @@ export function DropZone({
   const [error, setError] = useState<string | null>(null);
   const depth = useRef(0);
   const inputId = useId();
+  const t = useTranslations("shell.dropzone");
+  const resolvedTitle = title ?? (multiple ? t("titleMany") : t("titleOne"));
+  const resolvedSubtitle = subtitle ?? t("subtitle");
 
   const validate = useCallback(
     (list: FileList | File[]): File[] => {
@@ -56,18 +60,18 @@ export function DropZone({
       const chosen = multiple ? files : files.slice(0, 1);
       const bad = chosen.find((f) => !matchesAccept(f, accept));
       if (bad) {
-        setError(`“${bad.name}” isn't a supported file type for this tool.`);
+        setError(t("unsupported", { name: bad.name }));
         return [];
       }
       const big = maxSize ? chosen.find((f) => f.size > maxSize) : undefined;
       if (big) {
-        setError(`“${big.name}” is ${formatBytes(big.size)}. This tool handles files up to ${formatBytes(maxSize ?? 0, 0)}.`);
+        setError(t("tooLarge", { name: big.name, size: formatBytes(big.size), max: formatBytes(maxSize ?? 0, 0) }));
         return [];
       }
       setError(null);
       return chosen;
     },
-    [accept, maxSize, multiple],
+    [accept, maxSize, multiple, t],
   );
 
   const handle = useCallback(
@@ -161,9 +165,9 @@ export function DropZone({
         </div>
         <div className="flex flex-col items-center gap-1.5">
           <p className={cn("font-semibold", compact ? "text-base" : "text-lg", dragOver ? "text-primary" : "text-fg")}>
-            {dragOver ? `Release to open ${count > 1 ? `${count} files` : "file"}` : title}
+            {dragOver ? t("release", { count: Math.max(count, 1) }) : resolvedTitle}
           </p>
-          <p className="text-sm text-fg-muted">{subtitle}</p>
+          <p className="text-sm text-fg-muted">{resolvedSubtitle}</p>
         </div>
         {formats.length > 0 && (
           <div className="flex flex-wrap items-center justify-center gap-1.5">

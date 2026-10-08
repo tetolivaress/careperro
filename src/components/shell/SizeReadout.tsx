@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowRight, TrendingDown, TrendingUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { formatBytes, savingsPercent } from "@/lib/formatBytes";
 import { cn } from "@/lib/utils";
 
@@ -10,7 +13,8 @@ interface SizeReadoutProps {
 }
 
 /** Card showing "2.4 MB → 310 KB" with a savings pill and bar. */
-export function SizeReadout({ before, after, caption = "Estimated output", className }: SizeReadoutProps) {
+export function SizeReadout({ before, after, caption, className }: SizeReadoutProps) {
+  const t = useTranslations("shell.readout");
   const hasAfter = after !== undefined;
   const pct = hasAfter ? savingsPercent(before, after) : 0;
   const ratio = hasAfter && before > 0 ? Math.min(after / before, 1) : 1;
@@ -18,12 +22,12 @@ export function SizeReadout({ before, after, caption = "Estimated output", class
   return (
     <div className={cn("flex flex-col gap-3 rounded-lg border border-border bg-surface-2 p-4", className)}>
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-fg-muted">{caption}</span>
+        <span className="text-xs font-medium text-fg-muted">{caption ?? t("estimated")}</span>
         {hasAfter && <SavingsPill percent={pct} />}
       </div>
       <div className="flex items-center gap-2.5">
         <span className="text-base font-medium text-fg-subtle">{formatBytes(before)}</span>
-        <ArrowRight className="size-4 text-fg-subtle" aria-hidden />
+        <ArrowRight className="size-4 text-fg-subtle rtl:rotate-180" aria-hidden />
         <span className="text-2xl font-bold text-fg">{hasAfter ? formatBytes(after) : "—"}</span>
       </div>
       <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-3" aria-hidden>
@@ -37,6 +41,7 @@ export function SizeReadout({ before, after, caption = "Estimated output", class
 }
 
 export function SavingsPill({ percent, className }: { percent: number; className?: string }) {
+  const t = useTranslations("shell.readout");
   const grew = percent < 0;
   const Icon = grew ? TrendingUp : TrendingDown;
   return (
@@ -48,7 +53,7 @@ export function SavingsPill({ percent, className }: { percent: number; className
       )}
     >
       <Icon className="size-3" aria-hidden />
-      {grew ? `+${Math.abs(percent)}% larger` : `${percent}% smaller`}
+      {grew ? t("larger", { percent: Math.abs(percent) }) : t("smaller", { percent })}
     </span>
   );
 }
@@ -59,7 +64,7 @@ export function MiniReadout({ before, after }: { before: number; after?: number 
   return (
     <div className="flex items-center gap-2 text-[13px]">
       <span className="text-fg-subtle">{formatBytes(before)}</span>
-      <ArrowRight className="size-3.5 text-fg-subtle" aria-hidden />
+      <ArrowRight className="size-3.5 text-fg-subtle rtl:rotate-180" aria-hidden />
       <span className="text-sm font-bold text-fg">{after !== undefined ? formatBytes(after) : "—"}</span>
       {pct !== null && (
         <span

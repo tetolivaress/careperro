@@ -1,0 +1,37 @@
+{
+  "headline": "Edit any file. Upload nothing.",
+  "subhead": "{count} tools for images, audio, video, PDFs and code that run entirely in your browser. No uploads, no sign-up, no ads.",
+  "subheadMobile": "{count} tools that run entirely on your phone. No uploads, no sign-up, no ads.",
+  "drop": {
+    "title": "Drop any file and we'll suggest tools",
+    "subtitle": "or click to browse · nothing is uploaded, ever",
+    "titleMobile": "Drop a file or tap to browse",
+    "subtitleMobile": "We'll suggest the right tools",
+    "more": "+{count} more",
+    "noTool": "We don't have a tool for “{name}” yet. Browse the categories below."
+  },
+  "session": {
+    "title": "This session",
+    "networkIdle": "Network idle",
+    "uploaded": "uploaded",
+    "filesProcessed": "files processed"
+  },
+  "browseByCategory": "Browse by category",
+  "allTools": "All {count} tools",
+  "allToolsShort": "All tools",
+  "suggestTool": "Suggest a tool",
+  "popular": "Popular right now",
+  "seeAll": "See all",
+  "toolCount": "{count, plural, one {# tool} other {# tools}}",
+  "allToolsPage": {
+    "title": "All tools",
+    "meta": "{count} tools · every one of them processed on your device",
+    "description": "Every one of the {count} on-device tools, grouped by category."
+  },
+  "category": {
+    "meta": "{count} tools · {formats} · processed on your device",
+    "quickDrop": "Drop files to open in {tool}",
+    "notAFile": "“{name}” isn't a {category} file.",
+    "description": "{description}. {count} tools for {formats}, processed on your device."
+  }
+}

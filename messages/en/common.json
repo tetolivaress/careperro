@@ -1,0 +1,58 @@
+{
+  "brand": { "tagline": "Edit any file. Upload nothing." },
+  "nav": {
+    "home": "Home",
+    "allTools": "All tools",
+    "categories": "Categories",
+    "workspace": "Workspace",
+    "collapseSidebar": "Collapse sidebar",
+    "expandSidebar": "Expand sidebar",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "backTo": "Back to {title}",
+    "more": "More",
+    "media": "Media",
+    "primary": "Primary",
+    "main": "Main"
+  },
+  "search": {
+    "placeholder": "Find a tool...",
+    "label": "Find a tool",
+    "noResults": "No tools match “{query}”.",
+    "navigate": "navigate",
+    "open": "open",
+    "summary": "{count} tools · all on-device",
+    "tools": "Tools"
+  },
+  "theme": {
+    "label": "Theme",
+    "switchTo": "Switch to {theme} theme",
+    "dark": "dark",
+    "light": "light",
+    "auto": "Auto",
+    "darkLabel": "Dark",
+    "lightLabel": "Light"
+  },
+  "language": { "label": "Language", "select": "Choose language" },
+  "privacyBadge": "Your files stay on your device",
+  "offline": {
+    "title": "Works offline",
+    "body": "No uploads, no accounts, no tracking. Install it like a desktop app.",
+    "install": "Install app",
+    "installHint": "Install becomes available once the app is loaded as a PWA"
+  },
+  "announcement": {
+    "headline": "This domain is for sale.",
+    "body": "Interested in owning it? We're open to offers.",
+    "cta": "Make an offer",
+    "dismiss": "Dismiss announcement"
+  },
+  "footer": { "links": "About · Privacy · Open source" },
+  "notFound": {
+    "title": "That page doesn't exist",
+    "body": "The tool may have moved. Try the search, or start from the home page.",
+    "back": "Back to home"
+  },
+  "loading": "Loading {name}…"
+}

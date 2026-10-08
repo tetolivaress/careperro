@@ -1,21 +1,26 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { ImagePlus, TriangleAlert } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { stashFiles } from "@/lib/fileHandoff";
 import { matchesAccept } from "@/lib/fileTypes";
-import { toolPath, toolsIn } from "@/tools/registry";
+import { categories, toolPath, toolsIn } from "@/tools/registry";
+import { useCategoryCopy, useToolCopy } from "@/tools/copy";
 import type { Category } from "@/tools/types";
 
 /** Compact dashed drop target in a category header. Opens the category's first file tool. */
 export function CategoryQuickDrop({ category }: { category: Category }) {
+  const t = useTranslations("home.category");
+  const toolCopy = useToolCopy();
+  const catCopy = useCategoryCopy();
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const [over, setOver] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const target = toolsIn(category).find((t) => t.accept.length > 0);
+  const target = toolsIn(category).find((tool) => tool.accept.length > 0);
   if (!target) return null;
 
   const handle = (list: FileList | null) => {
@@ -23,7 +28,7 @@ export function CategoryQuickDrop({ category }: { category: Category }) {
     const files = Array.from(list);
     const bad = files.find((f) => !matchesAccept(f, target.accept));
     if (bad) {
-      setError(`“${bad.name}” isn't a ${category} file.`);
+      setError(t("notAFile", { name: bad.name, category: catCopy(categories[category]).name.toLowerCase() }));
       return;
     }
     setError(null);
@@ -52,7 +57,7 @@ export function CategoryQuickDrop({ category }: { category: Category }) {
         )}
       >
         <ImagePlus className="size-[18px]" aria-hidden />
-        Drop files to open in {target.name.toLowerCase()}
+        {t("quickDrop", { tool: toolCopy(target).name.toLowerCase() })}
         <input
           ref={inputRef}
           type="file"

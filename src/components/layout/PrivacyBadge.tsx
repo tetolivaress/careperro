@@ -1,8 +1,10 @@
 import { ShieldCheck } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 /** Persistent "Your files stay on your device" badge from the design. */
 export function PrivacyBadge({ className }: { className?: string }) {
+  const t = useTranslations("common");
   return (
     <span
       className={cn(
@@ -11,7 +13,7 @@ export function PrivacyBadge({ className }: { className?: string }) {
       )}
     >
       <ShieldCheck className="size-3.5" aria-hidden />
-      Your files stay on your device
+      {t("privacyBadge")}
     </span>
   );
 }

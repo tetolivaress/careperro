@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 interface SettingsPanelProps {
@@ -15,10 +16,11 @@ interface SettingsPanelProps {
  * children inside a bottom sheet, so this component only handles the desktop frame.
  */
 export function SettingsPanel({ children, tabs, className }: SettingsPanelProps) {
+  const t = useTranslations("shell.toolbar");
   return (
     <aside
-      aria-label="Settings"
-      className={cn("hidden w-[372px] shrink-0 flex-col border-l border-border bg-surface md:flex", className)}
+      aria-label={t("settings")}
+      className={cn("hidden w-[372px] shrink-0 flex-col border-s border-border bg-surface md:flex", className)}
     >
       {tabs && <div className="shrink-0 border-b border-border px-2">{tabs}</div>}
       <div className="scrollbar-thin flex min-h-0 flex-1 flex-col gap-6 overflow-y-auto px-5 py-6">{children}</div>

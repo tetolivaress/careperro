@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
 import { ChevronUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { PreviewArea } from "./PreviewArea";
 import { SettingsPanel } from "./SettingsPanel";
@@ -29,6 +30,7 @@ interface ToolShellProps {
  *  - mobile (<768px): preview on top, settings in a bottom sheet with a grabber, export bar pinned under it
  */
 export function ToolShell({ toolbar, preview, tabs, settings, footer, mobilePreviewClassName }: ToolShellProps) {
+  const t = useTranslations("shell.toolbar");
   const isDesktop = useIsDesktop();
   const [expanded, setExpanded] = useState(false);
 
@@ -56,14 +58,14 @@ export function ToolShell({ toolbar, preview, tabs, settings, footer, mobilePrev
         {preview}
       </div>
       <section
-        aria-label="Settings"
+        aria-label={t("settings")}
         className="flex min-h-0 flex-1 flex-col rounded-t-[20px] border-t border-border bg-surface"
       >
         <button
           type="button"
           onClick={() => setExpanded((v) => !v)}
           className="flex h-[22px] w-full items-center justify-center"
-          aria-label={expanded ? "Shrink settings" : "Expand settings"}
+          aria-label={expanded ? t("shrinkSettings") : t("expandSettings")}
           aria-expanded={expanded}
         >
           <span className="h-[5px] w-9 rounded-full bg-border-strong" aria-hidden />

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Caribito</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/icons/favicon-32.png">
+<link rel="alternate" hreflang="x-default" href="https://caribito.com/es/">
+<link rel="alternate" hreflang="es" href="https://caribito.com/es/">
+<link rel="alternate" hreflang="en" href="https://caribito.com/en/">
+<link rel="alternate" hreflang="zh" href="https://caribito.com/zh/">
+<link rel="alternate" hreflang="ar" href="https://caribito.com/ar/">
+<link rel="alternate" hreflang="pt" href="https://caribito.com/pt/">
+<link rel="alternate" hreflang="fr" href="https://caribito.com/fr/">
+<link rel="alternate" hreflang="id" href="https://caribito.com/id/">
+<link rel="alternate" hreflang="ja" href="https://caribito.com/ja/">
+<link rel="alternate" hreflang="ru" href="https://caribito.com/ru/">
+<link rel="alternate" hreflang="de" href="https://caribito.com/de/">
+<link rel="alternate" hreflang="hi" href="https://caribito.com/hi/">
+<style>html{background:#0a0a0b;color:#a0a0a8;font:14px system-ui,sans-serif}body{display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}</style>
+<script>
+(function(){
+  var supported=["es","en","zh","ar","pt","fr","id","ja","ru","de","hi"];
+  var target="es";
+  try{
+    var saved=localStorage.getItem("caribito-locale");
+    if(saved&&supported.indexOf(saved)>-1){target=saved;}
+    else{
+      var prefs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"es"]);
+      for(var i=0;i<prefs.length;i++){var code=String(prefs[i]).toLowerCase().split("-")[0];if(supported.indexOf(code)>-1){target=code;break;}}
+    }
+  }catch(e){}
+  location.replace("/"+target+"/"+location.search+location.hash);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0;url=/es/"></noscript>
+</head>
+<body><p>Redirecting… <a href="/es/">Español</a> · <a href="/en/">English</a></p></body>
+</html>

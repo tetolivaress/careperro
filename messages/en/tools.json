@@ -1,0 +1,293 @@
+{
+  "categories": {
+    "image": {
+      "name": "Images",
+      "title": "Image tools",
+      "description": "Compress, resize, crop, convert, watermark",
+      "formats": "JPG, PNG, WebP, AVIF, HEIC, GIF, SVG"
+    },
+    "audio": {
+      "name": "Audio",
+      "title": "Audio tools",
+      "description": "Trim, convert, normalize, change speed",
+      "formats": "MP3, WAV, OGG, M4A, FLAC"
+    },
+    "video": {
+      "name": "Video",
+      "title": "Video tools",
+      "description": "Trim, compress, crop, extract audio, GIF",
+      "formats": "MP4, WebM, MOV"
+    },
+    "pdf": {
+      "name": "PDF",
+      "title": "PDF tools",
+      "description": "Merge, split, compress, sign, reorder",
+      "formats": "PDF"
+    },
+    "text": {
+      "name": "Text",
+      "title": "Text tools",
+      "description": "Count, compare, change case, clean up",
+      "formats": "Plain text, Markdown"
+    },
+    "dev": {
+      "name": "Developer",
+      "title": "Developer tools",
+      "description": "JSON, Base64, hashes, regex, JWT, UUID",
+      "formats": "JSON, CSV, XLSX"
+    },
+    "privacy": {
+      "name": "Privacy",
+      "title": "Privacy tools",
+      "description": "Strip metadata, redact, encrypt files",
+      "formats": "Any file"
+    }
+  },
+  "items": {
+    "image": {
+      "compress": {
+        "name": "Compress image",
+        "description": "Shrink JPG, PNG and WebP without visible quality loss.",
+        "short": "Shrink JPG, PNG and WebP"
+      },
+      "resize": {
+        "name": "Resize image",
+        "description": "Exact pixels, percentage or social presets."
+      },
+      "crop": {
+        "name": "Crop image",
+        "description": "Free-form or fixed ratios like 1:1 and 16:9."
+      },
+      "convert": {
+        "name": "Convert format",
+        "description": "JPG, PNG, WebP, AVIF and back again."
+      },
+      "rotate": {
+        "name": "Rotate & flip",
+        "description": "Fix orientation in one click, losslessly."
+      },
+      "watermark": {
+        "name": "Add watermark",
+        "description": "Text or logo, positioned or tiled."
+      },
+      "filters": {
+        "name": "Filters & adjust",
+        "description": "Brightness, contrast, saturation, presets."
+      },
+      "remove-exif": {
+        "name": "Remove EXIF data",
+        "description": "Strip GPS location and camera details from photos.",
+        "short": "Strip location from photos"
+      },
+      "heic-to-jpg": {
+        "name": "HEIC to JPG",
+        "description": "Open iPhone photos anywhere."
+      },
+      "images-to-pdf": {
+        "name": "Images to PDF",
+        "description": "Combine photos into a single document."
+      },
+      "favicon": {
+        "name": "Favicon maker",
+        "description": "Generate every icon size from one image."
+      }
+    },
+    "audio": {
+      "trim": {
+        "name": "Trim audio",
+        "description": "Cut, fade and export to MP3, WAV or OGG."
+      },
+      "convert": {
+        "name": "Convert audio",
+        "description": "MP3, WAV, OGG and M4A with a bitrate of your choice."
+      },
+      "volume": {
+        "name": "Change volume",
+        "description": "Boost or lower the level without clipping."
+      },
+      "fade": {
+        "name": "Fade in & out",
+        "description": "Smooth starts and endings with adjustable curves."
+      },
+      "speed": {
+        "name": "Change speed",
+        "description": "Speed up or slow down, with or without pitch change."
+      },
+      "normalize": {
+        "name": "Normalize volume",
+        "description": "Bring every clip to a consistent loudness."
+      },
+      "merge": {
+        "name": "Merge audio",
+        "description": "Join several clips into one file."
+      },
+      "record": {
+        "name": "Voice recorder",
+        "description": "Record from your microphone and download the take."
+      }
+    },
+    "video": {
+      "trim": {
+        "name": "Trim video",
+        "description": "Cut a clip to the exact start and end you need."
+      },
+      "compress": {
+        "name": "Compress video",
+        "description": "Pick a resolution and quality, see the estimated size."
+      },
+      "convert": {
+        "name": "Convert video",
+        "description": "MP4 to WebM and back."
+      },
+      "to-gif": {
+        "name": "Video to GIF",
+        "description": "Turn short clips into lightweight loops."
+      },
+      "extract-audio": {
+        "name": "Extract audio",
+        "description": "Save the soundtrack as MP3 or WAV."
+      },
+      "remove-audio": {
+        "name": "Remove audio",
+        "description": "Mute a video permanently."
+      },
+      "crop": {
+        "name": "Crop video",
+        "description": "Reframe to 9:16, 1:1 or 16:9."
+      },
+      "watermark": {
+        "name": "Watermark video",
+        "description": "Overlay text or a logo."
+      },
+      "capture-frame": {
+        "name": "Capture frame",
+        "description": "Save any frame as a PNG or JPG."
+      },
+      "record": {
+        "name": "Screen & webcam recorder",
+        "description": "Record your screen or camera, then edit the result."
+      }
+    },
+    "pdf": {
+      "merge": {
+        "name": "Merge PDF",
+        "description": "Combine documents and drag pages into order.",
+        "short": "Combine and reorder pages"
+      },
+      "split": {
+        "name": "Split PDF",
+        "description": "Extract a page range or burst into single pages."
+      },
+      "organize": {
+        "name": "Organize pages",
+        "description": "Reorder, rotate and delete pages in a grid."
+      },
+      "to-images": {
+        "name": "PDF to images",
+        "description": "Render every page to PNG or JPG and download a zip."
+      },
+      "compress": {
+        "name": "Compress PDF",
+        "description": "Re-encode embedded images to shrink the file."
+      },
+      "watermark": {
+        "name": "Watermark PDF",
+        "description": "Stamp text or an image across every page."
+      },
+      "page-numbers": {
+        "name": "Add page numbers",
+        "description": "Numbers in the position and style you choose."
+      },
+      "sign": {
+        "name": "Sign PDF",
+        "description": "Draw or upload a signature and place it on a page."
+      }
+    },
+    "text": {
+      "word-counter": {
+        "name": "Word & character counter",
+        "description": "Words, characters, sentences and reading time."
+      },
+      "case-converter": {
+        "name": "Case converter",
+        "description": "UPPER, lower, Title, camelCase, snake_case and more."
+      },
+      "diff": {
+        "name": "Text diff",
+        "description": "Compare two texts line by line."
+      },
+      "markdown": {
+        "name": "Markdown previewer",
+        "description": "Write Markdown and see the rendered result live."
+      },
+      "ocr": {
+        "name": "Image to text (OCR)",
+        "description": "Pull editable text out of screenshots and scans."
+      },
+      "text-to-speech": {
+        "name": "Text to speech",
+        "description": "Read any text aloud with your device's voices."
+      }
+    },
+    "dev": {
+      "json": {
+        "name": "JSON formatter",
+        "description": "Format, validate and minify JSON instantly."
+      },
+      "base64": {
+        "name": "Base64 encode & decode",
+        "description": "Text and files to Base64 and back."
+      },
+      "url": {
+        "name": "URL encode & decode",
+        "description": "Escape and unescape URLs and query strings."
+      },
+      "jwt": {
+        "name": "JWT decoder",
+        "description": "Inspect header, payload and expiry of a token."
+      },
+      "hash": {
+        "name": "Hash generator",
+        "description": "SHA-1, SHA-256 and SHA-512 for text or files."
+      },
+      "uuid": {
+        "name": "UUID generator",
+        "description": "Generate v4 UUIDs one at a time or in bulk."
+      },
+      "color": {
+        "name": "Color converter",
+        "description": "HEX, RGB and HSL side by side with a live swatch."
+      },
+      "palette": {
+        "name": "Palette generator",
+        "description": "Build harmonious palettes from a base color."
+      },
+      "regex": {
+        "name": "Regex tester",
+        "description": "Test patterns with live matches and groups."
+      },
+      "csv": {
+        "name": "CSV, JSON & Excel converter",
+        "description": "Convert tables between CSV, JSON and XLSX."
+      }
+    },
+    "privacy": {
+      "password": {
+        "name": "Password generator",
+        "description": "Strong random passwords and passphrases."
+      },
+      "encrypt": {
+        "name": "Encrypt & decrypt file",
+        "description": "Lock any file with a password using AES-GCM."
+      },
+      "qr": {
+        "name": "QR code generator & scanner",
+        "description": "Make QR codes or read them from an image."
+      },
+      "zip": {
+        "name": "Zip & unzip",
+        "description": "Bundle files into a zip or extract one."
+      }
+    }
+  }
+}

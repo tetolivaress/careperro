@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { Cpu, Download, RotateCcw } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { MiniReadout } from "./SizeReadout";
 
@@ -24,12 +25,13 @@ export function ExportBar({
   before,
   after,
   status,
-  downloadLabel = "Download",
+  downloadLabel,
   onDownload,
   onReset,
   downloadDisabled,
   className,
 }: ExportBarProps) {
+  const t = useTranslations("shell.export");
   return (
     <div
       className={cn(
@@ -41,9 +43,9 @@ export function ExportBar({
         <Cpu className="size-4 text-primary" aria-hidden />
         {status ?? (
           <>
-            <span>Processed on this device</span>
+            <span>{t("processedOnDevice")}</span>
             <span className="size-[3px] rounded-full bg-fg-subtle" aria-hidden />
-            <span>0 bytes sent</span>
+            <span>{t("bytesSent")}</span>
           </>
         )}
       </div>
@@ -59,8 +61,8 @@ export function ExportBar({
           className="flex h-10 items-center gap-2 rounded-sm border border-border-strong bg-surface-2 px-3 text-sm font-medium text-fg transition-colors hover:bg-surface-3 focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none md:px-4"
         >
           <RotateCcw className="size-4 text-fg-muted" aria-hidden />
-          <span className="hidden md:inline">Reset</span>
-          <span className="sr-only md:hidden">Reset</span>
+          <span className="hidden md:inline">{t("reset")}</span>
+          <span className="sr-only md:hidden">{t("reset")}</span>
         </button>
         <button
           type="button"
@@ -69,7 +71,7 @@ export function ExportBar({
           className="flex h-10 items-center gap-2 rounded-sm bg-primary px-4 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
         >
           <Download className="size-4" aria-hidden />
-          {downloadLabel}
+          {downloadLabel ?? t("download")}
         </button>
       </div>
     </div>

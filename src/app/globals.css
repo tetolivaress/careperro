@@ -184,3 +184,17 @@
 @utility safe-bottom {
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
+
+/* Script-specific fallbacks layered in front of Inter for locales that need them. */
+.font-arabic {
+  --font-sans: var(--font-noto-arabic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+.font-devanagari {
+  --font-sans: var(--font-noto-devanagari), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+.font-jp {
+  --font-sans: var(--font-inter), var(--font-noto-jp), ui-sans-serif, system-ui, sans-serif;
+}
+.font-sc {
+  --font-sans: var(--font-inter), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+}

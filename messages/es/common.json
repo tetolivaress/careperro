@@ -1,0 +1,58 @@
+{
+  "brand": { "tagline": "Edita cualquier archivo. Sin subir nada." },
+  "nav": {
+    "home": "Inicio",
+    "allTools": "Todas las herramientas",
+    "categories": "Categorías",
+    "workspace": "Espacio de trabajo",
+    "collapseSidebar": "Contraer barra lateral",
+    "expandSidebar": "Expandir barra lateral",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú",
+    "backTo": "Volver a {title}",
+    "more": "Más",
+    "media": "Media",
+    "primary": "Principal",
+    "main": "Principal"
+  },
+  "search": {
+    "placeholder": "Buscar una herramienta...",
+    "label": "Buscar una herramienta",
+    "noResults": "Ninguna herramienta coincide con “{query}”.",
+    "navigate": "navegar",
+    "open": "abrir",
+    "summary": "{count} herramientas · todas en tu dispositivo",
+    "tools": "Herramientas"
+  },
+  "theme": {
+    "label": "Tema",
+    "switchTo": "Cambiar al tema {theme}",
+    "dark": "oscuro",
+    "light": "claro",
+    "auto": "Auto",
+    "darkLabel": "Oscuro",
+    "lightLabel": "Claro"
+  },
+  "language": { "label": "Idioma", "select": "Elegir idioma" },
+  "privacyBadge": "Tus archivos no salen de tu dispositivo",
+  "offline": {
+    "title": "Funciona sin conexión",
+    "body": "Sin subidas, sin cuentas, sin rastreo. Instálala como una app de escritorio.",
+    "install": "Instalar app",
+    "installHint": "La instalación estará disponible cuando la app cargue como PWA"
+  },
+  "announcement": {
+    "headline": "Este dominio está en venta.",
+    "body": "¿Te interesa? Escuchamos ofertas.",
+    "cta": "Hacer una oferta",
+    "dismiss": "Cerrar aviso"
+  },
+  "footer": { "links": "Acerca de · Privacidad · Código abierto" },
+  "notFound": {
+    "title": "Esa página no existe",
+    "body": "Puede que la herramienta se haya movido. Prueba el buscador o vuelve al inicio.",
+    "back": "Volver al inicio"
+  },
+  "loading": "Cargando {name}…"
+}

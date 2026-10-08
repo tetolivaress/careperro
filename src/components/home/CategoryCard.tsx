@@ -1,10 +1,17 @@
-import Link from "next/link";
-import { IconTile } from "@/components/ui/icon-tile";
-import { categoryPath, toolCount } from "@/tools/registry";
-import type { CategoryDefinition } from "@/tools/types";
+"use client";
 
-export function CategoryCard({ category, compact = false }: { category: CategoryDefinition; compact?: boolean }) {
-  const count = toolCount(category.slug);
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { IconTile } from "@/components/ui/icon-tile";
+import { categories, categoryPath, toolCount } from "@/tools/registry";
+import { useCategoryCopy } from "@/tools/copy";
+import type { Category } from "@/tools/types";
+
+export function CategoryCard({ slug, compact = false }: { slug: Category; compact?: boolean }) {
+  const t = useTranslations("home");
+  const category = categories[slug];
+  const copy = useCategoryCopy()(category);
+  const count = toolCount(slug);
   return (
     <Link
       href={categoryPath(category.slug)}
@@ -13,13 +20,11 @@ export function CategoryCard({ category, compact = false }: { category: Category
     >
       <div className="flex items-center justify-between">
         <IconTile icon={category.icon} size={compact ? 36 : 44} />
-        <span className="text-xs font-medium text-fg-subtle">
-          {count} {count === 1 ? "tool" : "tools"}
-        </span>
+        <span className="text-xs font-medium text-fg-subtle">{t("toolCount", { count })}</span>
       </div>
       <div className="flex flex-col gap-1.5">
-        <h3 className={compact ? "text-[15px] font-semibold text-fg" : "text-[17px] font-semibold text-fg"}>{category.name}</h3>
-        {!compact && <p className="text-[13px] leading-snug text-fg-muted">{category.description}</p>}
+        <h3 className={compact ? "text-[15px] font-semibold text-fg" : "text-[17px] font-semibold text-fg"}>{copy.name}</h3>
+        {!compact && <p className="text-[13px] leading-snug text-fg-muted">{copy.description}</p>}
       </div>
     </Link>
   );

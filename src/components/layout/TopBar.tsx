@@ -1,14 +1,17 @@
 "use client";
 
-import { Globe, Search } from "lucide-react";
+import { Search } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Kbd } from "@/components/ui/kbd";
 import { Logo } from "./Logo";
 import { PrivacyBadge } from "./PrivacyBadge";
 import { ThemeToggle } from "./ThemeToggle";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useUiStore } from "@/stores/ui";
 
 /** Desktop top bar: logo, tool search trigger, privacy badge, language, theme toggle. */
 export function TopBar() {
+  const t = useTranslations("common.search");
   const openSearch = useUiStore((s) => s.setSearchOpen);
 
   return (
@@ -20,26 +23,18 @@ export function TopBar() {
       <button
         type="button"
         onClick={() => openSearch(true)}
-        className="flex h-[38px] w-full max-w-[460px] items-center gap-2.5 rounded-sm border border-border bg-surface-2 pr-2 pl-3 text-left text-sm text-fg-subtle transition-colors hover:border-border-strong hover:text-fg-muted focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none"
-        aria-label="Find a tool"
+        className="flex h-[38px] w-full max-w-[460px] items-center gap-2.5 rounded-sm border border-border bg-surface-2 pr-2 pl-3 text-start text-sm text-fg-subtle transition-colors hover:border-border-strong hover:text-fg-muted focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none"
+        aria-label={t("label")}
         aria-keyshortcuts="Meta+K Control+K"
       >
         <Search className="size-4 shrink-0" aria-hidden />
-        <span className="flex-1">Find a tool...</span>
+        <span className="flex-1">{t("placeholder")}</span>
         <Kbd>⌘K</Kbd>
       </button>
 
       <div className="flex items-center justify-end gap-2 lg:w-[520px]">
         <PrivacyBadge className="hidden lg:inline-flex" />
-        <button
-          type="button"
-          className="flex h-9 items-center gap-1.5 rounded-sm border border-border px-2.5 text-[13px] font-medium text-fg transition-colors hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none"
-          aria-label="Language: English"
-          title="Spanish arrives in a later release"
-        >
-          <Globe className="size-[15px] text-fg-muted" aria-hidden />
-          EN
-        </button>
+        <LanguageSwitcher />
         <ThemeToggle />
       </div>
     </header>

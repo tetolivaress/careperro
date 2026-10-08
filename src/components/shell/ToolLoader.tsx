@@ -2,6 +2,8 @@
 
 import { Suspense, lazy, type ComponentType, type LazyExoticComponent } from "react";
 import { Loader } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useToolCopy } from "@/tools/copy";
 import { getTool, tools } from "@/tools/registry";
 import type { Category } from "@/tools/types";
 
@@ -15,6 +17,8 @@ const lazyComponents: ReadonlyMap<string, LazyExoticComponent<ComponentType>> = 
 
 /** Lazily loads a tool's component from the registry so heavy code ships only when its page opens. */
 export function ToolLoader({ category, slug }: { category: Category; slug: string }) {
+  const t = useTranslations("common");
+  const toolCopy = useToolCopy();
   const tool = getTool(category, slug);
   const Component = lazyComponents.get(`${category}/${slug}`);
   if (!tool || !Component) return null;
@@ -24,7 +28,7 @@ export function ToolLoader({ category, slug }: { category: Category; slug: strin
       fallback={
         <div className="flex flex-1 items-center justify-center gap-2 text-sm text-fg-muted" role="status">
           <Loader className="size-4 animate-spin" aria-hidden />
-          Loading {tool.name.toLowerCase()}…
+          {t("loading", { name: toolCopy(tool).name })}
         </div>
       }
     >

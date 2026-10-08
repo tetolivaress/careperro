@@ -1,12 +1,14 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Search } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Kbd } from "@/components/ui/kbd";
 import { IconTile } from "@/components/ui/icon-tile";
 import { categories, toolPath, tools } from "@/tools/registry";
+import { useCategoryCopy, useToolCopy } from "@/tools/copy";
 import { useUiStore } from "@/stores/ui";
 import { cn } from "@/lib/utils";
 
@@ -23,8 +25,11 @@ function score(query: string, haystack: string[]): number {
   return best;
 }
 
-/** ⌘K / Ctrl+K command palette over the tool registry. */
+/** ⌘K / Ctrl+K command palette over the tool registry. Matches localized and English names. */
 export function ToolSearch() {
+  const t = useTranslations("common.search");
+  const toolCopy = useToolCopy();
+  const catCopy = useCategoryCopy();
   const open = useUiStore((s) => s.searchOpen);
   const setOpen = useUiStore((s) => s.setSearchOpen);
   const [query, setQuery] = useState("");
@@ -53,20 +58,24 @@ export function ToolSearch() {
 
   const results = useMemo(() => {
     const scored = tools
-      .map((t) => ({
-        tool: t,
-        score: score(query, [t.name, t.description, categories[t.category].name, ...(t.keywords ?? [])]),
-      }))
+      .map((tool) => {
+        const copy = toolCopy(tool);
+        return {
+          tool,
+          copy,
+          score: score(query, [copy.name, copy.description, tool.name, tool.description, catCopy(categories[tool.category]).name, ...(tool.keywords ?? [])]),
+        };
+      })
       .filter((r) => r.score > 0)
-      .sort((a, b) => b.score - a.score || a.tool.name.localeCompare(b.tool.name));
-    return scored.slice(0, query.trim() ? 12 : 8).map((r) => r.tool);
-  }, [query]);
+      .sort((a, b) => b.score - a.score || a.copy.name.localeCompare(b.copy.name));
+    return scored.slice(0, query.trim() ? 12 : 8);
+  }, [query, toolCopy, catCopy]);
 
   const go = (index: number) => {
-    const tool = results[index];
-    if (!tool) return;
+    const r = results[index];
+    if (!r) return;
     close(false);
-    router.push(toolPath(tool));
+    router.push(toolPath(r.tool));
   };
 
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -88,11 +97,8 @@ export function ToolSearch() {
 
   return (
     <Dialog open={open} onOpenChange={close}>
-      <DialogContent
-        showCloseButton={false}
-        className="top-[12%] translate-y-0 gap-0 overflow-hidden p-0 sm:max-w-xl"
-      >
-        <DialogTitle className="sr-only">Find a tool</DialogTitle>
+      <DialogContent showCloseButton={false} className="top-[12%] translate-y-0 gap-0 overflow-hidden p-0 sm:max-w-xl">
+        <DialogTitle className="sr-only">{t("label")}</DialogTitle>
         <div className="flex h-14 items-center gap-3 border-b border-border px-4">
           <Search className="size-4 shrink-0 text-fg-subtle" aria-hidden />
           <input
@@ -103,18 +109,16 @@ export function ToolSearch() {
               setActive(0);
             }}
             onKeyDown={onKeyDown}
-            placeholder="Find a tool..."
-            aria-label="Find a tool"
-            aria-activedescendant={results[active] ? `search-${results[active].category}-${results[active].slug}` : undefined}
+            placeholder={t("placeholder")}
+            aria-label={t("label")}
+            aria-activedescendant={results[active] ? `search-${results[active].tool.category}-${results[active].tool.slug}` : undefined}
             className="h-full flex-1 bg-transparent text-[15px] text-fg outline-none placeholder:text-fg-subtle"
           />
           <Kbd>esc</Kbd>
         </div>
-        <ul ref={listRef} role="listbox" aria-label="Tools" className="scrollbar-thin max-h-[min(60vh,420px)] overflow-y-auto p-2">
-          {results.length === 0 && (
-            <li className="px-3 py-8 text-center text-sm text-fg-muted">No tools match “{query}”.</li>
-          )}
-          {results.map((tool, i) => (
+        <ul ref={listRef} role="listbox" aria-label={t("tools")} className="scrollbar-thin max-h-[min(60vh,420px)] overflow-y-auto p-2">
+          {results.length === 0 && <li className="px-3 py-8 text-center text-sm text-fg-muted">{t("noResults", { query })}</li>}
+          {results.map(({ tool, copy }, i) => (
             <li
               key={`${tool.category}/${tool.slug}`}
               id={`search-${tool.category}-${tool.slug}`}
@@ -122,25 +126,27 @@ export function ToolSearch() {
               aria-selected={i === active}
               onMouseEnter={() => setActive(i)}
               onClick={() => go(i)}
-              className={cn(
-                "flex cursor-pointer items-center gap-3 rounded-sm px-2.5 py-2",
-                i === active ? "bg-surface-2" : "hover:bg-surface-2/60",
-              )}
+              className={cn("flex cursor-pointer items-center gap-3 rounded-sm px-2.5 py-2", i === active ? "bg-surface-2" : "hover:bg-surface-2/60")}
             >
               <IconTile icon={tool.icon} size={36} />
               <div className="min-w-0 flex-1">
-                <div className="truncate text-sm font-semibold text-fg">{tool.name}</div>
-                <div className="truncate text-xs text-fg-muted">{tool.description}</div>
+                <div className="truncate text-sm font-semibold text-fg">{copy.name}</div>
+                <div className="truncate text-xs text-fg-muted">{copy.description}</div>
               </div>
-              <span className="hidden text-xs text-fg-subtle sm:inline">{categories[tool.category].name}</span>
-              <ArrowRight className={cn("size-4 text-fg-subtle", i === active ? "opacity-100" : "opacity-0")} aria-hidden />
+              <span className="hidden text-xs text-fg-subtle sm:inline">{catCopy(categories[tool.category]).name}</span>
+              <ArrowRight className={cn("size-4 text-fg-subtle rtl:rotate-180", i === active ? "opacity-100" : "opacity-0")} aria-hidden />
             </li>
           ))}
         </ul>
         <div className="flex items-center gap-4 border-t border-border px-4 py-2 text-[11px] text-fg-subtle">
-          <span className="flex items-center gap-1"><Kbd>↑</Kbd><Kbd>↓</Kbd> navigate</span>
-          <span className="flex items-center gap-1"><Kbd>↵</Kbd> open</span>
-          <span className="ml-auto">{tools.length} tools · all on-device</span>
+          <span className="flex items-center gap-1">
+            <Kbd>↑</Kbd>
+            <Kbd>↓</Kbd> {t("navigate")}
+          </span>
+          <span className="flex items-center gap-1">
+            <Kbd>↵</Kbd> {t("open")}
+          </span>
+          <span className="ms-auto">{t("summary", { count: tools.length })}</span>
         </div>
       </DialogContent>
     </Dialog>

@@ -2,6 +2,7 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 import { useSyncExternalStore } from "react";
 import { cn } from "@/lib/utils";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -9,10 +10,12 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 const subscribeNoop = () => () => {};
 
 export function ThemeToggle({ className }: { className?: string }) {
+  const t = useTranslations("common.theme");
   const { resolvedTheme, setTheme } = useTheme();
   const mounted = useSyncExternalStore(subscribeNoop, () => true, () => false);
   const isDark = mounted ? resolvedTheme !== "light" : true;
   const next = isDark ? "light" : "dark";
+  const label = t("switchTo", { theme: t(next) });
 
   return (
     <Tooltip>
@@ -25,34 +28,31 @@ export function ThemeToggle({ className }: { className?: string }) {
               "flex size-9 items-center justify-center rounded-sm border border-border text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:outline-none",
               className,
             )}
-            aria-label={`Switch to ${next} theme`}
+            aria-label={label}
           />
         }
       >
         {isDark ? <Moon className="size-4" aria-hidden /> : <Sun className="size-4" aria-hidden />}
       </TooltipTrigger>
-      <TooltipContent>Switch to {next} theme</TooltipContent>
+      <TooltipContent>{label}</TooltipContent>
     </Tooltip>
   );
 }
 
 /** Three-way segmented theme switch used in the mobile drawer. */
 export function ThemeSegmented({ className }: { className?: string }) {
+  const t = useTranslations("common.theme");
   const { theme, setTheme } = useTheme();
   const mounted = useSyncExternalStore(subscribeNoop, () => true, () => false);
   const current = mounted ? (theme ?? "system") : "system";
   const options = [
-    { value: "system", label: "Auto" },
-    { value: "dark", label: "Dark" },
-    { value: "light", label: "Light" },
+    { value: "system", label: t("auto") },
+    { value: "dark", label: t("darkLabel") },
+    { value: "light", label: t("lightLabel") },
   ] as const;
 
   return (
-    <div
-      role="radiogroup"
-      aria-label="Theme"
-      className={cn("flex gap-0.5 rounded-[10px] border border-border bg-surface-2 p-[3px]", className)}
-    >
+    <div role="radiogroup" aria-label={t("label")} className={cn("flex gap-0.5 rounded-[10px] border border-border bg-surface-2 p-[3px]", className)}>
       {options.map((o) => {
         const active = current === o.value;
         return (

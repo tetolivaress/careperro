@@ -9,9 +9,6 @@ const AUDIO = ["audio/*", ".m4a", ".flac"];
 const VIDEO = ["video/mp4", "video/webm", "video/quicktime", ".mov"];
 const PDF = ["application/pdf"];
 
-/** Placeholder until each phase lands its real component. */
-const placeholder = () => import("@/tools/placeholder/PlaceholderTool");
-
 /**
  * Single source of truth for all tools.
  * Sidebar, search, home grid, category pages, routes and SEO metadata derive from this list.
@@ -31,7 +28,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 100 * MB,
     keywords: ["optimize", "reduce", "smaller", "quality"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "resize",
@@ -44,7 +41,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 100 * MB,
     keywords: ["scale", "dimensions", "width", "height"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "crop",
@@ -56,7 +53,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["aspect", "ratio", "trim"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "convert",
@@ -68,7 +65,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["jpg to png", "png to webp", "avif", "change format"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "rotate",
@@ -80,7 +77,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["mirror", "orientation", "turn"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "watermark",
@@ -92,7 +89,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["logo", "copyright", "brand"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "filters",
@@ -104,7 +101,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["grayscale", "blur", "adjustments", "effects"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "remove-exif",
@@ -118,7 +115,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 100 * MB,
     keywords: ["metadata", "privacy", "gps", "strip"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "heic-to-jpg",
@@ -130,7 +127,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["iphone", "apple", "heif"],
-    component: placeholder,
+    component: () => import("@/tools/image/ImageEditor"),
   },
   {
     slug: "images-to-pdf",
@@ -142,7 +139,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 100 * MB,
     keywords: ["jpg to pdf", "png to pdf", "document"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/ImagesToPdfTool"),
   },
   {
     slug: "favicon",
@@ -154,7 +151,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 20 * MB,
     keywords: ["app icon", "ico", "pwa", "manifest"],
-    component: placeholder,
+    component: () => import("@/tools/privacy/FaviconTool"),
   },
 
   // ───────── Audio ─────────
@@ -169,7 +166,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 500 * MB,
     keywords: ["cut", "clip", "ringtone"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "convert",
@@ -181,7 +178,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 500 * MB,
     keywords: ["mp3", "wav", "ogg", "m4a", "bitrate"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "volume",
@@ -193,7 +190,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["gain", "louder", "quieter"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "fade",
@@ -205,7 +202,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["fade in", "fade out"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "speed",
@@ -217,7 +214,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["tempo", "pitch", "faster", "slower"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "normalize",
@@ -229,7 +226,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 500 * MB,
     keywords: ["loudness", "level", "lufs"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "merge",
@@ -241,7 +238,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 500 * MB,
     keywords: ["join", "concatenate", "combine"],
-    component: placeholder,
+    component: () => import("@/tools/audio/AudioEditor"),
   },
   {
     slug: "record",
@@ -252,7 +249,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["microphone", "memo", "capture"],
-    component: placeholder,
+    component: () => import("@/tools/audio/RecorderTool"),
   },
 
   // ───────── Video ─────────
@@ -266,7 +263,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["cut", "clip"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "compress",
@@ -278,7 +275,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["reduce", "smaller", "bitrate"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "convert",
@@ -290,7 +287,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["mp4", "webm", "mov"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "to-gif",
@@ -303,7 +300,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 2 * GB,
     keywords: ["gif", "loop", "animation"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "extract-audio",
@@ -315,7 +312,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["mp3", "soundtrack", "rip"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "remove-audio",
@@ -327,7 +324,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["mute", "silent"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "crop",
@@ -339,7 +336,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["aspect", "ratio", "vertical", "square"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "watermark",
@@ -351,7 +348,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["logo", "brand", "overlay"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "capture-frame",
@@ -363,7 +360,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 2 * GB,
     keywords: ["screenshot", "still", "thumbnail"],
-    component: placeholder,
+    component: () => import("@/tools/video/VideoEditor"),
   },
   {
     slug: "record",
@@ -374,7 +371,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["screen", "webcam", "camera", "capture"],
-    component: placeholder,
+    component: () => import("@/tools/video/RecorderTool"),
   },
 
   // ───────── PDF ─────────
@@ -390,7 +387,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 500 * MB,
     keywords: ["combine", "join"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "split",
@@ -402,7 +399,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["extract", "pages", "range"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "organize",
@@ -414,7 +411,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["reorder", "rotate", "delete", "pages"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "to-images",
@@ -426,7 +423,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["png", "jpg", "render", "export"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfToImagesTool"),
   },
   {
     slug: "compress",
@@ -438,7 +435,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["reduce", "smaller", "optimize"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "watermark",
@@ -450,7 +447,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["stamp", "draft", "confidential"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "page-numbers",
@@ -462,7 +459,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["footer", "header", "numbering"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
   {
     slug: "sign",
@@ -474,7 +471,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 500 * MB,
     keywords: ["signature", "esign", "initials"],
-    component: placeholder,
+    component: () => import("@/tools/pdf/PdfOrganizer"),
   },
 
   // ───────── Text ─────────
@@ -487,7 +484,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["count", "length", "reading time"],
-    component: placeholder,
+    component: () => import("@/tools/text/WordCounterTool"),
   },
   {
     slug: "case-converter",
@@ -498,7 +495,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["uppercase", "lowercase", "title case", "camel"],
-    component: placeholder,
+    component: () => import("@/tools/text/CaseConverterTool"),
   },
   {
     slug: "diff",
@@ -509,7 +506,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["compare", "changes", "difference"],
-    component: placeholder,
+    component: () => import("@/tools/text/DiffTool"),
   },
   {
     slug: "markdown",
@@ -520,7 +517,7 @@ export const tools: ToolDefinition[] = [
     accept: [".md", "text/markdown", "text/plain"],
     multiple: false,
     keywords: ["md", "preview", "render"],
-    component: placeholder,
+    component: () => import("@/tools/text/MarkdownTool"),
   },
   {
     slug: "ocr",
@@ -532,7 +529,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 50 * MB,
     keywords: ["ocr", "recognize", "extract text", "scan"],
-    component: placeholder,
+    component: () => import("@/tools/text/OcrTool"),
   },
   {
     slug: "text-to-speech",
@@ -543,7 +540,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["tts", "voice", "read aloud"],
-    component: placeholder,
+    component: () => import("@/tools/text/TextToSpeechTool"),
   },
 
   // ───────── Developer ─────────
@@ -558,7 +555,7 @@ export const tools: ToolDefinition[] = [
     maxSize: 20 * MB,
     keywords: ["pretty print", "validate", "minify", "beautify"],
     popular: true,
-    component: placeholder,
+    component: () => import("@/tools/dev/JsonTool"),
   },
   {
     slug: "base64",
@@ -569,7 +566,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["encode", "decode", "data uri"],
-    component: placeholder,
+    component: () => import("@/tools/dev/Base64Tool"),
   },
   {
     slug: "url",
@@ -580,7 +577,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["percent encoding", "escape", "query string"],
-    component: placeholder,
+    component: () => import("@/tools/dev/UrlTool"),
   },
   {
     slug: "jwt",
@@ -591,7 +588,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["token", "jwt", "claims"],
-    component: placeholder,
+    component: () => import("@/tools/dev/JwtTool"),
   },
   {
     slug: "hash",
@@ -602,7 +599,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["sha256", "checksum", "digest"],
-    component: placeholder,
+    component: () => import("@/tools/dev/HashTool"),
   },
   {
     slug: "uuid",
@@ -613,7 +610,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["guid", "unique id", "random"],
-    component: placeholder,
+    component: () => import("@/tools/dev/UuidTool"),
   },
   {
     slug: "color",
@@ -624,7 +621,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["hex", "rgb", "hsl", "picker"],
-    component: placeholder,
+    component: () => import("@/tools/dev/ColorTool"),
   },
   {
     slug: "palette",
@@ -635,7 +632,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["colors", "scheme", "shades", "tints"],
-    component: placeholder,
+    component: () => import("@/tools/dev/PaletteTool"),
   },
   {
     slug: "regex",
@@ -646,7 +643,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["regular expression", "pattern", "match"],
-    component: placeholder,
+    component: () => import("@/tools/dev/RegexTool"),
   },
   {
     slug: "csv",
@@ -658,7 +655,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 50 * MB,
     keywords: ["spreadsheet", "xlsx", "table", "convert"],
-    component: placeholder,
+    component: () => import("@/tools/dev/CsvTool"),
   },
 
   // ───────── Privacy ─────────
@@ -671,7 +668,7 @@ export const tools: ToolDefinition[] = [
     accept: [],
     multiple: false,
     keywords: ["random", "secure", "passphrase"],
-    component: placeholder,
+    component: () => import("@/tools/privacy/PasswordTool"),
   },
   {
     slug: "encrypt",
@@ -683,7 +680,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 1 * GB,
     keywords: ["aes", "password", "secure", "lock"],
-    component: placeholder,
+    component: () => import("@/tools/privacy/EncryptTool"),
   },
   {
     slug: "qr",
@@ -695,7 +692,7 @@ export const tools: ToolDefinition[] = [
     multiple: false,
     maxSize: 20 * MB,
     keywords: ["qr", "scan", "barcode"],
-    component: placeholder,
+    component: () => import("@/tools/privacy/QrTool"),
   },
   {
     slug: "zip",
@@ -707,7 +704,7 @@ export const tools: ToolDefinition[] = [
     multiple: true,
     maxSize: 2 * GB,
     keywords: ["archive", "compress", "extract"],
-    component: placeholder,
+    component: () => import("@/tools/privacy/ZipTool"),
   },
 ];
 

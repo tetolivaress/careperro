@@ -1,7 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { DropZone } from "@/components/shell/DropZone";
 import { kindOf } from "@/lib/fileTypes";
 import { toolPath, tools } from "@/tools/registry";
@@ -27,6 +28,7 @@ export function suggestTool(file: File): ToolDefinition | undefined {
 }
 
 export function HomeDropZone() {
+  const t = useTranslations("home.drop");
   const router = useRouter();
   const isDesktop = useIsDesktop();
   const [note, setNote] = useState<string | null>(null);
@@ -36,13 +38,13 @@ export function HomeDropZone() {
       <DropZone
         multiple
         size={isDesktop ? "default" : "compact"}
-        title={isDesktop ? "Drop any file and we'll suggest tools" : "Drop a file or tap to browse"}
-        subtitle={isDesktop ? "or click to browse · nothing is uploaded, ever" : "We'll suggest the right tools"}
-        moreLabel={`+${Math.max(tools.length - 9, 0)} more`}
+        title={isDesktop ? t("title") : t("titleMobile")}
+        subtitle={isDesktop ? t("subtitle") : t("subtitleMobile")}
+        moreLabel={t("more", { count: Math.max(tools.length - 9, 0) })}
         onFiles={(files) => {
           const tool = suggestTool(files[0]);
           if (!tool) {
-            setNote(`We don't have a tool for “${files[0].name}” yet. Browse the categories below.`);
+            setNote(t("noTool", { name: files[0].name }));
             return;
           }
           stashFiles(files);

@@ -1,0 +1,76 @@
+{
+  "dropzone": {
+    "title": "Drop any file and we'll suggest tools",
+    "subtitle": "or click to browse · nothing is uploaded, ever",
+    "titleOne": "Drop a file here",
+    "titleMany": "Drop files here",
+    "release": "Release to open {count, plural, =1 {file} other {# files}}",
+    "unsupported": "“{name}” isn't a supported file type for this tool.",
+    "tooLarge": "“{name}” is {size}. This tool handles files up to {max}.",
+    "browse": "Browse files"
+  },
+  "export": {
+    "processedOnDevice": "Processed on this device",
+    "processedIn": "Processed on this device in {seconds} s",
+    "bytesSent": "0 bytes sent",
+    "reset": "Reset",
+    "download": "Download",
+    "downloadFormat": "Download {format}",
+    "downloadAll": "Download all (.zip)",
+    "saved": "Saved to your downloads"
+  },
+  "readout": {
+    "estimated": "Estimated output",
+    "result": "Result",
+    "smaller": "{percent}% smaller",
+    "larger": "+{percent}% larger"
+  },
+  "status": {
+    "cancel": "Cancel",
+    "anotherFile": "Another file",
+    "chooseAnother": "Choose another",
+    "supportedFormats": "Supported formats",
+    "done": "Done — {percent}% smaller",
+    "ready": "{name} is ready · saved {size}",
+    "cannotOpen": "Can't open “{name}”",
+    "eta": "About {seconds} s left · on-device",
+    "processing": "Processing…"
+  },
+  "toolbar": {
+    "addFiles": "Add files",
+    "fit": "Fit to screen",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "original": "Original",
+    "split": "Split",
+    "sideBySide": "Side by side",
+    "chooseAnother": "Choose another",
+    "settings": "Settings",
+    "expandSettings": "Expand settings",
+    "shrinkSettings": "Shrink settings"
+  },
+  "placeholder": {
+    "comingSoon": "This tool is coming in a later phase. It will run entirely in your browser.",
+    "loaded": "File loaded on this device",
+    "loadedBody": "{tool} controls arrive in a later phase. Nothing was uploaded.",
+    "files": "Files",
+    "remove": "Remove {name}",
+    "name": "Name",
+    "format": "Format",
+    "size": "Size",
+    "modified": "Modified",
+    "unchanged": "Output (unchanged)",
+    "downloadFirst": "Download first"
+  },
+  "twoPane": {
+    "input": "Input",
+    "output": "Output",
+    "copy": "Copy",
+    "copied": "Copied",
+    "clear": "Clear",
+    "paste": "Paste",
+    "sample": "Load sample",
+    "characters": "{count} characters",
+    "uploadFile": "Open a file"
+  }
+}

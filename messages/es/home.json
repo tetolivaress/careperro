@@ -1,0 +1,37 @@
+{
+  "headline": "Edita cualquier archivo. Sin subir nada.",
+  "subhead": "{count} herramientas para imágenes, audio, vídeo, PDF y código que funcionan por completo en tu navegador. Sin subidas, sin registro, sin anuncios.",
+  "subheadMobile": "{count} herramientas que funcionan por completo en tu móvil. Sin subidas, sin registro, sin anuncios.",
+  "drop": {
+    "title": "Suelta cualquier archivo y te sugerimos herramientas",
+    "subtitle": "o haz clic para explorar · nunca se sube nada",
+    "titleMobile": "Suelta un archivo o toca para explorar",
+    "subtitleMobile": "Te sugerimos las herramientas adecuadas",
+    "more": "+{count} más",
+    "noTool": "Todavía no tenemos una herramienta para “{name}”. Explora las categorías de abajo."
+  },
+  "session": {
+    "title": "Esta sesión",
+    "networkIdle": "Red inactiva",
+    "uploaded": "subidos",
+    "filesProcessed": "archivos procesados"
+  },
+  "browseByCategory": "Explorar por categoría",
+  "allTools": "Las {count} herramientas",
+  "allToolsShort": "Todas las herramientas",
+  "suggestTool": "Sugerir una herramienta",
+  "popular": "Populares ahora",
+  "seeAll": "Ver todas",
+  "toolCount": "{count, plural, one {# herramienta} other {# herramientas}}",
+  "allToolsPage": {
+    "title": "Todas las herramientas",
+    "meta": "{count} herramientas · todas procesadas en tu dispositivo",
+    "description": "Las {count} herramientas en tu dispositivo, agrupadas por categoría."
+  },
+  "category": {
+    "meta": "{count} herramientas · {formats} · procesadas en tu dispositivo",
+    "quickDrop": "Suelta archivos para abrirlos en {tool}",
+    "notAFile": "“{name}” no es un archivo de {category}.",
+    "description": "{description}. {count} herramientas para {formats}, procesadas en tu dispositivo."
+  }
+}

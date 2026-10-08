@@ -4,3 +4,8 @@ export { PreviewArea } from "./PreviewArea";
 export { SettingsGroup, SettingsPanel } from "./SettingsPanel";
 export { MiniReadout, SavingsPill, SizeReadout } from "./SizeReadout";
 export { ToolShell } from "./ToolShell";
+export { DoneCard, ErrorCard, ProcessingCard } from "./StatusCards";
+export type { ProcessingStep } from "./StatusCards";
+export { Segmented } from "./Segmented";
+export type { SegmentOption } from "./Segmented";
+export { ToggleRow } from "./ToggleRow";
