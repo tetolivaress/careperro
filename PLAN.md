@@ -2,7 +2,7 @@
 
 A privacy-first web toolbox where every tool runs 100% in the browser. Files never leave the user's device. No backend.
 
-> Replace `[APP NAME]` with the final product name before starting.
+> Product name: **Lokal** (from design.pen).
 
 ## How to run this plan
 
@@ -126,19 +126,19 @@ Text-based tools (Text, Developer, parts of Privacy) use a second template, `Two
 
 ## Phase 1: Foundation
 
-- [ ] Create the Next.js project with TypeScript, Tailwind, ESLint, and pnpm
-- [ ] Configure static export and add `lint`, `typecheck`, and `build` scripts
-- [ ] Install and initialize shadcn/ui; add button, slider, tabs, input, select, switch, tooltip, sheet, dialog, progress, sonner
-- [ ] Set up dark and light themes with a toggle
-- [ ] Create `tools/types.ts` and `tools/registry.ts` with the 7 categories and placeholder entries
-- [ ] Build `TopBar` (logo, tool search, theme toggle) and collapsible `Sidebar` generated from the registry
-- [ ] Build routes: home, `[category]`, `[category]/[tool]` using `generateStaticParams`
-- [ ] Build the home page: hero, drop zone, category cards, popular tools
-- [ ] Build the category page: grid of tool cards
-- [ ] Build the shell components: `DropZone`, `PreviewArea`, `SettingsPanel`, `ExportBar`, `SizeReadout`
-- [ ] Build `lib/`: `download.ts`, `formatBytes.ts`, `fileTypes.ts`
-- [ ] Add the persistent "Your files stay on your device" badge
-- [ ] Make the layout responsive (settings panel becomes a bottom sheet under 768px)
+- [x] Create the Next.js project with TypeScript, Tailwind, ESLint, and pnpm
+- [x] Configure static export and add `lint`, `typecheck`, and `build` scripts
+- [x] Install and initialize shadcn/ui; add button, slider, tabs, input, select, switch, tooltip, sheet, dialog, progress, sonner
+- [x] Set up dark and light themes with a toggle
+- [x] Create `tools/types.ts` and `tools/registry.ts` with the 7 categories and placeholder entries
+- [x] Build `TopBar` (logo, tool search, theme toggle) and collapsible `Sidebar` generated from the registry
+- [x] Build routes: home, `[category]`, `[category]/[tool]` using `generateStaticParams`
+- [x] Build the home page: hero, drop zone, category cards, popular tools
+- [x] Build the category page: grid of tool cards
+- [x] Build the shell components: `DropZone`, `PreviewArea`, `SettingsPanel`, `ExportBar`, `SizeReadout`
+- [x] Build `lib/`: `download.ts`, `formatBytes.ts`, `fileTypes.ts`
+- [x] Add the persistent "Your files stay on your device" badge
+- [x] Make the layout responsive (settings panel becomes a bottom sheet under 768px)
 
 **Acceptance criteria**
 - `pnpm build` produces a static export with one page per registry entry
