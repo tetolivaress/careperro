@@ -147,7 +147,7 @@ export const tools: ToolDefinition[] = [
     name: "Favicon maker",
     description: "Generate every icon size from one image.",
     icon: "app-window",
-    accept: ["image/png", "image/jpeg", "image/webp", "image/svg+xml"],
+    accept: ["image/png", "image/jpeg", "image/webp", "image/svg+xml", "image/heic", "image/heif", ".heic", ".heif"],
     multiple: false,
     maxSize: 20 * MB,
     keywords: ["app icon", "ico", "pwa", "manifest"],

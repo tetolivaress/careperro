@@ -1,5 +1,12 @@
 {
-  "tabs": { "compress": "Compress", "resize": "Resize", "crop": "Crop", "watermark": "Watermark", "filters": "Filters", "convert": "Convert" },
+  "tabs": {
+    "compress": "Compress",
+    "resize": "Resize",
+    "crop": "Crop",
+    "watermark": "Watermark",
+    "filters": "Filters",
+    "convert": "Convert"
+  },
   "compress": {
     "preset": "Preset",
     "presetSmallest": "Smallest",
@@ -110,7 +117,13 @@
     "cancel": "Cancel",
     "totalSavings": "{count} images · {before} → {after} ({percent}% smaller)",
     "errorDecode": "Can't open “{name}”",
-    "errorDecodeBody": "This browser can't decode that format. HEIC opens natively in Safari; elsewhere try JPG, PNG, WebP, AVIF or GIF.",
-    "status": { "loading": "Decoding…", "ready": "Ready", "rendering": "Processing…", "done": "Done", "error": "Failed" }
+    "errorDecodeBody": "This photo couldn't be decoded on this device. It may be damaged or use an unusual format; try JPG, PNG, WebP, AVIF, GIF or HEIC.",
+    "status": {
+      "loading": "Decoding…",
+      "ready": "Ready",
+      "rendering": "Processing…",
+      "done": "Done",
+      "error": "Failed"
+    }
   }
 }

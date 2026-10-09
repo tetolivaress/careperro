@@ -117,7 +117,7 @@
     "cancel": "إلغاء",
     "totalSavings": "{count} صورة · {before} → {after} (أصغر بنسبة {percent}%)",
     "errorDecode": "تعذّر فتح “{name}”",
-    "errorDecodeBody": "لا يستطيع هذا المتصفح فك ترميز هذه الصيغة. تُفتح ملفات HEIC أصلًا في Safari؛ وفي غيره جرّب JPG أو PNG أو WebP أو AVIF أو GIF.",
+    "errorDecodeBody": "تعذّر فك ترميز هذه الصورة على هذا الجهاز. قد تكون تالفة أو بتنسيق غير معتاد؛ جرّب JPG أو PNG أو WebP أو AVIF أو GIF أو HEIC.",
     "status": {
       "loading": "جارٍ فك الترميز…",
       "ready": "جاهز",

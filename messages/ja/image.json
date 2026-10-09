@@ -117,7 +117,7 @@
     "cancel": "キャンセル",
     "totalSavings": "{count} 枚の画像 · {before} → {after}（{percent}% 削減）",
     "errorDecode": "「{name}」を開けません",
-    "errorDecodeBody": "このブラウザではこの形式をデコードできません。HEIC は Safari でネイティブに開けます。他のブラウザでは JPG、PNG、WebP、AVIF、GIF をお試しください。",
+    "errorDecodeBody": "このデバイスでは写真をデコードできませんでした。ファイルが破損しているか、珍しい形式の可能性があります。JPG、PNG、WebP、AVIF、GIF、HEIC をお試しください。",
     "status": {
       "loading": "デコード中…",
       "ready": "準備完了",

@@ -117,7 +117,7 @@
     "cancel": "रद्द करें",
     "totalSavings": "{count} इमेज · {before} → {after} ({percent}% छोटा)",
     "errorDecode": "“{name}” नहीं खुल सकी",
-    "errorDecodeBody": "यह ब्राउज़र उस फ़ॉर्मैट को डिकोड नहीं कर सकता। HEIC Safari में सीधे खुलता है; अन्य जगह JPG, PNG, WebP, AVIF या GIF आज़माएँ।",
+    "errorDecodeBody": "इस डिवाइस पर यह फ़ोटो डिकोड नहीं हो सकी। फ़ाइल खराब हो सकती है या असामान्य फ़ॉर्मैट में हो सकती है; JPG, PNG, WebP, AVIF, GIF या HEIC आज़माएँ।",
     "status": {
       "loading": "डिकोड हो रहा है…",
       "ready": "तैयार",

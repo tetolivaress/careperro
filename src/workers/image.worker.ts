@@ -266,6 +266,14 @@ const api = {
     return { width: bitmap.width, height: bitmap.height, hasExif: !!exif };
   },
 
+  /** Registers a bitmap decoded on the main thread (HEIC via libheif). Takes ownership of it. */
+  loadBitmap(id: string, bitmap: ImageBitmap, file: Blob, type: string): SourceInfo {
+    const prev = sources.get(id);
+    prev?.bitmap.close();
+    sources.set(id, { bitmap, file, type, exif: null });
+    return { width: bitmap.width, height: bitmap.height, hasExif: false };
+  },
+
   unload(id: string): void {
     sources.get(id)?.bitmap.close();
     sources.delete(id);

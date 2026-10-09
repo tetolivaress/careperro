@@ -117,7 +117,7 @@
     "cancel": "Batal",
     "totalSavings": "{count} gambar · {before} → {after} ({percent}% lebih kecil)",
     "errorDecode": "Tidak dapat membuka “{name}”",
-    "errorDecodeBody": "Browser ini tidak dapat mendekode format tersebut. HEIC terbuka secara native di Safari; di browser lain coba JPG, PNG, WebP, AVIF, atau GIF.",
+    "errorDecodeBody": "Foto ini tidak dapat didekode di perangkat ini. Mungkin rusak atau memakai format yang tidak umum; coba JPG, PNG, WebP, AVIF, GIF, atau HEIC.",
     "status": {
       "loading": "Mendekode…",
       "ready": "Siap",

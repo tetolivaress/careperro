@@ -117,7 +117,7 @@
     "cancel": "取消",
     "totalSavings": "{count} 张图片 · {before} → {after}（缩小 {percent}%）",
     "errorDecode": "无法打开“{name}”",
-    "errorDecodeBody": "此浏览器无法解码该格式。HEIC 可在 Safari 中原生打开；其他浏览器请尝试 JPG、PNG、WebP、AVIF 或 GIF。",
+    "errorDecodeBody": "无法在此设备上解码这张照片。文件可能已损坏或格式不常见；请尝试 JPG、PNG、WebP、AVIF、GIF 或 HEIC。",
     "status": {
       "loading": "解码中…",
       "ready": "就绪",

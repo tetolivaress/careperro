@@ -1,5 +1,6 @@
 "use client";
 
+import { decodeImage } from "@/lib/heic";
 import type { ImageInput } from "@/workers/pdf.worker";
 
 export interface PreparedImage extends ImageInput {
@@ -14,12 +15,12 @@ export interface PreparedImage extends ImageInput {
 export async function prepareImage(file: File | Blob, preferJpeg = false): Promise<PreparedImage> {
   const type = file.type || "";
   if (type === "image/jpeg" || type === "image/png") {
-    const bitmap = await createImageBitmap(file);
+    const bitmap = await decodeImage(file);
     const out = { bytes: await file.arrayBuffer(), type: type === "image/png" ? ("png" as const) : ("jpeg" as const), width: bitmap.width, height: bitmap.height };
     bitmap.close();
     return out;
   }
-  const bitmap = await createImageBitmap(file);
+  const bitmap = await decodeImage(file);
   try {
     const canvas = document.createElement("canvas");
     canvas.width = bitmap.width;

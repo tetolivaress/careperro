@@ -64,12 +64,8 @@ export default function ImageEditor() {
   const setShellFile = useToolShellStore((s) => s.setFile);
   const { originalUrl, exportSelected, exportAll } = useImageEngine();
   const addRef = useRef<HTMLInputElement>(null);
-  const [initialised] = useState(() => {
-    const handed = takeFiles();
-    if (handed?.length) addItems(handed);
-    if (tool) setTab(tabForSlug(tool.slug));
-    return true;
-  });
+  // Files handed over from the home drop zone, captured once on first render.
+  const [handed] = useState(() => takeFiles());
   const [exportError, setExportError] = useState<string | null>(null);
 
   // Mobile nav bar title/meta.
@@ -88,7 +84,17 @@ export default function ImageEditor() {
     resetSettings();
   }, [clear, resetSettings]);
 
-  if (!tool || !initialised) return null;
+  // Per-tool setup. Declared after the reset effect so it re-applies after any remount.
+  const toolSlug = tool?.slug;
+  useEffect(() => {
+    if (!toolSlug) return;
+    const st = useImageEditor.getState();
+    st.setTab(tabForSlug(toolSlug));
+    if (toolSlug === "heic-to-jpg") st.update("compress", { format: "jpeg", quality: 92 });
+    if (handed?.length && st.items.length === 0) st.addItems(handed);
+  }, [toolSlug, handed]);
+
+  if (!tool) return null;
   const copy = toolCopy(tool);
 
   if (items.length === 0) {

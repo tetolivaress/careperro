@@ -1,5 +1,7 @@
 "use client";
 
+import { heicToPngFile, isHeicFile } from "@/lib/heic";
+
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Download, Image as ImageIcon, ScanText } from "lucide-react";
@@ -43,6 +45,22 @@ export default function OcrTool() {
   useEffect(() => {
     setShellFile(file ? { name: file.name, meta: formatBytes(file.size) } : null);
   }, [file, setShellFile]);
+
+  // iPhone HEIC photos: swap in a lossless PNG so the preview and Tesseract can read them.
+  useEffect(() => {
+    if (!file || !isHeicFile(file)) return;
+    let alive = true;
+    heicToPngFile(file)
+      .then((png) => {
+        if (alive) setFile(png);
+      })
+      .catch((e: unknown) => {
+        if (alive) setError(e instanceof Error ? e.message : String(e));
+      });
+    return () => {
+      alive = false;
+    };
+  }, [file]);
 
   const run = useCallback(
     async (f: File, l: Lang) => {

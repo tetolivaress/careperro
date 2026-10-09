@@ -1,5 +1,7 @@
 "use client";
 
+import { decodeImage } from "@/lib/heic";
+
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { zipSync } from "fflate";
@@ -63,7 +65,7 @@ export default function FaviconTool() {
     if (!file) return;
     let bmp: ImageBitmap | null = null;
     let cancelled = false;
-    createImageBitmap(file).then((b) => {
+    decodeImage(file).then((b) => {
       if (cancelled) {
         b.close();
         return;
@@ -161,7 +163,7 @@ export default function FaviconTool() {
           <h1 className="text-2xl font-bold tracking-tight text-fg">{c.name}</h1>
           <p className="text-sm text-fg-muted">{c.description}</p>
         </div>
-        <DropZone className="w-full max-w-[640px]" accept={tool.accept} maxSize={tool.maxSize} title={t("drop")} subtitle={t("dropSubtitle")} formats={["PNG", "SVG", "JPG", "WebP"]} onFiles={(f) => setFile(f[0])} />
+        <DropZone className="w-full max-w-[640px]" accept={tool.accept} maxSize={tool.maxSize} title={t("drop")} subtitle={t("dropSubtitle")} formats={["PNG", "SVG", "JPG", "WebP", "HEIC"]} onFiles={(f) => setFile(f[0])} />
       </div>
     );
   }

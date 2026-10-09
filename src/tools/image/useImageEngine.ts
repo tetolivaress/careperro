@@ -2,10 +2,13 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import { zip } from "fflate";
+import * as Comlink from "comlink";
 import { useImageEditor, selectedItem, type EditorItem } from "./store";
 import { DEFAULT_SETTINGS, formatInfo, type EditSettings, type RenderResult } from "./types";
 import { exportConcurrency, imageWorker, releaseImageWorker, spawnExportWorkers, type ImageWorkerHandle } from "./imageClient";
 import { mimeOf } from "@/lib/fileTypes";
+import { decodeHeic, isHeicFile } from "@/lib/heic";
+import type { SourceInfo } from "./types";
 import { downloadBlob, outputFileName } from "@/lib/download";
 import { useSessionStore } from "@/stores/session";
 
@@ -28,6 +31,17 @@ function errorMessage(e: unknown): string {
 
 function isAbort(e: unknown): boolean {
   return e instanceof DOMException && e.name === "AbortError";
+}
+
+/** Loads a file into a worker; HEIC photos the worker can't decode are decoded here and transferred. */
+async function loadSource(handle: ImageWorkerHandle, id: string, file: File): Promise<SourceInfo> {
+  try {
+    return await handle.api.load(id, file, mimeOf(file));
+  } catch (e) {
+    if (!isHeicFile(file)) throw e;
+    const bitmap = await decodeHeic(file);
+    return handle.api.loadBitmap(id, Comlink.transfer(bitmap, [bitmap]), file, "image/heic");
+  }
 }
 
 /**
@@ -68,7 +82,7 @@ export function useImageEngine() {
       loading.current.add(item.id);
       void (async () => {
         try {
-          const info = await w.api.load(item.id, item.file, mimeOf(item.file));
+          const info = await loadSource(w, item.id, item.file);
           const [thumb, original] = await Promise.all([
             w.api.thumbnail(item.id, 192),
             w.api.render({ id: item.id, token: nextToken(), settings: { ...DEFAULT_SETTINGS, compress: { ...DEFAULT_SETTINGS.compress, format: "webp", quality: 90 } }, previewMaxSide: 2048 }),
@@ -145,7 +159,7 @@ export function useImageEngine() {
       if (cached && cached.settings === s) {
         result = cached.result;
       } else {
-        if (handle !== imageWorker()) await handle.api.load(item.id, item.file, mimeOf(item.file));
+        if (handle !== imageWorker()) await loadSource(handle, item.id, item.file);
         result = await handle.api.render({ id: item.id, token: nextToken(), settings: s });
       }
       const name = outputFileName(item.file.name, "edited", formatInfo(result.format).ext);

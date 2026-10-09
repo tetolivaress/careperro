@@ -1,5 +1,7 @@
 "use client";
 
+import { decodeImage } from "@/lib/heic";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import QRCode from "qrcode";
@@ -162,7 +164,7 @@ function Scan() {
 
   const scanFile = async (file: File) => {
     setError(null);
-    const bitmap = await createImageBitmap(file);
+    const bitmap = await decodeImage(file);
     const canvas = document.createElement("canvas");
     canvas.width = bitmap.width;
     canvas.height = bitmap.height;

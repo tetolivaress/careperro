@@ -117,7 +117,7 @@
     "cancel": "Annuler",
     "totalSavings": "{count} images · {before} → {after} ({percent}% plus léger)",
     "errorDecode": "Impossible d'ouvrir « {name} »",
-    "errorDecodeBody": "Ce navigateur ne peut pas décoder ce format. Le HEIC s'ouvre nativement dans Safari ; ailleurs, essayez JPG, PNG, WebP, AVIF ou GIF.",
+    "errorDecodeBody": "Impossible de décoder cette photo sur cet appareil. Elle est peut-être endommagée ou dans un format inhabituel ; essayez JPG, PNG, WebP, AVIF, GIF ou HEIC.",
     "status": {
       "loading": "Décodage…",
       "ready": "Prêt",
