@@ -1,5 +1,5 @@
 /**
- * Caribito encrypted file container (".cbt"):
+ * Lokal encrypted file container (".cbt"):
  *   magic "CBT1" (4) | salt (16) | iv (12) | iterations u32 BE (4) | ciphertext (AES-256-GCM, tag appended)
  * Key: PBKDF2-SHA-256 over the password, 310 000 iterations by default (OWASP 2023 guidance).
  */
@@ -40,7 +40,7 @@ export class WrongPasswordError extends Error {
 }
 export class NotEncryptedError extends Error {
   constructor() {
-    super("This file was not encrypted with Caribito.");
+    super("This file was not encrypted with Lokal.");
     this.name = "NotEncryptedError";
   }
 }

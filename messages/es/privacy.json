@@ -41,7 +41,7 @@
     "done": "Cifrado",
     "doneDecrypt": "Descifrado",
     "wrongPassword": "Contraseña incorrecta o archivo dañado.",
-    "notEncrypted": "Este archivo no fue cifrado con Caribito. Cambia a Cifrar para protegerlo.",
+    "notEncrypted": "Este archivo no fue cifrado con Lokal. Cambia a Cifrar para protegerlo.",
     "detected": "Contenedor cifrado detectado; se cambió a Descifrar.",
     "details": "Cómo funciona",
     "detailsBody": "PBKDF2-SHA-256 con 310.000 iteraciones convierte tu contraseña en una clave de 256 bits. El archivo se sella con AES-GCM, así que cualquier manipulación se detecta. Si pierdes la contraseña, el archivo es irrecuperable.",

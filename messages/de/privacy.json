@@ -41,7 +41,7 @@
     "done": "Verschlüsselt",
     "doneDecrypt": "Entschlüsselt",
     "wrongPassword": "Falsches Passwort oder die Datei ist beschädigt.",
-    "notEncrypted": "Diese Datei wurde nicht mit Caribito verschlüsselt. Zu Verschlüsseln wechseln, um sie zu schützen.",
+    "notEncrypted": "Diese Datei wurde nicht mit Lokal verschlüsselt. Zu Verschlüsseln wechseln, um sie zu schützen.",
     "detected": "Verschlüsselter Container erkannt; zu Entschlüsseln gewechselt.",
     "details": "So funktioniert es",
     "detailsBody": "PBKDF2-SHA-256 mit 310.000 Iterationen macht aus dem Passwort einen 256-Bit-Schlüssel. Die Datei wird mit AES-GCM versiegelt, sodass jede Manipulation erkannt wird. Ohne Passwort ist die Datei nicht wiederherstellbar.",

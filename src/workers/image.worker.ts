@@ -14,6 +14,43 @@ const sources = new Map<string, Source>();
 /** Highest render token seen per source. Older in-flight renders abort at their next checkpoint. */
 const latest = new Map<string, number>();
 let avifEncoder: ((data: ImageData, opts: { quality: number }) => Promise<ArrayBuffer>) | null = null;
+let webpEncoder: ((data: ImageData, opts: { quality: number }) => Promise<ArrayBuffer>) | null = null;
+const nativeSupport = new Map<string, boolean>();
+let maxArea: number | null = null;
+
+/** Whether this browser's canvas can encode `type` itself (WebKit silently returns PNG for WebP). */
+async function canEncodeNatively(type: string): Promise<boolean> {
+  const cached = nativeSupport.get(type);
+  if (cached !== undefined) return cached;
+  const c = new OffscreenCanvas(2, 2);
+  c.getContext("2d")?.fillRect(0, 0, 2, 2);
+  const ok = (await c.convertToBlob({ type })).type === type;
+  nativeSupport.set(type, ok);
+  return ok;
+}
+
+/**
+ * Largest canvas area this device will actually allocate. iOS caps canvases at 16.7 MP, which
+ * 24 MP and 48 MP iPhone photos exceed; other browsers allow far more.
+ */
+function canvasAreaLimit(): number {
+  if (maxArea !== null) return maxArea;
+  const IOS_LIMIT = 16_777_216;
+  try {
+    const c = new OffscreenCanvas(5000, 5000);
+    const ctx = c.getContext("2d");
+    if (!ctx) throw new Error("no context");
+    ctx.fillStyle = "#fff";
+    ctx.fillRect(4998, 4998, 2, 2);
+    const ok = ctx.getImageData(4999, 4999, 1, 1).data[3] === 255;
+    c.width = 1;
+    c.height = 1;
+    maxArea = ok ? 268_435_456 : IOS_LIMIT;
+  } catch {
+    maxArea = IOS_LIMIT;
+  }
+  return maxArea;
+}
 
 const MIME: Record<OutputFormat, string> = { jpeg: "image/jpeg", png: "image/png", webp: "image/webp", avif: "image/avif" };
 
@@ -157,6 +194,14 @@ async function drawWatermark(ctx: OffscreenCanvasRenderingContext2D, w: number, 
 }
 
 async function encode(c: OffscreenCanvas, format: OutputFormat, quality: number): Promise<Blob> {
+  if (format === "webp" && !(await canEncodeNatively("image/webp"))) {
+    if (!webpEncoder) {
+      const mod = await import("@jsquash/webp");
+      webpEncoder = (data, opts) => mod.encode(data, { quality: opts.quality });
+    }
+    const data = ctx2d(c).getImageData(0, 0, c.width, c.height);
+    return new Blob([await webpEncoder(data, { quality })], { type: "image/webp" });
+  }
   if (format === "avif") {
     if (!avifEncoder) {
       const mod = await import("@jsquash/avif");
@@ -221,6 +266,14 @@ async function compose(src: Source, s: EditSettings, previewMaxSide?: number): P
   }
   outW = Math.max(1, outW);
   outH = Math.max(1, outH);
+  if (outW * outH > 16_777_216) {
+    const limit = canvasAreaLimit();
+    if (outW * outH > limit) {
+      const k = Math.sqrt(limit / (outW * outH)) * 0.999;
+      outW = Math.floor(outW * k);
+      outH = Math.floor(outH * k);
+    }
+  }
 
   const c = canvas(outW, outH);
   const ctx = ctx2d(c);
@@ -289,6 +342,11 @@ const api = {
     latest.set(id, Math.max(latest.get(id) ?? 0, token));
   },
 
+  /** Encoding support, so the UI can pick fast defaults (e.g. JPG instead of WebP on iOS). */
+  async capabilities(): Promise<{ webp: boolean; avif: boolean }> {
+    return { webp: await canEncodeNatively("image/webp"), avif: await canEncodeNatively("image/avif") };
+  },
+
   /** Small thumbnail for the filmstrip. */
   async thumbnail(id: string, maxSide: number): Promise<Blob> {
     const src = sources.get(id);
@@ -297,7 +355,7 @@ const api = {
     const c = canvas(src.bitmap.width * k, src.bitmap.height * k);
     const ctx = ctx2d(c);
     ctx.drawImage(src.bitmap, 0, 0, c.width, c.height);
-    return c.convertToBlob({ type: "image/webp", quality: 0.7 });
+    return c.convertToBlob({ type: (await canEncodeNatively("image/webp")) ? "image/webp" : "image/jpeg", quality: 0.7 });
   },
 
   async render(req: RenderRequest): Promise<RenderResult> {

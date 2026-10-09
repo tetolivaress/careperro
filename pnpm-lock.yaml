@@ -20,6 +20,9 @@ importers:
       '@jsquash/avif':
         specifier: ^2.1.1
         version: 2.1.1
+      '@jsquash/webp':
+        specifier: ^1.5.0
+        version: 1.5.0
       '@vercel/analytics':
         specifier: ^2.0.1
         version: 2.0.1(next@16.4.0(@babel/core@7.29.7)(@types/node@20.19.43)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
@@ -615,6 +618,9 @@ packages:
 
   '@jsquash/avif@2.1.1':
     resolution: {integrity: sha512-LMRxd0fMgfCLtobDh0/sFYJMMiRJTNYSEEWvRDKXlAeZ08t3gI5V+1thIT0XjXJ+SVG7Zug9B0XPyx0Ti5VRNA==}
+
+  '@jsquash/webp@1.5.0':
+    resolution: {integrity: sha512-KggLoj2MnRSfIqTeKe1EmbljTX2vuV7mh79k89PCL1pyqiDULcPM1L47twxXt0hkb68F70bXiL31MxsuoZtKFw==}
 
   '@modelcontextprotocol/sdk@1.32.1':
     resolution: {integrity: sha512-2DdE+SJDtzLEEWzY1ZjY7Q+VcPhcV1KisD3zI4u0XZyktsjHum1mwbMI+JaulUBi2OZk+KJAi2uPXzxichPkdw==}
@@ -4086,6 +4092,10 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.6.0
 
   '@jsquash/avif@2.1.1':
+    dependencies:
+      wasm-feature-detect: 1.9.0
+
+  '@jsquash/webp@1.5.0':
     dependencies:
       wasm-feature-detect: 1.9.0
 

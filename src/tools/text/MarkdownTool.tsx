@@ -6,7 +6,7 @@ import { marked } from "marked";
 import { TwoPaneTool, OptionCheckbox } from "@/components/shell/TwoPaneTool";
 import { Segmented } from "@/components/shell/Segmented";
 
-const SAMPLE = `# Caribito
+const SAMPLE = `# Lokal
 
 Everything runs **in your browser**. Nothing is uploaded.
 
@@ -93,7 +93,7 @@ export default function MarkdownTool() {
           <textarea readOnly value={html} aria-label={t("html")} className="scrollbar-thin min-h-0 w-full flex-1 resize-none bg-transparent p-3.5 font-mono text-[13px] leading-relaxed text-fg outline-none" />
         ) : (
           <div
-            className="prose-caribito scrollbar-thin flex-1 overflow-auto p-5 text-sm leading-relaxed text-fg"
+            className="prose-lokal scrollbar-thin flex-1 overflow-auto p-5 text-sm leading-relaxed text-fg"
             // Sanitized above: scripts, handlers and javascript: URLs are removed before rendering.
             dangerouslySetInnerHTML={{ __html: html }}
           />

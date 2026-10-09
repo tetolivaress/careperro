@@ -19,6 +19,17 @@ import { useCurrentTool } from "@/tools/useCurrentTool";
 import { useToolCopy } from "@/tools/copy";
 import { useImageEditor, selectedItem, type ViewMode } from "./store";
 import { useImageEngine } from "./useImageEngine";
+
+/** Synchronous main-thread check; WebKit returns a PNG data URL when asked for WebP. */
+function canvasEncodesWebp(): boolean {
+  try {
+    const c = document.createElement("canvas");
+    c.width = c.height = 1;
+    return c.toDataURL("image/webp").startsWith("data:image/webp");
+  } catch {
+    return false;
+  }
+}
 import { Preview } from "./Preview";
 import { Filmstrip } from "./Filmstrip";
 import { CompressPanel, ConvertPanel, CropPanel, FiltersPanel, ResizePanel, WatermarkPanel } from "./panels";
@@ -91,6 +102,7 @@ export default function ImageEditor() {
     const st = useImageEditor.getState();
     st.setTab(tabForSlug(toolSlug));
     if (toolSlug === "heic-to-jpg") st.update("compress", { format: "jpeg", quality: 92 });
+    else if (st.settings.compress.format === "webp" && !canvasEncodesWebp()) st.update("compress", { format: "jpeg" });
     if (handed?.length && st.items.length === 0) st.addItems(handed);
   }, [toolSlug, handed]);
 

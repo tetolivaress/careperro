@@ -7,8 +7,8 @@
     "3": { "title": "Download", "body": "Save the result straight to your downloads. Nothing was uploaded; close the tab and it is gone." }
   },
   "items": {
-    "privacy": { "q": "Does {tool} upload my files?", "a": "No. {tool} runs entirely in your browser with Web Workers and WebAssembly. Your files never leave your device, and Caribito has no servers that could receive them." },
-    "offline": { "q": "Does it work offline?", "a": "Yes. Once a tool has loaded, it keeps working without a connection, and you can install Caribito as an app for quick access." },
+    "privacy": { "q": "Does {tool} upload my files?", "a": "No. {tool} runs entirely in your browser with Web Workers and WebAssembly. Your files never leave your device, and Lokal has no servers that could receive them." },
+    "offline": { "q": "Does it work offline?", "a": "Yes. Once a tool has loaded, it keeps working without a connection, and you can install Lokal as an app for quick access." },
     "limits": { "q": "What are the limits?", "a": "The only limit is your device's memory. Very large files may be slow on older phones; the tool warns you when a file exceeds its recommended size." },
     "cost": { "q": "Is it free?", "a": "Yes, free, with no sign-up and no ads. Every tool is free to use as much as you like." },
     "formats": { "q": "Which formats are supported?", "a": "{formats}. Support depends on what your browser can decode; the tool tells you right away if a file can't be opened." }

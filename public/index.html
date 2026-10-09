@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Caribito</title>
+<title>Lokal</title>
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/icons/favicon-32.png">
@@ -24,7 +24,7 @@
   var supported=["es","en","zh","ar","pt","fr","id","ja","ru","de","hi"];
   var target="es";
   try{
-    var saved=localStorage.getItem("caribito-locale");
+    var saved=localStorage.getItem("lokal-locale");
     if(saved&&supported.indexOf(saved)>-1){target=saved;}
     else{
       var prefs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"es"]);

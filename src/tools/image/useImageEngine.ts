@@ -83,9 +83,10 @@ export function useImageEngine() {
       void (async () => {
         try {
           const info = await loadSource(w, item.id, item.file);
+          const caps = await w.api.capabilities();
           const [thumb, original] = await Promise.all([
             w.api.thumbnail(item.id, 192),
-            w.api.render({ id: item.id, token: nextToken(), settings: { ...DEFAULT_SETTINGS, compress: { ...DEFAULT_SETTINGS.compress, format: "webp", quality: 90 } }, previewMaxSide: 2048 }),
+            w.api.render({ id: item.id, token: nextToken(), settings: { ...DEFAULT_SETTINGS, compress: { ...DEFAULT_SETTINGS.compress, format: caps.webp ? "webp" : "png", quality: 90 } }, previewMaxSide: 2048 }),
           ]);
           originals.current.set(item.id, URL.createObjectURL(original.blob));
           patchItem(item.id, { info, thumbUrl: URL.createObjectURL(thumb), status: "ready" });
@@ -228,7 +229,7 @@ export function useImageEngine() {
         const zipped = await new Promise<Uint8Array>((resolve, reject) => {
           zip(files, { level: 0 }, (err, data) => (err ? reject(err) : resolve(data)));
         });
-        downloadBlob(new Blob([new Uint8Array(zipped)], { type: "application/zip" }), "caribito-images.zip");
+        downloadBlob(new Blob([new Uint8Array(zipped)], { type: "application/zip" }), "lokal-images.zip");
         recordProcessed(list.length);
         return { before, after, count: list.length };
       } finally {

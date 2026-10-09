@@ -6,7 +6,7 @@ import { Check, TriangleAlert } from "lucide-react";
 import { TwoPaneTool, NativeSelect, OptionCheckbox } from "@/components/shell/TwoPaneTool";
 import { formatBytes } from "@/lib/formatBytes";
 
-const SAMPLE = `{"name":"Caribito","private":true,"tools":["compress","resize","merge"],"stats":{"uploads":0,"files":128},"nested":{"deep":{"deeper":{"value":42}}}}`;
+const SAMPLE = `{"name":"Lokal","private":true,"tools":["compress","resize","merge"],"stats":{"uploads":0,"files":128},"nested":{"deep":{"deeper":{"value":42}}}}`;
 
 type Indent = "2" | "4" | "tab";
 

@@ -41,7 +41,7 @@
     "done": "Terenkripsi",
     "doneDecrypt": "Terdekripsi",
     "wrongPassword": "Kata sandi salah, atau file rusak.",
-    "notEncrypted": "File ini tidak dienkripsi dengan Caribito. Beralih ke Enkripsi untuk melindunginya.",
+    "notEncrypted": "File ini tidak dienkripsi dengan Lokal. Beralih ke Enkripsi untuk melindunginya.",
     "detected": "Kontainer terenkripsi terdeteksi; beralih ke Dekripsi.",
     "details": "Cara kerjanya",
     "detailsBody": "PBKDF2-SHA-256 dengan 310.000 iterasi mengubah kata sandi Anda menjadi kunci 256-bit. File disegel dengan AES-GCM sehingga setiap manipulasi terdeteksi. Jika kata sandi hilang, file tidak dapat dipulihkan.",

@@ -41,7 +41,7 @@
     "done": "已加密",
     "doneDecrypt": "已解密",
     "wrongPassword": "密码错误，或文件已损坏。",
-    "notEncrypted": "此文件不是用 Caribito 加密的。切换到“加密”以保护它。",
+    "notEncrypted": "此文件不是用 Lokal 加密的。切换到“加密”以保护它。",
     "detected": "检测到加密容器，已切换到解密。",
     "details": "工作原理",
     "detailsBody": "PBKDF2-SHA-256 经 310,000 次迭代将您的密码转换为 256 位密钥。文件使用 AES-GCM 封装，任何篡改都会被检测到。密码一旦丢失，文件将无法恢复。",

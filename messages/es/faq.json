@@ -7,8 +7,8 @@
     "3": { "title": "Descarga", "body": "Guarda el resultado directamente en tus descargas. No se subió nada; cierra la pestaña y desaparece." }
   },
   "items": {
-    "privacy": { "q": "¿{tool} sube mis archivos?", "a": "No. {tool} funciona por completo en tu navegador con Web Workers y WebAssembly. Tus archivos nunca salen de tu dispositivo y Caribito no tiene servidores que pudieran recibirlos." },
-    "offline": { "q": "¿Funciona sin conexión?", "a": "Sí. Una vez cargada una herramienta, sigue funcionando sin conexión, y puedes instalar Caribito como app para acceder rápido." },
+    "privacy": { "q": "¿{tool} sube mis archivos?", "a": "No. {tool} funciona por completo en tu navegador con Web Workers y WebAssembly. Tus archivos nunca salen de tu dispositivo y Lokal no tiene servidores que pudieran recibirlos." },
+    "offline": { "q": "¿Funciona sin conexión?", "a": "Sí. Una vez cargada una herramienta, sigue funcionando sin conexión, y puedes instalar Lokal como app para acceder rápido." },
     "limits": { "q": "¿Cuáles son los límites?", "a": "El único límite es la memoria de tu dispositivo. Los archivos muy grandes pueden ir lentos en móviles antiguos; la herramienta te avisa cuando un archivo supera su tamaño recomendado." },
     "cost": { "q": "¿Es gratis?", "a": "Sí, gratis, sin registro y sin anuncios. Puedes usar cada herramienta tanto como quieras." },
     "formats": { "q": "¿Qué formatos admite?", "a": "{formats}. La compatibilidad depende de lo que tu navegador pueda decodificar; la herramienta te avisa al momento si un archivo no se puede abrir." }

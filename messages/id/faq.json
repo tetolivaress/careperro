@@ -18,11 +18,11 @@
   "items": {
     "privacy": {
       "q": "Apakah {tool} mengunggah file saya?",
-      "a": "Tidak. {tool} berjalan sepenuhnya di browser Anda dengan Web Worker dan WebAssembly. File Anda tidak pernah keluar dari perangkat, dan Caribito tidak memiliki server yang dapat menerimanya."
+      "a": "Tidak. {tool} berjalan sepenuhnya di browser Anda dengan Web Worker dan WebAssembly. File Anda tidak pernah keluar dari perangkat, dan Lokal tidak memiliki server yang dapat menerimanya."
     },
     "offline": {
       "q": "Apakah bisa bekerja offline?",
-      "a": "Ya. Setelah alat dimuat, alat tetap bekerja tanpa koneksi, dan Anda dapat menginstal Caribito sebagai aplikasi untuk akses cepat."
+      "a": "Ya. Setelah alat dimuat, alat tetap bekerja tanpa koneksi, dan Anda dapat menginstal Lokal sebagai aplikasi untuk akses cepat."
     },
     "limits": {
       "q": "Apa batasannya?",

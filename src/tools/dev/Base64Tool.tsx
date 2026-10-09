@@ -49,7 +49,7 @@ export default function Base64Tool() {
         setInput(v);
       }}
       inputPlaceholder={mode === "encode" ? t("placeholderEncode") : t("placeholderDecode")}
-      sample={mode === "encode" ? "Hello, Caribito! 🌴" : "SGVsbG8sIENhcmliaXRvISDwn4y0"}
+      sample={mode === "encode" ? "Hello, Lokal! 🌴" : "SGVsbG8sIExva2FsISDwn4y0"}
       accept={["*/*"]}
       onFile={onFile}
       output={result.output}

@@ -41,7 +41,7 @@
     "done": "Criptografado",
     "doneDecrypt": "Descriptografado",
     "wrongPassword": "Senha incorreta ou arquivo corrompido.",
-    "notEncrypted": "Este arquivo não foi criptografado com o Caribito. Mude para Criptografar para protegê-lo.",
+    "notEncrypted": "Este arquivo não foi criptografado com o Lokal. Mude para Criptografar para protegê-lo.",
     "detected": "Contêiner criptografado detectado; mudamos para Descriptografar.",
     "details": "Como funciona",
     "detailsBody": "PBKDF2-SHA-256 com 310.000 iterações transforma sua senha em uma chave de 256 bits. O arquivo é selado com AES-GCM, então qualquer adulteração é detectada. Se perder a senha, o arquivo é irrecuperável.",

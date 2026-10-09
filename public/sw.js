@@ -1,8 +1,8 @@
-/* Caribito service worker: app shell + static assets cache so the image tools work offline. */
+/* Lokal service worker: app shell + static assets cache so the image tools work offline. */
 const VERSION = "v1";
-const SHELL = `caribito-shell-${VERSION}`;
-const RUNTIME = `caribito-runtime-${VERSION}`;
-const CDN = `caribito-cdn-${VERSION}`;
+const SHELL = `lokal-shell-${VERSION}`;
+const RUNTIME = `lokal-runtime-${VERSION}`;
+const CDN = `lokal-cdn-${VERSION}`;
 const PRECACHE = ["/", "/es/", "/en/", "/icons/icon-192.png", "/icons/icon-512.png", "/manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {

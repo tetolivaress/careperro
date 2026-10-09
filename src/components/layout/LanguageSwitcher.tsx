@@ -19,7 +19,7 @@ export function LanguageSwitcher({ variant = "pill", className }: { variant?: "p
 
   const onChange = (next: Locale) => {
     try {
-      localStorage.setItem("caribito-locale", next);
+      localStorage.setItem("lokal-locale", next);
     } catch {
       /* private mode */
     }

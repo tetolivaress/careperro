@@ -18,11 +18,11 @@
   "items": {
     "privacy": {
       "q": "O {tool} envia meus arquivos?",
-      "a": "Não. O {tool} roda inteiramente no seu navegador com Web Workers e WebAssembly. Seus arquivos nunca saem do seu dispositivo, e o Caribito não tem servidores que possam recebê-los."
+      "a": "Não. O {tool} roda inteiramente no seu navegador com Web Workers e WebAssembly. Seus arquivos nunca saem do seu dispositivo, e o Lokal não tem servidores que possam recebê-los."
     },
     "offline": {
       "q": "Funciona offline?",
-      "a": "Sim. Depois que uma ferramenta carrega, ela continua funcionando sem conexão, e você pode instalar o Caribito como app para acesso rápido."
+      "a": "Sim. Depois que uma ferramenta carrega, ela continua funcionando sem conexão, e você pode instalar o Lokal como app para acesso rápido."
     },
     "limits": {
       "q": "Quais são os limites?",

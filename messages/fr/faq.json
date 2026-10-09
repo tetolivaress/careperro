@@ -18,11 +18,11 @@
   "items": {
     "privacy": {
       "q": "{tool} envoie-t-il mes fichiers ?",
-      "a": "Non. {tool} tourne entièrement dans votre navigateur grâce aux Web Workers et à WebAssembly. Vos fichiers ne quittent jamais votre appareil, et Caribito n'a aucun serveur qui pourrait les recevoir."
+      "a": "Non. {tool} tourne entièrement dans votre navigateur grâce aux Web Workers et à WebAssembly. Vos fichiers ne quittent jamais votre appareil, et Lokal n'a aucun serveur qui pourrait les recevoir."
     },
     "offline": {
       "q": "Ça marche hors ligne ?",
-      "a": "Oui. Une fois un outil chargé, il continue de fonctionner sans connexion, et vous pouvez installer Caribito comme application pour y accéder rapidement."
+      "a": "Oui. Une fois un outil chargé, il continue de fonctionner sans connexion, et vous pouvez installer Lokal comme application pour y accéder rapidement."
     },
     "limits": {
       "q": "Quelles sont les limites ?",

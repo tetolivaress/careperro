@@ -101,7 +101,7 @@ export const DEFAULT_SETTINGS: EditSettings = {
   crop: { rect: null, aspect: "free" },
   rotate: { angle: 0, flipH: false, flipV: false },
   filters: { brightness: 100, contrast: 100, saturation: 100, grayscale: 0, blur: 0 },
-  watermark: { enabled: false, type: "text", text: "© Caribito", image: null, position: 9, opacity: 60, size: 20, tiled: false, color: "#FFFFFF" },
+  watermark: { enabled: false, type: "text", text: "© Lokal", image: null, position: 9, opacity: 60, size: 20, tiled: false, color: "#FFFFFF" },
 };
 
 export interface SourceInfo {

@@ -18,11 +18,11 @@
   "items": {
     "privacy": {
       "q": "Lädt {tool} meine Dateien hoch?",
-      "a": "Nein. {tool} läuft komplett im Browser mit Web Workers und WebAssembly. Die Dateien verlassen das Gerät nie, und Caribito hat keine Server, die sie empfangen könnten."
+      "a": "Nein. {tool} läuft komplett im Browser mit Web Workers und WebAssembly. Die Dateien verlassen das Gerät nie, und Lokal hat keine Server, die sie empfangen könnten."
     },
     "offline": {
       "q": "Funktioniert es offline?",
-      "a": "Ja. Sobald ein Tool geladen ist, funktioniert es auch ohne Verbindung weiter, und Caribito lässt sich für schnellen Zugriff als App installieren."
+      "a": "Ja. Sobald ein Tool geladen ist, funktioniert es auch ohne Verbindung weiter, und Lokal lässt sich für schnellen Zugriff als App installieren."
     },
     "limits": {
       "q": "Wo liegen die Grenzen?",

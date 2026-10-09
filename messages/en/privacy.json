@@ -41,7 +41,7 @@
     "done": "Encrypted",
     "doneDecrypt": "Decrypted",
     "wrongPassword": "Wrong password, or the file is corrupted.",
-    "notEncrypted": "This file wasn't encrypted with Caribito. Switch to Encrypt to protect it.",
+    "notEncrypted": "This file wasn't encrypted with Lokal. Switch to Encrypt to protect it.",
     "detected": "Encrypted container detected; switched to Decrypt.",
     "details": "How it works",
     "detailsBody": "PBKDF2-SHA-256 with 310,000 iterations turns your password into a 256-bit key. The file is sealed with AES-GCM so any tampering is detected. Lose the password and the file is unrecoverable.",

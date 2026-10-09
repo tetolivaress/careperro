@@ -41,7 +41,7 @@
     "done": "Chiffré",
     "doneDecrypt": "Déchiffré",
     "wrongPassword": "Mot de passe incorrect, ou fichier corrompu.",
-    "notEncrypted": "Ce fichier n'a pas été chiffré avec Caribito. Passez en mode Chiffrer pour le protéger.",
+    "notEncrypted": "Ce fichier n'a pas été chiffré avec Lokal. Passez en mode Chiffrer pour le protéger.",
     "detected": "Conteneur chiffré détecté ; passage en mode Déchiffrer.",
     "details": "Comment ça marche",
     "detailsBody": "PBKDF2-SHA-256 avec 310 000 itérations transforme votre mot de passe en clé de 256 bits. Le fichier est scellé avec AES-GCM, de sorte que toute altération est détectée. Perdez le mot de passe et le fichier est irrécupérable.",
