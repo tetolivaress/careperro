@@ -165,7 +165,10 @@ export default function VideoEditor() {
     let alive = true;
     probeVideo(file)
       .then((i) => {
-        if (alive) setInfo(i);
+        if (!alive) return;
+        const el = videoRef.current;
+        const fromEl = el && Number.isFinite(el.duration) && el.duration > 0 ? el.duration : 0;
+        setInfo(!Number.isFinite(i.duration) || i.duration <= 0 ? { ...i, duration: fromEl } : i);
       })
       .catch(() => {
         if (alive) setProbeError(true);
@@ -216,6 +219,20 @@ export default function VideoEditor() {
   const onMetadata = () => {
     const v = videoRef.current;
     if (!v) return;
+    // MediaRecorder WebM files report Infinity until the element is seeked past the end.
+    if (!Number.isFinite(v.duration) || v.duration === 0) {
+      const onChange = () => {
+        if (Number.isFinite(v.duration) && v.duration > 0) {
+          v.removeEventListener("durationchange", onChange);
+          v.currentTime = 0;
+          setInfo((prev) => (prev && (!Number.isFinite(prev.duration) || prev.duration === 0) ? { ...prev, duration: v.duration } : prev));
+          if (!info) onMetadata();
+        }
+      };
+      v.addEventListener("durationchange", onChange);
+      v.currentTime = 1e101;
+      return;
+    }
     if (!info && v.duration && Number.isFinite(v.duration)) {
       setInfo({
         duration: v.duration,
