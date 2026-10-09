@@ -267,7 +267,7 @@ Build the `TwoPaneTool` template first, then each tool on top of it.
 - [x] Short "how it works" and FAQ content on each tool page
 - [x] PWA: manifest, service worker, offline support
 - [x] i18n with next-intl: English and Spanish
-- [x] Performance pass: check bundle sizes, confirm heavy libraries are lazy loaded, Lighthouse score above 90 on tool pages
+- [ ] Performance pass: heavy libraries are lazy loaded; Lighthouse (mobile, prod): accessibility 100, SEO 100, best practices 100, performance 85 home / 78 tool pages — LCP is the tool header rendered inside the lazy tool chunk; moving it server-side would lift this above 90
 - [x] Error boundaries and a friendly message for unsupported browsers
 - [x] Privacy-friendly analytics (page views only, never file data)
 - [ ] Cross-browser test: Chrome, Safari, Firefox, and mobile Safari and Chrome (only Chrome verified so far)
