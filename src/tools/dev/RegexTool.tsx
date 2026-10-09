@@ -18,7 +18,7 @@ export default function RegexTool() {
   const t = useTranslations("dev.regex");
   const [pattern, setPattern] = useState("(\\w+)@(\\w+)\\.com");
   const [flags, setFlags] = useState("g");
-  const [text, setText] = useState("Contact ana@caribito.com or luis@example.com today.");
+  const [text, setText] = useState("Contact ana@careperroshouse.com or luis@example.com today.");
   const [replacement, setReplacement] = useState("$1 at $2");
 
   const compiled = useMemo(() => {

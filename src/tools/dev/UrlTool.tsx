@@ -47,7 +47,7 @@ export default function UrlTool() {
       input={input}
       onInputChange={setInput}
       inputPlaceholder={mode === "encode" ? t("placeholderEncode") : t("placeholderDecode")}
-      sample={mode === "encode" ? "https://caribito.com/search?q=ñandú & café#top" : "https%3A%2F%2Fcaribito.com%2Fsearch%3Fq%3D%C3%B1and%C3%BA%20%26%20caf%C3%A9"}
+      sample={mode === "encode" ? "https://www.careperroshouse.com/search?q=ñandú & café#top" : "https%3A%2F%2Fwww.careperroshouse.com%2Fsearch%3Fq%3D%C3%B1and%C3%BA%20%26%20caf%C3%A9"}
       output={result.output}
       error={result.error}
       options={

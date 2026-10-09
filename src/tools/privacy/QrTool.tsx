@@ -41,7 +41,7 @@ export default function QrTool() {
 
 function Generate() {
   const t = useTranslations("privacy.qr");
-  const [text, setText] = useState("https://caribito.com");
+  const [text, setText] = useState("https://www.careperroshouse.com");
   const [size, setSize] = useState(320);
   const [margin, setMargin] = useState(2);
   const [level, setLevel] = useState<Level>("M");
