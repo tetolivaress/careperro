@@ -225,7 +225,7 @@ One editor at `/image/editor` with tabs; individual tool URLs (`/image/compress`
 - [x] Capture the current frame as an image
 - [x] Screen and webcam recorder (`getDisplayMedia`, `getUserMedia`, `MediaRecorder`)
 - [x] Use WebCodecs when supported; fall back to ffmpeg.wasm otherwise
-- [x] Add COOP and COEP headers in `vercel.json` **only** for `/audio/*` and `/video/*` routes
+- [ ] Add COOP and COEP headers in `vercel.json` **only** for `/audio/*` and `/video/*` routes — deliberately not applied: cross-origin isolation blocks every Web Worker whose script lacks the same headers (Next chunks, ffmpeg worker), and the single-threaded ffmpeg core needs no isolation
 - [x] File size limit with a clear warning for large videos
 
 **Acceptance criteria**
