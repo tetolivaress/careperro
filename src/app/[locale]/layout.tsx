@@ -20,7 +20,7 @@ import { dirFor, LOCALES, type Locale } from "@/i18n/locales";
 import { localeAlternates } from "@/i18n/seo";
 import { tools } from "@/tools/registry";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext", "cyrillic"], display: "swap" });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext", "cyrillic"], display: "optional" });
 const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"], display: "swap" });
 
 export function generateStaticParams() {

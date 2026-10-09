@@ -276,6 +276,7 @@ export function WatermarkPanel() {
             accept="image/png,image/jpeg,image/webp,image/svg+xml"
             className="sr-only"
             tabIndex={-1}
+            aria-label={t("uploadLogo")}
             onChange={(e) => {
               const f = e.target.files?.[0];
               if (f) update("watermark", { image: f, enabled: true });

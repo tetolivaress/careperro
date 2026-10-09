@@ -63,6 +63,7 @@ export function CategoryQuickDrop({ category }: { category: Category }) {
           type="file"
           className="sr-only"
           tabIndex={-1}
+          aria-label={t("quickDrop", { tool: toolCopy(target).name.toLowerCase() })}
           multiple={target.multiple}
           accept={target.accept.join(",")}
           onChange={(e) => {

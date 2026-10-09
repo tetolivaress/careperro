@@ -185,6 +185,7 @@ export function DropZone({
           type="file"
           className="sr-only"
           tabIndex={-1}
+          aria-label={resolvedTitle}
           accept={accept.join(",") || undefined}
           multiple={multiple}
           disabled={disabled}

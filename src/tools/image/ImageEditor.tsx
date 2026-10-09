@@ -249,6 +249,7 @@ export default function ImageEditor() {
         multiple
         className="sr-only"
         tabIndex={-1}
+        aria-label={t("editor.addFiles")}
         onChange={(e) => {
           if (e.target.files?.length) addItems(Array.from(e.target.files));
           e.target.value = "";
