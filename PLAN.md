@@ -149,20 +149,20 @@ Text-based tools (Text, Developer, parts of Privacy) use a second template, `Two
 
 One editor at `/image/editor` with tabs; individual tool URLs (`/image/compress`, `/image/resize`, and so on) open the same editor with the matching tab selected.
 
-- [ ] Create `image.worker.ts` with Comlink: decode with `createImageBitmap`, process on `OffscreenCanvas`, encode with `convertToBlob`
-- [ ] Create the editor Zustand store: source file, settings per tab, result blob, status
-- [ ] **Compress:** quality slider and format selector (JPG, PNG, WebP, AVIF); live preview; live readout such as "2.4 MB → 310 KB (87% smaller)"
-- [ ] Debounce slider changes and cancel stale jobs so the UI never blocks
-- [ ] **Compare slider:** draggable before/after divider over the preview
-- [ ] **Resize:** width and height inputs, lock-ratio toggle, percentage presets
-- [ ] **Convert:** format change; AVIF through `@jsquash/avif`, loaded lazily
-- [ ] **Crop:** `react-image-crop` with presets (Free, 1:1, 4:5, 16:9, 9:16)
-- [ ] **Rotate and flip**
-- [ ] **Watermark:** text or uploaded logo, 9-position grid, opacity and size sliders, tiled option
-- [ ] **Filters:** brightness, contrast, saturation, grayscale, blur
-- [ ] Apply all edits as one ordered pipeline: crop, rotate, resize, filters, watermark, encode
-- [ ] Reset button and Download button with a sensible file name (`name-edited.webp`)
-- [ ] Option to strip EXIF metadata (on by default, since canvas re-encoding removes it)
+- [x] Create `image.worker.ts` with Comlink: decode with `createImageBitmap`, process on `OffscreenCanvas`, encode with `convertToBlob`
+- [x] Create the editor Zustand store: source file, settings per tab, result blob, status
+- [x] **Compress:** quality slider and format selector (JPG, PNG, WebP, AVIF); live preview; live readout such as "2.4 MB → 310 KB (87% smaller)"
+- [x] Debounce slider changes and cancel stale jobs so the UI never blocks
+- [x] **Compare slider:** draggable before/after divider over the preview
+- [x] **Resize:** width and height inputs, lock-ratio toggle, percentage presets
+- [x] **Convert:** format change; AVIF through `@jsquash/avif`, loaded lazily
+- [x] **Crop:** `react-image-crop` with presets (Free, 1:1, 4:5, 16:9, 9:16)
+- [x] **Rotate and flip**
+- [x] **Watermark:** text or uploaded logo, 9-position grid, opacity and size sliders, tiled option
+- [x] **Filters:** brightness, contrast, saturation, grayscale, blur
+- [x] Apply all edits as one ordered pipeline: crop, rotate, resize, filters, watermark, encode
+- [x] Reset button and Download button with a sensible file name (`name-edited.webp`)
+- [x] Option to strip EXIF metadata (on by default, since canvas re-encoding removes it)
 
 **Acceptance criteria**
 - Moving the quality slider updates the preview and the size readout within about 300 ms on a 5 MB photo, with no UI freeze
@@ -171,15 +171,15 @@ One editor at `/image/editor` with tabs; individual tool URLs (`/image/compress`
 
 ## Phase 3: Image batch mode
 
-- [ ] Accept multiple files in the drop zone and "add more" afterwards
-- [ ] Filmstrip of thumbnails at the bottom; each shows original size, new size, and status
-- [ ] Selecting a thumbnail shows it in the main preview with live editing
-- [ ] Settings apply to all images; crop is relative (ratio based) so it works across sizes
-- [ ] Processing queue in the worker with limited concurrency (2 to 4 jobs) and overall progress
-- [ ] Only the selected image is processed live; the rest are processed on export
-- [ ] "Download all (.zip)" using `fflate`, showing total savings
-- [ ] Remove individual images; clear all
-- [ ] Memory handling: close bitmaps and revoke URLs for items that are not visible
+- [x] Accept multiple files in the drop zone and "add more" afterwards
+- [x] Filmstrip of thumbnails at the bottom; each shows original size, new size, and status
+- [x] Selecting a thumbnail shows it in the main preview with live editing
+- [x] Settings apply to all images; crop is relative (ratio based) so it works across sizes
+- [x] Processing queue in the worker with limited concurrency (2 to 4 jobs) and overall progress
+- [x] Only the selected image is processed live; the rest are processed on export
+- [x] "Download all (.zip)" using `fflate`, showing total savings
+- [x] Remove individual images; clear all
+- [x] Memory handling: close bitmaps and revoke URLs for items that are not visible
 
 **Acceptance criteria**
 - 50 images of about 4 MB each process and download as a zip without crashing the tab
@@ -187,46 +187,46 @@ One editor at `/image/editor` with tabs; individual tool URLs (`/image/compress`
 
 ## Phase 4: PDF
 
-- [ ] `pdf.worker.ts` with `pdf-lib`; thumbnails rendered with `pdfjs-dist`
-- [ ] Page grid with drag to reorder, rotate, and delete
-- [ ] Merge several PDFs
-- [ ] Split by range or into single pages
-- [ ] Images to PDF and PDF to images (zip)
-- [ ] Add a text or image watermark and page numbers
-- [ ] Draw or upload a signature and place it on a page
-- [ ] Compress by re-encoding embedded images
+- [x] `pdf.worker.ts` with `pdf-lib`; thumbnails rendered with `pdfjs-dist`
+- [x] Page grid with drag to reorder, rotate, and delete
+- [x] Merge several PDFs
+- [x] Split by range or into single pages
+- [x] Images to PDF and PDF to images (zip)
+- [x] Add a text or image watermark and page numbers
+- [x] Draw or upload a signature and place it on a page
+- [x] Compress by re-encoding embedded images
 
 **Acceptance criteria**
 - A 100-page PDF loads thumbnails progressively and can be reordered and exported
 
 ## Phase 5: Audio
 
-- [ ] Waveform with `wavesurfer.js` and draggable trim region
-- [ ] Playback controls
-- [ ] Trim, volume, fade in/out, and speed using Web Audio API (`OfflineAudioContext`)
-- [ ] Normalize volume
-- [ ] Merge several clips
-- [ ] Convert format (MP3, WAV, OGG, M4A) with `@ffmpeg/ffmpeg`, lazy loaded, with a loading indicator
-- [ ] Bitrate selector with estimated output size
-- [ ] Voice recorder with `MediaRecorder`
+- [x] Waveform with `wavesurfer.js` and draggable trim region
+- [x] Playback controls
+- [x] Trim, volume, fade in/out, and speed using Web Audio API (`OfflineAudioContext`)
+- [x] Normalize volume
+- [x] Merge several clips
+- [x] Convert format (MP3, WAV, OGG, M4A) with `@ffmpeg/ffmpeg`, lazy loaded, with a loading indicator
+- [x] Bitrate selector with estimated output size
+- [x] Voice recorder with `MediaRecorder`
 
 **Acceptance criteria**
 - A 10-minute MP3 can be trimmed, faded, and exported to another format with a progress bar
 
 ## Phase 6: Video
 
-- [ ] Player plus timeline with thumbnails and trim handles
-- [ ] Trim and cut
-- [ ] Compress: resolution and quality controls with estimated output size
-- [ ] Convert between MP4 and WebM; video to GIF
-- [ ] Extract audio; remove audio
-- [ ] Crop to ratio presets (9:16, 1:1, 16:9)
-- [ ] Watermark (text or logo)
-- [ ] Capture the current frame as an image
-- [ ] Screen and webcam recorder (`getDisplayMedia`, `getUserMedia`, `MediaRecorder`)
-- [ ] Use WebCodecs when supported; fall back to ffmpeg.wasm otherwise
-- [ ] Add COOP and COEP headers in `vercel.json` **only** for `/audio/*` and `/video/*` routes
-- [ ] File size limit with a clear warning for large videos
+- [x] Player plus timeline with thumbnails and trim handles
+- [x] Trim and cut
+- [x] Compress: resolution and quality controls with estimated output size
+- [x] Convert between MP4 and WebM; video to GIF
+- [x] Extract audio; remove audio
+- [x] Crop to ratio presets (9:16, 1:1, 16:9)
+- [x] Watermark (text or logo)
+- [x] Capture the current frame as an image
+- [x] Screen and webcam recorder (`getDisplayMedia`, `getUserMedia`, `MediaRecorder`)
+- [x] Use WebCodecs when supported; fall back to ffmpeg.wasm otherwise
+- [x] Add COOP and COEP headers in `vercel.json` **only** for `/audio/*` and `/video/*` routes
+- [x] File size limit with a clear warning for large videos
 
 **Acceptance criteria**
 - A 1-minute 1080p clip can be trimmed and compressed with visible progress and a cancel button
@@ -236,42 +236,42 @@ One editor at `/image/editor` with tabs; individual tool URLs (`/image/compress`
 Build the `TwoPaneTool` template first, then each tool on top of it.
 
 **Text**
-- [ ] Word and character counter
-- [ ] Case converter
-- [ ] Text diff
-- [ ] Markdown previewer
-- [ ] OCR from an image (`tesseract.js`, lazy loaded)
-- [ ] Text to speech (`speechSynthesis`)
+- [x] Word and character counter
+- [x] Case converter
+- [x] Text diff
+- [x] Markdown previewer
+- [x] OCR from an image (`tesseract.js`, lazy loaded)
+- [x] Text to speech (`speechSynthesis`)
 
 **Developer**
-- [ ] JSON formatter and validator
-- [ ] Base64, URL, and JWT encode/decode
-- [ ] Hash generator (SHA-1, SHA-256, SHA-512) and UUID generator
-- [ ] Color converter (HEX, RGB, HSL) and palette generator
-- [ ] Regex tester
-- [ ] CSV, JSON, and Excel converter
+- [x] JSON formatter and validator
+- [x] Base64, URL, and JWT encode/decode
+- [x] Hash generator (SHA-1, SHA-256, SHA-512) and UUID generator
+- [x] Color converter (HEX, RGB, HSL) and palette generator
+- [x] Regex tester
+- [x] CSV, JSON, and Excel converter
 
 **Privacy**
-- [ ] Password generator (`crypto.getRandomValues`)
-- [ ] File encrypt and decrypt with a password (AES-GCM, PBKDF2 key derivation)
-- [ ] QR code generator and scanner
-- [ ] Zip and unzip
-- [ ] Favicon and app-icon generator
+- [x] Password generator (`crypto.getRandomValues`)
+- [x] File encrypt and decrypt with a password (AES-GCM, PBKDF2 key derivation)
+- [x] QR code generator and scanner
+- [x] Zip and unzip
+- [x] Favicon and app-icon generator
 
 **Acceptance criteria**
 - Every tool in the registry has a working page; no placeholders remain
 
 ## Phase 8: Polish and launch
 
-- [ ] SEO: unique title, description, and Open Graph image per tool, generated from the registry; `sitemap.xml` and `robots.txt`
-- [ ] Short "how it works" and FAQ content on each tool page
-- [ ] PWA: manifest, service worker, offline support
-- [ ] i18n with next-intl: English and Spanish
-- [ ] Performance pass: check bundle sizes, confirm heavy libraries are lazy loaded, Lighthouse score above 90 on tool pages
-- [ ] Error boundaries and a friendly message for unsupported browsers
-- [ ] Privacy-friendly analytics (page views only, never file data)
-- [ ] Cross-browser test: Chrome, Safari, Firefox, and mobile Safari and Chrome
-- [ ] Deploy to Vercel with a custom domain
+- [x] SEO: unique title, description, and Open Graph image per tool, generated from the registry; `sitemap.xml` and `robots.txt`
+- [x] Short "how it works" and FAQ content on each tool page
+- [x] PWA: manifest, service worker, offline support
+- [x] i18n with next-intl: English and Spanish
+- [x] Performance pass: check bundle sizes, confirm heavy libraries are lazy loaded, Lighthouse score above 90 on tool pages
+- [x] Error boundaries and a friendly message for unsupported browsers
+- [x] Privacy-friendly analytics (page views only, never file data)
+- [ ] Cross-browser test: Chrome, Safari, Firefox, and mobile Safari and Chrome (only Chrome verified so far)
+- [x] Deploy to Vercel (caribito.vercel.app); custom domain caribito.com pending — it is attached to the existing caribito-web project
 
 **Acceptance criteria**
 - The site installs as a PWA and the image tools work offline

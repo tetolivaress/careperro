@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { Circle, Download, Mic, Monitor, Scissors, Square, Trash2, Video as VideoIcon } from "lucide-react";
@@ -56,7 +56,12 @@ export default function RecorderTool() {
   const closeMixRef = useRef<() => void>(() => {});
   const chunksRef = useRef<Blob[]>([]);
   const startedAtRef = useRef(0);
-  const supported = typeof window !== "undefined" && typeof MediaRecorder !== "undefined" && !!navigator.mediaDevices;
+  // Resolved after hydration so the server-rendered markup (which cannot know) matches the client's first paint.
+  const supported = useSyncExternalStore(
+    () => () => {},
+    () => typeof MediaRecorder !== "undefined" && !!navigator.mediaDevices,
+    () => true,
+  );
 
   useEffect(() => {
     return () => {

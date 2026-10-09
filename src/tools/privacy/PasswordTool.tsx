@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { RefreshCw } from "lucide-react";
 import { ToolHeader, Pane, CopyButton, OptionCheckbox, NativeSelect, primaryButton } from "@/components/shell/TwoPaneTool";
@@ -29,7 +29,12 @@ export default function PasswordTool() {
   const gen = (m: Mode, o: PasswordOptions, w: number, sep: string, cap: boolean, num: boolean, n: number) =>
     Array.from({ length: n }, () => (m === "password" ? generatePassword(o) : generatePassphrase(w, sep, cap, num)));
 
-  const [values, setValues] = useState<string[]>(() => gen("password", DEFAULTS, 4, "-", true, true, 1));
+  // Start empty so server and client markup match; the first password is generated right after mount.
+  const [values, setValues] = useState<string[]>([]);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setValues(gen("password", DEFAULTS, 4, "-", true, true, 1)));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   const regenerate = (patch: { mode?: Mode; opts?: PasswordOptions; words?: number; sep?: typeof separator; cap?: boolean; num?: boolean; count?: number } = {}) => {
     const m = patch.mode ?? mode, o = patch.opts ?? opts, w = patch.words ?? words, s = patch.sep ?? separator, c = patch.cap ?? capitalize, n = patch.num ?? addNumber, k = patch.count ?? count;
