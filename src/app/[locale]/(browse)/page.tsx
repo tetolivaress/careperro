@@ -50,13 +50,16 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           {categoryList.map((c) => (
             <CategoryCard key={c.slug} slug={c.slug} compact />
           ))}
-          <Link
-            href="/tools"
-            className="hidden flex-col items-center justify-center gap-2 rounded-lg border-[1.5px] border-dashed border-border-strong text-[13px] font-medium text-fg-muted hover:border-fg-subtle hover:text-fg md:flex"
-          >
-            <Plus className="size-[18px]" aria-hidden />
-            {t("suggestTool")}
-          </Link>
+          {/* Filler tile only while the 4-column grid has a gap to fill. */}
+          {categoryList.length % 4 !== 0 && (
+            <Link
+              href="/tools"
+              className="hidden flex-col items-center justify-center gap-2 rounded-lg border-[1.5px] border-dashed border-border-strong text-[13px] font-medium text-fg-muted hover:border-fg-subtle hover:text-fg md:flex"
+            >
+              <Plus className="size-[18px]" aria-hidden />
+              {t("suggestTool")}
+            </Link>
+          )}
         </div>
       </section>
 

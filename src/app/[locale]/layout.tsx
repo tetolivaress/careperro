@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Sora } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -22,6 +22,8 @@ import { tools } from "@/tools/registry";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext", "cyrillic"], display: "optional" });
 const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"], display: "swap" });
+/** Wordmark only (the "Toolbox" logo text). */
+const sora = Sora({ variable: "--font-sora", subsets: ["latin"], weight: "600", display: "swap" });
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -75,7 +77,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const fontVars = [inter.variable, jetbrainsMono.variable].join(" ");
+  const fontVars = [inter.variable, jetbrainsMono.variable, sora.variable].join(" ");
 
   return (
     <html lang={locale} dir={dirFor(locale)} className={`${fontVars} ${LOCALE_FONT_CLASS[locale] ?? ""} h-full`} suppressHydrationWarning>

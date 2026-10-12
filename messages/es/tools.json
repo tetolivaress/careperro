@@ -41,6 +41,12 @@
       "title": "Herramientas de privacidad",
       "description": "Elimina metadatos, censura, cifra archivos",
       "formats": "Cualquier archivo"
+    },
+    "productivity": {
+      "name": "Productividad",
+      "title": "Herramientas de productividad",
+      "description": "Pizarra, conversor de unidades, temporizador de enfoque",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Comprimir y descomprimir zip",
         "description": "Agrupa archivos en un zip o extrae uno."
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "Pizarra",
+        "description": "Dibuja diagramas e ideas; se guarda en tu navegador y exporta a PNG o SVG.",
+        "short": "Dibuja diagramas e ideas"
+      },
+      "unit-converter": {
+        "name": "Conversor de unidades",
+        "description": "Longitud, peso, temperatura, volumen, datos y más."
+      },
+      "pomodoro": {
+        "name": "Temporizador Pomodoro",
+        "description": "Concéntrate en sesiones de 25 minutos con descansos."
       }
     }
   }

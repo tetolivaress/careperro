@@ -6,7 +6,7 @@ import { marked } from "marked";
 import { TwoPaneTool, OptionCheckbox } from "@/components/shell/TwoPaneTool";
 import { Segmented } from "@/components/shell/Segmented";
 
-const SAMPLE = `# Lokal
+const SAMPLE = `# Toolbox
 
 Everything runs **in your browser**. Nothing is uploaded.
 

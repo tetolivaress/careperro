@@ -57,6 +57,14 @@ export const categories: Record<Category, CategoryDefinition> = {
     formats: "Any file",
     icon: "shield",
   },
+  productivity: {
+    slug: "productivity",
+    name: "Productivity",
+    title: "Productivity tools",
+    description: "Whiteboard, unit converter, focus timer",
+    formats: "PNG, SVG, Excalidraw",
+    icon: "lightbulb",
+  },
 };
 
 export const categoryList: CategoryDefinition[] = Object.values(categories);

@@ -706,6 +706,43 @@ export const tools: ToolDefinition[] = [
     keywords: ["archive", "compress", "extract"],
     component: () => import("@/tools/privacy/ZipTool"),
   },
+
+  // ───────── Productivity ─────────
+  {
+    slug: "whiteboard",
+    category: "productivity",
+    name: "Whiteboard",
+    description: "Sketch diagrams and ideas; saved in your browser, export to PNG or SVG.",
+    shortDescription: "Sketch diagrams and ideas",
+    icon: "presentation",
+    accept: [],
+    multiple: false,
+    keywords: ["draw", "sketch", "diagram", "excalidraw", "canvas", "mind map", "flowchart"],
+    popular: true,
+    component: () => import("@/tools/productivity/WhiteboardTool"),
+  },
+  {
+    slug: "unit-converter",
+    category: "productivity",
+    name: "Unit converter",
+    description: "Length, weight, temperature, volume, data and more.",
+    icon: "ruler",
+    accept: [],
+    multiple: false,
+    keywords: ["convert", "metric", "imperial", "cm to inches", "kg to lb", "celsius", "fahrenheit", "measurement"],
+    component: () => import("@/tools/productivity/UnitConverterTool"),
+  },
+  {
+    slug: "pomodoro",
+    category: "productivity",
+    name: "Pomodoro timer",
+    description: "Focus in 25-minute sessions with timed breaks.",
+    icon: "timer",
+    accept: [],
+    multiple: false,
+    keywords: ["focus", "timer", "countdown", "study", "productivity", "break"],
+    component: () => import("@/tools/productivity/PomodoroTool"),
+  },
 ];
 
 // ───────── Lookups ─────────

@@ -61,6 +61,7 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-brand: var(--font-sora), var(--font-sans);
   --font-heading: var(--font-sans);
 
   --radius-xs: 6px;

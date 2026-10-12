@@ -41,6 +41,12 @@
       "title": "Datenschutz-Tools",
       "description": "Metadaten entfernen, schwärzen, Dateien verschlüsseln",
       "formats": "Beliebige Datei"
+    },
+    "productivity": {
+      "name": "Produktivität",
+      "title": "Produktivitäts-Tools",
+      "description": "Whiteboard, Einheitenumrechner, Fokus-Timer",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Zippen & Entpacken",
         "description": "Dateien in ein Zip bündeln oder eines entpacken."
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "Whiteboard",
+        "description": "Skizziere Diagramme und Ideen; im Browser gespeichert, Export als PNG oder SVG.",
+        "short": "Diagramme und Ideen skizzieren"
+      },
+      "unit-converter": {
+        "name": "Einheitenumrechner",
+        "description": "Länge, Gewicht, Temperatur, Volumen, Datenmengen und mehr."
+      },
+      "pomodoro": {
+        "name": "Pomodoro-Timer",
+        "description": "Konzentriert arbeiten in 25-Minuten-Einheiten mit festen Pausen."
       }
     }
   }

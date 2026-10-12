@@ -1,16 +1,17 @@
 {
-  "name": "lokal",
+  "name": "toolbox",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build --webpack",
+    "dev": "node scripts/copy-excalidraw-assets.mjs && next dev",
+    "build": "node scripts/copy-excalidraw-assets.mjs && next build --webpack",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
+    "@excalidraw/excalidraw": "0.18.1",
     "@ffmpeg/ffmpeg": "^0.12.15",
     "@ffmpeg/util": "^0.12.2",
     "@jsquash/avif": "^2.1.1",

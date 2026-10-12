@@ -41,6 +41,12 @@
       "title": "Outils de confidentialité",
       "description": "Supprimer les métadonnées, caviarder, chiffrer des fichiers",
       "formats": "Tout fichier"
+    },
+    "productivity": {
+      "name": "Productivité",
+      "title": "Outils de productivité",
+      "description": "Tableau blanc, convertisseur d'unités, minuteur de concentration",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Zipper et dézipper",
         "description": "Regroupez des fichiers dans un zip ou extrayez-en un."
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "Tableau blanc",
+        "description": "Dessinez schémas et idées ; enregistré dans votre navigateur, export en PNG ou SVG.",
+        "short": "Dessinez schémas et idées"
+      },
+      "unit-converter": {
+        "name": "Convertisseur d'unités",
+        "description": "Longueur, poids, température, volume, données et plus."
+      },
+      "pomodoro": {
+        "name": "Minuteur Pomodoro",
+        "description": "Concentrez-vous par sessions de 25 minutes avec des pauses."
       }
     }
   }

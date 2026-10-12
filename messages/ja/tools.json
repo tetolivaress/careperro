@@ -41,6 +41,12 @@
       "title": "プライバシーツール",
       "description": "メタデータ削除、墨消し、ファイル暗号化",
       "formats": "あらゆるファイル"
+    },
+    "productivity": {
+      "name": "効率化",
+      "title": "効率化ツール",
+      "description": "ホワイトボード、単位変換、集中タイマー",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Zip 圧縮・解凍",
         "description": "ファイルを zip にまとめる、または展開する。"
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "ホワイトボード",
+        "description": "図やアイデアを手描き。ブラウザに保存され、PNG や SVG に書き出せます。",
+        "short": "図やアイデアを手描き"
+      },
+      "unit-converter": {
+        "name": "単位変換",
+        "description": "長さ、重さ、温度、体積、データ量など。"
+      },
+      "pomodoro": {
+        "name": "Pomodoro タイマー",
+        "description": "25 分の集中と休憩を繰り返します。"
       }
     }
   }

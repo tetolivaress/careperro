@@ -41,6 +41,12 @@
       "title": "Ferramentas de privacidade",
       "description": "Remova metadados, oculte, criptografe arquivos",
       "formats": "Qualquer arquivo"
+    },
+    "productivity": {
+      "name": "Produtividade",
+      "title": "Ferramentas de produtividade",
+      "description": "Quadro branco, conversor de unidades, timer de foco",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Compactar e descompactar zip",
         "description": "Agrupe arquivos em um zip ou extraia um."
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "Quadro branco",
+        "description": "Desenhe diagramas e ideias; salvo no seu navegador, exporte para PNG ou SVG.",
+        "short": "Desenhe diagramas e ideias"
+      },
+      "unit-converter": {
+        "name": "Conversor de unidades",
+        "description": "Comprimento, peso, temperatura, volume, dados e mais."
+      },
+      "pomodoro": {
+        "name": "Timer Pomodoro",
+        "description": "Concentre-se em sessões de 25 minutos com pausas programadas."
       }
     }
   }

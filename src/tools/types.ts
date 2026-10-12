@@ -1,7 +1,7 @@
 import type { ComponentType } from "react";
 import type { IconName } from "@/lib/icons";
 
-export const CATEGORIES = ["image", "audio", "video", "pdf", "text", "dev", "privacy"] as const;
+export const CATEGORIES = ["image", "audio", "video", "pdf", "text", "dev", "privacy", "productivity"] as const;
 
 export type Category = (typeof CATEGORIES)[number];
 

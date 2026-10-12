@@ -1,6 +1,6 @@
 /** Brand and deployment constants. */
 export const SITE = {
-  name: "Lokal",
+  name: "Toolbox",
   domain: "careperroshouse.com",
   url: "https://www.careperroshouse.com",
   tagline: "Edit any file. Upload nothing.",

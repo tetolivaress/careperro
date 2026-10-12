@@ -1,5 +1,5 @@
-/* Lokal service worker: app shell + static assets cache so the image tools work offline. */
-const VERSION = "v1";
+/* Toolbox service worker: app shell + static assets cache so the image tools work offline. */
+const VERSION = "v2";
 const SHELL = `lokal-shell-${VERSION}`;
 const RUNTIME = `lokal-runtime-${VERSION}`;
 const CDN = `lokal-cdn-${VERSION}`;

@@ -41,6 +41,12 @@
       "title": "Alat privasi",
       "description": "Hapus metadata, sensor, enkripsi file",
       "formats": "File apa pun"
+    },
+    "productivity": {
+      "name": "Produktivitas",
+      "title": "Alat produktivitas",
+      "description": "Papan tulis, konverter satuan, timer fokus",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "Zip & unzip",
         "description": "Bundel file ke dalam zip atau ekstrak isinya."
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "Papan tulis",
+        "description": "Gambar diagram dan ide; tersimpan di browser, ekspor ke PNG atau SVG.",
+        "short": "Gambar diagram dan ide"
+      },
+      "unit-converter": {
+        "name": "Konverter satuan",
+        "description": "Panjang, berat, suhu, volume, data, dan lainnya."
+      },
+      "pomodoro": {
+        "name": "Timer Pomodoro",
+        "description": "Fokus dalam sesi 25 menit dengan jeda terjadwal."
       }
     }
   }

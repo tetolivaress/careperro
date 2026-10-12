@@ -41,6 +41,12 @@
       "title": "隐私工具",
       "description": "清除元数据、脱敏、加密文件",
       "formats": "任何文件"
+    },
+    "productivity": {
+      "name": "效率",
+      "title": "效率工具",
+      "description": "白板、单位换算、专注计时器",
+      "formats": "PNG, SVG, Excalidraw"
     }
   },
   "items": {
@@ -287,6 +293,21 @@
       "zip": {
         "name": "压缩与解压",
         "description": "将文件打包为 zip 或解压。"
+      }
+    },
+    "productivity": {
+      "whiteboard": {
+        "name": "白板",
+        "description": "绘制图表、记录想法；保存在浏览器中，可导出为 PNG 或 SVG。",
+        "short": "绘制图表和想法"
+      },
+      "unit-converter": {
+        "name": "单位换算",
+        "description": "长度、重量、温度、体积、数据等。"
+      },
+      "pomodoro": {
+        "name": "Pomodoro 番茄钟",
+        "description": "以 25 分钟为一段专注，并定时休息。"
       }
     }
   }

@@ -2,7 +2,7 @@
 
 A privacy-first web toolbox where every tool runs 100% in the browser. Files never leave the user's device. No backend.
 
-> Product name: **Lokal** (from design.pen).
+> Product name: **Toolbox** (icon and wordmark from icon.html; formerly Lokal).
 
 ## How to run this plan
 
