@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logo B: Frame</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 720px; height: 520px; box-sizing: border-box; background: #0E0F11; display: flex; flex-direction: column; font-family: 'Sora', sans-serif; font-weight: 600">
+<div style="flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 28px">
+<svg viewBox="0 0 64 64" width="132" height="132" role="img" aria-label="Toolbox logo">
+<rect width="64" height="64" rx="15" fill="{{accent}}"></rect>
+<path d="M15 27V15H27M49 37V49H37" stroke="#0E0F11" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<circle cx="32" cy="32" r="8" fill="#0E0F11"></circle>
+</svg>
+<div style="font-size: 64px; letter-spacing: -0.03em; color: #F4F5F0">Toolbox</div>
+</div>
+<div style="height: 150px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr))">
+<div style="background: #F1F2EC; display: flex; align-items: center; justify-content: center; gap: 14px">
+<svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+<rect width="64" height="64" rx="15" fill="#0E0F11"></rect>
+<path d="M15 27V15H27M49 37V49H37" stroke="{{accent}}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<circle cx="32" cy="32" r="8" fill="{{accent}}"></circle>
+</svg>
+<div style="font-size: 26px; letter-spacing: -0.03em; color: #0E0F11">Toolbox</div>
+</div>
+<div style="border-top: 1px solid #26282C; display: flex; align-items: center; justify-content: center; gap: 24px">
+<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+<rect width="64" height="64" rx="15" fill="{{accent}}"></rect>
+<path d="M15 27V15H27M49 37V49H37" stroke="#0E0F11" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<circle cx="32" cy="32" r="8" fill="#0E0F11"></circle>
+</svg>
+<svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+<rect width="64" height="64" rx="15" fill="{{accent}}"></rect>
+<path d="M15 27V15H27M49 37V49H37" stroke="#0E0F11" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<circle cx="32" cy="32" r="8" fill="#0E0F11"></circle>
+</svg>
+<svg viewBox="0 0 64 64" width="20" height="20" aria-hidden="true">
+<rect width="64" height="64" rx="15" fill="{{accent}}"></rect>
+<path d="M15 27V15H27M49 37V49H37" stroke="#0E0F11" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<circle cx="32" cy="32" r="8" fill="#0E0F11"></circle>
+</svg>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F432","options":["#C6F432","#5EE6D0","#FFB020","#8FA8FF"]},"$preview":{"width":720,"height":520}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#C6F432' };
+}
+}
+</script>
+</body>
+</html>
