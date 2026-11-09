@@ -1,8 +1,8 @@
 /** Brand and deployment constants. */
 export const SITE = {
   name: "Reactool",
-  domain: "careperroshouse.com",
-  url: "https://www.careperroshouse.com",
+  domain: "reactool.app",
+  url: "https://www.reactool.app",
   tagline: "Edit any file. Upload nothing.",
   description:
     "Free tools for images, audio, video, PDFs and code that run entirely in your browser. No uploads, no sign-up, no ads.",
