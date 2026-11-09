@@ -1,4 +1,4 @@
-/* Toolbox service worker: app shell + static assets cache so the image tools work offline. */
+/* Reactool service worker: app shell + static assets cache so the image tools work offline. */
 const VERSION = "v2";
 const SHELL = `lokal-shell-${VERSION}`;
 const RUNTIME = `lokal-runtime-${VERSION}`;

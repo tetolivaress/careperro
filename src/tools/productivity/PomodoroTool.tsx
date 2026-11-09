@@ -38,6 +38,7 @@ interface Today {
   minutes: number;
 }
 
+// Kept from the Toolbox name on purpose: renaming the key would drop every saved timer.
 const STORAGE_KEY = "toolbox-pomodoro";
 const DEFAULTS: Settings = { work: 25, short: 5, long: 15, longEvery: 4, autoStart: false, sound: true, notify: false };
 const MIN = 60_000;
