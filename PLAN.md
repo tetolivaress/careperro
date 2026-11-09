@@ -1,8 +1,8 @@
-# Browser Toolbox: Implementation Plan
+# Reactool: Implementation Plan
 
 A privacy-first web toolbox where every tool runs 100% in the browser. Files never leave the user's device. No backend.
 
-> Product name: **Toolbox** (icon and wordmark from icon.html; formerly Lokal).
+> Product name: **Reactool** (icon and wordmark from icon.html; formerly Toolbox, and before that Lokal).
 
 ## How to run this plan
 

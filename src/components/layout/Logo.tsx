@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 
 export const APP_NAME = SITE.name;
 
-/** Toolbox frame mark: lime rounded square with corner brackets around a dot. Same artwork as public/icons/icon.svg. */
+/** Reactool frame mark: lime rounded square with corner brackets around a dot. Same artwork as public/icons/icon.svg. */
 export function LogoMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 64 64" className={cn("size-7 shrink-0", className)} aria-hidden>

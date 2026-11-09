@@ -22,7 +22,7 @@ import { tools } from "@/tools/registry";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext", "cyrillic"], display: "optional" });
 const jetbrainsMono = JetBrains_Mono({ variable: "--font-jetbrains-mono", subsets: ["latin"], display: "swap" });
-/** Wordmark only (the "Toolbox" logo text). */
+/** Wordmark only (the "Reactool" logo text). */
 const sora = Sora({ variable: "--font-sora", subsets: ["latin"], weight: "600", display: "swap" });
 
 export function generateStaticParams() {

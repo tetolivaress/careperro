@@ -3,6 +3,7 @@
  * One record holds the whole scene; nothing leaves the browser.
  */
 
+// Kept from the Toolbox name on purpose: renaming the database would orphan every saved board.
 const DB_NAME = "toolbox-whiteboard";
 const STORE = "scenes";
 const KEY = "current";
