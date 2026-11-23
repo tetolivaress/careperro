@@ -172,6 +172,11 @@
       "record": {
         "name": "Bildschirm- & Webcam-Rekorder",
         "description": "Bildschirm oder Kamera aufnehmen, dann das Ergebnis bearbeiten."
+      },
+      "player": {
+        "name": "Videoplayer",
+        "description": "Videos von deinem Gerät abspielen – mit Tempo, A–B-Schleifen, Untertiteln und Warteschlange.",
+        "short": "Tempo, Schleifen, Untertitel, Warteschlange"
       }
     },
     "pdf": {

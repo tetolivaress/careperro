@@ -172,6 +172,11 @@
       "record": {
         "name": "Screen & webcam recorder",
         "description": "Record your screen or camera, then edit the result."
+      },
+      "player": {
+        "name": "Video player",
+        "description": "Play videos from your device with speed control, A–B loops, subtitles and a queue.",
+        "short": "Speed, loops, subtitles and a queue"
       }
     },
     "pdf": {

@@ -373,6 +373,18 @@ export const tools: ToolDefinition[] = [
     keywords: ["screen", "webcam", "camera", "capture"],
     component: () => import("@/tools/video/RecorderTool"),
   },
+  {
+    slug: "player",
+    category: "video",
+    name: "Video player",
+    description: "Play videos from your device with speed control, A–B loops, subtitles and a queue.",
+    shortDescription: "Speed, loops, subtitles and a queue",
+    icon: "circle-play",
+    accept: ["video/*", ".mov", ".mkv", ".srt", ".vtt"],
+    multiple: true,
+    keywords: ["play", "watch", "playlist", "queue", "subtitles", "srt", "vtt", "loop", "speed", "mkv"],
+    component: () => import("@/tools/video/PlayerTool"),
+  },
 
   // ───────── PDF ─────────
   {

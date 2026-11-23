@@ -172,6 +172,11 @@
       "record": {
         "name": "Gravador de tela e webcam",
         "description": "Grave sua tela ou câmera e edite o resultado."
+      },
+      "player": {
+        "name": "Reprodutor de vídeo",
+        "description": "Reproduza vídeos do seu dispositivo com controle de velocidade, loops A–B, legendas e fila.",
+        "short": "Velocidade, loops, legendas e fila"
       }
     },
     "pdf": {

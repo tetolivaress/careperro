@@ -172,6 +172,11 @@
       "record": {
         "name": "Enregistreur d'écran et webcam",
         "description": "Enregistrez votre écran ou votre caméra, puis modifiez le résultat."
+      },
+      "player": {
+        "name": "Lecteur vidéo",
+        "description": "Lisez les vidéos de votre appareil avec réglage de vitesse, boucles A–B, sous-titres et file d’attente.",
+        "short": "Vitesse, boucles, sous-titres et file"
       }
     },
     "pdf": {
