@@ -172,6 +172,11 @@
       "record": {
         "name": "Perekam layar & webcam",
         "description": "Rekam layar atau kamera Anda, lalu edit hasilnya."
+      },
+      "player": {
+        "name": "Pemutar video",
+        "description": "Putar video dari perangkat Anda dengan kontrol kecepatan, pengulangan A–B, subtitle, dan antrean.",
+        "short": "Kecepatan, pengulangan, subtitle, antrean"
       }
     },
     "pdf": {

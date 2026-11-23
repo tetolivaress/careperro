@@ -172,6 +172,11 @@
       "record": {
         "name": "Grabador de pantalla y webcam",
         "description": "Graba tu pantalla o cámara y edita el resultado."
+      },
+      "player": {
+        "name": "Reproductor de vídeo",
+        "description": "Reproduce vídeos de tu dispositivo con control de velocidad, bucles A–B, subtítulos y cola.",
+        "short": "Velocidad, bucles, subtítulos y cola"
       }
     },
     "pdf": {
